@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <META http-equiv="X-UA-Compatible" content="IE=8" ></META>
+    <title>用户管理</title>
+	<#include "Admin/jsp/common/common.ftl">
+	<link rel="stylesheet" type="text/css" href="${hxltUrl}Admin/css/editcard.css" media="all">
+	<script>
+		var fdUserId = "${item.fdId}";
+		var fdUserMessage = '${item.fdUserMessage}';
+	</script>
+	<script type="text/javascript">
+		var firstMenuNo="00090";
+		var secondMenuNo="00091";
+	</script>
+	<script type="text/javascript" src="${hxltUrl}js/utils/templateUtil.js"></script>
+	<script type="text/javascript" src="${hxltUrl}Admin/js/app/AppUser/editCard.js"></script>
+  </head>
+  
+<body>
+<!-- 头部 -->
+<#include "Admin/jsp/common/header.ftl">
+<!-- /头部 --> 
+
+<!-- 边栏 -->
+<#include "Admin/jsp/common/sidebar.ftl">
+<!-- /边栏 --> 
+
+<!-- 内容区 -->
+<div id="main-content">
+	<div id="top-alert" class="fixed alert alert-error" style="display: none;">
+		<button class="close fixed" style="margin-top: 4px;">×</button>
+		<div class="alert-content">这是内容</div>
+	</div>
+	<div id="main" class="main" style="min-height: 430px;"> 
+		
+		<!-- nav -->
+		<div class="main-title">
+			<h2>卡片信息</h2>
+		</div>
+		<div class="editcardMain">
+				<div class="writeCardTip">
+					<p class="writeCardTipText">温馨提示:</p>
+					<p class="writeCardTipText2">1.基本信息必须填写完整并确保姓名的真实性，否则影响名片交换;</p>
+					<p class="writeCardTipText2">2.注册后，手机验证并上传名片立即获得100张体验名片</p>
+					<p class="writeCardTipText2">3.每成功推荐一位好友下载使用 微片，可获得50张名片的奖励</p>
+				</div>
+				<div class="wrcard-main">
+					<div class="whiteLine"></div>
+					<div class="wrcard-title">基本信息</div>
+					<div class="wrcard-Content">
+						<div class="wrcard-item clearfix">
+							<div class="wrcard-label">名字：</div>
+							<div class="wrcard-inputDiv">
+								<div class="wrcard-inputItem">
+									<input type="text" name="fdName" placeholder="请输入名字(必填)" value="${item.fdName}" readonly="readonly"/>
+								</div>
+							</div>
+						</div>
+						<div class="wrcard-item clearfix">
+							<div class="wrcard-label">职位：</div>
+							<div class="wrcard-inputDiv">
+								<div class="wrcard-inputItem">
+									<input type="text" name="fdJobs" placeholder="请输入职位名称(必填)" datatype="*"/>
+								</div>
+							</div>
+						</div>
+						<div class="wrcard-item clearfix">
+							<div class="wrcard-label">公司：</div>
+							<div class="wrcard-inputDiv">
+								<div class="wrcard-inputItem">
+									<input type="text" name="fdCompany"  placeholder="请输入公司名称(必填)" datatype="*"/>
+									<a href="javascript:void(0)" class="addMessage">
+										<img src="${hxltUrl}app/images/add.png">
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="wrcard-item clearfix">
+							<div class="wrcard-label">行业：</div>
+							<div class="wrcard-inputDiv">
+								<div class="wrcard-inputItem">
+									<select class="select input-large" name="fdCompanyType" nullmsg="选择行业类别(必选)" datatype="*" dictKey="402881365b040e03015b044080f20000"  dictValue="" >
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class="wrcard-item clearfix">
+							<div class="wrcard-label">地址：</div>
+							<div class="wrcard-inputDiv">
+								<div class="wrcard-inputItem">
+									<input type="text" name="fdCompanyAddress"  datatype="*" placeholder="请输入地址(必填)"/>
+									<a href="javascript:void(0)" class="addMessage">
+										<img src="${hxltUrl}app/images/add.png">
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="wrcard-item clearfix">
+							<div class="wrcard-label">网址：</div>
+							<div class="wrcard-inputDiv">
+								<div class="wrcard-inputItem">
+									<input type="text" name="fdCompanyUrl" placeholder="请输入公司主页"/>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			
+				<div class="wrcard-main">
+					<div class="wrcard-title">联系信息</div>
+					<div class="wrcard-Content">
+						<div class="wrcard-item clearfix">
+							<div class="wrcard-label">手机：</div>
+							<div class="wrcard-inputDiv">
+								<div class="wrcard-inputItem">
+									<input type="text" name="fdMobile" datatype="*" placeholder="请输入手机号码(必填)"/>
+									<a href="javascript:void(0)" class="addMessage">
+										<img src="${hxltUrl}app/images/add.png">
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="wrcard-item clearfix">
+							<div class="wrcard-label">电话：</div>
+							<div class="wrcard-inputDiv">
+								<div class="wrcard-inputItem">
+									<input type="text" name="fdTel" datatype="*" placeholder="请输入电话号码(必填)"/>
+									<a href="javascript:void(0)" class="addMessage">
+										<img src="${hxltUrl}app/images/add.png">
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="wrcard-item clearfix">
+							<div class="wrcard-label">传真：</div>
+							<div class="wrcard-inputDiv">
+								<div class="wrcard-inputItem">
+									<input type="text" name="fdFax" datatype="*" placeholder="请输入传真号码(必填)"/>
+									<a href="javascript:void(0)" class="addMessage">
+										<img src="${hxltUrl}app/images/add.png">
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="wrcard-item clearfix">
+							<div class="wrcard-label">邮箱：</div>
+							<div class="wrcard-inputDiv">
+								<div class="wrcard-inputItem">
+									<input type="text" name="fdEmail" datatype="*" placeholder="请输入邮箱地址(必填)"/>
+									<a href="javascript:void(0)" class="addMessage">
+										<img src="${hxltUrl}app/images/add.png">
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="wrcard-item clearfix">
+							<div class="wrcard-label">微信：</div>
+							<div class="wrcard-inputDiv">
+								<div class="wrcard-inputItem">
+									<input type="text" name="fdWxNo" placeholder="请输入微信号码"/>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="wrcard-main">
+					<div class="wrcard-title">其他信息</div>
+					<div class="wrcard-Content">
+						<div class="wrcard-item  clearfix">
+							<div class="wrcard-label ">毕业学校：</div>
+							<div class="wrcard-inputDiv ">
+								<div class="wrcard-inputItem">
+									<input type="text" name="fdSchool" placeholder="请输入毕业学校"/>
+									<a href="javascript:void(0)" class="addMessage">
+										<img src="${hxltUrl}app/images/add.png">
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="wrcard-item  clearfix">
+							<div class="wrcard-label ">最高学历：</div>
+							<div class="wrcard-inputDiv ">
+								<div class="wrcard-inputItem">
+									<input type="text"  name="fdEducation" placeholder="请输入学历"/>
+									<a href="javascript:void(0)" class="addMessage">
+										<img src="${hxltUrl}app/images/add.png">
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="wrcard-item  clearfix">
+							<div class="wrcard-label ">学习专业：</div>
+							<div class="wrcard-inputDiv ">
+								<div class="wrcard-inputItem">
+									<input type="text" name="fdMajor" placeholder="请选择专业"/>
+									<a href="javascript:void(0)" class="addMessage">
+										<img src="${hxltUrl}app/images/add.png">
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="wrcard-main">
+					<div class="wrcard-title">其他信息</div>
+					<div class="wrcard-Content">
+						<div class="wrcard-item  clearfix">
+							<div class="wrcard-textareaDiv wrcard-inputItem">
+								<textarea name="fdRemark" placeholder="请输入企业简介或者其他信息"></textarea>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="wrcardBtnList clearfix">
+					<a href="javascript:history.go(-1)" class="wrcard-cancelBtn">取消</a>
+					<a href="javascript:void(0)" class="wrcard-saveBtn">保存</a>
+					<div class="wcardBtnLine"></div>
+				</div>
+				<div style="padding-bottom: 70px;"></div>
+		</div>
+	</div>
+	
+	<textarea class="x-template" id="inputTemplate">
+		<div class="wrcard-inputItem">
+			<input type="text" name="{name}" {datatype} placeholder="{placeholder}" value="{value}"/>
+			<a href="javascript:void(0)" class="jianMessage">
+				<img src="${hxltUrl}app/images/jian.png">
+			</a>
+		</div>
+	</textarea>
+	<#include "Admin/jsp/common/footer.ftl">
+</div>
+<!-- /内容区 -->
+</body>
+</html>

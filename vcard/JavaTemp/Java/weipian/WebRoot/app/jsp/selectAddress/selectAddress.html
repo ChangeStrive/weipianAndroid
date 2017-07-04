@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<#include "app/jsp/common/common.ftl">
+	<#include "app/jsp/weixinTemplate.html">
+	<title>选择收货地址</title>
+	<script type="text/javascript">
+		var backUrl="${backUrl}";
+	</script>
+	
+</head>
+<body class="address" >
+	<div class="wrap">
+		<header class="homepage_head">
+			<a href="${backUrl}" class="left_head  ahref" style="left:2%;">
+	             	  <span class="iconfont backBtn">&#xe61c;</span>
+			</a>
+			<h2>选择收货地址</h2>
+		</header>
+		<div class="address_kongkong" style="display: none;">
+			<img src="${hxltUrl}app/images/zwxxdz_icon.png" alt="暂无详细地址">	
+			<span>暂无详细地址</span>	
+			<a href="javascript:void(0)" class="goAndGet" >赶快去填写</a>	
+		</div>
+		<div class="addressList" style="display: display;">
+			 <#list addressList.list as addressItem>
+				<div class="addressItem" fdId="${addressItem.fdId}">
+					<div class="ai-head">
+						<div class="ai-content clearfix">
+							<img src="${hxltUrl}app/images/un_icon.png" alt="用户名icon" class="un-icon">
+							<span>${addressItem.fdConsignee}</span>
+						</div>
+						<div class="ai-content clearfix">
+							<img src="${hxltUrl}app/images/tel_icon.png" alt="手机icon" class="tel-icon">
+							<span>${addressItem.fdTel}</span>
+						</div>
+						<div class="ai-content clearfix">
+							<img src="${hxltUrl}app/images/loc_icon.png" alt="手机icon" class="tel-icon">
+							<span>${addressItem.fdProvince}${addressItem.fdCity}${addressItem.fdArea}${addressItem.fdAddress}&nbsp;&nbsp;${addressItem.fdZipCode}</span>
+						</div>
+					</div>
+				</div>
+			</#list>
+		</div>
+		<div style="height: 70px;width:100%;"></div>
+		<div class="footerBtn">
+			<a href="javascript:void(0);" class="fb_ahref add " ><span class="fb-text">新增收货地址</span></a>
+		</div>
+	</div>
+</body>
+<script src='${hxltUrl}app/js/selectAddress/selectAddress.js'></script>
+</html>

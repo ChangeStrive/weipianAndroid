@@ -1,0 +1,55 @@
+.singleUpload-imageTable{
+	width:120px;
+	float:left;
+	margin-right: 5px;
+}
+
+.singleUpload-image{
+	padding-bottom: 5px;
+}
+
+.singleUpload-btn{
+	width:100%;
+	text-align: center;
+	margin: 0px auto;
+	position: relative;
+	display: block;
+}
+.singleUpload-upload{
+    height: 40px !important;
+    width: 80px !important;
+    line-height:40px;
+    text-align:center;
+    cursor: pointer;
+    position: relative;
+    background:#86db00;
+    font-weight:bold;
+    color:#fff;
+}
+.singleUpload-upload2{
+   margin: 0 auto;
+}
+.singleUpload-beginUpload{
+    height: 40px !important;
+    width: 80px !important;
+    line-height:40px;
+    text-align:center;
+    cursor: pointer;
+    position: relative;
+    background:#999;
+    font-weight:bold;
+    color:#fff;
+}
+.singleUpload-cutImage{
+	height: 40px !important;
+    width: 80px !important;
+    line-height:40px;
+    text-align:center;
+    cursor: pointer;
+    position: absolute;
+    background:#cdcdcd;
+    font-weight:bold;
+    color:#fff;
+    right:0;
+    bottom:0;
+ }

@@ -1,0 +1,8 @@
+include ':app'
+include ':MAYA_Library_Afinal'
+include ':MAYA_Library_AsyncImageView2'
+include ':MAYA_Library_Utils'
+include ':MAYA_Library_Vcard_OCR_Tencent'
+include ':MAYA_Library_Scan2'
+include ':MAYA_Library_JsonWork'
+include ':MAYA_Library_Crop_Image'

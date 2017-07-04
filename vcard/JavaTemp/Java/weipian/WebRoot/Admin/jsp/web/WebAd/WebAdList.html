@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <META http-equiv="X-UA-Compatible" content="IE=9" ></META>
+	<title>微片生活管理平台 - 广告管理</title>
+	<#include "Admin/jsp/common/common.ftl">
+	<script type="text/javascript">
+		var firstMenuNo="00019";
+		var fdTypeId="${fdTypeId}";
+	</script>
+	<script type="text/javascript" src="${hxltUrl}js/jquery/jquery.dataTables.js"></script>
+	<script type="text/javascript" src="${hxltUrl}js/jquery/jquery.tabaleUtils.js"></script>
+	<script type="text/javascript" src="${hxltUrl}Admin/js/web/WebAd/WebAdList.js"></script>
+  </head>
+ <body>
+<!-- 头部 -->
+<#include "Admin/jsp/common/header.ftl">
+<!-- /头部 --> 
+
+<!-- 边栏 -->
+<div class="sidebar"> 
+	<block name="sidebar">
+		<div id="subnav" class="subnav">
+		</div>
+	</block>
+</div>
+<!-- /边栏 --> 
+
+<!-- 内容区 -->
+<div id="main-content">
+	<div id="top-alert" class="fixed alert alert-error" style="display: none;">
+		<button class="close fixed" style="margin-top: 4px;">&times;</button>
+		<div class="alert-content">这是内容</div>
+	</div>
+	<div id="main" class="main">
+		<div class="main-title">
+			<h2>广告管理列表</h2>
+		</div>
+		<div class="cf">
+			<div class="fl"> <a class="btn" onclick="WebAdConfig.toEdit()" href="javascript:;">新 增</a>
+				<a class="btn" onclick="WebAdConfig.del()" href="javascript:;">删 除</a>
+			</div>
+			
+			<!-- 高级搜索 -->
+			<div class="search-form fr cf">
+				<div class="sleft">
+					<input type="text" name="fdTitle" class="search-input" value="" placeholder="请输入标题">
+					<a class="sch-btn" href="javascript:;" id="search" url="#"><i class="btn-search"></i></a> 
+			    </div>
+			</div>
+		</div>
+		<div class="data-table table-striped">
+			<table id="tableList">
+				<thead>
+					<tr>
+						<th class="row-selected row-selected"><input class="check-all" type="checkbox"></th>
+						<th class="">图片</th>
+						<th class="">标题</th>
+						<th class="">URL</th>
+						<th class="">顺序</th>
+						<th class="">广告类型</th>
+						<th class="">操作</th>
+					</tr>
+				</thead>
+				<tbody>
+				</tbody>
+			</table>
+		</div>
+		<!-- 分页 -->
+		
+	</div>
+	<#include "Admin/jsp/common/footer.ftl">
+</div>
+<!-- /内容区 --> 
+</body>
+</html>

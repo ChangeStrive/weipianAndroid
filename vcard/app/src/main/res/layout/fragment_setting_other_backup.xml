@@ -1,0 +1,127 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/all_frg_view_color"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.maya.android.vcard.ui.frg.SettingOtherBackupFragment">
+
+    <LinearLayout
+        style="@style/all_btn_background_color"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_50dp"
+            android:paddingLeft="@dimen/dimen_15dp"
+            android:paddingRight="@dimen/dimen_15dp">
+
+            <TextView
+                style="@style/text_setting_general_size_and_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/frg_setting_backup_auto_cloud_backup" />
+
+            <com.maya.android.vcard.ui.widget.SlipButton
+                android:id="@+id/slb_backup_auto_cloud_backup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <View style="@style/horizontal_line_divider_padding_dimen_15dp" />
+        <RelativeLayout
+            android:id="@+id/rel_backup_auto_backup_time"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_50dp"
+            android:paddingLeft="@dimen/dimen_15dp"
+            android:paddingRight="@dimen/dimen_15dp">
+
+            <TextView
+                style="@style/text_setting_general_size_and_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/frg_setting_backup_auto_backup_time" />
+
+            <TextView
+                android:id="@+id/txv_backup_auto_backup_time"
+                style="@style/text_setting_general_right_sign_size_and_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:drawablePadding="@dimen/dimen_10dp"
+                android:drawableRight="@mipmap/img_general_right_arrow"
+                android:text="" />
+        </RelativeLayout>
+
+        <View style="@style/horizontal_line_divider_padding_dimen_15dp" />
+
+        <RelativeLayout
+            android:id="@+id/rel_backup_backup_way"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_50dp"
+            android:paddingLeft="@dimen/dimen_15dp"
+            android:paddingRight="@dimen/dimen_15dp">
+
+            <TextView
+                style="@style/text_setting_general_size_and_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/frg_setting_backup_backup_way" />
+
+            <TextView
+                android:id="@+id/txv_backup_backup_way"
+                style="@style/text_setting_general_right_sign_size_and_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:drawablePadding="@dimen/dimen_10dp"
+                android:drawableRight="@mipmap/img_general_right_arrow"
+                android:text="" />
+        </RelativeLayout>
+
+        <View style="@style/horizontal_line_divider_padding_dimen_15dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_50dp"
+            android:paddingLeft="@dimen/dimen_15dp"
+            android:paddingRight="@dimen/dimen_15dp">
+
+            <TextView
+                style="@style/text_setting_general_size_and_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/frg_setting_backup_wifi_auto_backup" />
+
+            <com.maya.android.vcard.ui.widget.SlipButton
+                android:id="@+id/slb_backup_wifi_auto_backup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true" />
+        </RelativeLayout>
+
+        <View style="@style/vertical_line_divider_height_dimen_10dp" />
+
+        <TextView
+            android:id="@+id/txv_backup_log_backup"
+            style="@style/text_setting_general_size_and_color"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_50dp"
+            android:drawableRight="@mipmap/img_general_right_arrow"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/dimen_15dp"
+            android:paddingRight="@dimen/dimen_15dp"
+            android:text="@string/frg_setting_backup_log_backup" />
+    </LinearLayout>
+
+
+</RelativeLayout>

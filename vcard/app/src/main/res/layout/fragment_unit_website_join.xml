@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/all_frg_view_color"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.maya.android.vcard.ui.frg.UnitWebsiteJoinFragment">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_51dp"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        style="@style/all_btn_background_color"
+        android:paddingLeft="@dimen/dimen_15dp"
+        android:paddingRight="@dimen/dimen_15dp" >
+
+        <TextView
+            android:id="@+id/txv_we_official_join_Binding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            style="@style/btn_get_verification"
+            android:paddingRight="@dimen/dimen_10dp"
+            android:paddingLeft="@dimen/dimen_10dp"
+            android:paddingTop="@dimen/dimen_3dp"
+            android:paddingBottom="@dimen/dimen_3dp"
+            android:text="@string/frg_setting_account_common_unbind"
+            android:background="@drawable/bg_general_btn_green" />
+
+        <EditText
+            android:id="@+id/edt_we_official_join_url"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_35dp"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/dimen_10dp"
+            style="@style/edt_main_general_size_and_color"
+            android:lines="1"
+            android:hint="@string/please_enter_we_official_url"
+            android:layout_toLeftOf="@id/txv_we_official_join_Binding"
+            android:layout_marginRight="@dimen/dimen_10dp"
+            android:background="@drawable/bg_general_edt_normal" />
+    </RelativeLayout>
+
+</RelativeLayout>

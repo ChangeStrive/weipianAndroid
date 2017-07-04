@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <META http-equiv="X-UA-Compatible" content="IE=9" ></META>
+	<title>微片生活管理平台 - 关键词自动应答</title>
+	<#include "Admin/jsp/common/common.ftl">
+	<script type="text/javascript">
+		var firstMenuNo="00027";
+		var secondMenuNo="00032";
+	</script>
+	<script type="text/javascript" src="${hxltUrl}js/jquery/jquery.dataTables.js"></script>
+	<script type="text/javascript" src="${hxltUrl}js/jquery/jquery.tabaleUtils.js"></script>
+	<script type="text/javascript" src="${hxltUrl}Admin/js/weixin/WeiXinKeywordReply/keywordReplyList.js"></script>
+  </head>
+ <body>
+<!-- 头部 -->
+<#include "Admin/jsp/common/header.ftl">
+<!-- /头部 --> 
+
+<!-- 边栏 -->
+<#include "Admin/jsp/common/sidebar.ftl">
+<!-- /边栏 --> 
+
+<!-- 内容区 -->
+<div id="main-content">
+	<div id="top-alert" class="fixed alert alert-error" style="display: none;">
+		<button class="close fixed" style="margin-top: 4px;">&times;</button>
+		<div class="alert-content">这是内容</div>
+	</div>
+	<div id="main" class="main">
+		<div class="main-title">
+			<h2>关键词自动应答列表</h2>
+		</div>
+		<div class="cf">
+			<div class="fl"> <a class="btn" href="${hxltUrl}WeiXinKeywordReplyAction/toEdit">新 增</a>
+				<a class="btn" onclick="WeiXinKeywordReplyConfig.del()" href="javascript:;">删 除</a>
+			</div>
+			
+			<!-- 高级搜索 -->
+			<div class="search-form fr cf">
+				<div class="sleft">
+					<input type="text" name="fdTitle" class="search-input" value="" placeholder="请输入关键词">
+					<a class="sch-btn" href="javascript:;" id="search" url="#"><i class="btn-search"></i></a> 
+			    </div>
+			</div>
+		</div>
+		<div class="data-table table-striped">
+			<table id="tableList">
+				<thead>
+					<tr>
+						<th class="row-selected row-selected"><input class="check-all" type="checkbox"></th>
+						<th class="">关键词</th>
+						<th class="">标题</th>
+						<th class="">URL</th>
+						<th class="">类型</th>
+						<th class="">创建时间</th>
+						<th class="">状态</th>
+						<th class="">操作</th>
+					</tr>
+				</thead>
+				<tbody>
+				</tbody>
+			</table>
+		</div>
+		<!-- 分页 -->
+		
+	</div>
+	<!-- 底部 -->
+	<#include "Admin/jsp/common/footer.ftl">
+</div>
+<!-- /内容区 --> 
+</body>
+</html>

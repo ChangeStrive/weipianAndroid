@@ -1,0 +1,27 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/all_frg_view_color"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.maya.android.vcard.ui.frg.UserShareFragment">
+
+    <com.maya.android.vcard.ui.widget.MarqueeTextView
+        android:id="@+id/txv_hint"
+        style="@style/user_vcard_hint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_10dp"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:paddingLeft="@dimen/dimen_15dp"
+        android:paddingRight="@dimen/dimen_15dp"
+        android:text="@string/share_vcard_mess_hint" />
+
+    <RelativeLayout
+        style="@style/all_btn_background_color"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txv_hint">
+
+        <include layout="@layout/inc_lsv_view" />
+    </RelativeLayout>
+</RelativeLayout>

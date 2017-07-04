@@ -1,0 +1,116 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 22
+    buildToolsVersion "23.0.3"
+
+    defaultConfig {
+        applicationId "com.maya.android.vcard"
+        minSdkVersion 16
+        targetSdkVersion 21
+        versionCode 2120020900
+        versionName "2.5.1 Beta"
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+
+            zipAlignEnabled true
+
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    packagingOptions {
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+    }
+
+    productFlavors {
+        C000 {}
+//        C001 {}
+//        C002 {}
+//        C003 {}
+//        C004 {}
+//        C005 {}
+//        C006 {}
+//        C007 {}
+//        C008 {}
+//        C009 {}
+//        C010 {}
+//        C011 {}
+//        C012 {}
+//        C013 {}
+//        C014 {}
+//        C015 {}
+//        C016 {}
+//        C017 {}
+//        C018 {}
+//        C019 {}
+//        C020 {}
+//        C021 {}
+//        C022 {}
+//        C023 {}
+//        C024 {}
+//        C025 {}
+//        C026 {}
+//        C027 {}
+//        C028 {}
+//        C029 {}
+//        C030 {}
+//        C031 {}
+//        C032 {}
+//        C033 {}
+//        C034 {}
+//        C035 {}
+//        C036 {}
+//        C037 {}
+//        C038 {}
+//        C039 {}
+//        C040 {}
+//        C041 {}
+//        C042 {}
+//        C043 {}
+//        C044 {}
+//        C045 {}
+//        C046 {}
+//        C047 {}
+//        C048 {}
+//        C049 {}
+//        C050 {}
+//        C051 {}
+//        C052 {}
+//        C053 {}
+//        C054 {}
+//        C055 {}
+//        C056 {}
+//        C057 {}
+//        C058 {}
+//        C059 {}
+
+    }
+
+    productFlavors.all {
+        flavor -> flavor.manifestPlaceholders = [UMENG_CHANNEL_VALUE: name]
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.android.support:support-v4:22.2.1'
+    compile project(':MAYA_Library_JsonWork')
+    compile project(':MAYA_Library_Utils')
+    compile project(':MAYA_Library_AsyncImageView2')
+    compile project(':MAYA_Library_Scan2')
+    compile files('libs/umeng-analytics-v5.5.3.jar')
+    compile files('libs/umeng-update-v2.6.0.1.jar')
+    compile files('libs/weibo.sdk.android.sso.jar')
+    compile files('libs/QQ_open_sdk.jar')
+    compile files('libs/libammsdk.jar')
+    compile files('libs/GetuiSdk-2.1.2.0.jar')
+    compile files('libs/GetuiExt-1.2.2.jar')
+    compile files('libs/GetuiExt-1.2.2.jar')
+    compile files('libs/GetuiSdk-2.1.2.0.jar')
+    compile files('libs/pinyin4j-2.5.0.jar')
+    compile files('libs/QQ_mta-sdk-1.6.2.jar')
+    compile project(':MAYA_Library_Vcard_OCR_Tencent')
+}

@@ -1,0 +1,136 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/all_frg_view_color"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.maya.android.vcard.ui.frg.UnitMainFragment">
+
+    <LinearLayout
+        style="@style/all_btn_background_color"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txv_business_assistant"
+            style="@style/text_setting_general_size_and_color"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_55dp"
+            android:drawableLeft="@mipmap/img_unit_main_business_assistant"
+            android:drawablePadding="@dimen/dimen_10dp"
+            android:drawableRight="@mipmap/img_general_right_arrow"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/dimen_15dp"
+            android:paddingRight="@dimen/dimen_15dp"
+            android:text="@string/business_assistant"
+            android:visibility="gone"/>
+
+        <View style="@style/vertical_line_divider_height_dimen_10dp" />
+
+        <TextView
+            android:id="@+id/txv_card_information"
+            style="@style/text_setting_general_size_and_color"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_55dp"
+            android:drawableLeft="@mipmap/img_unit_main_card_information"
+            android:drawablePadding="@dimen/dimen_10dp"
+            android:drawableRight="@mipmap/img_general_right_arrow"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/dimen_15dp"
+            android:paddingRight="@dimen/dimen_15dp"
+            android:text="@string/my_card_information" />
+
+        <View style="@style/horizontal_line_divider_padding_dimen_15dp" />
+
+        <RelativeLayout
+            android:id="@+id/rel_official_website"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_55dp"
+            android:paddingLeft="@dimen/dimen_15dp"
+            android:paddingRight="@dimen/dimen_15dp">
+
+            <TextView
+
+                style="@style/text_setting_general_size_and_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:drawableLeft="@mipmap/img_unit_main_official_website"
+                android:drawablePadding="@dimen/dimen_10dp"
+                android:gravity="center_vertical"
+                android:text="@string/official_website" />
+
+            <TextView
+                style="@style/text_setting_general_right_sign_size_12sp_and_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:drawablePadding="@dimen/dimen_10dp"
+                android:drawableRight="@mipmap/img_general_right_arrow"
+                android:text="@string/official_website_hint" />
+        </RelativeLayout>
+
+        <View style="@style/horizontal_line_divider_padding_dimen_15dp" />
+
+        <RelativeLayout
+            android:id="@+id/rel_picture_album"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_55dp"
+            android:paddingLeft="@dimen/dimen_15dp"
+            android:paddingRight="@dimen/dimen_15dp">
+
+            <TextView
+
+                style="@style/text_setting_general_size_and_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:drawableLeft="@mipmap/img_unit_main_picture_album"
+                android:drawablePadding="@dimen/dimen_10dp"
+                android:gravity="center_vertical"
+                android:text="@string/picture_album" />
+
+            <TextView
+                style="@style/text_setting_general_right_sign_size_12sp_and_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:drawablePadding="@dimen/dimen_10dp"
+                android:drawableRight="@mipmap/img_general_right_arrow"
+                android:text="@string/picture_album_hint" />
+        </RelativeLayout>
+
+        <View style="@style/vertical_line_divider_height_dimen_10dp" />
+
+        <TextView
+            android:id="@+id/txv_qr_code_card"
+            style="@style/text_setting_general_size_and_color"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_55dp"
+            android:drawableLeft="@mipmap/img_unit_main_qr_code_card"
+            android:drawablePadding="@dimen/dimen_10dp"
+            android:drawableRight="@mipmap/img_general_right_arrow"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/dimen_15dp"
+            android:paddingRight="@dimen/dimen_15dp"
+            android:text="@string/qr_code_card" />
+
+        <View style="@style/horizontal_line_divider_padding_dimen_15dp" />
+
+        <TextView
+            android:id="@+id/txv_share_card"
+            style="@style/text_setting_general_size_and_color"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_55dp"
+            android:drawableLeft="@mipmap/img_unit_main_share_card"
+            android:drawablePadding="@dimen/dimen_10dp"
+            android:drawableRight="@mipmap/img_general_right_arrow"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/dimen_15dp"
+            android:paddingRight="@dimen/dimen_15dp"
+            android:text="@string/share_card" />
+    </LinearLayout>
+
+</RelativeLayout>

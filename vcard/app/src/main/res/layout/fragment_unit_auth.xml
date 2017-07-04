@@ -1,0 +1,420 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/all_frg_view_color"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.maya.android.vcard.ui.frg.UnitAuthFragment">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/text_hint_vcard_info_edt_big"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_e2e2e2"
+            android:gravity="center_vertical"
+            android:paddingBottom="@dimen/dimen_10dp"
+            android:paddingLeft="@dimen/dimen_15dp"
+            android:paddingRight="@dimen/dimen_15dp"
+            android:paddingTop="@dimen/dimen_9dp"
+            android:text="@string/warm_prompt_hint" />
+
+        <com.maya.android.vcard.util.AlignTextView
+            android:id="@+id/txv_user_vcard_hint"
+            style="@style/user_vcard_hint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_e2e2e2"
+            android:paddingLeft="@dimen/dimen_15dp"
+            android:paddingRight="@dimen/dimen_15dp"
+            android:text="@string/user_vcard_hint" />
+
+        <LinearLayout
+            style="@style/all_btn_background_color"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/text_hint_vcard_info"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_18dp"
+                android:layout_marginTop="@dimen/dimen_2dp"
+                android:background="@color/color_e2e2e2"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/dimen_15dp"
+                android:paddingRight="@dimen/dimen_15dp"
+                android:text="@string/base_info" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_45dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/dimen_15dp"
+                android:paddingRight="@dimen/dimen_15dp">
+
+                <TextView
+                    style="@style/unit_auth_edt_enter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/unit_name" />
+
+                <EditText
+                    android:id="@+id/edt_unit_name"
+                    style="@style/unit_auth_edt_enter"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_34dp"
+                    android:background="@drawable/bg_general_edt_normal"
+                    android:gravity="center_vertical"
+                    android:hint="@string/not_null"
+                    android:paddingLeft="@dimen/dimen_10dp"
+                    android:paddingRight="@dimen/dimen_10dp"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <View style="@style/horizontal_line_divider_padding_dimen_15dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_45dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/dimen_15dp"
+                android:paddingRight="@dimen/dimen_15dp">
+
+                <TextView
+                    style="@style/unit_auth_edt_enter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/industry_category" />
+
+                <TextView
+                    android:id="@+id/txv_industry_category"
+                    style="@style/unit_auth_edt_enter"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_34dp"
+                    android:background="@drawable/bg_general_edt_normal"
+                    android:drawableRight="@mipmap/img_general_right_arrow"
+                    android:gravity="center_vertical"
+                    android:hint="@string/not_null"
+                    android:paddingLeft="@dimen/dimen_10dp"
+                    android:paddingRight="@dimen/dimen_10dp"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <View style="@style/horizontal_line_divider_padding_dimen_15dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_45dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/dimen_15dp"
+                android:paddingRight="@dimen/dimen_15dp">
+
+                <TextView
+                    style="@style/unit_auth_edt_enter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/unit_nature" />
+
+                <TextView
+                    android:id="@+id/txv_unit_nature"
+                    style="@style/unit_auth_edt_enter"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_34dp"
+                    android:background="@drawable/bg_general_edt_normal"
+                    android:drawableRight="@mipmap/img_general_right_arrow"
+                    android:gravity="center_vertical"
+                    android:hint="@string/not_null"
+                    android:paddingLeft="@dimen/dimen_10dp"
+                    android:paddingRight="@dimen/dimen_10dp"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <View style="@style/horizontal_line_divider_padding_dimen_15dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_45dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/dimen_15dp"
+                android:paddingRight="@dimen/dimen_15dp">
+
+                <TextView
+                    style="@style/unit_auth_edt_enter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/legal_representative" />
+
+                <EditText
+                    android:id="@+id/edt_legal_representative"
+                    style="@style/unit_auth_edt_enter"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_34dp"
+                    android:background="@drawable/bg_general_edt_normal"
+                    android:gravity="center_vertical"
+                    android:hint="@string/not_null"
+                    android:paddingLeft="@dimen/dimen_10dp"
+                    android:paddingRight="@dimen/dimen_10dp"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <View style="@style/horizontal_line_divider_padding_dimen_15dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_45dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/dimen_15dp"
+                android:paddingRight="@dimen/dimen_15dp">
+
+                <TextView
+                    style="@style/unit_auth_edt_enter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/contact_phone" />
+
+                <EditText
+                    android:id="@+id/edt_contact_phone"
+                    style="@style/unit_auth_edt_enter"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_34dp"
+                    android:background="@drawable/bg_general_edt_normal"
+                    android:gravity="center_vertical"
+                    android:hint="@string/not_null"
+                    android:paddingLeft="@dimen/dimen_10dp"
+                    android:digits="0123456789-"
+                    android:paddingRight="@dimen/dimen_10dp"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <View style="@style/horizontal_line_divider_padding_dimen_15dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_45dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/dimen_15dp"
+                android:paddingRight="@dimen/dimen_15dp">
+
+                <TextView
+                    style="@style/unit_auth_edt_enter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/email_english" />
+
+                <EditText
+                    android:id="@+id/edt_email_english"
+                    style="@style/unit_auth_edt_enter"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_34dp"
+                    android:background="@drawable/bg_general_edt_normal"
+                    android:gravity="center_vertical"
+                    android:hint="@string/not_null"
+                    android:paddingLeft="@dimen/dimen_10dp"
+                    android:paddingRight="@dimen/dimen_10dp"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <View style="@style/horizontal_line_divider_padding_dimen_15dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_45dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/dimen_15dp"
+                android:paddingRight="@dimen/dimen_15dp">
+
+                <TextView
+                    style="@style/unit_auth_edt_enter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/unit_address" />
+
+                <EditText
+                    android:id="@+id/edt_unit_address"
+                    style="@style/unit_auth_edt_enter"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_34dp"
+                    android:background="@drawable/bg_general_edt_normal"
+                    android:gravity="center_vertical"
+                    android:hint="@string/not_null"
+                    android:singleLine="true"
+                    android:paddingLeft="@dimen/dimen_10dp"
+                    android:paddingRight="@dimen/dimen_10dp" />
+            </LinearLayout>
+
+            <TextView
+                style="@style/text_hint_vcard_info"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_18dp"
+                android:background="@color/color_e2e2e2"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/dimen_15dp"
+                android:paddingRight="@dimen/dimen_15dp"
+                android:text="@string/data_upload" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/dimen_34dp"
+                android:paddingRight="@dimen/dimen_34dp">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dimen_17dp"
+                    android:layout_weight="1">
+
+                    <com.maya.android.asyncimageview.widget.AsyncImageView
+                        android:id="@+id/imv_approve_license_copy"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimen_91dp"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/bg_line_dotted_blue_rectangle"
+                        android:contentDescription="@string/app_name"
+                        android:scaleType="centerInside"
+                        android:src="@mipmap/img_picture_book" />
+
+                    <TextView
+                        style="@style/unit_auth_edt_picture_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/imv_approve_license_copy"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/dimen_10dp"
+                        android:gravity="center_horizontal"
+                        android:text="@string/approve_license_copy" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_17dp"
+                    android:layout_weight="1">
+
+                    <com.maya.android.asyncimageview.widget.AsyncImageView
+                        android:id="@+id/imv_approve_organization_certificate"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimen_91dp"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/bg_line_dotted_blue_rectangle"
+                        android:contentDescription="@string/app_name"
+                        android:scaleType="centerInside"
+                        android:src="@mipmap/img_picture_book" />
+
+                    <TextView
+                        style="@style/unit_auth_edt_picture_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/imv_approve_organization_certificate"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/dimen_10dp"
+                        android:gravity="center_horizontal"
+                        android:text="@string/approve_organization_certificate" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <com.maya.android.vcard.util.AlignTextView
+                style="@style/user_vcard_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/dimen_15dp"
+                android:paddingRight="@dimen/dimen_15dp"
+                android:text="@string/company_certify_data_upload_explain" />
+
+            <TextView
+                style="@style/text_hint_vcard_info"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_18dp"
+                android:layout_marginTop="@dimen/dimen_17dp"
+                android:background="@color/color_e2e2e2"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/dimen_15dp"
+                android:paddingRight="@dimen/dimen_15dp"
+                android:text="@string/super_administrator_default" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_85dp"
+                android:paddingLeft="@dimen/dimen_15dp"
+                android:paddingRight="@dimen/dimen_15dp">
+
+                <TextView
+                    android:id="@+id/txv_super_administrator"
+                    style="@style/unit_auth_super_administrator_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="@dimen/dimen_3dp"
+                    android:drawableTop="@mipmap/img_upload_head"
+                    android:singleLine="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_horizontal"
+                    android:text="" />
+            </RelativeLayout>
+
+            <TextView
+                style="@style/text_hint_vcard_info"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_18dp"
+                android:background="@color/color_e2e2e2"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/dimen_15dp"
+                android:paddingRight="@dimen/dimen_15dp"
+                android:text="@string/appoint_administrator" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/dimen_85dp"
+                android:paddingBottom="@dimen/dimen_10dp"
+                android:paddingLeft="@dimen/dimen_15dp"
+                android:paddingRight="@dimen/dimen_15dp"
+                android:paddingTop="@dimen/dimen_10dp">
+
+                <com.maya.android.vcard.ui.widget.NoScrolGridView
+                    android:id="@+id/grv_administrator_head"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:horizontalSpacing="@dimen/dimen_6dp"
+                    android:numColumns="5"
+                    android:verticalSpacing="@dimen/dimen_6dp" />
+            </RelativeLayout>
+        </LinearLayout>
+        <com.maya.android.vcard.util.AlignTextView
+            style="@style/user_vcard_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/dimen_15dp"
+            android:paddingRight="@dimen/dimen_15dp"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:text="@string/company_certify_explain" />
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_42dp"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/dimen_15dp"
+            android:layout_marginRight="@dimen/dimen_15dp"
+            android:background="@drawable/bg_general_btn_normal"
+            style="@style/btn_submit"
+            android:layout_marginTop="@dimen/dimen_25dp"
+            android:layout_marginBottom="@dimen/dimen_33dp"
+            android:text="@string/submit"/>
+    </LinearLayout>
+
+</ScrollView>

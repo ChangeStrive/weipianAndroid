@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <META http-equiv="X-UA-Compatible" content="IE=9" ></META>
+    <title>微片生活管理平台 - 关键词自动应</title>
+	<#include "Admin/jsp/common/common.ftl">
+	<link rel="stylesheet" type="text/css" href="${hxltUrl}Admin/css/validator.css">
+	
+	<script type="text/javascript" src="${hxltUrl}js/utils/form/validform.js"></script>
+	<script type="text/javascript" src="${hxltUrl}Admin/js/weixin/WeiXinKeywordReply/keywordReplyAdd.js"></script>
+	
+	<link rel="stylesheet" type="text/css" href="${hxltUrl}js/utils/singleUpload/singleUpload.css">
+	<script type="text/javascript" src="${hxltUrl}js/utils/singleUpload/singleUpload.js"></script>
+	
+	<script>
+		var fdId = "${item.fdId}";
+		var fdStatus = "${item.fdStatus}";
+	</script>
+	<script type="text/javascript">
+		var firstMenuNo="00027";
+		var secondMenuNo="00032";
+	</script>
+  </head>
+  
+<body>
+<!-- 头部 -->
+<#include "Admin/jsp/common/header.ftl">
+<!-- /头部 --> 
+
+<!-- 边栏 -->
+<#include "Admin/jsp/common/sidebar.ftl">
+<!-- /边栏 --> 
+
+<!-- 内容区 -->
+<div id="main-content">
+	<div id="top-alert" class="fixed alert alert-error" style="display: none;">
+		<button class="close fixed" style="margin-top: 4px;">×</button>
+		<div class="alert-content">这是内容</div>
+	</div>
+	<div id="main" class="main" style="min-height: 430px;"> 
+		
+		<!-- nav -->
+		<div class="main-title">
+			<h2>关键词自动应答</h2>
+		</div>
+		<form method="post" id="form" class="form-horizontal contact_form">
+			<div class="form-item" id="fdType">
+	            <label class="item-label">类型<span class="check-tips"></span></label>
+	            <div class="controls">
+	                <label class="radio"><input type="radio" name="fdType" id="fdType1" value="1" checked="checked">图文</label>
+	                <label class="radio"><input type="radio" name="fdType" id="fdType2" value="0">文本</label>
+	            </div>
+	        </div>
+			<div class="form-item" id="fdPicUrl">
+				<label class="item-label">图片</label>
+				<div class="controls">
+					<input type="hidden" name="fdPicUrl"  singUpload-Type="image" value="${item.fdPicUrl}"/>
+				</div>
+			</div>
+			<div class="form-item">
+				<label class="item-label">关键词</label>
+				<div class="controls">
+					<input type="text" class="text input-large" name=fdKeyword nullmsg="关键词不允许为空" ajaxurl="" datatype="*"  value="${item.fdKeyword }" />
+					 <span class="form_checktip"></span>
+				</div>
+			</div>
+			<div class="form-item">
+				<label class="item-label">标题</label>
+				<div class="controls">
+					<input type="text" class="text input-large" name=fdTitle nullmsg="标题不允许为空" ajaxurl="" datatype="*"  value="${item.fdTitle }" />
+					 <span class="form_checktip"></span>
+				</div>
+			</div>
+			<div class="form-item" id="fdUrl">
+				<label class="item-label">URL</label>
+				<div class="controls">
+					<input type="text" class="text input-large" name="fdUrl" value="${item.fdUrl}" />
+					 <span class="form_checktip"></span>
+				</div>
+			</div>
+			<div class="form-item">
+				<label class="item-label">描述</label>
+				<div class="controls">
+					<input type="text" class="text input-large" name="fdDesc" value="${item.fdDesc}" />
+					 <span class="form_checktip"></span>
+				</div>
+			</div>
+			<div class="form-item" id="fdType">
+	            <label class="item-label">状态<span class="check-tips"></span></label>
+	            <div class="controls">
+	                <label class="radio"><input type="radio" name="fdStatus" id="fdStatus1" value="1" checked="checked">启用</label>
+	                <label class="radio"><input type="radio" name="fdStatus" id="fdStatus2" value="0">禁用</label>
+	            </div>
+	        </div>
+			<div class="form-item">
+				<input type="hidden" name="fdId" value="${item.fdId }" />
+			</div>
+			<div class="form-item">
+				<button class="btn submit-btn ajax-post" id="submit" type="submit" target-form="form-horizontal">确 定</button>
+				<button class="btn btn-return" onclick="javascript:history.back(-1);return false;">返 回</button>
+			</div>
+		</form>
+	</div>
+	<!-- 底部 -->
+	<#include "Admin/jsp/common/footer.ftl">
+</div>
+<!-- /内容区 -->
+</body>
+</html>

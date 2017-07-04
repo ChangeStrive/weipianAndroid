@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/dimen_20dp" >
+
+    <SeekBar
+        android:id="@+id/seb_dlg_frg_msg_warn_rock_set"
+        android:layout_width="@dimen/dimen_200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_20dp"
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="@dimen/dimen_9dp"
+        android:paddingRight="@dimen/dimen_9dp"
+        android:progressDrawable="@drawable/seb_background"
+        android:thumb="@drawable/seb_thumb" />
+
+    <TextView      
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/seb_dlg_frg_msg_warn_rock_set"
+        android:layout_marginTop="@dimen/dimen_20dp"
+        android:layout_centerHorizontal="true" 
+        android:gravity="center_horizontal"
+        android:textColor="@color/color_fb0101"
+        android:textSize="@dimen/dimen_12sp"
+        android:text="@string/frg_setting_notice__msg_setting_shake_sensitivity_confirm" />
+
+</RelativeLayout>

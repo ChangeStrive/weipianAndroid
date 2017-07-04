@@ -1,0 +1,28 @@
+<#if (refunerList?size>0)>
+	<div class="takeTitle">
+			退款信息
+	</div>
+	<div class="takeGoodsType">
+		<#list refunerList as refunderItem>
+			<#if refunderItem.fdFinishTime??>
+				<div class="goodsItem">
+					退款成功：${refunderItem.fdFinishTime}
+				</div>	
+			</#if>
+			<#if refunderItem.fdBackTime??>
+				<div class="goodsItem">
+					商家&nbsp;&nbsp;${refunderItem.fdBackTime}
+				</div>	
+				<div class="goodsItem" style="border:0;">
+					<p>内容：${refunderItem.fdBackReason}</p>
+				</div>	
+			</#if>
+			<div class="goodsItem">
+				客户&nbsp;&nbsp;${refunderItem.fdApplyRefundTime}
+			</div>	
+			<div class="goodsItem" style="border:0;">
+				<p>理由：${refunderItem.fdApplyReason}</p>
+			</div>	
+		</#list>
+	</div>
+</#if>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <META http-equiv="X-UA-Compatible" content="IE=9" ></META>
+    <title>微片生活管理平台 - 招聘管理</title>
+	<#include "Admin/jsp/common/common.ftl">
+	<link rel="stylesheet" type="text/css" href="${hxltUrl}Admin/css/validator.css">
+	<link rel="stylesheet" type="text/css" href="${hxltUrl}js/utils/singleUpload/singleUpload.css">
+	<link rel="stylesheet" type="text/css" href="<%=basePath %>js/plugins/easyui/themes/default/easyui.css">
+	<link rel="stylesheet" type="text/css" href="<%=basePath %>js/plugins/easyui/themes/icon.css">
+	<script type="text/javascript" src="${hxltUrl}js/utils/form/validform.js"></script>
+	<script type="text/javascript" src="${hxltUrl}js/utils/singleUpload/singleUpload.js"></script>
+	
+	<script type="text/javascript" charset="utf-8" src="${hxltUrl}ueditor/ueditor.config.js"></script>
+	<script type="text/javascript" charset="utf-8" src="${hxltUrl}ueditor/ueditor.all.min.js"> </script>
+    <script type="text/javascript" charset="utf-8" src="${hxltUrl}ueditor/lang/zh-cn/zh-cn.js"></script>
+    
+    <script type="text/javascript" src="<%=basePath %>js/plugins/easyui/jquery.easyui.min.js"></script>
+    <script type="text/javascript" src="<%=basePath %>js/utils/easyui_DateUtil.js"></script>
+	
+	
+	<script>
+		var firstMenuNo="00022";
+		var fdId = "${item.fdId}";
+		var fdTypeId="${fdTypeId}";
+		var fdJobDutyUE = UE.getEditor('fdJobDutyEditor');
+		var fdJobReqUE = UE.getEditor('fdJobReqEditor');
+	</script>
+	
+	<script type="text/javascript" src="${hxltUrl}Admin/js/web/WebJob/jobAdd.js"></script>
+  </head>
+  
+<body>
+<!-- 头部 -->
+<#include "Admin/jsp/common/header.ftl">
+<!-- /头部 --> 
+
+<!-- 边栏 -->
+<#include "Admin/jsp/common/sidebar.ftl">
+<!-- /边栏 --> 
+
+<!-- 内容区 -->
+<div id="main-content">
+	<div id="top-alert" class="fixed alert alert-error" style="display: none;">
+		<button class="close fixed" style="margin-top: 4px;">×</button>
+		<div class="alert-content">这是内容</div>
+	</div>
+	<div id="main" class="main" style="min-height: 430px;"> 
+		
+		<!-- nav -->
+		<div class="main-title">
+			<h2>招聘管理</h2>
+		</div>
+		<form method="post" id="form" class="form-horizontal contact_form">
+			<div class="form-item">
+				<label class="item-label">标题</label>
+				<div class="controls">
+					<input type="text" class="text input-large" name="fdTitle" nullmsg="标题不允许为空！" datatype="*" value="${item.fdTitle}" />
+					 <span class="form_checktip"></span>
+				</div>
+			</div>
+			<div class="form-item">
+				<label class="item-label">学历要求</label>
+				<div class="controls">
+					<select class="select input-large" name="fdEducation" nullmsg="学历要求不允许为空！" datatype="*" data-dictKey="4028819a47a4e4cc0147a51369b10013" data-dictValue="${item.fdEducation}" >
+					</select>
+					 <span class="form_checktip"></span>
+				</div>
+			</div>
+			<div class="form-item">
+				<label class="item-label">性别要求</label>
+				<div class="controls">
+					<select class="select input-large" name="fdSex" nullmsg="学历要求不允许为空！" datatype="*" data-dictKey="4028819a47a4e4cc0147a50ec7c6000c" data-dictValue="${item.fdSex}" >
+					</select>
+					 <span class="form_checktip"></span>
+				</div>
+			</div>
+			<div class="form-item">
+				<label class="item-label">职位类型</label>
+				<div class="controls">
+					<select class="select input-large" name="fdJobType" nullmsg="职位类型不允许为空！" datatype="*" data-dictKey="4028819a47a4e4cc0147a5103a180010" data-dictValue="${item.fdJobType}" >
+					</select>
+					 <span class="form_checktip"></span>
+				</div>
+			</div>
+			<div class="form-item">
+				<label class="item-label">招聘类型</label>
+				<div class="controls">
+					<select class="select input-large" name="fdTypeId" nullmsg="招聘类型不允许为空！" datatype="*" data-dictKey="4028819a47a4e4cc0147a4e66d780000" data-dictText=".fdTypeName" data-dictValue="${fdTypeId}" >
+					</select>
+					 <span class="form_checktip"></span>
+				</div>
+			</div>
+			<div class="form-item">
+				<label class="item-label">年龄要求</label>
+				<div class="controls">
+					<input type="text" class="text input-large" name="fdAge" value="${item.fdAge}" />
+					 <span class="form_checktip"></span>
+				</div>
+			</div>
+			<div class="form-item">
+				<label class="item-label">招聘人数</label>
+				<div class="controls">
+					<input type="number" class="text input-large" name="fdNum" value="${item.fdNum}" />
+					 <span class="form_checktip"></span>
+				</div>
+			</div>
+			<div class="form-item">
+				<label class="item-label">工作地点</label>
+				<div class="controls">
+					<input type="text" class="text input-large" name="fdAddress" value="${item.fdAddress}" />
+					 <span class="form_checktip"></span>
+				</div>
+			</div>
+			<div class="form-item">
+				<label class="item-label">开始时间</label>
+				<div class="controls">
+					<input class="text input-large easyui-datebox" name="fdStartTime" value="${item.fdStartTime}" data-options="formatter:dateUtil.formatter,parser:dateUtil.parser"></input>
+					 <span class="form_checktip"></span>
+				</div>
+			</div>
+			<div class="form-item">
+				<label class="item-label">结束时间</label>
+				<div class="controls">
+					<input class="text input-large easyui-datebox" name="fdEndTime" value="${item.fdEndTime}" data-options="formatter:dateUtil.formatter,parser:dateUtil.parser"></input>
+					<span class="form_checktip"></span>
+				</div>
+			</div>
+			<div class="form-item">
+				<label class="item-label">职位职责</label>
+				<div class="controls">
+					<input type="hidden" name="fdJobDuty" value='${item.fdJobDuty}' />
+					<script id="fdJobDutyEditor" type="text/plain" style="width:800px;height:500px;"></script>
+					 <span class="form_checktip"></span>
+				</div>
+			</div>
+			<div class="form-item">
+				<label class="item-label">任职资格</label>
+				<div class="controls">
+					<input type="hidden" name="fdJobReq" value='${item.fdJobReq}' />
+					<script id="fdJobReqEditor" type="text/plain" style="width:800px;height:500px;"></script>
+					 <span class="form_checktip"></span>
+				</div>
+			</div>
+			<div class="form-item">
+				<input type="hidden" name="fdId" value="${item.fdId }" />
+			</div>
+			<div class="form-item">
+				<button class="btn submit-btn ajax-post" id="submit" type="submit" target-form="form-horizontal">确 定</button>
+				<button class="btn btn-return" onclick="javascript:history.back(-1);return false;">返 回</button>
+			</div>
+		</form>
+	</div>
+	<!-- 底部 -->
+	<#include "Admin/jsp/common/footer.ftl">
+</div>
+<!-- /内容区 -->
+</body>
+</html>

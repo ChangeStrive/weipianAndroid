@@ -1,0 +1,14 @@
+.provinceList{
+	padding: 5px 5px;
+}
+.provinceSelect label{
+	display: block;
+	width:130px;
+	float:left;
+	padding: 2px 0;
+}
+.provinceSelect .bbar a{
+		width:200px;
+		padding: 0 10px;
+		margin: 5px 10px;
+}

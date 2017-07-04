@@ -1,0 +1,60 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/all_frg_view_color"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.maya.android.vcard.ui.frg.SettingManagerChatFragment">
+
+    <RelativeLayout
+        android:id="@+id/rel_bottom"
+        style="@style/all_btn_background_color"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_50dp"
+        android:layout_alignParentBottom="true"
+        android:paddingLeft="@dimen/dimen_15dp"
+        android:paddingRight="@dimen/dimen_15dp">
+
+
+        <CheckBox
+            android:id="@+id/chb_is_selected"
+            style="@style/chb_is_agree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:button="@color/transparent"
+            android:checked="false"
+            android:paddingLeft="@dimen/dimen_1px"
+            android:text="@string/select_all" />
+
+        <Button
+            android:id="@+id/btn_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/bg_general_btn_normal"
+            android:gravity="center"
+            android:paddingBottom="@dimen/dimen_4dp"
+            android:paddingLeft="@dimen/dimen_12dp"
+            android:paddingRight="@dimen/dimen_12dp"
+            android:paddingTop="@dimen/dimen_4dp"
+            android:text="@string/delete"
+            android:textSize="@dimen/dimen_15dp" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/rel_bottom">
+
+        <include layout="@layout/inc_lsv_view" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/rel_bottom"
+        android:background="@mipmap/bg_multi_nav_shadow"
+        android:contentDescription="@null" />
+</RelativeLayout>

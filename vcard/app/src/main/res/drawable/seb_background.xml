@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- 背景图 -->
+    <item
+        android:id="@android:id/background"
+        android:drawable="@drawable/bg_seekbar_total"/>
+    <!-- 全部能量图 -->
+    <item android:id="@android:id/secondaryProgress">
+        <clip android:drawable="@drawable/bg_seekbar_total" />
+    </item>
+
+    <!-- 进度能量图 -->
+    <item android:id="@android:id/progress">
+        <clip android:drawable="@drawable/bg_seekbar_part" />
+    </item>
+
+</layer-list>

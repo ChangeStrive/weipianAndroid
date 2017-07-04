@@ -1,0 +1,265 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <META http-equiv="X-UA-Compatible" content="IE=8" ></META>
+    <title>管理首页|微片管理平台</title>
+	 <#include "Admin/jsp/common/common.ftl">
+	<link rel="stylesheet" type="text/css" href="${hxltUrl}Admin/css/base.css" media="all">
+    <link rel="stylesheet" type="text/css" href="${hxltUrl}Admin/css/common.css" media="all">
+    <link rel="stylesheet" type="text/css" href="${hxltUrl}Admin/css/module.css">
+    <link rel="stylesheet" type="text/css" href="${hxltUrl}Admin/css/style.css" media="all">
+	<link rel="stylesheet" type="text/css" href="${hxltUrl}Admin/css/default_color.css" media="all">
+	<style>
+        body{padding: 0}
+    </style>
+    <script>
+    	var firstMenuNo="";
+    </script>
+  </head>
+  
+  <body>
+ 	<!-- 头部 -->
+	 <#include "Admin/jsp/common/header.ftl">
+	<!-- /头部 --> 
+    <!-- 边栏 -->
+    <div class="sidebar">
+    </div>
+    <!-- /边栏 -->
+
+    <!-- 内容区 -->
+    <div id="main-content">
+        <div id="top-alert" class="fixed alert alert-error" style="display: none;">
+            <button class="close fixed" style="margin-top: 4px;">&times;</button>
+            <div class="alert-content">这是内容</div>
+        </div>
+        <div id="main" class="main">
+            
+            <!-- nav -->
+                        <!-- nav -->
+            
+
+            
+    <!-- 主体 -->
+    <div id="indexMain" class="index-main">
+       <!-- 插件块 -->
+       <div class="container-span"> <div class="container-span top-columns cf">
+	<dl class="show-num-mod">
+		<dt><i class="count-icon user-count-icon"></i></dt>
+		<dd>
+			<strong>2</strong>
+			<span>用户数</span>
+		</dd>
+	</dl>
+	<dl class="show-num-mod">
+		<dt><i class="count-icon user-action-icon"></i></dt>
+		<dd>
+			<strong>62</strong>
+			<span>用户行为</span>
+		</dd>
+	</dl>
+	<dl class="show-num-mod">
+		<dt><i class="count-icon doc-count-icon"></i></dt>
+		<dd>
+			<strong>36</strong>
+			<span>文档数</span>
+		</dd>
+	</dl>
+	<dl class="show-num-mod">
+		<dt><i class="count-icon doc-modal-icon"></i></dt>
+		<dd>
+			<strong>3</strong>
+			<span>文档模型</span>
+		</dd>
+	</dl>
+	<dl class="show-num-mod">
+		<dt><i class="count-icon category-count-icon"></i></dt>
+		<dd>
+			<strong>12</strong>
+			<span>分类数</span>
+		</dd>
+	</dl>
+</div><div class="span2">
+	<div class="columns-mod">
+		<div class="hd cf">
+			<h5>系统信息</h5>
+			<div class="title-opt">
+			</div>
+		</div>
+		<div class="bd">
+			<div class="sys-info">
+				<table>
+					<tr>
+						<th>OneThink版本</th>
+						<td>1.0.131218&nbsp;&nbsp;&nbsp;
+													</td>
+					</tr>
+					<tr>
+						<th>服务器操作系统</th>
+						<td>Linux</td>
+					</tr>
+					<tr>
+						<th>ThinkPHP版本</th>
+						<td>3.2.0</td>
+					</tr>
+					<tr>
+						<th>运行环境</th>
+						<td>Apache/2.2.15 (CentOS)</td>
+					</tr>
+					<tr>
+						<th>MYSQL版本</th>
+												<td>5.0.95-log</td>
+					</tr>
+					<tr>
+						<th>上传限制</th>
+						<td>8M</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+</div><div class="span2">
+	<div class="columns-mod">
+		<div class="hd cf">
+			<h5>产品团队</h5>
+			<div class="title-opt">
+			</div>
+		</div>
+		<div class="bd">
+			<div class="sys-info">
+				<table>
+					<tr>
+						<th>总策划</th>
+						<td>刘晨</td>
+					</tr>
+					<tr>
+						<th>产品设计及研发团队</th>
+						<td>刘晨 左家梓 朱亚杰 杨维杰 花杰</td>
+					</tr>
+					<tr>
+						<th>界面及用户体验团队</th>
+						<td>朱亚杰 余旺 彭思思</td>
+					</tr>
+					<tr>
+						<th>官方网址</th>
+						<td><a href="http://www.onethink.cn" target="_blank">www.onethink.cn</a></td>
+					</tr>
+					<tr>
+						<th>官方QQ群</th>
+						<td><a target="_blank" href="http://wp.qq.com/wpa/qunwpa?idkey=14ba57a5273cc820d298cc394227276b22177217e413dfe658aa3d3b34c119e0"><img border="0" src="http://pub.idqqimg.com/wpa/images/group.png" alt="OneThink技术交流" title="OneThink技术交流"></a></td>
+					</tr>
+					<tr>
+						<th>BUG反馈</th>
+						<td><a href="http://www.onethink.cn/cate/bug.html" target="_blank">OneThink讨论区</a></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+</div></div>
+    </div>
+
+        </div>
+        <#include "Admin/jsp/common/footer.ftl">
+    </div>
+    <!-- /内容区 -->
+    <script type="text/javascript">
+    (function(){
+        var ThinkPHP = window.Think = {
+            "ROOT"   : "", //当前网站地址
+            "APP"    : "/index.php", //当前项目地址
+            "PUBLIC" : "/Public", //项目公共目录地址
+            "DEEP"   : "/", //PATHINFO分割符
+            "MODEL"  : ["1", "1", "html"],
+            "VAR"    : ["m", "c", "a"]
+        }
+    })();
+    </script>
+   
+    <script type="text/javascript">
+        +function(){
+            var $window = $(window), $subnav = $("#subnav"), url;
+            $window.resize(function(){
+                $("#main").css("min-height", $window.height() - 130);
+            }).resize();
+
+            /* 左边菜单高亮 */
+            url = window.location.pathname + window.location.search;
+            url = url.replace(/(\/(p)\/\d+)|(&p=\d+)|(\/(id)\/\d+)|(&id=\d+)|(\/(group)\/\d+)|(&group=\d+)/, "");
+            $subnav.find("a[href='" + url + "']").parent().addClass("current");
+
+            /* 左边菜单显示收起 */
+            $("#subnav").on("click", "h3", function(){
+                var $this = $(this);
+                $this.find(".icon").toggleClass("icon-fold");
+                $this.next().slideToggle("fast").siblings(".side-sub-menu:visible").
+                      prev("h3").find("i").addClass("icon-fold").end().end().hide();
+            });
+
+            $("#subnav h3 a").click(function(e){e.stopPropagation()});
+
+            /* 头部管理员菜单 */
+            $(".user-bar").mouseenter(function(){
+                var userMenu = $(this).children(".user-menu ");
+                userMenu.removeClass("hidden");
+                clearTimeout(userMenu.data("timeout"));
+            }).mouseleave(function(){
+                var userMenu = $(this).children(".user-menu");
+                userMenu.data("timeout") && clearTimeout(userMenu.data("timeout"));
+                userMenu.data("timeout", setTimeout(function(){userMenu.addClass("hidden")}, 100));
+            });
+
+	        /* 表单获取焦点变色 */
+	        $("form").on("focus", "input", function(){
+		        $(this).addClass('focus');
+	        }).on("blur","input",function(){
+				        $(this).removeClass('focus');
+			        });
+		    $("form").on("focus", "textarea", function(){
+			    $(this).closest('label').addClass('focus');
+		    }).on("blur","textarea",function(){
+			    $(this).closest('label').removeClass('focus');
+		    });
+
+            // 导航栏超出窗口高度后的模拟滚动条
+            var sHeight = $(".sidebar").height();
+            var subHeight  = $(".subnav").height();
+            var diff = subHeight - sHeight; //250
+            var sub = $(".subnav");
+            if(diff > 0){
+                $(window).mousewheel(function(event, delta){
+                    if(delta>0){
+                        if(parseInt(sub.css('marginTop'))>-10){
+                            sub.css('marginTop','0px');
+                        }else{
+                            sub.css('marginTop','+='+10);
+                        }
+                    }else{
+                        if(parseInt(sub.css('marginTop'))<'-'+(diff-10)){
+                            sub.css('marginTop','-'+(diff-10));
+                        }else{
+                            sub.css('marginTop','-='+10);
+                        }
+                    }
+                });
+            }
+        }();
+    </script>
+    
+<script type="text/javascript">
+    /* 插件块关闭操作 */
+    $(".title-opt .wm-slide").each(function(){
+        $(this).click(function(){
+            $(this).closest(".columns-mod").find(".bd").toggle();
+            $(this).find("i").toggleClass("mod-up");
+        });
+    })
+    $(function(){
+        // $('#main').attr({'id': 'indexMain','class': 'index-main'});
+        $('.copyright').html('<div class="copyright"> ©2013 <a href="http://www.topthink.net" target="_blank">topthink.net</a> 上海顶想信息科技有限公司版权所有</div>');
+        $('.sidebar').remove();
+    })
+</script>
+
+</body>
+</html>

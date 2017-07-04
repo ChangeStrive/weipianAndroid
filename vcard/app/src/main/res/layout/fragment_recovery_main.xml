@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/all_frg_view_color"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.maya.android.vcard.ui.frg.RecoveryMainFragment">
+
+    <RelativeLayout
+        android:id="@+id/rel_btn_submit"
+        style="@style/all_btn_background_color"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_55dp"
+        android:layout_alignParentBottom="true"
+        android:paddingLeft="@dimen/dimen_15dp"
+        android:paddingRight="@dimen/dimen_15dp">
+
+        <Button
+            android:id="@+id/btn_submit"
+            style="@style/btn_submit"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_42dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/bg_general_btn_normal"
+            android:text="@string/start_recovery" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        style="@style/all_btn_background_color"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_55dp">
+
+        <ExpandableListView
+            android:id="@+id/elv_recovery"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:cacheColorHint="@color/color_00000000"
+            android:childDivider="@drawable/lsv_divider"
+            android:divider="@drawable/lsv_divider"
+            android:dividerHeight="@dimen/dimen_1px" />
+
+        <TextView
+            android:id="@+id/txv_recovery_empty"
+            style="@style/text_list_empty_data"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/frg_common_nothing_data"
+            android:visibility="gone" />
+    </RelativeLayout>
+</RelativeLayout>

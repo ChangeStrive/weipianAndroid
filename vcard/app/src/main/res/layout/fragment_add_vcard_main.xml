@@ -1,0 +1,128 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg_add_vcard"
+    tools:context="com.maya.android.vcard.ui.frg.AddVCardMainFragment">
+
+    <LinearLayout
+        android:id="@+id/ll_add_vcard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rel_vcard_scan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_add_vcard_addcard">
+
+            <TextView
+                android:id="@+id/txv_vcard_scan"
+                style="@style/text_vcard_info_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawablePadding="@dimen/dimen_5dp"
+                android:drawableTop="@mipmap/img_add_vcard_scan"
+                android:gravity="center_horizontal"
+                android:text="@string/vcard_scan" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rel_vcard_custom_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:background="@drawable/bg_add_vcard_addcard">
+
+            <TextView
+                android:id="@+id/txv_vcard_custom_card"
+                style="@style/text_vcard_info_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/dimen_5dp"
+                android:layout_centerInParent="true"
+                android:drawableTop="@mipmap/img_add_vcard_custom_card"
+                android:gravity="center_horizontal"
+                android:text="@string/vcard_custom_card" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rel_vcard_localup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:background="@drawable/bg_add_vcard_addcard">
+
+            <TextView
+                android:id="@+id/txv_vcard_localup"
+                style="@style/text_vcard_info_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/dimen_5dp"
+                android:layout_centerInParent="true"
+                android:drawableTop="@mipmap/img_add_vcard_localup"
+                android:gravity="center_horizontal"
+                android:text="@string/vcard_localup" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lil_add_vcard_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dimen_7dp"
+        android:layout_marginLeft="@dimen/dimen_19dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/lil_add_vcard_learn_now"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/text_vcard_info_add_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/common_learn_now" />
+
+            <TextView
+                style="@style/text_vcard_info_add_my_vcard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/common_create_my_card" />
+        </LinearLayout>
+
+        <View
+            style="@style/all_btn_background_color"
+            android:layout_width="@dimen/dimen_2dp"
+            android:layout_height="@dimen/dimen_29dp"
+            android:layout_marginLeft="@dimen/dimen_26dp"
+            android:layout_marginRight="@dimen/dimen_26dp" />
+
+        <LinearLayout
+            android:id="@+id/lil_add_vcard_login_now"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/text_vcard_info_add_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/frg_text_login" />
+
+            <TextView
+                style="@style/text_vcard_info_add_my_vcard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/vcard_user_account" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

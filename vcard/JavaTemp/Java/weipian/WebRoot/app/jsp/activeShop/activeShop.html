@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<#include "app/jsp/common/common.ftl">
+	<#include "app/jsp/weixinTemplate.html">
+	<title>激活微片支付商户</title>
+</head>
+<body class="grayBg">
+	<div class="wrap">
+		<header class="homepage_head">
+			<a href="javascript:history.go(-1)" class="left_head  ahref" style="left:2%;">
+	             	  <span class="iconfont backBtn">&#xe61c;</span>
+			</a>
+			<h2>激活微片支付商户</h2>
+		</header>
+		<div class="headNext">
+			<div class="acts-top clearfix">
+				<a class="acts-left" href="${hxltUrl}wx/shopMessage?fdShopNo=${fdShopNo}"><img src="${hxltUrl}app/images/code.png"/></a>
+				<a class="acts-center" href="${hxltUrl}wx/shopMessage?fdShopNo=${fdShopNo}">激活支付商户资格</a>
+				<a class="acts-right" href="javascript:void(0)"><img src="${hxltUrl}app/images/help.png"/></a>
+			</div>
+			<div class="acts-contain">
+				<#if item??>
+					<div class="acts-List">
+						<div class="acts-item clearfix">
+							<span class="acts-label">店铺名称:</span>
+							<span class="acts-text">${item.fdStoreName}</span>
+						</div>
+						<div class="acts-item clearfix">
+							<span class="acts-label">品牌名称:</span>
+							<span class="acts-text">${item.fdStoreBrand}</span>
+						</div>
+						<div class="acts-item clearfix">
+							<span class="acts-label">所属类目:</span>
+							<span class="acts-text">${item.fdStoreType}</span>
+						</div>
+						<div class="acts-item clearfix">
+							<span class="acts-label">所在地区:</span>
+							<span class="acts-text">${item.fdStoreAddress}</span>
+						</div>
+						<div class="acts-item clearfix">
+							<span class="acts-label">店铺状态:</span>
+							<#if (item.fdStatus=="0")>
+								<span class="acts-text acts-text2">待审核</span>
+								<#elseif (item.fdStatus=="1")>
+								<span class="acts-text acts-text2">审核通过</span>
+								<#elseif (item.fdStatus=="-1")>
+								<span class="acts-text acts-text2">审核被驳回</span>
+							</#if>
+						</div>
+					</div>
+				<#else>
+					<div class="acts-noTip">无支付商户数据</div>
+				</#if>
+			</div>
+			<div class="LoginBtns">
+				<a href="${hxltUrl}wx/mycard?fdShopNo=${fdShopNo}" class="commonbtn">完成</a>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.maya.android.vcard.ui.act.ScanQrCodeActivity">
+
+    <include
+        android:id="@+id/inc_top"
+        layout="@layout/inc_top_title"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/inc_top">
+        <ImageView
+            android:id="@+id/imv_camera_light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@null"
+            android:layout_marginTop="@dimen/dimen_20dp"
+            android:layout_marginLeft="@dimen/dimen_15dp"
+            android:src="@mipmap/img_camera_light_open"
+            android:scaleType="centerInside"/>
+       <!-- <ImageView
+            android:id="@+id/imv_act_qrcode_scan_camera"
+            android:layout_width="@dimen/dimen_200dp"
+            android:layout_height="@dimen/dimen_200dp"
+            android:layout_marginTop="@dimen/dimen_37dp"
+            android:layout_centerHorizontal="true"
+            android:background="@color/color_ffffff"
+            android:contentDescription="@null" />
+        <ImageView
+            android:id="@+id/imv_act_qrcode_scan_laser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignTop="@id/imv_act_qrcode_scan_camera"
+            android:contentDescription="@string/app_name"/>-->
+        <TextView
+            android:id="@+id/txv_act_qrcode_scan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="@dimen/dimen_2dp"
+            android:textColor="@color/color_ffffff"
+            android:textSize="@dimen/dimen_15sp"
+            android:gravity="center"
+            android:text="@string/qrcode_scan_change_hint" />
+
+        <Button
+            android:id="@+id/btn_act_qrcode_choose"
+            android:layout_width="@dimen/dimen_190dp"
+            android:layout_height="@dimen/dimen_46dp"
+            android:layout_below="@+id/txv_act_qrcode_scan"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dimen_55dp"
+            android:background="@drawable/bg_general_normal_green"
+            android:textSize="@dimen/dimen_18sp"
+            android:textColor="@color/color_ffffff"
+            android:gravity="center"
+            android:text="@string/my_vcard_qrcode"/>
+    </RelativeLayout>
+
+</RelativeLayout>

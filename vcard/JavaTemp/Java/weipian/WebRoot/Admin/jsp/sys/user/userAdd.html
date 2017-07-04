@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <META http-equiv="X-UA-Compatible" content="IE=9" ></META>
+    <title>微片生活管理平台 - 用户管理</title>
+	<#include "Admin/jsp/common/common.ftl">
+	<link rel="stylesheet" type="text/css" href="${hxltUrl}Admin/css/validator.css">
+	
+	<script type="text/javascript" src="${hxltUrl}js/utils/form/validform.js"></script>
+	<script type="text/javascript" src="${hxltUrl}Admin/js/core/user/userAdd.js"></script>
+	
+	<script>
+		var fdId = "${item.fdId}";
+	</script>
+	<script type="text/javascript">
+		var firstMenuNo="00002";
+		var secondMenuNo="00013";
+	</script>
+  </head>
+  
+<body>
+<!-- 头部 -->
+<#include "Admin/jsp/common/header.ftl">
+<!-- /头部 --> 
+
+<!-- 边栏 -->
+<#include "Admin/jsp/common/sidebar.ftl">
+<!-- /边栏 --> 
+
+<!-- 内容区 -->
+<div id="main-content">
+	<div id="top-alert" class="fixed alert alert-error" style="display: none;">
+		<button class="close fixed" style="margin-top: 4px;">×</button>
+		<div class="alert-content">这是内容</div>
+	</div>
+	<div id="main" class="main" style="min-height: 430px;"> 
+		
+		<!-- nav -->
+		<div class="main-title">
+			<h2>新增用户</h2>
+		</div>
+		<form method="post" id="userForm" class="form-horizontal contact_form">
+			<div class="form-item">
+				<label class="item-label">用户名</label>
+				<div class="controls">
+					<input type="text" class="text input-large" name="fdLoginName" nullmsg="用户名不允许为空" ajaxurl="" datatype="*3-18" errormsg="用户名至少5个字符,最多18个字符！" value="${item.fdLoginName }" />
+					 <span class="form_checktip"></span>
+				</div>
+			</div>
+			<div class="form-item">
+				<label class="item-label">昵称</label>
+				<div class="controls">
+					<input type="text" class="text input-large" name="fdName" nullmsg="昵称不允许为空" ajaxurl="" datatype="*3-18" errormsg="昵称至少5个字符,最多18个字符！" value="${item.fdName }" />
+					 <span class="form_checktip"></span>
+				</div>
+			</div>
+			<div class="form-item">
+				<label class="item-label">密码<span class="check-tips">（用户密码不能少于6位）</span></label>
+				<div class="controls">
+					<input type="password" class="text input-large" name="password" datatype="*6-18" errormsg="密码至少6个字符,最多18个字符！" />
+					 <span class="form_checktip"></span>
+				</div>
+			</div>
+			<div class="form-item">
+				<label class="item-label">确认密码</label>
+				<div class="controls">
+					<input type="password" class="text input-large" name="fdPwd" datatype="*6-18" recheck="password" nullmsg="请再输入一次密码！" errormsg="您两次输入的账号密码不一致！" />
+					 <span class="form_checktip"></span>
+				</div>
+			</div>
+			<div class="form-item">
+				<label class="item-label">邮箱<span class="check-tips">（用户邮箱，用于找回密码等安全操作）</span></label>
+				<div class="controls">
+					<input type="text" class="text input-large"   name="fdEmail"  value="${item.fdEmail }" />
+					<span class="form_checktip"></span>
+				</div>
+			</div>
+			<div class="form-item">
+				<label class="item-label">是否为超级管理员</label>
+				<div class="controls">
+					<label for="fdIsAdmin1" style="margin-right: 5px;">是</label>
+					<input id="fdIsAdmin1" name="fdIsAdmin" type="radio" value="1" style="margin-right: 10px;"
+						<#if item.fdIsAdmin=="1">
+								checked="checked"
+						</#if>
+					/>
+					<label for="fdIsAdmin2" style="margin-right: 5px;">否</label>
+					<input id="fdIsAdmin2" name="fdIsAdmin" type="radio" value="0" 
+						<#if item.fdIsAdmin!="1">
+								checked="checked"
+						</#if>
+					/>
+					<span class="form_checktip"></span>
+				</div>
+			</div>
+			<div class="form-item">
+				<input type="hidden" name="fdId" value="${item.fdId }" />
+			</div>
+			<div class="form-item">
+				<button class="btn submit-btn ajax-post" id="submit" type="submit" target-form="form-horizontal">确 定</button>
+				<button class="btn btn-return" onclick="javascript:history.back(-1);return false;">返 回</button>
+			</div>
+		</form>
+	</div>
+	<#include "Admin/jsp/common/footer.ftl">
+</div>
+<!-- /内容区 -->
+</body>
+</html>

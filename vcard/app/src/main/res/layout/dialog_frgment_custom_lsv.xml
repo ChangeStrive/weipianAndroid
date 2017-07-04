@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lsv_dialogfragment_custom_list"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#00000000"
+    android:cacheColorHint="#00000000"
+    android:divider="@color/color_cacaca"
+    android:dividerHeight="@dimen/dimen_1px"
+    android:listSelector="#00000000"
+    android:scrollbars="vertical" >
+
+</ListView>

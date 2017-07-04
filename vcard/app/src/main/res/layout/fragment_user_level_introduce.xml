@@ -1,0 +1,321 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/all_frg_view_color"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.maya.android.vcard.ui.frg.UserLevelIntroduceFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/l"
+            android:orientation="vertical"
+            style="@style/all_btn_background_color"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/dimen_15dp"
+            android:layout_marginTop="@dimen/dimen_10dp" >
+
+            <TextView
+                android:paddingLeft="@dimen/dimen_15dp"
+                android:paddingRight="@dimen/dimen_15dp"
+                android:gravity="center_vertical"
+                style="@style/user_level_text_rlue"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_36dp"
+                android:drawableLeft="@mipmap/img_regular_members"
+                android:drawablePadding="@dimen/dimen_5dp"
+                android:text="@string/member_class_know_regular_members" />
+
+            <View style="@style/horizontal_line_divider_padding_dimen_15dp" />
+
+            <TextView
+                android:paddingLeft="@dimen/dimen_15dp"
+                android:paddingRight="@dimen/dimen_15dp"
+                android:gravity="center_vertical"
+                style="@style/user_level_text_rlue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_7dp"
+                android:text="@string/privilege" />
+
+            <TextView
+                android:paddingLeft="@dimen/dimen_15dp"
+                android:paddingRight="@dimen/dimen_15dp"
+                android:gravity="center_vertical"
+                style="@style/user_level_text_level_up"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_7dp"
+                android:text="@string/can_add_a_card" />
+
+            <TextView
+                android:paddingLeft="@dimen/dimen_15dp"
+                android:paddingRight="@dimen/dimen_15dp"
+                android:gravity="center_vertical"
+                style="@style/user_level_text_level_up"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_7dp"
+                android:text="@string/can_swap_card" />
+
+            <TextView
+                android:paddingLeft="@dimen/dimen_15dp"
+                android:paddingRight="@dimen/dimen_15dp"
+                android:gravity="center_vertical"
+                style="@style/user_level_text_level_up"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_7dp"
+                android:text="@string/can_relay_card" />
+
+            <TextView
+                android:paddingLeft="@dimen/dimen_15dp"
+                android:paddingRight="@dimen/dimen_15dp"
+                android:gravity="center_vertical"
+                style="@style/user_level_text_level_up"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_7dp"
+                android:text="@string/can_attention_and_have_attention" />
+
+            <TextView
+                android:paddingLeft="@dimen/dimen_15dp"
+                android:paddingRight="@dimen/dimen_15dp"
+                android:gravity="center_vertical"
+                style="@style/user_level_text_level_up"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_7dp"
+                android:text="@string/can_backup_and_recovery_need_verify" />
+
+            <TextView
+                android:paddingLeft="@dimen/dimen_15dp"
+                android:paddingRight="@dimen/dimen_15dp"
+                android:gravity="center_vertical"
+                style="@style/user_level_text_level_up"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_7dp"
+                android:text="@string/can_the_synchronization_of_privacy_need_verify" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/l3"
+            android:orientation="vertical"
+            style="@style/all_btn_background_color"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/dimen_15dp"
+            android:layout_marginTop="@dimen/dimen_10dp" >
+
+            <TextView
+                android:paddingLeft="@dimen/dimen_15dp"
+                android:paddingRight="@dimen/dimen_15dp"
+                android:gravity="center_vertical"
+                style="@style/user_level_text_rlue"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_36dp"
+                android:drawableLeft="@mipmap/img_enior_member"
+                android:drawablePadding="@dimen/dimen_5dp"
+                android:text="@string/senior_member_add_v_and_diamond" />
+
+            <View style="@style/horizontal_line_divider_padding_dimen_15dp" />
+
+            <TextView
+                android:paddingLeft="@dimen/dimen_15dp"
+                android:paddingRight="@dimen/dimen_15dp"
+                android:gravity="center_vertical"
+                style="@style/user_level_text_rlue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_7dp"
+                android:text="@string/privilege" />
+
+            <TextView
+                android:paddingLeft="@dimen/dimen_15dp"
+                android:paddingRight="@dimen/dimen_15dp"
+                android:gravity="center_vertical"
+                style="@style/user_level_text_level_up"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_7dp"
+                android:text="@string/can_add_three_card" />
+
+            <TextView
+                android:paddingLeft="@dimen/dimen_15dp"
+                android:paddingRight="@dimen/dimen_15dp"
+                android:gravity="center_vertical"
+                style="@style/user_level_text_level_up"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_7dp"
+                android:text="@string/can_swap_card" />
+
+            <TextView
+                android:paddingLeft="@dimen/dimen_15dp"
+                android:paddingRight="@dimen/dimen_15dp"
+                android:gravity="center_vertical"
+                style="@style/user_level_text_level_up"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_7dp"
+                android:text="@string/can_relay_card" />
+
+            <TextView
+                android:paddingLeft="@dimen/dimen_15dp"
+                android:paddingRight="@dimen/dimen_15dp"
+                android:gravity="center_vertical"
+                style="@style/user_level_text_level_up"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_7dp"
+                android:text="@string/can_attention_and_have_attention" />
+
+            <TextView
+                android:paddingLeft="@dimen/dimen_15dp"
+                android:paddingRight="@dimen/dimen_15dp"
+                android:gravity="center_vertical"
+                style="@style/user_level_text_level_up"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_7dp"
+                android:text="@string/can_backup_and_recovery" />
+
+            <TextView
+                android:paddingLeft="@dimen/dimen_15dp"
+                android:paddingRight="@dimen/dimen_15dp"
+                android:gravity="center_vertical"
+                style="@style/user_level_text_level_up"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_7dp"
+                android:text="@string/can_the_synchronization_of_privacy" />
+
+            <TextView
+                android:paddingLeft="@dimen/dimen_15dp"
+                android:paddingRight="@dimen/dimen_15dp"
+                android:gravity="center_vertical"
+                style="@style/user_level_text_level_up"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_7dp"
+                android:text="@string/can_change_the_skin" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            style="@style/all_btn_background_color"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/dimen_15dp"
+            android:layout_marginTop="@dimen/dimen_10dp" >
+
+            <TextView
+                android:paddingLeft="@dimen/dimen_15dp"
+                android:paddingRight="@dimen/dimen_15dp"
+                android:gravity="center_vertical"
+                style="@style/user_level_text_rlue"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_36dp"
+                android:drawableLeft="@mipmap/img_diamond_member"
+                android:drawablePadding="@dimen/dimen_5dp"
+                android:text="@string/diamond_member_add_head_diamond_and_icon" />
+
+            <View style="@style/horizontal_line_divider_padding_dimen_15dp" />
+
+            <TextView
+                android:paddingLeft="@dimen/dimen_15dp"
+                android:paddingRight="@dimen/dimen_15dp"
+                android:gravity="center_vertical"
+                style="@style/user_level_text_rlue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_7dp"
+                android:text="@string/privilege" />
+
+            <TextView
+                android:paddingLeft="@dimen/dimen_15dp"
+                android:paddingRight="@dimen/dimen_15dp"
+                android:gravity="center_vertical"
+                style="@style/user_level_text_level_up"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_7dp"
+                android:text="@string/can_add_three_card" />
+
+            <TextView
+                android:paddingLeft="@dimen/dimen_15dp"
+                android:paddingRight="@dimen/dimen_15dp"
+                android:gravity="center_vertical"
+                style="@style/user_level_text_level_up"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_7dp"
+                android:text="@string/can_swap_card" />
+
+            <TextView
+                android:paddingLeft="@dimen/dimen_15dp"
+                android:paddingRight="@dimen/dimen_15dp"
+                android:gravity="center_vertical"
+                style="@style/user_level_text_level_up"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_7dp"
+                android:text="@string/can_relay_card" />
+
+            <TextView
+                android:paddingLeft="@dimen/dimen_15dp"
+                android:paddingRight="@dimen/dimen_15dp"
+                android:gravity="center_vertical"
+                style="@style/user_level_text_level_up"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_7dp"
+                android:text="@string/can_attention_and_have_attention" />
+
+            <TextView
+                android:paddingLeft="@dimen/dimen_15dp"
+                android:paddingRight="@dimen/dimen_15dp"
+                android:gravity="center_vertical"
+                style="@style/user_level_text_level_up"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_7dp"
+                android:text="@string/can_backup_and_recovery" />
+
+            <TextView
+                android:paddingLeft="@dimen/dimen_15dp"
+                android:paddingRight="@dimen/dimen_15dp"
+                android:gravity="center_vertical"
+                style="@style/user_level_text_level_up"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_7dp"
+                android:text="@string/can_the_synchronization_of_privacy" />
+
+            <TextView
+                android:paddingLeft="@dimen/dimen_15dp"
+                android:paddingRight="@dimen/dimen_15dp"
+                android:gravity="center_vertical"
+                style="@style/user_level_text_level_up"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_7dp"
+                android:text="@string/can_change_the_skin" />
+
+            <TextView
+                android:paddingLeft="@dimen/dimen_15dp"
+                android:paddingRight="@dimen/dimen_15dp"
+                android:gravity="center_vertical"
+                style="@style/user_level_text_level_up"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_7dp"
+                android:text="@string/can_use_dedicated_template" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

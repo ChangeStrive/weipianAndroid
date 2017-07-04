@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <META http-equiv="X-UA-Compatible" content="IE=9" ></META>
+    <title>微片管理平台 - 商品管理</title>
+	<#include "Admin/jsp/common/common.ftl">
+	<link rel="stylesheet" type="text/css" href="${hxltUrl}Admin/css/validator.css">
+	<link rel="stylesheet" type="text/css" href="${hxltUrl}js/plugins/easyui/themes/default/easyui.css">
+	<link rel="stylesheet" type="text/css" href="${hxltUrl}js/plugins/easyui/themes/icon.css">
+	<link rel="stylesheet" type="text/css" href="${hxltUrl}js/utils/singleUpload/singleUpload.css">
+	<script type="text/javascript" src="${hxltUrl}js/plugins/easyui/jquery.easyui.min.js"></script>
+    <script type="text/javascript" src="${hxltUrl}js/utils/easyui_DateUtil.js"></script>
+	<script type="text/javascript" src="${hxltUrl}js/utils/form/validform.js"></script>
+	<script type="text/javascript" src="${hxltUrl}js/utils/singleUpload/singleUpload.js"></script>
+	<script type="text/javascript" src="${hxltUrl}Admin/js/app/AppGoods/AppGoodsSelect.js"></script>
+	
+	 <link rel="stylesheet" type="text/css" href="${hxltUrl}Admin/css/cutImage.css">
+    <link rel="stylesheet" type="text/css" href="${hxltUrl}js/jquery/Jcrop-master/css/jquery.Jcrop.min.css">
+    <script type="text/javascript" src="${hxltUrl}js/jquery/Jcrop-master/js/jquery.Jcrop.min.js"></script>
+    <script type="text/javascript" src="${hxltUrl}js/jquery/Jcrop-master/js/jquery.color.js"></script>
+    <script type="text/javascript" src="${hxltUrl}js/utils/cutImage/cutImageUtil.js"></script>
+    
+    <script type="text/javascript" charset="utf-8" src="${hxltUrl}ueditor/ueditor.config.js"></script>
+    <script type="text/javascript" charset="utf-8" src="${hxltUrl}ueditor/ueditor.all.min.js"> </script>
+    <script type="text/javascript" charset="utf-8" src="${hxltUrl}ueditor/lang/zh-cn/zh-cn.js"></script>
+    
+	
+
+	<script type="text/javascript">
+		var firstMenuNo="00090";
+		var secondMenuNo="00093";
+		var ue = UE.getEditor('fdContentEditor',{scaleEnabled:true});
+	</script>
+	<script type="text/javascript" src="${hxltUrl}Admin/js/app/AppGoods/AppGoodsAdd.js"></script>
+  </head>
+  
+<body>
+<!-- 头部 -->
+<#include "Admin/jsp/common/header.ftl">
+<!-- /头部 --> 
+
+<!-- 边栏 -->
+<#include "Admin/jsp/common/sidebar.ftl">
+<!-- /边栏 --> 
+
+<!-- 内容区 -->
+<div id="main-content">
+	<div id="top-alert" class="fixed alert alert-error" style="display: none;">
+		<button class="close fixed" style="margin-top: 4px;">×</button>
+		<div class="alert-content">这是内容</div>
+	</div>
+	<div id="main" class="main" style="min-height: 430px;"> 
+		
+		<!-- nav -->
+		<div class="main-title">
+			<h2>商品管理</h2>
+		</div>
+		<form method="post" id="userForm" class="form-horizontal contact_form">
+			<div class="form-item">
+				<label class="item-label">商品名称</label>
+				<div class="controls">
+					<input type="text" class="text input-large" name="fdGoodsName" nullmsg="商品名称不允许为空" ajaxurl="" datatype="*"  value="${item.fdGoodsName}" />
+					 <span class="form_checktip"></span>
+				</div>
+			</div>
+			<div class="form-item">
+				<label class="item-label">规格</label>
+				<div class="controls">
+					<input type="text" class="text input-large" name="fdGoodsNo" nullmsg="规格不允许为空" ajaxurl="" datatype="*"  value="${item.fdGoodsNo}" />
+					 <span class="form_checktip"></span>
+				</div>
+			</div>
+			<div class="form-item">
+				<label class="item-label">图片(500*500)<span class="check-tips"></span></label>
+				<div class="controls">
+					<input type="hidden" name="fdPicUrl"  singUpload-Type="image" nullmsg="图片不允许为空！"  singUpload-savePath="goods" datatype="*" value="${item.fdPicUrl}" singUpload-width="200" singUpload-height="200" aspectRatio="1/1" hasCut="1"/>
+					 <span class="form_checktip"></span>
+				</div>
+			</div>
+			<div class="form-item">
+	            <label class="item-label">商品分类</label>
+	            <div class="controls">
+	            	<input type="hidden" name="fdTypeName" class="fdTypeName" value="${fdTypeName}" />
+					<select name="fdTypeId" selectValue="${fdTypeId}" data-key="selectMenu" data-text=".fdTypeName" nullmsg="商品分类不允许为空"></select>
+					 <span class="form_checktip"></span>
+				</div>
+			</div>
+			<div class="form-item">
+				<label class="item-label">吊牌价</label>
+				<div class="controls">
+					<input type="text" class="text input-large" name="fdTagPrice" nullmsg="吊牌价不允许为空" ajaxurl="" datatype="*"  value="${item.fdTagPrice}" />
+					 <span class="form_checktip"></span>
+				</div>
+			</div>
+			<div class="form-item">
+				<label class="item-label">销售价</label>
+				<div class="controls">
+					<input type="text" class="text input-large" name="fdPrice" nullmsg="吊牌价不允许为空" ajaxurl="" datatype="*"  value="${item.fdPrice}" />
+					 <span class="form_checktip"></span>
+				</div>
+			</div>
+			<div class="form-item">
+	            <label class="item-label">库存</label>
+	            <div class="controls">
+	                <input type="number" class="text input-small" name="fdQuantity" value='${item.fdQuantity}'>
+	                 <span class="form_checktip"></span>
+	            </div>
+	        </div>
+			 <div class="form-item">
+	            <label class="item-label">状态<span class="check-tips"></span></label>
+	            <div class="controls">
+	                <label class="radio">
+	                	<input type="radio" name="fdStatus" id="fdStatus1" value="1" 
+	                		<#if item.fdStatus!="0">
+									checked="checked"
+							</#if>
+	                	>
+	                	已上架
+	                </label>
+	                <label class="radio">
+		                <input type="radio" name="fdStatus" id="fdStatus2" value="0"
+		                	<#if item.fdStatus=="0">
+									checked="checked"
+							</#if>
+		                >
+		                                          未上架
+	                </label>
+	            </div>
+	        </div>
+	        <div class="form-item">
+				<label class="item-label">宝贝描述</label>
+				<div class="controls">
+					<input type="hidden" name="fdDesc" ajaxurl="" value='${item.fdDesc}' />
+					<script id="fdContentEditor" type="text/plain" style="width:800px;height:600px;"></script>
+					 <span class="form_checktip"></span>
+				</div>
+			</div>
+			<div class="form-item">
+				<input type="hidden" name="fdId" value="${item.fdId}" />
+			</div>
+			
+			<div class="form-item">
+				<button class="btn submit-btn ajax-post" id="submit" type="submit" target-form="form-horizontal">确 定</button>
+				<button class="btn btn-return" onclick="javascript:history.back(-1);return false;">返 回</button>
+			</div>
+		</form>
+	</div>
+	<!-- 底部 -->
+	<#include "Admin/jsp/common/footer.ftl">
+</div>
+<!-- /内容区 -->
+</body>
+</html>

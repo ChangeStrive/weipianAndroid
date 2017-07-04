@@ -1,0 +1,62 @@
+{
+    "id": 0,
+    "width": 1063,
+    "height": 643,
+    "isVertical": false,
+    "lucidEntityList": [
+        {
+            "tagId": 0,
+            "width": 305,
+            "height": 37,
+            "left": 217,
+            "top": 0,
+            "right": 0,
+            "bottom": 74
+        },
+        {
+            "tagId": 1,
+            "width": 305,
+            "height": 26,
+            "left": 217,
+            "top": 0,
+            "right": 0,
+            "bottom": 38
+        },
+        {
+            "tagId": 2,
+            "width": 0,
+            "height": 0,
+            "left": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 0
+        },
+        {
+            "tagId": 3,
+            "width": 172,
+            "height": 12,
+            "left": 217,
+            "top": 0,
+            "right": 0,
+            "bottom": 26
+        },
+        {
+            "tagId": 4,
+            "width": 168,
+            "height": 13,
+            "left": 217,
+            "top": 0,
+            "right": 0,
+            "bottom": 12
+        },
+        {
+            "tagId": 5,
+            "width": 128,
+            "height": 13,
+            "left": 390,
+            "top": 0,
+            "right": 0,
+            "bottom": 12
+        }
+    ]
+}

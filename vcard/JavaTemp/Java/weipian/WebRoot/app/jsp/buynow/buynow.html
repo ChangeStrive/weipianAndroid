@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<#include "app/jsp/common/common.ftl">
+	<#include "app/jsp/weixinTemplate.html">
+	<title>生成订单</title>
+	<script type="text/javascript">
+	var hasAddress="${address.hasAddress}";
+	var fdAddressId="${address.defaultAddress.fdId}";
+	var fdGoodsId="${fdGoodsId}";
+	var fdQuantity="${fdQuantity}";
+	</script>
+	<script src='${hxltUrl}app/js/buynow/buynow.js'></script>
+</head>
+<body class="orderDetail" >
+	<div class="mask" style="display:none;"></div>
+	<div class="wrap">
+		<header class="homepage_head">
+			<a href="javascript:history.go(-1)" class="left_head  ahref" style="left:2%;">
+	             	  <span class="iconfont backBtn">&#xe61c;</span>
+			</a>
+			<h2>订单详情</h2>
+		</header>
+		<div class="orderDetailMain" >
+			<div class="odm-Item" >
+				<div class="odmi-head">
+					<#if (address.hasAddress==1)>
+						<p class="odmi-content clearfix">
+							<img src="${hxltUrl}app/images/un_icon.png" alt="用户名icon" class="un-icon">
+							<span>${address.defaultAddress.fdConsignee}</span>
+						</p>
+						<p class="odmi-content clearfix">
+							<img src="${hxltUrl}app/images/tel_icon.png" alt="手机icon" class="tel-icon">
+							<span>${address.defaultAddress.fdTel}</span>
+						</p>
+						<p class="odmi-content clearfix">
+							<img src="${hxltUrl}app/images/loc_icon.png" alt="手机icon" class="tel-icon">
+							<span>
+								${address.defaultAddress.fdProvince}
+								${address.defaultAddress.fdCity}
+								${address.defaultAddress.fdArea}
+								${address.defaultAddress.fdAddress}
+								${address.defaultAddress.fdZipCode}
+							</span>
+						</p>
+						<#else>
+						<a class="userNoAddressTip" href="javascript:void(0)">暂无个人收货地址，请新增</a>
+					</#if>
+				</div>
+				<a href="javascript:void(0)" class="odmi_right_head ahref iconfont">
+	              	&#xe641;
+				</a>
+			</div>
+			<div class="odm-line"></div>
+			<div class="orderDetailGoodsItem">
+				<div class="odmg-goods clearfix">
+					<a class="odmg-item clearfix" fdId="${orderDetail.fdId}" href="${hxltUrl}wx/goodsDetail?fdShopStoreId=${orderDetail.fdGoodsId}&fdShopNo=${fdShopNo}" style="display: block;">
+						<img src="${downAction}${orderDetail.fdPicUrl}" alt="goods"/>
+						<div class="odmgiMain clearfix">
+							<p class="odmgiTitle">${orderDetail.fdGoodsName}</p>
+							<p class="odmgiColor">规格：￥${orderDetail.fdGoodsNo}</p>
+							<p class="odmgiColor">原价：￥${orderDetail.fdPrice}</p>
+							<span class="odmgiPrice">￥${orderDetail.fdTagPrice}</span>
+							<span class="odmgi_Calc clearfix">
+								<span class="odmgi_quantity">X${orderDetail.fdQuantity}</span>
+							</span>
+						</div>
+					</a>
+					<div class="odmg-total clearfix">
+						<div class="odmg-left clearfix">
+							<span class="heji">小计</span>
+						</div>
+						<div class="odmg-right clearfix">
+							<span class="odmg-amount">${orderDetail.fdGoodsAmount}</span>
+							<span class="odmg-rmb">￥</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="odm-coupon">
+				<div class="odmc-item clearfix">
+					<div class="odmci-left clearfix">
+						<span>运费</span>
+					</div>
+					<div class="odmci-right clearfix">
+						<span class="odmci-amount">免费运费</span>
+					</div>
+				</div>
+			</div>
+			<div class="odm-leave-message" >
+			<div class="odmlm-Content">
+				<textarea placeholder="给卖家留言...."  name="fdReplyContent"  class="fdReplyContent"></textarea>
+			</div>
+		</div>
+		</div>
+		<div style="height: 70px;width:100%;"></div>
+		<footer class="orderDetail-footer">
+			<a href="javascript:void(0)" class="odf_ahref needPay" ><span>需付</span></a>
+			<a href="javascript:void(0)" class="odf_ahref totalCount " >
+				<span class="odf-amount">${orderDetail.fdAmount}</span>
+				<span class="odf-rmb">￥</span>
+				<span class="odf-heji">合计</span>
+			</a>
+			<a href="javascript:void(0)" class="odf_ahref confirmBtn " ><span>确认付款</span></a>
+		</footer>
+	</div>
+</body>
+</html>

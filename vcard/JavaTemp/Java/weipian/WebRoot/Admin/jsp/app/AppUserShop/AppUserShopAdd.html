@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <META http-equiv="X-UA-Compatible" content="IE=8" ></META>
+    <title>店铺管理</title>
+	<#include "Admin/jsp/common/common.ftl">
+	<link rel="stylesheet" type="text/css" href="${hxltUrl}Admin/css/validator.css">
+	
+	<link rel="stylesheet" type="text/css" href="${hxltUrl}js/utils/singleUpload/singleUpload.css">
+	<script type="text/javascript" src="${hxltUrl}js/utils/singleUpload/singleUpload.js"></script>
+	
+	<script type="text/javascript" charset="utf-8" src="${hxltUrl}ueditor/ueditor.config.js"></script>
+    <script type="text/javascript" charset="utf-8" src="${hxltUrl}ueditor/ueditor.all.min.js"> </script>
+    <script type="text/javascript" charset="utf-8" src="${hxltUrl}ueditor/lang/zh-cn/zh-cn.js"></script>
+    
+    <link rel="stylesheet" type="text/css" href="${hxltUrl}js/plugins/easyui/themes/default/easyui.css">
+	<link rel="stylesheet" type="text/css" href="${hxltUrl}js/plugins/easyui/themes/icon.css">
+	<script type="text/javascript" src="${hxltUrl}js/plugins/easyui/jquery.easyui.min.js"></script>
+	
+	<script type="text/javascript" src="${hxltUrl}js/utils/form/validform.js"></script>
+	<script src='${hxltUrl}js/utils/PCASClass.js'></script>
+	<script>
+		var fdId = "${item.fdId}";
+		var fdShopType="${item.fdShopType}";
+	</script>
+	<script type="text/javascript">
+		var firstMenuNo="00090";
+		var secondMenuNo="00101";
+	</script>
+	<script type="text/javascript" src="${hxltUrl}Admin/js/app/AppUserShop/AppUserShopAdd.js"></script>
+  </head>
+  
+<body>
+<!-- 头部 -->
+<#include "Admin/jsp/common/header.ftl">
+<!-- /头部 --> 
+
+<!-- 边栏 -->
+<#include "Admin/jsp/common/sidebar.ftl">
+<!-- /边栏 --> 
+
+<!-- 内容区 -->
+<div id="main-content">
+	<div id="top-alert" class="fixed alert alert-error" style="display: none;">
+		<button class="close fixed" style="margin-top: 4px;">×</button>
+		<div class="alert-content">这是内容</div>
+	</div>
+	<div id="main" class="main" style="min-height: 430px;"> 
+		
+		<!-- nav -->
+		<div class="main-title">
+			<h2>店铺管理</h2>
+		</div>
+		<form method="post" id="AppUserShopForm" class="form-horizontal contact_form">
+			<div class="form-item">
+				<label class="item-label">店铺名称</label>
+				<div class="controls">
+					<input type="text" class="text input-large" name="fdStoreName" nullmsg="店铺名称不允许为空" ajaxurl="" datatype="*"  value="${item.fdStoreName}" />
+					 <span class="form_checktip"></span>
+				</div>
+			</div>
+			<div class="form-item">
+				<label class="item-label">店铺地址</label>
+				<div class="controls">
+					<input type="text" class="text input-large" name="fdStoreAddress" nullmsg="店铺地址不允许为空" ajaxurl="" datatype="*"  value="${item.fdStoreAddress}" />
+					 <span class="form_checktip"></span>
+				</div>
+			</div>
+			<div class="form-item">
+				<label class="item-label">商家类别</label>
+				<div class="controls">
+					<select class="select input-large" name="fdStoreType" nullmsg="商家类别不允许为空！" datatype="*" data-dictKey="402881365b0f1bfd015b0f3514080000" data-dictText=".fdTypeName" data-dictValue="${item.fdStoreType}" >
+					</select>
+					 <span class="form_checktip"></span>
+				</div>
+			</div>
+			<div class="form-item">
+	            <label class="item-label">状态<span class="check-tips"></span></label>
+	            <div class="controls">
+	                <label class="radio">
+	                	<input type="radio" name="fdStatus" id="fdStatus1" value="1" 
+	                		<#if item.fdStatus=="1">
+									checked="checked"
+							</#if>
+	                	>
+	                	通过
+	                </label>
+	                <label class="radio">
+		                <input type="radio" name="fdStatus" id="fdStatus2" value="0"
+		                	<#if item.fdStatus!="1" && item.fdStatus!="-1">
+									checked="checked"
+							</#if>
+		                >
+		                              待审核
+	                </label>
+	                <label class="radio">
+		                <input type="radio" name="fdStatus" id="fdStatus2" value="-1"
+		                	<#if item.fdStatus=="-1">
+									checked="checked"
+							</#if>
+		                >
+		                              不通过
+	                </label>
+	            </div>
+	        </div>
+			<div class="form-item">
+				<input type="hidden" name="fdId" value="${item.fdId }" />
+			</div>
+			<div class="form-item">
+				<button class="btn submit-btn ajax-post" id="submit" type="submit" target-form="form-horizontal">确 定</button>
+				<button class="btn btn-return" onclick="javascript:history.back(-1);return false;">返 回</button>
+			</div>
+		</form>
+	</div>
+	<#include "Admin/jsp/common/footer.ftl">
+</div>
+<!-- /内容区 -->
+</body>
+</html>

@@ -1,0 +1,202 @@
+.bought-table{
+	width:100%;
+	border-collapse: collapse;
+	border-spacing: 2px;
+}
+.bought-table a{
+	color: #3c3c3c;
+	font-size: 12px;
+}
+ .bought-table .toolbar-top {
+	height: 22px;
+	padding: 5px 0;
+}
+
+.bought-table .toolbar-top td{
+	border: 0px;
+	line-height: 1.5;
+}
+
+.bought-table tr {
+	display: table-row;
+	vertical-align: inherit;
+	border-color: inherit;
+}
+
+.bought-table .col-name th {
+	height: 38px;
+	text-align: center;
+	background: #f5f5f5;
+	border-top: 1px solid #e8e8e8;
+	border-bottom: 1px solid #e8e8e8;
+	font-style: normal;
+	font-weight: 400;
+}
+
+.bought-table .column{
+	border-left: 0px;
+	border-right: 0px;
+}
+
+.bought-table .last{
+	border-left: 0px;
+}
+.baobei {
+	border-left: 1px solid #e8e8e8;
+}
+
+.trade-operate {
+	border-right: 1px solid #e8e8e8;
+}
+
+.operates {
+	display: inline;
+	float: left;
+	margin: 10px 0;
+}
+
+.paging-simple {
+	text-align: right;
+	display: inline;
+	float: right;
+	margin: 10px 0;
+}
+
+.bought-table .toolbar .toolbtn {
+	display: inline-block;
+	width: 66px;
+	height: 18px;
+	margin-right: 5px;
+	line-height: 18px;
+	vertical-align: middle;
+	text-align: center;
+	border: 1px solid #dcdcdc;
+	border-radius: 2px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	color: #6c6c6c;
+	cursor: auto;
+}
+.bought-table .toolbar .long-toolbtn{
+	width: 90px;
+}
+
+.bought-table .order-hd td.first {
+	border-right: 0 none;
+	padding-left: 20px;
+}
+
+.bought-table tbody .order-hd td {
+	background: #eaf8ff;
+	border-bottom-color: #eaf8ff;
+}
+
+.bought-table  td {
+	text-align: center;
+	vertical-align: middle;
+}
+.bought-table .order-hd td {
+	height: 40px;
+	line-height: 40px;
+	text-align: left;
+}
+.bought-table tbody td {
+	border: 1px solid #daf3ff;
+}
+
+.bought-table .order-hd .summary span {
+	float: left;
+	margin-right: 8px;
+}
+.bought-table .order-hd td {
+	height: 40px;
+	line-height: 40px;
+	text-align: left;
+}
+
+.bought-table .order-hd .summary .number em {
+	font-family: verdana;
+	font-style: normal;
+	font-weight: 400;
+}
+
+.bought-table .order-hd .summary .dealtime {
+font-weight: 700;
+font-family: verdana;
+}
+
+.bought-table .order-bd .baobei {
+	padding-left: 20px;
+	padding-right: 0;
+	text-align: left;
+	border-right: none;
+}
+
+.bought-table .order-bd .baobei .pic {
+	display: inline;
+	float: left;
+	margin: 5px 12px 0 0;
+	width: 82px;
+	text-align: center;
+}
+.bought-table .order-bd .baobei .desc {
+	display: inline;
+	float: left;
+	width: 216px;
+	overflow: hidden;
+	word-wrap: break-word;
+	text-align: left;
+}
+
+.bought-table .order-bd .baobei .spec {
+	max-height: 38px;
+	overflow: hidden;
+	margin-bottom: 5px;
+	line-height: 18px;
+	color: #9c9c9c;
+	padding-top: 5px;
+}
+
+.bought-table td .special-num {
+	font-family: verdana;
+	font-style: normal;
+	vertical-align: top;
+}
+
+.bought-table .order-bd .trade-status a,.bought-table .order-bd .trade-operate a,.bought-table .order-bd .item-operate a{
+	display: block;
+	margin-bottom: 4px;
+	border-bottom: none;
+}
+.bought-table .order-bd .trade-status a:HOVER,.bought-table .order-bd .trade-operate a:HOVER,.bought-table .order-bd .item-operate a:HOVER{
+	color: red;
+}
+.bought-table .order-hd{
+	background-color: #EDF9FF;
+	border-left: 1px solid #e8e8e8;
+	border-right: 1px solid #e8e8e8;
+}
+
+.bought-table .order-bd td{
+	border-left: 1px solid #e8e8e8;
+	border-bottom: 1px solid #e8e8e8;
+}
+.bought-table .baobei .desc{
+	padding-top: 10px;
+}
+.bought-table .baobei-name .J_MakePoint{
+	font-size: 16px;
+}
+
+.bought-table  .item-operate p{
+	text-align: left;
+	padding-left: 20px;
+}
+.bought-table  .addressColumn{
+	padding-left: 20px;
+	background: #b7d2ff;
+	border: 1px solid #e8e8e8;
+}
+.bought-table  .addressColumn span{
+	padding-right: 20px;
+}

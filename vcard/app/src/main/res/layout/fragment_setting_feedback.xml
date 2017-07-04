@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/all_frg_view_color"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.maya.android.vcard.ui.frg.SettingFeedbackFragment">
+
+    <RelativeLayout
+        android:id="@+id/rel_enter_feedback"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_45dp"
+        android:paddingLeft="@dimen/dimen_15dp"
+        android:paddingRight="@dimen/dimen_15dp"
+        style="@style/all_btn_background_color">
+    <Button
+            android:id="@+id/btn_send_feedback"
+            android:layout_width="@dimen/dimen_68dp"
+            android:layout_height="@dimen/dimen_34dp"
+            android:background="@color/color_399c2f"
+            style="@style/btn_feedback_send_size_and_color"
+            android:text="发送"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"/>
+        <EditText
+            android:id="@+id/edt_enter_feedback"
+            android:layout_toLeftOf="@id/btn_send_feedback"
+            android:layout_marginRight="@dimen/dimen_10dp"
+            style="@style/edt_base_mess"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_34dp"
+            android:background="@drawable/bg_general_edt_normal"
+            android:gravity="center_vertical"
+            android:layout_centerVertical="true"
+            android:hint="@string/feedback_edt_hint"
+            android:paddingLeft="@dimen/dimen_10dp"
+            android:paddingRight="@dimen/dimen_10dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_above="@id/rel_enter_feedback"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ListView
+            android:id="@+id/lsv_feedback"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@color/color_00000000"
+            android:dividerHeight="@dimen/dimen_15dp"
+            android:cacheColorHint="@color/color_00000000"/>
+        <TextView
+            android:id="@+id/txv_empty"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/not_feedback_info_correct"
+            style="@style/text_list_empty_data"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</RelativeLayout>

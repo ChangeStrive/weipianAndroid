@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <META http-equiv="X-UA-Compatible" content="IE=9" ></META>
+    <title>修改密码</title>
+	<#include "Admin/jsp/common/common.ftl">
+	<link rel="stylesheet" type="text/css" href="${hxltUrl}Admin/css/validator.css">
+	
+	<script type="text/javascript" src="${hxltUrl}js/utils/form/validform.js"></script>
+	<script type="text/javascript" src="${hxltUrl}Admin/js/app/AppUser/updatePwd.js"></script>
+	
+	<script type="text/javascript">
+		var firstMenuNo="00090";
+		var secondMenuNo="00091";
+	</script>
+  </head>
+  
+<body>
+<!-- 头部 -->
+<#include "Admin/jsp/common/header.ftl">
+<!-- /头部 --> 
+
+<!-- 边栏 -->
+<#include "Admin/jsp/common/sidebar.ftl">
+<!-- /边栏 --> 
+
+<!-- 内容区 -->
+<div id="main-content">
+	<div id="top-alert" class="fixed alert alert-error" style="display: none;">
+		<button class="close fixed" style="margin-top: 4px;">×</button>
+		<div class="alert-content">这是内容</div>
+	</div>
+	<div id="main" class="main" style="min-height: 430px;"> 
+		
+		<!-- nav -->
+		<div class="main-title">
+			<h2>修改密码</h2>
+		</div>
+		<form method="post" id="userForm" class="form-horizontal contact_form">
+			<div class="form-item">
+				<label class="item-label">用户账号</label>
+				<div class="controls">
+				 	${item.fdCode}	
+				</div>
+			</div>
+			<div class="form-item">
+				<label class="item-label">用户名</label>
+				<div class="controls">
+				 	${item.fdName}	
+				</div>
+			</div>
+			<div class="form-item">
+				<label class="item-label">新密码</label>
+				<div class="controls">
+					<input type="password" class="text input-large" name="fdPwd" nullmsg="新密码不允许为空" ajaxurl="" datatype="*"  />
+					 <span class="form_checktip"></span>
+				</div>
+			</div>
+			<div class="form-item">
+				<label class="item-label">确认密码</label>
+				<div class="controls">
+					<input type="password" class="text input-large" name="fdPassword" nullmsg="密码不允许为空" recheck="fdPwd"  errormsg="您两次输入的账号密码不一致！" ajaxurl="" datatype="*"  />
+					 <span class="form_checktip"></span>
+				</div>
+			</div>
+			<div class="form-item">
+				<input type="hidden" name="fdId" value="${item.fdId}" />
+			</div>
+			<div class="form-item">
+				<button class="btn submit-btn ajax-post" id="submit" type="submit" target-form="form-horizontal">确 定</button>
+				<button class="btn btn-return" onclick="javascript:history.back(-1);return false;">返 回</button>
+			</div>
+		</form>
+	</div>
+	<!-- 底部 -->
+	<#include "Admin/jsp/common/footer.ftl">
+</div>
+<!-- /内容区 -->
+</body>
+</html>

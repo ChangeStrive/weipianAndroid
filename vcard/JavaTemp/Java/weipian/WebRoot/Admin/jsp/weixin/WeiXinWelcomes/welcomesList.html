@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <META http-equiv="X-UA-Compatible" content="IE=9" ></META>
+	<title>微片生活管理平台 - 微信菜单管理</title>
+	<#include "Admin/jsp/common/common.ftl">
+	<link rel="stylesheet" href="${hxltUrl}Admin/css/appmsg.css" type="text/css" media="all"></link>
+	<link rel="stylesheet" type="text/css" href="${hxltUrl}Admin/css/welcomes.css" media="all">
+	<script type="text/javascript">
+		var fdPid="${fdPid}";
+		var firstMenuNo="00027";
+		var secondMenuNo="00031";
+	</script>
+	<script type="text/javascript" src="${hxltUrl}Admin/js/weixin/WeiXinWelcomes/welcomesList.js"></script>
+  </head>
+ <body>
+<!-- 头部 -->
+<#include "Admin/jsp/common/header.ftl">
+<!-- /头部 --> 
+
+<!-- 边栏 -->
+<#include "Admin/jsp/common/sidebar.ftl">
+<!-- /边栏 --> 
+
+<!-- 内容区 -->
+<div id="main-content">
+	<div id="top-alert" class="fixed alert alert-error" style="display: none;">
+		<button class="close fixed" style="margin-top: 4px;">&times;</button>
+		<div class="alert-content">这是内容</div>
+	</div>
+	<div id="main" class="main">
+		<div>
+			<div class="main-title">
+				<h2>首次关注欢迎语</h2>
+			</div>
+			<img src="${hxltUrl}Admin/images/daduihao.png" style="display: none" id="ddhpng">
+			<div class="container">
+				<div class="content" style="border:1px solid lightgrey">
+	   					<div class="page-bd">
+	   						<div class="tj msg-list">
+	   						<!-- 偶数内容 -->
+	   							<div class="b-dib vt msg-col list-fist">
+									
+	   							</div>
+	   							<div class="b-dib vt msg-col list-middle">
+	   							</div>
+	   							
+	   							<div class="b-dib vt msg-col list-last">
+	   							</div>
+							</div>
+						</div>
+	   				</div>
+			</div>
+			<div class="maskdivgen" style="display:none">
+				<div class="cf" style="">
+					<div class="fl" style="position:relative;position:absolute;left;0;bottom:0;background-color: #fff;width:100%">
+						<a class="btn setDef" href="javascript:;" onclick="WeiXinWelcomesConfig.setDefault(this)" style="width:91%;">确定</a>
+					</div>
+				</div>
+			</div>
+		   	<div class="clr"></div>
+		</div>		
+	</div>
+	<!-- 底部 -->
+	<#include "Admin/jsp/common/footer.ftl">
+</div>
+<!-- /内容区 --> 
+</body>
+</html>

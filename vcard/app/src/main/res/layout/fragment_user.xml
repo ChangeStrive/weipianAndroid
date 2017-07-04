@@ -1,0 +1,202 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/all_frg_view_color"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    tools:context="com.maya.android.vcard.ui.frg.UserMainFragment">
+
+    <LinearLayout
+        style="@style/all_btn_background_color"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen_145dp"
+            android:background="@mipmap/bg_user_head_big"
+            android:orientation="vertical">
+
+            <include layout="@layout/inc_user_head" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@mipmap/bg_horizontal_stripe"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txv_vcard"
+                    style="@style/user_head_bottom_selected"
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:lineSpacingExtra="@dimen/dimen_3dp" />
+
+                <View
+                    android:layout_width="@dimen/dimen_1dp"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/bg_user_vertical_divider" />
+
+                <TextView
+                    android:id="@+id/txv_attention"
+                    style="@style/user_head_bottom_selected"
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_height="match_parent"
+
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:lineSpacingExtra="@dimen/dimen_3dp" />
+
+                <View
+                    android:layout_width="@dimen/dimen_1dp"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/bg_user_vertical_divider" />
+
+                <TextView
+                    android:id="@+id/txv_fans"
+                    style="@style/user_head_bottom_selected"
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:lineSpacingExtra="@dimen/dimen_3dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/all_btn_background_color"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txv_vmarket"
+                style="@style/user_head_selected"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="@dimen/dimen_90dp"
+                android:layout_weight="1"
+                android:drawablePadding="@dimen/dimen_4dp"
+                android:drawableTop="@mipmap/img_user_vmarket"
+                android:gravity="center"
+                android:paddingTop="@dimen/dimen_11dp"
+                android:text="@string/user_market" />
+
+            <TextView
+                android:id="@+id/txv_app_center"
+                style="@style/user_head_selected"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="@dimen/dimen_90dp"
+                android:layout_weight="1"
+                android:drawablePadding="@dimen/dimen_4dp"
+                android:drawableTop="@mipmap/img_user_app_center"
+                android:gravity="center"
+                android:paddingTop="@dimen/dimen_11dp"
+                android:text="@string/user_app_center" />
+
+            <TextView
+                android:id="@+id/txv_wealth_center"
+                style="@style/user_head_selected"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="@dimen/dimen_90dp"
+                android:layout_weight="1"
+                android:drawablePadding="@dimen/dimen_4dp"
+                android:drawableTop="@mipmap/img_user_wealth_center"
+                android:gravity="center"
+                android:paddingTop="@dimen/dimen_11dp"
+                android:text="@string/user_money" />
+        </LinearLayout>
+
+        <View style="@style/vertical_line_divider_height_dimen_10dp" />
+
+        <TextView
+            android:id="@+id/txv_vip_class"
+            style="@style/text_setting_general_size_and_color"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_55dp"
+            android:drawableLeft="@mipmap/img_user_member"
+            android:drawablePadding="@dimen/dimen_10dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/dimen_15dp"
+            android:paddingRight="@dimen/dimen_15dp"
+            android:text="@string/user_vip_class" />
+
+        <View style="@style/vertical_line_divider_height_dimen_10dp" />
+
+        <TextView
+            android:id="@+id/txv_nearby_contacts"
+            style="@style/text_setting_general_size_and_color"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_55dp"
+            android:drawableLeft="@mipmap/img_user_nearby_contacts"
+            android:drawablePadding="@dimen/dimen_10dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/dimen_15dp"
+            android:paddingRight="@dimen/dimen_15dp"
+            android:text="@string/nearby_contacts" />
+
+        <View style="@style/vertical_line_divider_height_dimen_10dp" />
+
+        <TextView
+            android:id="@+id/txv_nfc_vcard_enter"
+            style="@style/text_setting_general_size_and_color"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_55dp"
+            android:drawableLeft="@mipmap/img_user_nfc"
+            android:drawablePadding="@dimen/dimen_10dp"
+            android:drawableRight="@mipmap/img_general_right_arrow"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/dimen_15dp"
+            android:paddingRight="@dimen/dimen_15dp"
+            android:text="@string/nfc_edt_vcard"
+            android:visibility="gone" />
+
+        <View style="@style/horizontal_line_divider_padding_dimen_15dp" />
+
+        <TextView
+            android:id="@+id/txv_recommend_friend_use"
+            style="@style/text_setting_general_size_and_color"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_55dp"
+            android:drawableLeft="@mipmap/img_user_recommend"
+            android:drawablePadding="@dimen/dimen_10dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/dimen_15dp"
+            android:paddingRight="@dimen/dimen_15dp"
+            android:text="@string/recommend_friend_use" />
+
+        <View style="@style/horizontal_line_divider_padding_dimen_15dp" />
+
+        <TextView
+            android:id="@+id/txv_one_tree_green_public"
+            style="@style/text_setting_general_size_and_color"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_55dp"
+            android:drawableLeft="@mipmap/img_usert_commonweal"
+            android:drawablePadding="@dimen/dimen_10dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/dimen_15dp"
+            android:paddingRight="@dimen/dimen_15dp"
+            android:text="@string/one_tree_green_public" />
+
+        <View style="@style/vertical_line_divider_height_dimen_10dp" />
+
+        <TextView
+            android:id="@+id/txv_set"
+            style="@style/text_setting_general_size_and_color"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_55dp"
+            android:drawableLeft="@mipmap/img_user_set"
+            android:drawablePadding="@dimen/dimen_10dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/dimen_15dp"
+            android:paddingRight="@dimen/dimen_15dp"
+            android:text="@string/set" />
+
+        <View style="@style/vertical_line_divider_height_dimen_10dp" />
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/dimen_15dp"
+    style="@style/all_btn_background_color"
+    android:paddingRight="@dimen/dimen_15dp">
+
+    <Button
+        android:id="@+id/btn_remove_group"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="@dimen/dimen_42dp"
+        android:layout_weight="1"
+        android:background="@drawable/bg_general_btn_normal"
+        android:gravity="center"
+        android:text="@string/move_group"
+        android:layout_gravity="center_vertical"
+        android:textSize="@dimen/dimen_14sp" />
+
+    <Button
+        android:id="@+id/btn_send_message"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="@dimen/dimen_42dp"
+        android:layout_marginLeft="@dimen/dimen_3dp"
+        android:layout_weight="1"
+        android:background="@drawable/bg_general_btn_normal"
+        android:gravity="center"
+        android:text="@string/send_message"
+        android:layout_gravity="center_vertical"
+        android:textSize="@dimen/dimen_14sp" />
+
+    <Button
+        android:id="@+id/btn_delete"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="@dimen/dimen_42dp"
+        android:layout_marginLeft="@dimen/dimen_3dp"
+        android:layout_weight="1"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/bg_general_btn_normal"
+        android:gravity="center"
+        android:text="@string/delete"
+        android:textSize="@dimen/dimen_14sp" />
+
+    <Button
+        android:id="@+id/btn_selected_all"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="@dimen/dimen_42dp"
+        android:layout_marginLeft="@dimen/dimen_3dp"
+        android:layout_weight="1"
+        android:background="@drawable/bg_general_btn_normal"
+        android:gravity="center"
+        android:text="@string/common_select_all"
+        android:layout_gravity="center_vertical"
+        android:textSize="@dimen/dimen_14sp" />
+</LinearLayout>

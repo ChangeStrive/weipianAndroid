@@ -1,0 +1,131 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/all_frg_view_color"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.maya.android.vcard.ui.frg.CardcaseChooseFragment">
+
+    <!--搜索栏-->
+    <LinearLayout
+        android:id="@+id/lil_cardcase_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_cardcase_search">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/bg_cardcase_search_card"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/dimen_10dp"
+            android:paddingRight="@dimen/dimen_10dp">
+
+            <TextView
+                android:id="@+id/txv_act_cardcase_bus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_30dp"
+                android:width="@dimen/dimen_68dp"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="@string/business_class"
+                android:textColor="@color/color_688abe"
+                android:textSize="@dimen/dimen_12sp" />
+
+            <ImageView
+                android:id="@+id/imv_act_cardcase_bus_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_10dp"
+                android:layout_marginRight="@dimen/dimen_30dp"
+                android:contentDescription="@null"
+                android:src="@mipmap/img_cardcase_business_arrow" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:contentDescription="@null"
+                android:src="@mipmap/bg_cardcase_search_card_gap" />
+
+            <EditText
+                android:id="@+id/edt_act_cardcase_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/dimen_10dp"
+                android:background="@null"
+                android:drawableLeft="@mipmap/img_news_find"
+                android:drawablePadding="@dimen/dimen_10dp"
+                android:ellipsize="end"
+                android:hint="@string/search_contact_company_tel"
+                android:lines="1"
+                android:textColorHint="@color/color_688abe"
+                android:textSize="@dimen/dimen_12sp"></EditText>
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rel_btn_submit"
+        style="@style/all_btn_background_color"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_55dp"
+        android:layout_alignParentBottom="true"
+        android:paddingLeft="@dimen/dimen_15dp"
+        android:paddingRight="@dimen/dimen_15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_42dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/bg_general_btn_normal">
+
+            <Button
+                android:id="@+id/btn_negative"
+                style="@style/btn_submit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:width="@dimen/dimen_0dp"
+                android:background="@color/transparent" />
+
+            <View
+                android:id="@+id/view_divider"
+                style="@style/vertical_line_divider" />
+
+            <Button
+                android:id="@+id/btn_submit"
+                style="@style/btn_submit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:width="@dimen/dimen_0dp"
+                android:background="@color/transparent" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/rel_btn_submit"
+        android:layout_below="@id/lil_cardcase_search">
+
+        <include layout="@layout/inc_lsv_view" />
+    </RelativeLayout>
+
+    <com.maya.android.vcard.ui.widget.SideBar
+        android:id="@+id/sib_cardcase_choose"
+        android:layout_width="@dimen/dimen_14dp"
+        android:layout_height="match_parent"
+        android:layout_above="@id/rel_btn_submit"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/lil_cardcase_search"
+        android:layout_marginBottom="@dimen/dimen_10dp"
+        android:textColor="@color/color_787878"
+        android:textSize="@dimen/dimen_12sp" />
+
+
+</RelativeLayout>

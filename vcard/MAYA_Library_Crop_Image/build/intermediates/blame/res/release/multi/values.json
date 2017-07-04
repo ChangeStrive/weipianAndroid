@@ -1,0 +1,142 @@
+[
+    {
+        "outputFile": "D:\\AndroidStudio\\VCard\\MAYA_Library_Crop_Image\\build\\intermediates\\res\\merged\\release\\values\\values.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 41,
+                    "endOffset": 92
+                },
+                "from": {
+                    "file": "D:\\AndroidStudio\\VCard\\MAYA_Library_Crop_Image\\res\\values\\fwex_crop_img_strings.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 41,
+                        "endOffset": 92
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 97,
+                    "endColumn": 59,
+                    "endOffset": 152
+                },
+                "from": {
+                    "file": "D:\\AndroidStudio\\VCard\\MAYA_Library_Crop_Image\\res\\values\\fwex_crop_img_strings.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 247,
+                        "endColumn": 59,
+                        "endOffset": 302
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 157,
+                    "endColumn": 61,
+                    "endOffset": 214
+                },
+                "from": {
+                    "file": "D:\\AndroidStudio\\VCard\\MAYA_Library_Crop_Image\\res\\values\\fwex_crop_img_strings.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 307,
+                        "endColumn": 61,
+                        "endOffset": 364
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 5,
+                    "startColumn": 4,
+                    "startOffset": 219,
+                    "endColumn": 57,
+                    "endOffset": 272
+                },
+                "from": {
+                    "file": "D:\\AndroidStudio\\VCard\\MAYA_Library_Crop_Image\\res\\values\\fwex_crop_img_strings.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 189,
+                        "endColumn": 57,
+                        "endOffset": 242
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 6,
+                    "startColumn": 4,
+                    "startOffset": 277,
+                    "endColumn": 37,
+                    "endOffset": 310
+                },
+                "from": {
+                    "file": "D:\\AndroidStudio\\VCard\\MAYA_Library_Crop_Image\\res\\values\\fwex_crop_img_strings.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 97,
+                        "endColumn": 37,
+                        "endOffset": 130
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 7,
+                    "startColumn": 4,
+                    "startOffset": 315,
+                    "endColumn": 53,
+                    "endOffset": 364
+                },
+                "from": {
+                    "file": "D:\\AndroidStudio\\VCard\\MAYA_Library_Crop_Image\\res\\values\\fwex_crop_img_strings.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 135,
+                        "endColumn": 53,
+                        "endOffset": 184
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 8,
+                    "startColumn": 4,
+                    "startOffset": 369,
+                    "endLine": 17,
+                    "endColumn": 12,
+                    "endOffset": 869
+                },
+                "from": {
+                    "file": "D:\\AndroidStudio\\VCard\\MAYA_Library_Crop_Image\\res\\values\\fwex_crop_img_styles.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 56,
+                        "endLine": 12,
+                        "endColumn": 12,
+                        "endOffset": 556
+                    }
+                }
+            }
+        ]
+    }
+]

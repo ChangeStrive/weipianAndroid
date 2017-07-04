@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/rel_member"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_50dp"
+        android:paddingLeft="@dimen/dimen_15dp"
+        android:paddingRight="@dimen/dimen_15dp">
+        
+        <com.maya.android.asyncimageview.widget.AsyncImageView
+            android:id="@+id/imv_head"
+            android:layout_width="@dimen/dimen_40dp"
+            android:layout_height="@dimen/dimen_40dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/img_upload_head"
+            android:scaleType="fitXY"/>
+
+        <TextView
+            android:id="@+id/txv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/imv_head"
+            android:layout_marginLeft="@dimen/dimen_10dp"
+            style="@style/text_setting_general_size_and_color"/>
+
+        <ImageView
+            android:id="@+id/imv_vcard_sign"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/img_vcard_sign_gray"
+            android:layout_marginLeft="@dimen/dimen_10dp"
+            android:layout_toRightOf="@id/txv_name"/>
+
+        <Button
+            android:id="@+id/btn_invite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_general_btn_green"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:paddingTop="@dimen/dimen_3dp"
+            android:paddingBottom="@dimen/dimen_3dp"
+            android:paddingLeft="@dimen/dimen_10dp"
+            android:paddingRight="@dimen/dimen_10dp"
+            style="@style/btn_get_verification"/>
+
+        <TextView
+            android:id="@+id/txv_wait"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            style="@style/mag_invite_hint"/>
+    </RelativeLayout>
+
+    <View android:id="@+id/view_divider"
+        android:layout_below="@id/rel_member"
+        style="@style/horizontal_line_divider_padding_dimen_15dp"/>
+
+</RelativeLayout>

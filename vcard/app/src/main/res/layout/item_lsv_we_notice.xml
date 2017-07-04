@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/dimen_10dp"
+    android:paddingLeft="@dimen/dimen_15dp"
+    android:paddingRight="@dimen/dimen_15dp"
+    android:paddingTop="@dimen/dimen_10dp" >
+
+    <com.maya.android.asyncimageview.widget.AsyncImageView
+        android:id="@+id/imv_head"
+        android:layout_width="@dimen/dimen_50dp"
+        android:layout_height="@dimen/dimen_50dp"
+        android:contentDescription="@null"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/txv_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imv_head"
+        android:layout_marginLeft="@dimen/dimen_10dp"
+        android:layout_toRightOf="@+id/imv_head"
+        android:ellipsize="end"
+        android:maxLines="9"
+        style="@style/unit_we_notice_content"/>
+
+    <LinearLayout
+        android:id="@+id/lil_photo_wall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txv_content"
+        android:layout_below="@+id/txv_content"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txv_datetime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txv_content"
+        android:layout_below="@+id/lil_photo_wall"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        style="@style/unit_we_notice_datetime"/>
+</RelativeLayout>

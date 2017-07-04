@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!--  姓氏-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_45dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/text_email_register_size_and_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/family_name" />
+
+        <EditText
+            android:id="@+id/edt_family_name"
+            style="@style/edt_base_mess"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_34dp"
+            android:background="@color/color_00000000"
+            android:gravity="center_vertical"
+            android:hint="@string/not_null"
+            android:paddingLeft="@dimen/dimen_10dp"
+            android:paddingRight="@dimen/dimen_10dp"
+            android:singleLine="true" />
+    </LinearLayout>
+
+    <View style="@style/horizontal_line_divider_fill" />
+    <!--名字-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_45dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            style="@style/text_email_register_size_and_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/name" />
+
+        <EditText
+            android:id="@+id/edt_name"
+            style="@style/edt_base_mess"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_34dp"
+            android:background="@color/color_00000000"
+            android:gravity="center_vertical"
+            android:hint="@string/not_null"
+            android:paddingLeft="@dimen/dimen_10dp"
+            android:paddingRight="@dimen/dimen_10dp"
+            android:singleLine="true" />
+    </LinearLayout>
+
+    <View style="@style/horizontal_line_divider_fill" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <!--性别-->
+            <LinearLayout
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="@dimen/dimen_45dp"
+                android:layout_marginRight="@dimen/dimen_4dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/text_email_register_size_and_color"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/user_sex" />
+
+                <!--<TextView-->
+                <!--android:id="@+id/txv_sex"-->
+                <!--style="@style/edt_base_mess"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="@dimen/dimen_34dp"-->
+                <!--android:background="@color/color_00000000"-->
+                <!--android:gravity="center_vertical"-->
+                <!--android:hint="@string/not_null"-->
+                <!--android:paddingLeft="@dimen/dimen_10dp"-->
+                <!--android:paddingRight="@dimen/dimen_10dp" />-->
+                <RadioGroup
+                    android:id="@+id/rg_sex"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:checkedButton="@+id/male"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/male"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/man"
+                        android:textColor="@color/color_0a0a0b" />
+
+                    <RadioButton
+                        android:id="@+id/female"
+                        android:layout_marginLeft="@dimen/dimen_18dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/female"
+                        android:textColor="@color/color_0a0a0b" />
+                </RadioGroup>
+            </LinearLayout>
+            <!--星座-->
+            <LinearLayout
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="@dimen/dimen_45dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dimen_4dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    style="@style/text_email_register_size_and_color"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/constellation" />
+
+                <TextView
+                    android:id="@+id/txv_constellation"
+                    style="@style/edt_base_mess"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_34dp"
+                    android:background="@color/color_00000000"
+                    android:drawableRight="@mipmap/img_general_right_arrow"
+                    android:gravity="center_vertical"
+                    android:hint="@string/not_null"
+                    android:paddingLeft="@dimen/dimen_10dp"
+                    android:paddingRight="@dimen/dimen_10dp" />
+            </LinearLayout>
+        </TableRow>
+
+        <View style="@style/horizontal_line_divider_fill" />
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="@dimen/dimen_45dp"
+                android:layout_marginRight="@dimen/dimen_4dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    style="@style/text_email_register_size_and_color"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/age" />
+
+                <TextView
+                    android:id="@+id/txv_age"
+                    style="@style/edt_base_mess"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_34dp"
+                    android:background="@color/color_00000000"
+                    android:drawableRight="@mipmap/img_general_right_arrow"
+                    android:gravity="center_vertical"
+                    android:hint="@string/not_null"
+                    android:paddingLeft="@dimen/dimen_10dp"
+                    android:paddingRight="@dimen/dimen_10dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="@dimen/dimen_45dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/dimen_4dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/text_email_register_size_and_color"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/birthday" />
+
+                <TextView
+                    android:id="@+id/txv_birthday"
+                    style="@style/edt_base_mess"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_34dp"
+                    android:background="@color/color_00000000"
+                    android:drawableRight="@mipmap/img_general_right_arrow"
+                    android:gravity="center_vertical"
+                    android:hint="@string/not_null"
+                    android:paddingLeft="@dimen/dimen_10dp"
+                    android:paddingRight="@dimen/dimen_10dp" />
+            </LinearLayout>
+        </TableRow>
+
+        <View style="@style/horizontal_line_divider_fill" />
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <!--家乡-->
+            <LinearLayout
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="@dimen/dimen_45dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/dimen_4dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/text_email_register_size_and_color"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hometown" />
+
+                <TextView
+                    android:id="@+id/txv_hometown"
+                    style="@style/edt_base_mess"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_34dp"
+                    android:background="@color/color_00000000"
+                    android:drawableRight="@mipmap/img_general_right_arrow"
+                    android:gravity="center_vertical"
+                    android:hint="@string/not_null"
+                    android:paddingLeft="@dimen/dimen_10dp"
+                    android:paddingRight="@dimen/dimen_10dp" />
+            </LinearLayout>
+
+        </TableRow>
+
+        <View style="@style/horizontal_line_divider_fill" />
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <!--学历-->
+            <LinearLayout
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="@dimen/dimen_45dp"
+                android:layout_marginRight="@dimen/dimen_4dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/text_email_register_size_and_color"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/education" />
+
+                <TextView
+                    android:id="@+id/txv_education"
+                    style="@style/edt_base_mess"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_34dp"
+                    android:background="@color/color_00000000"
+                    android:gravity="center_vertical"
+                    android:hint="@string/not_null"
+                    android:paddingLeft="@dimen/dimen_10dp"
+                    android:paddingRight="@dimen/dimen_10dp" />
+            </LinearLayout>
+        </TableRow>
+    </TableLayout>
+</LinearLayout>

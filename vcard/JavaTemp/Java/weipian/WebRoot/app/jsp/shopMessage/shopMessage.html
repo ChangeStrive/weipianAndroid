@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<#include "app/jsp/common/common.ftl">
+	<#include "app/jsp/weixinTemplate.html">
+	<title>完善商户资料</title>
+	
+	<link rel="stylesheet" href="${hxltUrl}js/photoCut/css/cropper.css">
+  	<link rel="stylesheet" href="${hxltUrl}js/photoCut/css/myCrop.css">
+  	
+	<script type="text/javascript" src="${hxltUrl}js/photoCut/js/exif.js"></script>
+	<script type="text/javascript" src="${hxltUrl}js/photoCut/js/cropper.js"></script>
+	<script type="text/javascript" src="${hxltUrl}js/photoCut/js/myCrop.js?v=1.0.4"></script>
+	<script>
+		var fdPicUrl="${item.fdPicUrl}";
+	</script>
+	<script src="${hxltUrl}app/js/shopMessage/shopMessage.js"></script>
+</head>
+<body class="grayBg">
+	<div class="wrap">
+		<header class="homepage_head">
+			<a href="javascript:history.go(-1)" class="left_head  ahref" style="left:2%;">
+	             	  <span class="iconfont backBtn">&#xe61c;</span>
+			</a>
+			<h2 >完善商户资料</h2>
+		</header>
+		<div class="headNext">
+			<div class="loginMain formMain">
+				<div class="formItem clearfix">
+					<div class="formLabel">店铺名称</div>
+					<div class="formInput">
+						<input type="text" placeholder="请输入店铺名称" name="fdStoreName" value="${item.fdStoreName}"/>
+					</div>
+				</div>
+				<div class="formItem clearfix">
+					<div class="formLabel">品牌名称</div>
+					<div class="formInput">
+						<input type="text" placeholder="请输入品牌名称" name="fdStoreBrand"  value="${item.fdStoreBrand}"/>
+					</div>
+				</div>
+				<div class="formItem clearfix">
+					<div class="formLabel">所属类别</div>
+					<div class="formInput">
+						<select  name="fdStoreType" class="fdStoreType" dictKey="402881365b0f1bfd015b0f3514080000"  dictValue="${item.fdStoreType}" >
+					   </select>
+					</div>
+				</div>
+				<div class="formItem clearfix">
+					<div class="formLabel">所在地区</div>
+					<div class="formInput">
+						<input type="text" placeholder="请输入所在地区" name="fdStoreAddress" value="${item.fdStoreAddress}"/>
+					</div>
+				</div>
+				<div class="formItem clearfix imageFormItem">
+					<div class="formLabel">门店图片</div>
+					<div class="formInput">
+						<a href="javascript:void(0);" class="addImageBtn" >
+							<img src="${hxltUrl}app/images/addImage.jpg" hasUpload="0"/>
+						</a>
+						<a href="javascript:void(0);" class="addImageBtn">
+							<img src="${hxltUrl}app/images/addImage.jpg"  hasUpload="0"/>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="LoginBtns">
+				<a href="javascript:void(0)" class="commonbtn">下一步</a>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

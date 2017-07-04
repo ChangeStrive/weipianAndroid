@@ -1,0 +1,132 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.maya.android.vcard.ui.act.MultiMainActivity">
+
+    <include
+        android:id="@+id/inc_top"
+        layout="@layout/inc_top_title" />
+
+
+    <!--底部按钮-->
+    <LinearLayout
+        android:id="@+id/lil_nav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/color_ffffff"
+        android:paddingTop="@dimen/dimen_3dp">
+
+        <TextView
+            android:id="@+id/txv_nav_vcard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="@dimen/dimen_3dp"
+            android:drawableTop="@mipmap/img_vcard_gray"
+            android:gravity="center"
+            android:text="@string/vcard"
+            android:textColor="@color/color_7a7a7a"
+            android:textSize="@dimen/dimen_12sp" />
+
+        <TextView
+            android:id="@+id/txv_nav_cardcase"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="@dimen/dimen_3dp"
+            android:drawableTop="@mipmap/img_cardcase_blue"
+            android:gravity="center"
+            android:text="@string/cardcase"
+            android:textColor="@color/color_7a7a7a"
+            android:textSize="@dimen/dimen_12sp" />
+
+        <RelativeLayout
+            android:id="@+id/rel_nav_bottom_msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/txv_nav_msg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawablePadding="@dimen/dimen_3dp"
+                android:drawableTop="@mipmap/img_msg_gray"
+                android:gravity="center"
+                android:text="@string/message"
+                android:textColor="@color/color_7a7a7a"
+                android:textSize="@dimen/dimen_12sp" />
+
+            <TextView
+                android:id="@+id/txv_nav_msg_sign"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="@dimen/dimen_50dp"
+                android:background="@drawable/bg_num_red"
+                android:gravity="center"
+                android:paddingLeft="@dimen/dimen_6dp"
+                android:paddingRight="@dimen/dimen_6dp"
+                android:textSize="@dimen/dimen_11sp"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rel_nav_mine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/txv_nav_mine"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawablePadding="@dimen/dimen_3dp"
+                android:drawableTop="@mipmap/img_mine_gray"
+                android:gravity="center"
+                android:text="@string/my"
+                android:textColor="@color/color_7a7a7a"
+                android:textSize="@dimen/dimen_12sp" />
+
+            <ImageView
+                android:id="@+id/txv_nav_mine_sign"
+                android:layout_width="@dimen/dimen_13dp"
+                android:layout_height="@dimen/dimen_13dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="@dimen/dimen_50dp"
+                android:contentDescription="@null"
+                android:gravity="center"
+                android:src="@mipmap/img_red_sign"
+                android:textSize="@dimen/dimen_11sp"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <!--主体-->
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vwp_multi"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/lil_nav"
+        android:layout_below="@id/inc_top" />
+    <!--导航阴影-->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/lil_nav"
+        android:background="@mipmap/bg_multi_nav_shadow"
+        android:contentDescription="@null" />
+
+    <FrameLayout
+        android:id="@+id/frg_multi_main_contend"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@id/lil_nav"
+        android:layout_alignTop="@id/lil_nav" />
+</RelativeLayout>

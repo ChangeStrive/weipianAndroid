@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <META http-equiv="X-UA-Compatible" content="IE=8" ></META>
+	<title>用户管理</title>
+	<#include "Admin/jsp/common/common.ftl">
+	<script type="text/javascript">
+		var firstMenuNo="00090";
+		var secondMenuNo="00091";
+	</script>
+		<link rel="stylesheet" type="text/css" href="${hxltUrl}js/plugins/easyui/themes/default/easyui.css">
+	<link rel="stylesheet" type="text/css" href="${hxltUrl}js/plugins/easyui/themes/icon.css">
+	<script type="text/javascript" src="${hxltUrl}js/plugins/easyui/jquery.easyui.min.js"></script>
+	<script type="text/javascript" src="${hxltUrl}js/jquery/jquery.dataTables.js"></script>
+	<script type="text/javascript" src="${hxltUrl}js/jquery/jquery.tabaleUtils.js"></script>
+	<script type="text/javascript" src="${hxltUrl}Admin/js/app/AppUser/AppUserList.js"></script>
+  </head>
+ <body>
+<!-- 头部 -->
+<#include "Admin/jsp/common/header.ftl">
+<!-- /头部 --> 
+
+<!-- 边栏 -->
+<#include "Admin/jsp/common/sidebar.ftl">
+<!-- /边栏 --> 
+
+<!-- 内容区 -->
+<div id="main-content">
+	<div id="top-alert" class="fixed alert alert-error" style="display: none;">
+		<button class="close fixed" style="margin-top: 4px;">&times;</button>
+		<div class="alert-content">用户管理</div>
+	</div>
+	<div id="main" class="main">
+		<div class="main-title">
+			<h2>用户列表</h2>
+		</div>
+		
+		<div class="hightSearchForm clearfix">
+			<form>
+				<div class="search_title">高级搜索</div>
+				<div class="itemList">
+					<div class="search_item" >
+						<label>
+							账号：
+							<input type="text" name="fdCode" placeholder="账号" />
+						</label>
+					</div>
+					<div class="search_item" >
+						<label>
+							姓名：
+							<input type="text" name="fdName" placeholder="姓名" />
+						</label>
+					</div>
+					<div class="search_item" >
+						<label>
+							 商家类型：
+							<select name="fdShopType">
+								<option value="">所有</option>
+								<option value="0">待审核</option>
+								<option value="1">普通分销商</option>
+								<option value="2">城市合伙人</option>
+								<option value="3">区域合伙人</option>
+							</select>
+						</label>
+					</div>
+					<div class="search_item" >
+						<label>
+							 状态：
+							<select name="fdStatus">
+								<option value="">所有</option>
+								<option value="1">上架</option>
+								<option value="0">下架</option>
+							</select>
+						</label>
+					</div>
+					<div class="search_item" >
+						<a class="btn searchbtn" href="javascript:;">搜索</a>
+						<a class="btn clearbtn" href="javascript:;">清空</a>
+					</div>
+				</div>
+			</form>
+		</div>
+		<div class="cf">
+			<div class="fl"> <a class="btn" href="${hxltUrl}AppUserAction/toEdit">新 增</a>
+				<a class="btn" onclick="AppUserConfig.del()" href="javascript:;">删 除</a>
+			</div>
+		</div>
+		<div class="data-table table-striped">
+			<table id="tableList">
+				<thead>
+					<tr>
+						<th class="row-selected row-selected"><input class="check-all" type="checkbox"></th>
+						<th class="">头像</th>
+						<th class="">用户信息</th>
+						<th class="">佣金</th>
+						<th class="">商家类型</th>
+						<th class="">创建时间</th>
+						<th class="">状态</th>
+						<th class="">操作</th>
+					</tr>
+				</thead>
+				<tbody>
+				</tbody>
+			</table>
+		</div>
+		<!-- 分页 -->
+		
+	</div>
+	<!-- 底部 -->
+	<#include "Admin/jsp/common/footer.ftl">
+</div>
+<!-- /内容区 --> 
+<div style="display:none;">
+	<div id="uploadExcelWin">
+		<form   method="POST" enctype ="multipart/form-data" action="${hxltUrl}AppUserAction/importExcel" >
+			<div style="padding-left:50px;padding-top:10px;">
+				<div style="padding-top:10px;">
+					excel上传模板:<a href="${hxltUrl}Admin/jsp/app/AppUser/import_user_sample.xls" target="_blank">下载</a>
+				</div>  
+				<div style="padding-top:10px;vertical-align: top;">
+					上传：<input type="file" name="file" accept=".xls;.xlsx" />
+				</div>  
+				<div style="padding-left:25px;padding-top:10px;">
+					<a class="btn uploadExcelWinSave"  href="javascript:;">保存</a>
+					<a class="btn uploadExcelWinCancel"  href="javascript:;">取消</a>
+				</div>
+			</div>
+		</form>
+	</div>
+	<div id="errorWin">
+		<div id="errorWinMsg">
+		
+		</div>
+	</div>  
+</div>
+</body>
+</html>

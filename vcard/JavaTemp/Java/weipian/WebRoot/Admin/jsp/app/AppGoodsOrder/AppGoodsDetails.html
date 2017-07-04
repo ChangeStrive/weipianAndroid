@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <META http-equiv="X-UA-Compatible" content="IE=8" ></META>
+	<title>订单管理</title>
+	<#include "Admin/jsp/common/common.ftl">
+	<link rel="stylesheet" type="text/css" href="${hxltUrl}Admin/css/orderDetail.css" media="all">
+	<script type="text/javascript">
+	</script>
+  </head>
+ <body style="background-color: #f6f6f6">
+
+<div id="main" class="main">
+		<div class="main-title">
+			<h2>订单详情</h2>
+		</div>
+		<div class="OrderDetail">
+			<!-- 订单基本信息 -->
+			<#include "Admin/jsp/ml/orderOfShop/AppGoodsDetailsTemplate/orderBaseTemplate.html">
+			
+			<!-- 退款申请 -->
+			<#include "Admin/jsp/ml/orderOfShop/AppGoodsDetailsTemplate/refunderListTemplate.html">
+			
+			<!-- 支付方式 -->
+			<#include "Admin/jsp/ml/orderOfShop/AppGoodsDetailsTemplate/payTemplate.html">
+			
+			<!-- 收货方式 -->
+			<#include "Admin/jsp/ml/orderOfShop/AppGoodsDetailsTemplate/sendGoodsTemplate.html">
+			
+			<!-- 订单明细 -->
+			<#include "Admin/jsp/ml/orderOfShop/AppGoodsDetailsTemplate/goodsListTemplate.html">
+			
+			<div class="clearfix">&nbsp;</div>
+			<div class="clearfix">&nbsp;</div>
+		</div>
+	</div>
+</body>
+</html>

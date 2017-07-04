@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <META http-equiv="X-UA-Compatible" content="IE=9" ></META>
+	<title>微片管理平台 - 商品管理</title>
+	<#include "Admin/jsp/common/common.ftl">
+	<script type="text/javascript">
+		var firstMenuNo="00090";
+		var secondMenuNo="00093";
+		var fdPid="${fdPid}";
+	</script>
+	<script type="text/javascript" src="${hxltUrl}js/jquery/jquery.dataTables.js"></script>
+	<script type="text/javascript" src="${hxltUrl}js/jquery/jquery.tabaleUtils.js"></script>
+	<script type="text/javascript" src="${hxltUrl}Admin/js/app/AppGoods/AppGoodsSelect.js"></script>
+	<script type="text/javascript" src="${hxltUrl}Admin/js/app/AppGoods/AppGoodsList.js"></script>
+  </head>
+ <body>
+<!-- 头部 -->
+<#include "Admin/jsp/common/header.ftl">
+<!-- /头部 --> 
+
+<!-- 边栏 -->
+<#include "Admin/jsp/common/sidebar.ftl">
+<!-- /边栏 --> 
+
+<!-- 内容区 -->
+<div id="main-content">
+	<div id="top-alert" class="fixed alert alert-error" style="display: none;">
+		<button class="close fixed" style="margin-top: 4px;">&times;</button>
+		<div class="alert-content">这是内容</div>
+	</div>
+	<div id="main" class="main">
+		<div class="main-title">
+			<h2>商品管理</h2>
+		</div>
+		<div class="hightSearchForm clearfix">
+			<form>
+				<div class="search_title">高级搜索</div>
+				<div class="itemList">
+					<div class="search_item" >
+						<label>
+							商品名称：
+							<input type="text" name="fdGoodsName" placeholder="商品名称" />
+						</label>
+					</div>
+					<div class="search_item" >
+						<label>
+							商品分类：
+							<select name="fdTypeId" selectValue="" data-key="selectMenu" data-text=".fdTypeName"></select>
+						</label>
+					</div>
+					<div class="search_item" >
+						<label>
+							 状态：
+							<select name="fdStatus">
+								<option value="">所有</option>
+								<option value="1">上架</option>
+								<option value="0">下架</option>
+							</select>
+						</label>
+					</div>
+					<div class="search_item" >
+						<a class="btn searchbtn" href="javascript:;">搜索</a>
+						<a class="btn clearbtn" href="javascript:;">清空</a>
+					</div>
+				</div>
+			</form>
+		</div>
+		<div class="cf">
+			<div class="fl"> 
+				<a class="btn" href="${hxltUrl}AppGoodsAction/toEdit">新 增</a>
+				<a class="btn" onclick="AppGoodsConfig.del()" href="javascript:;">删 除</a>
+				<a class="btn" onclick="AppGoodsConfig.enableOrDisabled('','1')" href="javascript:;">上架</a>
+				<a class="btn" onclick="AppGoodsConfig.enableOrDisabled('','0')" href="javascript:;">下架</a>
+			</div>
+			
+		</div>
+		<div class="data-table table-striped">
+			<table id="tableList">
+				<thead>
+					<tr>
+						<th class="row-selected row-selected"><input class="check-all" type="checkbox"></th>
+						<th class="">图片</th>
+						<th class="">商品名称</th>
+						<th class="">规格</th>
+						<th class="">吊牌价</th>
+						<th class="">销售价</th>
+						<th class="">库存数量</th>
+						<th class="">商品类别</th>
+						<th class="">创建时间</th>
+						<th class="">更新时间</th>
+						<th class="">状态</th>
+						<th class="">操作</th>
+					</tr>
+				</thead>
+				<tbody>
+				</tbody>
+			</table>
+		</div>
+		<!-- 分页 -->
+		
+	</div>
+	<!-- 底部 -->
+	<#include "Admin/jsp/common/footer.ftl">
+</div>
+<!-- /内容区 --> 
+</body>
+</html>

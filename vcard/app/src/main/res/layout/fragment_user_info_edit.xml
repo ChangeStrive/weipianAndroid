@@ -1,0 +1,251 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/all_frg_view_color"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.maya.android.vcard.ui.frg.UserInfoEditFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_96dp"
+            android:background="@mipmap/bg"
+            android:paddingTop="@dimen/dimen_15dp"
+            android:paddingLeft="@dimen/dimen_15dp"
+            android:paddingRight="@dimen/dimen_15dp">
+
+            <GridView
+                android:id="@+id/grv_img_head"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dimen_70dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/dimen_13dp"
+                android:horizontalSpacing="@dimen/dimen_6dp"
+                android:numColumns="5" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            style="@style/all_btn_background_color"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:layout_height="@dimen/dimen_22dp"
+            android:paddingLeft="@dimen/dimen_15dp"
+            android:paddingRight="@dimen/dimen_15dp">
+
+            <TextView
+                android:id="@+id/txv_improve_the_degree_of_information_num"
+                style="@style/text_setting_general_right_sign_size_12sp_and_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true" />
+
+            <TextView
+                android:id="@+id/txv_improve_the_degree_of_information"
+                style="@style/text_setting_general_right_sign_size_12sp_and_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/txv_improve_the_degree_of_information_num"
+                android:text="@string/improve_the_degree_of_information" />
+        </RelativeLayout>
+
+        <LinearLayout
+            style="@style/all_btn_background_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/dimen_15dp"
+            android:paddingRight="@dimen/dimen_15dp">
+
+            <include layout="@layout/inc_base" />
+
+            <View style="@style/horizontal_line_divider_fill" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_45dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/text_email_register_size_and_color"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/graduate_institutions" />
+
+                <EditText
+                    android:id="@+id/edt_graduate_institutions"
+                    style="@style/edt_base_mess"
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_height="@dimen/dimen_34dp"
+                    android:layout_weight="1"
+                    android:background="@color/color_00000000"
+                    android:gravity="center_vertical"
+                    android:hint="@string/please_enter"
+                    android:paddingLeft="@dimen/dimen_10dp"
+                    android:paddingRight="@dimen/dimen_10dp"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:id="@+id/txv_more"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_marginLeft="@dimen/dimen_15dp"
+                    android:drawablePadding="@dimen/dimen_10dp"
+                    android:drawableRight="@mipmap/img_general_right_arrow"
+                    android:paddingBottom="@dimen/dimen_5dp"
+                    android:paddingTop="@dimen/dimen_5dp"
+                    android:text="@string/more"
+                    android:textColor="@color/color_0a0a0b" />
+            </LinearLayout>
+            <!--  工作经历-->
+            <LinearLayout
+                android:id="@+id/lil_work_experience"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <View style="@style/horizontal_line_divider_fill" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/dimen_6dp"
+                    android:paddingTop="@dimen/dimen_6dp">
+
+                    <TextView
+                        style="@style/text_email_register_size_and_color"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/work_experience" />
+
+                    <ImageButton
+                        android:id="@+id/imb_work_experience_add"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@color/color_00000000"
+                        android:src="@mipmap/img_add_more_edt" />
+                </RelativeLayout>
+
+                <EditText
+                    android:id="@+id/edt_work_experience"
+                    style="@style/edt_base_mess"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_34dp"
+                    android:layout_marginBottom="@dimen/dimen_6dp"
+                    android:background="@drawable/bg_general_edt_normal"
+                    android:gravity="center_vertical"
+                    android:hint="@string/please_enter"
+                    android:maxLength="50"
+                    android:paddingLeft="@dimen/dimen_10dp"
+                    android:paddingRight="@dimen/dimen_10dp"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lil_educational_information"
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <View style="@style/horizontal_line_divider_fill" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/dimen_6dp"
+                    android:paddingTop="@dimen/dimen_6dp">
+
+                    <TextView
+                        android:id="@+id/tv_edu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/text_email_register_size_and_color"
+                        android:text="@string/educational_information" />
+
+                    <TextView
+                        style="@style/text_email_register_size_and_color"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/tv_edu"
+                        android:hint="@string/edu_remake"
+                        android:paddingLeft="@dimen/dimen_2dp" />
+
+                    <ImageButton
+                        android:id="@+id/imb_educational_information"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@color/color_00000000"
+                        android:src="@mipmap/img_add_more_edt" />
+                </RelativeLayout>
+                <EditText
+                    android:id="@+id/edt_educational_information"
+                    style="@style/edt_base_mess"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_34dp"
+                    android:layout_marginBottom="@dimen/dimen_6dp"
+                    android:background="@drawable/bg_general_edt_normal"
+                    android:gravity="center_vertical"
+                    android:hint="@string/please_enter"
+                    android:maxLength="50"
+                    android:singleLine="true"
+                    android:paddingLeft="@dimen/dimen_10dp"
+                    android:paddingRight="@dimen/dimen_10dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            style="@style/all_btn_background_color"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:paddingBottom="@dimen/dimen_6dp"
+            android:paddingLeft="@dimen/dimen_15dp"
+            android:paddingRight="@dimen/dimen_15dp"
+            android:paddingTop="@dimen/dimen_6dp">
+
+            <TextView
+                android:id="@+id/tv1"
+                style="@style/text_email_register_size_and_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/self_introduction2" />
+
+            <TextView
+                style="@style/text_setting_general_right_sign_size_12sp_and_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/tv1"
+                android:layout_toRightOf="@+id/tv1"
+                android:text="@string/limit_within_500_words"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/edt_detail_user_introduce"
+                style="@style/edt_base_mess"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_65dp"
+                android:layout_below="@+id/tv1"
+                android:layout_marginTop="@dimen/dimen_6dp"
+                android:background="@drawable/bg_general_edt_normal"
+                android:gravity="top|left"
+                android:hint="@string/please_enter"
+                android:maxLength="500"
+                android:padding="@dimen/dimen_5dp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>

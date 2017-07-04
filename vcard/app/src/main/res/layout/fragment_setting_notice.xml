@@ -1,0 +1,172 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/all_frg_view_color"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.maya.android.vcard.ui.frg.SettingNoticeFragment">
+
+    <LinearLayout
+        style="@style/all_btn_background_color"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rel_vcard_exchange_sound_effect"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_50dp"
+            android:paddingLeft="@dimen/dimen_15dp"
+            android:paddingRight="@dimen/dimen_15dp">
+
+            <TextView
+                style="@style/text_setting_general_size_and_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/frg_setting_notice_vcard_exchange_sound_effect" />
+
+            <TextView
+                android:id="@+id/txv_vcard_exchange_sound_effect"
+                style="@style/text_setting_general_right_sign_size_and_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:drawablePadding="@dimen/dimen_10dp"
+                android:drawableRight="@mipmap/img_general_right_arrow"
+                android:text="" />
+        </RelativeLayout>
+
+        <View style="@style/horizontal_line_divider_padding_dimen_15dp" />
+
+        <RelativeLayout
+            android:id="@+id/rel_news_effect"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_50dp"
+            android:paddingLeft="@dimen/dimen_15dp"
+            android:paddingRight="@dimen/dimen_15dp">
+
+            <TextView
+                style="@style/text_setting_general_size_and_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/frg_setting_notice_news_effect" />
+
+            <TextView
+                android:id="@+id/txv_news_effect"
+                style="@style/text_setting_general_right_sign_size_and_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:drawablePadding="@dimen/dimen_10dp"
+                android:drawableRight="@mipmap/img_general_right_arrow"
+                android:text="" />
+        </RelativeLayout>
+
+        <View style="@style/horizontal_line_divider_padding_dimen_15dp" />
+
+        <RelativeLayout
+            android:id="@+id/rel_sensitivity_setting"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_50dp"
+            android:paddingLeft="@dimen/dimen_15dp"
+            android:paddingRight="@dimen/dimen_15dp">
+
+            <TextView
+                style="@style/text_setting_general_size_and_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/frg_setting_notice_sensitivity_setting" />
+
+            <TextView
+                android:id="@+id/txv_sensitivity_setting"
+                style="@style/text_setting_general_right_sign_size_and_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:drawablePadding="@dimen/dimen_10dp"
+                android:drawableRight="@mipmap/img_general_right_arrow"
+                android:text="" />
+        </RelativeLayout>
+
+        <View style="@style/vertical_line_divider_height_dimen_10dp" />
+
+        <TextView
+            android:id="@+id/txv_manage_chat_log"
+            style="@style/text_setting_general_size_and_color"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_50dp"
+            android:drawableRight="@mipmap/img_general_right_arrow"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/dimen_15dp"
+            android:paddingRight="@dimen/dimen_15dp"
+            android:text="@string/frg_setting_notice_manage_chat_log" />
+
+        <View style="@style/horizontal_line_divider_padding_dimen_15dp" />
+
+        <RelativeLayout
+            android:id="@+id/rel_chat_log"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_50dp"
+            android:paddingLeft="@dimen/dimen_15dp"
+            android:paddingRight="@dimen/dimen_15dp">
+
+            <TextView
+                style="@style/text_setting_general_size_and_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/frg_setting_notice_chat_log" />
+
+            <com.maya.android.vcard.ui.widget.SlipButton
+                android:id="@+id/sbtn_frg_notice_chatting_records"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true" />
+        </RelativeLayout>
+
+        <View style="@style/horizontal_line_divider_padding_dimen_15dp" />
+
+        <TextView
+            android:id="@+id/txv_clear_chat_log"
+            style="@style/text_setting_general_size_and_color"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_50dp"
+            android:drawableRight="@mipmap/img_general_right_arrow"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/dimen_15dp"
+            android:paddingRight="@dimen/dimen_15dp"
+            android:text="@string/frg_setting_notice_clear_chat_log" />
+
+        <View style="@style/vertical_line_divider_height_dimen_10dp" />
+
+        <RelativeLayout
+            android:id="@+id/rel_out_logiin_receive_news"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_50dp"
+            android:paddingLeft="@dimen/dimen_15dp"
+            android:paddingRight="@dimen/dimen_15dp">
+
+            <TextView
+                style="@style/text_setting_general_size_and_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/frg_setting_notice_out_login_receive_news" />
+
+            <com.maya.android.vcard.ui.widget.SlipButton
+                android:id="@+id/sbtn_frg_notice_receive_inform"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

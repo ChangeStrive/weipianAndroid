@@ -1,0 +1,61 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/all_frg_view_color"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.maya.android.vcard.ui.frg.UserVCardFragment">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.maya.android.vcard.util.AlignTextView
+            android:id="@+id/txv_user_vcard_hint"
+            style="@style/user_vcard_hint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_2dp"
+            android:layout_marginBottom="@dimen/dimen_2dp"
+            android:paddingLeft="@dimen/dimen_15dp"
+            android:paddingRight="@dimen/dimen_15dp"
+            android:text="@string/user_vcard_hint" />
+
+        <RelativeLayout
+            android:id="@+id/rel_lsv_vcard"
+            style="@style/all_btn_background_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <include layout="@layout/inc_noscrol_lsv_view" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="@dimen/dimen_15dp"
+            android:layout_gravity="right">
+            <TextView
+                android:id="@+id/txv_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/vcard_total_surplus"
+                style="@style/text_setting_general_right_sign_size_12sp_and_color"/>
+
+            <TextView
+                android:id="@+id/txv_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/txv_label"
+                style="@style/text_setting_general_right_sign_size_12sp_and_color" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/frg_piece"
+                android:layout_toRightOf="@+id/txv_num"
+                style="@style/text_setting_general_right_sign_size_12sp_and_color" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>

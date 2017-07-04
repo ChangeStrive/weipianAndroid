@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<META http-equiv="X-UA-Compatible" content="IE=9" ></META>
+	<title>管理首页|字典</title>
+	<#include "Admin/jsp/common/common.ftl">
+	<script type="text/javascript">
+		var firstMenuNo="00001";
+		var secondMenuNo="00011";
+	</script>
+	<link rel="stylesheet" type="text/css" href="${hxltUrl}js/plugins/easyui/themes/default/easyui.css">
+	<link rel="stylesheet" type="text/css" href="${hxltUrl}js/plugins/easyui/themes/icon.css">
+	<script type="text/javascript" src="${hxltUrl}js/plugins/easyui/jquery.easyui.min.js"></script>
+	
+	<link rel="stylesheet" type="text/css" href="${hxltUrl}Admin/css/validator.css">
+	<script type="text/javascript" src="${hxltUrl}js/utils/form/validform.js"></script>
+	<script type="text/javascript" src="${hxltUrl}Admin/js/core/dict/dictTree.js">
+	</script>
+	
+	</head>
+<body>
+<!-- 头部 -->
+ <#include "Admin/jsp/common/header.ftl">
+<!-- /头部 --> 
+
+<!-- 边栏 -->
+<#include "Admin/jsp/common/sidebar.ftl">
+<!-- /边栏 --> 
+<div id="main-content">
+	<div id="top-alert" class="fixed alert alert-error" style="display: none;">
+		<button class="close fixed" style="margin-top: 4px;">×</button>
+		<div class="alert-content">这是内容</div>
+	</div>
+	<div id="leftTree" style="min-height:430px;position:absolute;width:200px;background:#f6f6f6;border-right:1px solid #ddd;overflow:auto;">
+		<div style="color:#fff;background:#555;line-height:30px;font-size:14px;padding:0 0 0 10px;">字典管理</div>
+		<ul id="dictTree" style="margin:8px 0 0 8px;"></ul>  
+	</div>
+	<div id="main" class="main" style="min-height:430px;margin:0 0 0 200px;"> 
+		<!-- nav -->
+		<div class="main-title">
+			<h2>字典管理</h2>
+		</div>
+		<form method="post" id="dictForm" class="form-horizontal contact_form">
+			<div class="form-item">
+				<label class="item-label">上级字典</label>
+				<div class="controls">
+					<input type="hidden" name="fdFunId" value="root">
+					<input type="text" readonly="readonly" class="text input-large" name="fdFunName" nullmsg="流水号起始值不允许为空" datatype="*" value="根字典" />
+					<i>选择</i>
+					<span class="form_checktip"></span>
+				</div>
+			</div>
+			<div class="form-item">
+				<label class="item-label">主键</label>
+				<div class="controls">
+					<input type="text" class="text input-large" readonly="readonly" name="fdId"  value="" />
+					 <span class="form_checktip"></span>
+				</div>
+			</div>
+			<div class="form-item">
+				<label class="item-label">字典名称</label>
+				<div class="controls">
+					<input type="text" class="text input-large" name="fdName" nullmsg="类明不允许为空！" datatype="*" value="" />
+					 <span class="form_checktip"></span>
+				</div>
+			</div>
+			<div class="form-item">
+				<label class="item-label">字典值</label>
+				<div class="controls">
+					<input type="text" class="text input-large" name="fdValue" nullmsg="规则不允许为空" datatype="*" value="" />
+					 <span class="form_checktip"></span>
+				</div>
+			</div>
+			<div class="form-item">
+				<label class="item-label">排序</label>
+				<div class="controls">
+					<input type="number" class="text input-large" name="fdSeqNo" value="0" />
+					 <span class="form_checktip"></span>
+				</div>
+			</div>
+			
+			<div class="form-item">
+				<button class="btn submit-btn ajax-post" type="submit" onclick="javascript:dictConfig.next=true;" target-form="form-horizontal">保存并新增</button>
+				<button class="btn submit-btn ajax-post" type="submit" onclick="javascript:dictConfig.next=false;" target-form="form-horizontal">保存</button>
+				<button class="btn btn-return" onclick="javascript:history.back(-1);return false;">返 回</button>
+			</div>
+		</form>
+	</div>
+	<#include "Admin/jsp/common/footer.ftl">
+</div>
+
+<div id="menu" class="easyui-menu" style="width:120px;">
+	<div onclick="dictConfig.append()" data-options="iconCls:'icon-add'">新增</div>
+	<div onclick="dictConfig.del()" data-options="iconCls:'icon-remove'">删除</div>
+</div>
+
+</BODY>
+</html>

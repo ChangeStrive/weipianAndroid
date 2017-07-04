@@ -1,0 +1,31 @@
+.editcardMain{width:600px;}
+.writeCardTip{width:90%;margin:10px auto;}
+.writeCardTipText{font-size: 16px;}
+.writeCardTipText,.writeCardTipText2{text-align: justify;}
+.whiteLine{border-top: 1px solid white;}
+.wrcard-title{margin:5px auto;padding: 0 5%;font-size: 14px;}
+.wrcard-Content{background: white;}
+.wrcard-item{border-top: 1px solid #e1e1e1;width:90%;padding: 5px 0;margin: 0 auto;}
+.wrcard-label{width:17%;float:left;}
+.wrcard-inputDiv{width:83%;float:left;text-align: right;}
+.wrcard-label2{width:30%;float:left;}
+.wrcard-inputDiv2{width:70%;float:left;text-align: right;}
+.wrcard-inputItem{position: relative;width:100%;margin-top:5px;}
+.wrcard-inputDiv .wrcard-inputItem:nth-child(1){margin-top:0;}
+.wrcard-inputDiv input{width:90%;padding-left: 5%;border: 1px solid #e5e5e5;}
+.wrcard-inputDiv select{width:96%;padding-left: 5%;border: 1px solid #e5e5e5;}
+.wrcard-label,.wrcard-inputDiv input,.wrcard-inputDiv select{font-size: 16px;color:#787878;line-height: 35px;height:35px;vertical-align: middle;}
+.wrcard-Content .wrcard-item:nth-child(1){border:0;}
+.addMessage,.jianMessage{position: absolute;right:10px;top:5px;display: inline-block;width:25px;height: 25px;border-radius:50%; }
+.addMessage img,.jianMessage img{width:100%;height: 100%;}
+
+.wrcard-inputDiv .redInput{border: 1px red solid;}
+.wrcard-textareaDiv{width: 100%;}
+.wrcard-textareaDiv textarea{width:96%;font-size: 16px;color:#787878;height:50px;padding:2px 2%;}
+
+.wrcardBtnList{margin: 20px 0;position: relative;}
+.wrcardBtnList a{float:left;width:50%;display: inline-block;font-size: 22px;background: white;text-align: center;padding:15px 0;}
+.wrcard-cancelBtn{border-radius:30px 0 0 30px;color:#333333;border: 0;}
+.wrcard-saveBtn{border-radius:0 30px 30px 0;color:#69aa28;border: 0;}
+.wrcardBtnList a:hover{border:0;}
+.wcardBtnLine{height: 100%;border-right:1px solid #f1f1f1;position: absolute;top:0;left:50%; }

@@ -1,0 +1,2183 @@
+﻿{"V10001": {
+        "id": 10001,
+        "name": "免费模板",
+        "templateType": 0,
+        "vertical": false,
+        "money": 0,
+        "createTime": "",
+        "verson": 0,
+        "classType": 0,
+        "showImage": "local_card_template_10001.jpg",
+        "showImageBack": "",
+        "hasLogo": false,
+        "hasHeadImg": true,
+        "style": {
+    "width": 1200,
+    "height": 720,
+    "vertical": false,
+    "backgroundImage": "local_card_template_10001bg.jpg",
+    "backgroundImageBack": "",
+    "cardModeImageArray": [
+        {
+            "name": "headImg",
+            "width": 84,
+            "height": 84,
+            "top": 0,
+            "bottom": 244,
+            "left": 493,
+            "right": 0,
+            "rule": [
+                9,
+                12
+            ],
+            "gravity": 17,
+            "rotation":0
+        }
+    ],
+    "cardModeTextArray": [
+        {
+            "name": "name",
+            "fontSize": 26,
+            "fontColor": "255|0|0|0",
+            "isShow": false,
+            "showTag": "",
+            "maxEms": 4,
+            "minEms": 0,
+            "top": 0,
+            "left": 35,
+            "right": 0,
+            "bottom": 141,
+            "rule": [
+                12,
+                9
+            ],
+            "fontScaleX":0,
+            "rotation":0,
+            "gravity": 3
+        },
+        {
+            "name": "job",
+            "fontSize": 18,
+            "fontColor": "255|0|0|0",
+            "isShow": false,
+            "showTag": "",
+            "maxEms": 0,
+            "minEms": 0,
+            "top": 0,
+            "left": 136,
+            "right": 0,
+            "bottom": 141,
+            "rule": [
+                12,
+                9
+            ],
+            "fontScaleX":0,
+            "rotation":0,
+            "gravity": 3
+        },
+        {
+            "name": "address",
+            "fontSize": 16,
+            "fontColor": "255|0|0|0",
+            "isShow": true,
+            "showTag": "地 址:",
+            "maxEms": 23,
+            "minEms": 0,
+            "top": 0,
+            "left": 236,
+            "right": 0,
+            "bottom": 63,
+            "rule": [
+                12,
+                9
+            ],
+            "fontScaleX":0,
+            "rotation":0,
+            "gravity": 5
+        },
+        {
+            "name": "mobile",
+            "fontSize": 16,
+            "fontColor": "255|0|0|0",
+            "isShow": true,
+            "showTag": "M.O:",
+            "maxEms": 0,
+            "minEms": 0,
+            "top": 0,
+            "left": 35,
+            "right": 0,
+            "bottom": 115,
+            "rule": [
+                12,
+                9
+            ],
+            "fontScaleX":0,
+            "rotation":0,
+            "gravity": 5
+        },
+        {
+            "name": "Email",
+            "fontSize": 16,
+            "fontColor": "255|0|0|0",
+            "isShow": true,
+            "showTag": "E-mail:",
+            "maxEms": 0,
+            "minEms": 0,
+            "top": 0,
+            "left": 236,
+            "right": 0,
+            "bottom": 84,
+            "rule": [
+                12,
+                9
+            ],
+            "fontScaleX":0,
+            "rotation":0,
+            "gravity": 5
+        },
+        {
+            "name": "telephone",
+            "fontSize": 16,
+            "fontColor": "255|0|0|0",
+            "isShow": true,
+            "showTag": "电 话:",
+            "maxEms": 0,
+            "minEms": 0,
+            "top": 0,
+            "left": 236,
+            "right": 0,
+            "bottom": 126,
+            "rule": [
+                12,
+                9
+            ],
+            "fontScaleX":0,
+            "rotation":0,
+            "gravity": 5
+        },
+        {
+            "name": "fax",
+            "fontSize": 16,
+            "fontColor": "255|0|0|0",
+            "isShow": true,
+            "showTag": "传 真:",
+            "maxEms": 0,
+            "minEms": 0,
+            "top": 0,
+            "left": 236,
+            "right": 0,
+            "bottom": 105,
+            "rule": [
+                12,
+                9
+            ],
+            "fontScaleX":0,
+            "rotation":0,
+            "gravity": 5
+        },
+        {
+            "name": "companyName",
+            "fontSize": 22,
+            "fontColor": "255|0|0|0",
+            "isShow": false,
+            "showTag": "",
+            "maxEms": 14,
+            "minEms": 0,
+            "top": 0,
+            "left": 236,
+            "right": 0,
+            "bottom": 148,
+            "rule": [
+                12,
+                9
+            ],
+            "fontScaleX":0,
+            "rotation":0,
+            "gravity": 5
+        },
+        {
+            "name": "homePage",
+            "fontSize": 20,
+            "fontColor": "255|255|255|255",
+            "isShow": false,
+            "showTag": "",
+            "maxEms": 0,
+            "minEms": 0,
+            "top": 0,
+            "left": 236,
+            "right": 0,
+            "bottom": 329,
+            "rule": [
+                12,
+                9
+            ],
+            "fontScaleX":0,
+            "rotation":0,
+            "gravity": 5
+        }
+    ],
+    "cardModeImageBackArray": [],
+    "cardModeTextBackArray": []
+	}
+},
+"V10002": {
+        "id": 10002,
+        "name": "免费模板",
+        "templateType": 0,
+        "vertical": false,
+        "money": 0,
+        "createTime": "",
+        "verson": 0,
+        "classType": 0,
+        "showImage": "local_card_template_10002.jpg",
+        "showImageBack": "",
+        "hasLogo": false,
+        "hasHeadImg": true,
+        "style": {
+    "width": 1200,
+    "height": 720,
+    "vertical": false,
+    "backgroundImage": "local_card_template_10002bg.jpg",
+    "backgroundImageBack": "",
+    "cardModeImageArray": [
+        {
+            "name": "headImg",
+            "width": 84,
+            "height": 84,
+            "top": 0,
+            "bottom": 235,
+            "left": 39,
+            "right": 0,
+            "rule": [
+                9,
+                12
+            ],
+            "gravity": 17,
+            "rotation":0
+        }
+    ],
+    "cardModeTextArray": [
+        {
+            "name": "name",
+            "fontSize": 28,
+            "fontColor": "255|255|255|255",
+            "isShow": false,
+            "showTag": "",
+            "maxEms": 4,
+            "minEms": 0,
+            "top": 0,
+            "left": 247,
+            "right": 0,
+            "bottom": 153,
+            "rule": [
+                12,
+                9
+            ],
+            "fontScaleX":0,
+            "rotation":0,
+            "gravity": 3
+        },
+        {
+            "name": "job",
+            "fontSize": 18,
+            "fontColor": "255|255|255|255",
+            "isShow": false,
+            "showTag": "",
+            "maxEms": 0,
+            "minEms": 0,
+            "top": 0,
+            "left": 364,
+            "right": 0,
+            "bottom": 153,
+            "rule": [
+                12,
+                9
+            ],
+            "fontScaleX":0,
+            "rotation":0,
+            "gravity": 3
+        },
+        {
+            "name": "address",
+            "fontSize": 16,
+            "fontColor": "255|255|255|255",
+            "isShow": true,
+            "showTag": "地 址:",
+            "maxEms": 23,
+            "minEms": 0,
+            "top": 0,
+            "left": 176,
+            "right": 0,
+            "bottom": 86,
+            "rule": [
+                12,
+                9
+            ],
+            "fontScaleX":0,
+            "rotation":0,
+            "gravity": 5
+        },
+        {
+            "name": "mobile",
+            "fontSize": 16,
+            "fontColor": "255|255|255|255",
+            "isShow": true,
+            "showTag": "手 机:",
+            "maxEms": 0,
+            "minEms": 0,
+            "top": 0,
+            "left": 176,
+            "right": 0,
+            "bottom": 44,
+            "rule": [
+                12,
+                9
+            ],
+            "fontScaleX":0,
+            "rotation":0,
+            "gravity": 5
+        },
+        {
+            "name": "Email",
+            "fontSize": 16,
+            "fontColor": "255|255|255|255",
+            "isShow": true,
+            "showTag": "E-mail:",
+            "maxEms": 0,
+            "minEms": 0,
+            "top": 0,
+            "left": 352,
+            "right": 0,
+            "bottom": 44,
+            "rule": [
+                12,
+                9
+            ],
+            "fontScaleX":0,
+            "rotation":0,
+            "gravity": 5
+        },
+        {
+            "name": "telephone",
+            "fontSize": 16,
+            "fontColor": "255|255|255|255",
+            "isShow": true,
+            "showTag": "电 话:",
+            "maxEms": 0,
+            "minEms": 0,
+            "top": 0,
+            "left": 176,
+            "right": 0,
+            "bottom": 65,
+            "rule": [
+                12,
+                9
+            ],
+            "fontScaleX":0,
+            "rotation":0,
+            "gravity": 5
+        },
+        {
+            "name": "fax",
+            "fontSize": 16,
+            "fontColor": "255|255|255|255",
+            "isShow": true,
+            "showTag": "传 真:",
+            "maxEms": 0,
+            "minEms": 0,
+            "top": 0,
+            "left": 396,
+            "right": 0,
+            "bottom": 65,
+            "rule": [
+                12,
+                9
+            ],
+            "fontScaleX":0,
+            "rotation":0,
+            "gravity": 5
+        },
+        {
+            "name": "companyName",
+            "fontSize": 24,
+            "fontColor": "255|255|255|255",
+            "isShow": false,
+            "showTag": "",
+            "maxEms": 15,
+            "minEms": 0,
+            "top": 0,
+            "left": 176,
+            "right": 0,
+            "bottom": 295,
+            "rule": [
+                12,
+                9
+            ],
+            "fontScaleX":0,
+            "rotation":0,
+            "gravity": 5
+        },
+        {
+            "name": "companyNameEn",
+            "fontSize": 18,
+            "fontColor": "255|255|255|255",
+            "isShow": false,
+            "showTag": "",
+            "maxEms": 0,
+            "minEms": 0,
+            "top": 0,
+            "left": 176,
+            "right": 0,
+            "bottom": 268,
+            "rule": [
+                12,
+                9
+            ],
+            "fontScaleX":0,
+            "rotation":0,
+            "gravity": 5
+        },
+        {
+            "name": "homePage",
+            "fontSize": 16,
+            "fontColor": "255|255|255|255",
+            "isShow": false,
+            "showTag": "",
+            "maxEms": 0,
+            "minEms": 0,
+            "top": 0,
+            "left": 176,
+            "right": 0,
+            "bottom": 23,
+            "rule": [
+                12,
+                9
+            ],
+            "fontScaleX":0,
+            "rotation":0,
+            "gravity": 5
+        }
+    ],
+    "cardModeImageBackArray": [],
+    "cardModeTextBackArray": []
+	}
+},
+"V10003": {
+        "id": 10003,
+        "name": "免费模板",
+        "templateType": 0,
+        "vertical": true,
+        "money": 0,
+        "createTime": "",
+        "verson": 0,
+        "classType": 0,
+        "showImage": "local_card_template_10003.jpg",
+        "showImageBack": "",
+        "hasLogo": false,
+        "hasHeadImg": true,
+        "style": {
+    "width": 720,
+    "height": 1200,
+    "vertical": true,
+    "backgroundImage": "local_card_template_10003bg.jpg",
+    "backgroundImageBack": "",
+    "cardModeImageArray": [
+        {
+            "name": "headImg",
+            "width": 84,
+            "height": 84,
+            "top": 0,
+            "bottom": 443,
+            "left": 138,
+            "right": 0,
+            "rule": [
+                14,
+                12
+            ],
+            "gravity": 17,
+            "rotation":0
+        }
+    ],
+    "cardModeTextArray": [
+        {
+            "name": "name",
+            "fontSize": 26,
+            "fontColor": "255|0|0|0",
+            "isShow": false,
+            "showTag": "",
+            "maxEms": 4,
+            "minEms": 0,
+            "top": 0,
+            "left": 0,
+            "right": 0,
+            "bottom": 403,
+            "rule": [
+                12,
+                14
+            ],
+            "fontScaleX":0,
+            "rotation":0,
+            "gravity": 3
+        },
+        {
+            "name": "job",
+            "fontSize": 18,
+            "fontColor": "255|0|0|0",
+            "isShow": false,
+            "showTag": "",
+            "maxEms": 0,
+            "minEms": 0,
+            "top": 0,
+            "left": 0,
+            "right": 0,
+            "bottom": 373,
+            "rule": [
+                12,
+                14
+            ],
+            "fontScaleX":0,
+            "rotation":0,
+            "gravity": 3
+        },
+        {
+            "name": "address",
+            "fontSize": 16,
+            "fontColor": "255|0|0|0",
+            "isShow": false,
+            "showTag": "地址:",
+            "maxEms": 20,
+            "minEms": 0,
+            "top": 0,
+            "left": 0,
+            "right": 0,
+            "bottom": 22,
+            "rule": [
+                12,
+                14
+            ],
+            "fontScaleX":0,
+            "rotation":0,
+            "gravity": 5
+        },
+        {
+            "name": "mobile",
+            "fontSize": 16,
+            "fontColor": "255|0|0|0",
+            "isShow": true,
+            "showTag": "手机:",
+            "maxEms": 0,
+            "minEms": 0,
+            "top": 0,
+            "left": 0,
+            "right": 0,
+            "bottom": 126,
+            "rule": [
+                12,
+                14
+            ],
+            "fontScaleX":0,
+            "rotation":0,
+            "gravity": 5
+        },
+        {
+            "name": "Email",
+            "fontSize": 16,
+            "fontColor": "255|0|0|0",
+            "isShow": true,
+            "showTag": "Email:",
+            "maxEms": 0,
+            "minEms": 0,
+            "top": 0,
+            "left": 0,
+            "right": 0,
+            "bottom": 64,
+            "rule": [
+                12,
+                14
+            ],
+            "fontScaleX":0,
+            "rotation":0,
+            "gravity": 5
+        },
+        {
+            "name": "telephone",
+            "fontSize": 16,
+            "fontColor": "255|0|0|0",
+            "isShow": true,
+            "showTag": "电话:",
+            "maxEms": 0,
+            "minEms": 0,
+            "top": 0,
+            "left": 0,
+            "right": 0,
+            "bottom": 105,
+            "rule": [
+                12,
+                14
+            ],
+            "fontScaleX":0,
+            "rotation":0,
+            "gravity": 5
+        },
+        {
+            "name": "fax",
+            "fontSize": 16,
+            "fontColor": "255|0|0|0",
+            "isShow": true,
+            "showTag": "传真:",
+            "maxEms": 0,
+            "minEms": 0,
+            "top": 0,
+            "left": 0,
+            "right": 0,
+            "bottom": 85,
+            "rule": [
+                12,
+                14
+            ],
+            "fontScaleX":0,
+            "rotation":0,
+            "gravity": 5
+        },
+        {
+            "name": "companyName",
+            "fontSize": 22,
+            "fontColor": "255|0|0|0",
+            "isShow": false,
+            "showTag": "",
+            "maxEms": 12,
+            "minEms": 0,
+            "top": 0,
+            "left": 0,
+            "right": 0,
+            "bottom": 177,
+            "rule": [
+                12,
+                14
+            ],
+            "fontScaleX":0,
+            "rotation":0,
+            "gravity": 5
+        },
+        {
+            "name": "companyNameEn",
+            "fontSize": 18,
+            "fontColor": "255|0|0|0",
+            "isShow": false,
+            "showTag": "",
+            "maxEms": 0,
+            "minEms": 0,
+            "top": 0,
+            "left": 0,
+            "right": 0,
+            "bottom": 154,
+            "rule": [
+                12,
+                14
+            ],
+            "fontScaleX":0,
+            "rotation":0,
+            "gravity": 5
+        },
+        {
+            "name": "homePage",
+            "fontSize": 16,
+            "fontColor": "255|0|0|0",
+            "isShow": false,
+            "showTag": "",
+            "maxEms": 0,
+            "minEms": 0,
+            "top": 0,
+            "left": 0,
+            "right": 0,
+            "bottom": 43,
+            "rule": [
+                12,
+                14
+            ],
+            "fontScaleX":0,
+            "rotation":0,
+            "gravity": 5
+        }
+    ],
+    "cardModeImageBackArray": [],
+    "cardModeTextBackArray": []
+	}
+},
+    "V10004": {
+        "id": 10004,
+        "name": "免费模板",
+        "templateType": 0,
+        "vertical": false,
+        "money": 0,
+        "createTime": "",
+        "verson": 0,
+        "classType": 0,
+        "showImage": "local_card_template_10004.jpg",
+        "showImageBack": "",
+        "hasLogo": false,
+        "hasHeadImg": true,
+        "style": {
+    "width": 1200,
+    "height": 720,
+    "vertical": false,
+    "backgroundImage": "local_card_template_10004bg.jpg",
+    "backgroundImageBack": "",
+    "cardModeImageArray": [
+        {
+            "name": "headImg",
+            "width": 85,
+            "height": 85,
+            "top": 0,
+            "bottom": 138,
+            "left": 496,
+            "right": 0,
+            "rule": [
+                9,
+                12
+            ],
+            "rotation":0,
+            "gravity": 17
+        }
+    ],
+    "cardModeTextArray": [
+        {
+            "name": "name",
+            "fontSize": 28,
+            "fontColor": "255|255|255|255",
+            "isShow": false,
+            "showTag": "",
+            "maxEms": 4,
+            "minEms": 0,
+            "top": 0,
+            "left": 40,
+            "right": 0,
+            "bottom": 246,
+            "rule": [
+                12,
+                9
+            ],
+            "fontScaleX":0,
+            "rotation":0,
+            "gravity": 3
+        },
+        {
+            "name": "job",
+            "fontSize": 18,
+            "fontColor": "255|255|255|255",
+            "isShow": false,
+            "showTag": "",
+            "maxEms": 0,
+            "minEms": 0,
+            "top": 0,
+            "left": 148,
+            "right": 0,
+            "bottom": 246,
+            "rule": [
+                12,
+                9
+            ],
+            "fontScaleX":0,
+            "rotation":0,
+            "gravity": 3
+        },
+        {
+            "name": "address",
+            "fontSize": 16,
+            "fontColor": "255|255|255|255",
+            "isShow": true,
+            "showTag": "地址:",
+            "maxEms": 23,
+            "minEms": 0,
+            "top": 0,
+            "left": 40,
+            "right": 0,
+            "bottom": 177,
+            "rule": [
+                12,
+                9
+            ],
+            "fontScaleX":0,
+            "rotation":0,
+            "gravity": 5
+        },
+        {
+            "name": "mobile",
+            "fontSize": 16,
+            "fontColor": "255|255|255|255",
+            "isShow": true,
+            "showTag": "手机:",
+            "maxEms": 0,
+            "minEms": 0,
+            "top": 0,
+            "left": 40,
+            "right": 0,
+            "bottom": 136,
+            "rule": [
+                12,
+                9
+            ],
+            "fontScaleX":0,
+            "rotation":0,
+            "gravity": 5
+        },
+        {
+            "name": "Email",
+            "fontSize": 16,
+            "fontColor": "255|255|255|255",
+            "isShow": true,
+            "showTag": "Email:",
+            "maxEms": 0,
+            "minEms": 0,
+            "top": 0,
+            "left": 40,
+            "right": 0,
+            "bottom": 115,
+            "rule": [
+                12,
+                9
+            ],
+            "fontScaleX":0,
+            "rotation":0,
+            "gravity": 5
+        },
+        {
+            "name": "telephone",
+            "fontSize": 16,
+            "fontColor": "255|255|255|255",
+            "isShow": true,
+            "showTag": "电话:",
+            "maxEms": 0,
+            "minEms": 0,
+            "top": 0,
+            "left": 40,
+            "right": 0,
+            "bottom": 157,
+            "rule": [
+                12,
+                9
+            ],
+            "fontScaleX":0,
+            "rotation":0,
+            "gravity": 5
+        },
+        {
+            "name": "fax",
+            "fontSize": 16,
+            "fontColor": "255|255|255|255",
+            "isShow": true,
+            "showTag": "传真:",
+            "maxEms": 0,
+            "minEms": 0,
+            "top": 0,
+            "left": 226,
+            "right": 0,
+            "bottom": 157,
+            "rule": [
+                12,
+                9
+            ],
+            "fontScaleX":0,
+            "rotation":0,
+            "gravity": 5
+        },
+        {
+            "name": "QQ",
+            "fontSize": 16,
+            "fontColor": "255|255|255|255",
+            "isShow": true,
+            "showTag": "QQ:",
+            "maxEms": 0,
+            "minEms": 0,
+            "top": 0,
+            "left": 226,
+            "right": 0,
+            "bottom": 136,
+            "rule": [
+                12,
+                9
+            ],
+            "fontScaleX":0,
+            "rotation":0,
+            "gravity": 5
+        },
+        {
+            "name": "companyName",
+            "fontSize": 24,
+            "fontColor": "255|255|255|255",
+            "isShow": false,
+            "showTag": "",
+            "maxEms": 15,
+            "minEms": 0,
+            "top": 0,
+            "left": 40,
+            "right": 0,
+            "bottom": 205,
+            "rule": [
+                12,
+                9
+            ],
+            "fontScaleX":0,
+            "rotation":0,
+            "gravity": 5
+        },
+        {
+            "name": "homePage",
+            "fontSize": 16,
+            "fontColor": "255|255|255|255",
+            "isShow": false,
+            "showTag": "",
+            "maxEms": 0,
+            "minEms": 0,
+            "top": 0,
+            "left": 40,
+            "right": 0,
+            "bottom": 94,
+            "rule": [
+                12,
+                9
+            ],
+            "fontScaleX":0,
+            "rotation":0,
+            "gravity": 5
+        }
+    ],
+    "cardModeImageBackArray": [],
+    "cardModeTextBackArray": []
+	}
+},
+    "V10005": {
+        "id": 10005,
+        "name": "免费模板",
+        "templateType": 0,
+        "vertical": false,
+        "money": 0,
+        "createTime": "",
+        "verson": 0,
+        "classType": 0,
+        "showImage": "local_card_template_10005.jpg",
+        "showImageBack": "",
+        "hasLogo": false,
+        "hasHeadImg": true,
+        "online": false,
+        "style": {
+            "width": 1200,
+            "height": 720,
+            "vertical": false,
+            "backgroundImage": "local_card_template_10005bg.jpg",
+            "backgroundImageBack": "",
+            "cardModeImageArray": [
+                {
+                    "name": "headImg",
+                    "width": 85,
+                    "height": 85,
+                    "top": 0,
+                    "bottom": 131,
+                    "left": 35,
+                    "right": 0,
+                    "rule": [
+                        9,
+                        12
+                    ],
+            		"rotation":0,
+                    "gravity": 17
+                }
+            ],
+            "cardModeTextArray": [
+                {
+                    "name": "name",
+                    "fontSize": 28,
+                    "fontColor": "255|255|255|255",
+                    "isShow": false,
+                    "showTag": "",
+                    "maxEms": 4,
+                    "minEms": 0,
+                    "top": 0,
+                    "left": 146,
+                    "right": 0,
+                    "bottom": 260,
+                    "rule": [
+                        12,
+                        9
+                    ],
+                    "fontScaleX":0,
+            		"rotation":0,
+                    "gravity": 3
+                },
+                {
+                    "name": "job",
+                    "fontSize": 18,
+                    "fontColor": "255|255|255|255",
+                    "isShow": false,
+                    "showTag": "",
+                    "maxEms": 0,
+                    "minEms": 0,
+                    "top": 0,
+                    "left": 146,
+                    "right": 0,
+                    "bottom": 236,
+                    "rule": [
+                        12,
+                        9
+                    ],
+                    "fontScaleX":0,
+            		"rotation":0,
+                    "gravity": 3
+                },
+                {
+                    "name": "address",
+                    "fontSize": 16,
+                    "fontColor": "255|255|255|255",
+                    "isShow": true,
+                    "showTag": "地址:",
+                    "maxEms": 23,
+                    "minEms": 0,
+                    "top": 0,
+                    "left": 146,
+                    "right": 0,
+                    "bottom": 139,
+                    "rule": [
+                        12,
+                        9
+                    ],
+                    "fontScaleX":0,
+            		"rotation":0,
+                    "gravity": 5
+                },
+                {
+                    "name": "mobile",
+                    "fontSize": 16,
+                    "fontColor": "255|255|255|255",
+                    "isShow": true,
+                    "showTag": "手机:",
+                    "maxEms": 0,
+                    "minEms": 0,
+                    "top": 0,
+                    "left": 146,
+                    "right": 0,
+                    "bottom": 98,
+                    "rule": [
+                        12,
+                        9
+                    ],
+                    "fontScaleX":0,
+            		"rotation":0,
+                    "gravity": 5
+                },
+                {
+                    "name": "Email",
+                    "fontSize": 16,
+                    "fontColor": "255|255|255|255",
+                    "isShow": true,
+                    "showTag": "Email:",
+                    "maxEms": 0,
+                    "minEms": 0,
+                    "top": 0,
+                    "left": 146,
+                    "right": 0,
+                    "bottom": 79,
+                    "rule": [
+                        12,
+                        9
+                    ],
+                    "fontScaleX":0,
+            		"rotation":0,
+                    "gravity": 5
+                },
+                {
+                    "name": "telephone",
+                    "fontSize": 16,
+                    "fontColor": "255|255|255|255",
+                    "isShow": true,
+                    "showTag": "电话:",
+                    "maxEms": 0,
+                    "minEms": 0,
+                    "top": 0,
+                    "left": 146,
+                    "right": 0,
+                    "bottom": 119,
+                    "rule": [
+                        12,
+                        9
+                    ],
+                    "fontScaleX":0,
+            		"rotation":0,
+                    "gravity": 5
+                },
+                {
+                    "name": "fax",
+                    "fontSize": 16,
+                    "fontColor": "255|255|255|255",
+                    "isShow": true,
+                    "showTag": "传真:",
+                    "maxEms": 0,
+                    "minEms": 0,
+                    "top": 0,
+                    "left": 333,
+                    "right": 0,
+                    "bottom": 119,
+                    "rule": [
+                        12,
+                        9
+                    ],
+                    "fontScaleX":0,
+            		"rotation":0,
+                    "gravity": 5
+                },
+                {
+                    "name": "QQ",
+                    "fontSize": 16,
+                    "fontColor": "255|255|255|255",
+                    "isShow": true,
+                    "showTag": "QQ:",
+                    "maxEms": 0,
+                    "minEms": 0,
+                    "top": 0,
+                    "left": 333,
+                    "right": 0,
+                    "bottom": 98,
+                    "rule": [
+                        12,
+                        9
+                    ],
+                    "fontScaleX":0,
+            		"rotation":0,
+                    "gravity": 5
+                },
+                {
+                    "name": "companyName",
+                    "fontSize": 22,
+                    "fontColor": "255|255|255|255",
+                    "isShow": false,
+                    "showTag": "",
+                    "maxEms": 18,
+                    "minEms": 0,
+                    "top": 0,
+                    "left": 146,
+                    "right": 0,
+                    "bottom": 194,
+                    "rule": [
+                        12,
+                        9
+                    ],
+                    "fontScaleX":0,
+            		"rotation":0,
+                    "gravity": 5
+                },
+                {
+                    "name": "companyNameEn",
+                    "fontSize": 20,
+                    "fontColor": "255|255|255|255",
+                    "isShow": false,
+                    "showTag": "",
+                    "maxEms": 0,
+                    "minEms": 0,
+                    "top": 0,
+                    "left": 146,
+                    "right": 0,
+                    "bottom": 174,
+                    "rule": [
+                        12,
+                        9
+                    ],
+                    "fontScaleX":0,
+            		"rotation":0,
+                    "gravity": 5
+                },
+                {
+                    "name": "homePage",
+                    "fontSize": 16,
+                    "fontColor": "255|255|255|255",
+                    "isShow": false,
+                    "showTag": "",
+                    "maxEms": 0,
+                    "minEms": 0,
+                    "top": 0,
+                    "left": 146,
+                    "right": 0,
+                    "bottom": 58,
+                    "rule": [
+                        12,
+                        9
+                    ],
+                    "fontScaleX":0,
+            		"rotation":0,
+                    "gravity": 5
+                }
+            ],
+            "cardModeImageBackArray": [],
+            "cardModeTextBackArray": []
+        }
+    },
+    "V10006": {
+        "id": 10006,
+        "name": "免费模板",
+        "templateType": 0,
+        "vertical": false,
+        "money": 0,
+        "createTime": "",
+        "verson": 0,
+        "classType": 0,
+        "showImage": "local_card_template_10006.jpg",
+        "showImageBack": "",
+        "hasLogo": false,
+        "hasHeadImg": true,
+        "online": false,
+        "style": {
+            "width": 1200,
+            "height": 720,
+            "vertical": false,
+            "backgroundImage": "local_card_template_10006bg.jpg",
+            "backgroundImageBack": "",
+            "cardModeImageArray": [
+                {
+                    "name": "headImg",
+                    "width": 84,
+                    "height": 84,
+                    "top": 0,
+                    "bottom": 26,
+                    "left": 24,
+                    "right": 0,
+                    "rule": [
+                        9,
+                        12
+                    ],
+            		"rotation":0,
+                    "gravity": 17
+                }
+            ],
+            "cardModeTextArray": [
+                {
+                    "name": "name",
+                    "fontSize": 26,
+                    "fontColor": "255|0|0|0",
+                    "isShow": false,
+                    "showTag": "",
+                    "maxEms": 4,
+                    "minEms": 0,
+                    "top": 0,
+                    "left": 120,
+                    "right": 0,
+                    "bottom": 26,
+                    "rule": [
+                        12,
+                        9
+                    ],
+                    "fontScaleX":0,
+            		"rotation":0,
+                    "gravity": 3
+                },
+                {
+                    "name": "job",
+                    "fontSize": 18,
+                    "fontColor": "255|0|0|0",
+                    "isShow": false,
+                    "showTag": "",
+                    "maxEms": 0,
+                    "minEms": 0,
+                    "top": 0,
+                    "left": 120,
+                    "right": 0,
+                    "bottom": 62,
+                    "rule": [
+                        12,
+                        9
+                    ],
+                    "fontScaleX":0,
+            		"rotation":0,
+                    "gravity": 3
+                },
+                {
+                    "name": "address",
+                    "fontSize": 16,
+                    "fontColor": "255|35|25|220",
+                    "isShow": true,
+                    "showTag": "地址:",
+                    "maxEms": 23,
+                    "minEms": 0,
+                    "top": 0,
+                    "left": 24,
+                    "right": 0,
+                    "bottom": 258,
+                    "rule": [
+                        12,
+                        9
+                    ],
+                    "fontScaleX":0,
+            		"rotation":0,
+                    "gravity": 5
+                },
+                {
+                    "name": "mobile",
+                    "fontSize": 16,
+                    "fontColor": "255|35|25|220",
+                    "isShow": true,
+                    "showTag": "手机:",
+                    "maxEms": 0,
+                    "minEms": 0,
+                    "top": 0,
+                    "left": 24,
+                    "right": 0,
+                    "bottom": 216,
+                    "rule": [
+                        12,
+                        9
+                    ],
+                    "fontScaleX":0,
+            		"rotation":0,
+                    "gravity": 5
+                },
+                {
+                    "name": "Email",
+                    "fontSize": 16,
+                    "fontColor": "255|35|25|220",
+                    "isShow": true,
+                    "showTag": "Email:",
+                    "maxEms": 0,
+                    "minEms": 0,
+                    "top": 0,
+                    "left": 24,
+                    "right": 0,
+                    "bottom": 195,
+                    "rule": [
+                        12,
+                        9
+                    ],
+                    "fontScaleX":0,
+            		"rotation":0,
+                    "gravity": 5
+                },
+                {
+                    "name": "telephone",
+                    "fontSize": 16,
+                    "fontColor": "255|35|25|220",
+                    "isShow": true,
+                    "showTag": "电话:",
+                    "maxEms": 0,
+                    "minEms": 0,
+                    "top": 0,
+                    "left": 24,
+                    "right": 0,
+                    "bottom": 237,
+                    "rule": [
+                        12,
+                        9
+                    ],
+                    "fontScaleX":0,
+            		"rotation":0,
+                    "gravity": 5
+                },
+                {
+                    "name": "fax",
+                    "fontSize": 16,
+                    "fontColor": "255|35|25|220",
+                    "isShow": true,
+                    "showTag": "传真:",
+                    "maxEms": 0,
+                    "minEms": 0,
+                    "top": 0,
+                    "left": 212,
+                    "right": 0,
+                    "bottom": 237,
+                    "rule": [
+                        12,
+                        9
+                    ],
+                    "fontScaleX":0,
+            		"rotation":0,
+                    "gravity": 5
+                },
+                {
+                    "name": "QQ",
+                    "fontSize": 16,
+                    "fontColor": "255|35|25|220",
+                    "isShow": true,
+                    "showTag": "QQ:",
+                    "maxEms": 0,
+                    "minEms": 0,
+                    "top": 0,
+                    "left": 212,
+                    "right": 0,
+                    "bottom": 216,
+                    "rule": [
+                        12,
+                        9
+                    ],
+                    "fontScaleX":0,
+            		"rotation":0,
+                    "gravity": 5
+                },
+                {
+                    "name": "companyName",
+                    "fontSize": 24,
+                    "fontColor": "255|35|25|220",
+                    "isShow": false,
+                    "showTag": "",
+                    "maxEms": 19,
+                    "minEms": 0,
+                    "top": 0,
+                    "left": 24,
+                    "right": 0,
+                    "bottom": 285,
+                    "rule": [
+                        12,
+                        9
+                    ],
+                    "fontScaleX":0,
+            		"rotation":0,
+                    "gravity": 5
+                },
+                {
+                    "name": "homePage",
+                    "fontSize": 16,
+                    "fontColor": "255|35|25|220",
+                    "isShow": false,
+                    "showTag": "",
+                    "maxEms": 0,
+                    "minEms": 0,
+                    "top": 0,
+                    "left": 24,
+                    "right": 0,
+                    "bottom": 175,
+                    "rule": [
+                        12,
+                        9
+                    ],
+                    "fontScaleX":0,
+            		"rotation":0,
+                    "gravity": 5
+                }
+            ],
+            "cardModeImageBackArray": [],
+            "cardModeTextBackArray": []
+        }
+    },
+    "V10007": {
+        "id": 10007,
+        "name": "免费模板",
+        "templateType": 0,
+        "vertical": false,
+        "money": 0,
+        "createTime": "",
+        "verson": 0,
+        "classType": 0,
+        "showImage": "local_card_template_10007.jpg",
+        "showImageBack": "",
+        "hasLogo": false,
+        "hasHeadImg": true,
+        "online": false,
+        "style": {
+            "width": 1200,
+            "height": 720,
+            "vertical": false,
+            "backgroundImage": "local_card_template_10007bg.jpg",
+            "backgroundImageBack": "",
+            "cardModeImageArray": [
+                {
+                    "name": "headImg",
+                    "width": 84,
+                    "height": 84,
+                    "top": 0,
+                    "bottom": 242,
+                    "left": 476,
+                    "right": 0,
+                    "rule": [
+                        9,
+                        12
+                    ],
+            		"rotation":0,
+                    "gravity": 17
+                }
+            ],
+            "cardModeTextArray": [
+                {
+                    "name": "name",
+                    "fontSize": 28,
+                    "fontColor": "255|0|0|0",
+                    "isShow": false,
+                    "showTag": "",
+                    "maxEms": 4,
+                    "minEms": 0,
+                    "top": 0,
+                    "left": 204,
+                    "right": 0,
+                    "bottom": 197,
+                    "rule": [
+                        12,
+                        9
+                    ],
+                    "fontScaleX":0,
+            		"rotation":0,
+                    "gravity": 3
+                },
+                {
+                    "name": "job",
+                    "fontSize": 18,
+                    "fontColor": "255|0|0|0",
+                    "isShow": false,
+                    "showTag": "",
+                    "maxEms": 0,
+                    "minEms": 0,
+                    "top": 0,
+                    "left": 315,
+                    "right": 0,
+                    "bottom": 197,
+                    "rule": [
+                        12,
+                        9
+                    ],
+                    "fontScaleX":0,
+            		"rotation":0,
+                    "gravity": 3
+                },
+                {
+                    "name": "address",
+                    "fontSize": 16,
+                    "fontColor": "255|0|0|0",
+                    "isShow": true,
+                    "showTag": "地址:",
+                    "maxEms": 23,
+                    "minEms": 0,
+                    "top": 0,
+                    "left": 204,
+                    "right": 0,
+                    "bottom": 111,
+                    "rule": [
+                        12,
+                        9
+                    ],
+                    "fontScaleX":0,
+            		"rotation":0,
+                    "gravity": 5
+                },
+                {
+                    "name": "mobile",
+                    "fontSize": 16,
+                    "fontColor": "255|0|0|0",
+                    "isShow": true,
+                    "showTag": "手机:",
+                    "maxEms": 0,
+                    "minEms": 0,
+                    "top": 0,
+                    "left": 204,
+                    "right": 0,
+                    "bottom": 70,
+                    "rule": [
+                        12,
+                        9
+                    ],
+                    "fontScaleX":0,
+            		"rotation":0,
+                    "gravity": 5
+                },
+                {
+                    "name": "Email",
+                    "fontSize": 16,
+                    "fontColor": "255|0|0|0",
+                    "isShow": true,
+                    "showTag": "Email:",
+                    "maxEms": 0,
+                    "minEms": 0,
+                    "top": 0,
+                    "left": 204,
+                    "right": 0,
+                    "bottom": 49,
+                    "rule": [
+                        12,
+                        9
+                    ],
+                    "fontScaleX":0,
+            		"rotation":0,
+                    "gravity": 5
+                },
+                {
+                    "name": "telephone",
+                    "fontSize": 16,
+                    "fontColor": "255|0|0|0",
+                    "isShow": true,
+                    "showTag": "电话:",
+                    "maxEms": 0,
+                    "minEms": 0,
+                    "top": 0,
+                    "left": 204,
+                    "right": 0,
+                    "bottom": 91,
+                    "rule": [
+                        12,
+                        9
+                    ],
+                    "fontScaleX":0,
+            		"rotation":0,
+                    "gravity": 5
+                },
+                {
+                    "name": "fax",
+                    "fontSize": 16,
+                    "fontColor": "255|0|0|0",
+                    "isShow": true,
+                    "showTag": "传真:",
+                    "maxEms": 0,
+                    "minEms": 0,
+                    "top": 0,
+                    "left": 389,
+                    "right": 0,
+                    "bottom": 91,
+                    "rule": [
+                        12,
+                        9
+                    ],
+                    "fontScaleX":0,
+            		"rotation":0,
+                    "gravity": 5
+                },
+                {
+                    "name": "QQ",
+                    "fontSize": 16,
+                    "fontColor": "255|0|0|0",
+                    "isShow": true,
+                    "showTag": "QQ:",
+                    "maxEms": 0,
+                    "minEms": 0,
+                    "top": 0,
+                    "left": 389,
+                    "right": 0,
+                    "bottom":70,
+                    "rule": [
+                        12,
+                        9
+                    ],
+                    "fontScaleX":0,
+            		"rotation":0,
+                    "gravity": 5
+                },
+                {
+                    "name": "companyName",
+                    "fontSize": 24,
+                    "fontColor": "255|0|0|0",
+                    "isShow": false,
+                    "showTag": "",
+                    "maxEms": 14,
+                    "minEms": 0,
+                    "top": 0,
+                    "left": 204,
+                    "right": 0,
+                    "bottom": 138,
+                    "rule": [
+                        12,
+                        9
+                    ],
+                    "fontScaleX":0,
+            		"rotation":0,
+                    "gravity": 5
+                },
+                {
+                    "name": "homePage",
+                    "fontSize": 16,
+                    "fontColor": "255|0|0|0",
+                    "isShow": false,
+                    "showTag": "",
+                    "maxEms": 0,
+                    "minEms": 0,
+                    "top": 0,
+                    "left": 204,
+                    "right": 0,
+                    "bottom": 28,
+                    "rule": [
+                        12,
+                        9
+                    ],
+                    "fontScaleX":0,
+            		"rotation":0,
+                    "gravity": 5
+                }
+            ],
+            "cardModeImageBackArray": [],
+            "cardModeTextBackArray": []
+        }
+    },
+    "V10008": {
+        "id": 10008,
+        "name": "免费模板",
+        "templateType": 0,
+        "vertical": true,
+        "money": 0,
+        "createTime": "",
+        "verson": 0,
+        "classType": 0,
+        "showImage": "local_card_template_10008.jpg",
+        "showImageBack": "",
+        "hasLogo": false,
+        "hasHeadImg": true,
+        "style": {
+    "width": 720,
+    "height": 1200,
+    "vertical": true,
+    "backgroundImage": "local_card_template_10008bg.jpg",
+    "backgroundImageBack": "",
+    "cardModeImageArray": [
+        {
+            "name": "headImg",
+            "width": 84,
+            "height": 84,
+            "top": 0,
+            "bottom": 302,
+            "left": 138,
+            "right": 0,
+            "rule": [
+                14,
+                12
+            ],
+            "gravity": 17,
+            "rotation":0
+        }
+    ],
+    "cardModeTextArray": [
+        {
+            "name": "name",
+            "fontSize": 28,
+            "fontColor": "255|255|255|255",
+            "isShow": false,
+            "showTag": "",
+            "maxEms": 4,
+            "minEms": 0,
+            "top": 0,
+            "left": 0,
+            "right": 0,
+            "bottom": 540,
+            "rule": [
+                12,
+                14
+            ],
+            "fontScaleX":0,
+            "rotation":0,
+            "gravity": 3
+        },
+        {
+            "name": "job",
+            "fontSize": 18,
+            "fontColor": "255|255|255|255",
+            "isShow": false,
+            "showTag": "",
+            "maxEms": 0,
+            "minEms": 0,
+            "top": 0,
+            "left": 0,
+            "right": 0,
+            "bottom": 511,
+            "rule": [
+                12,
+                14
+            ],
+            "fontScaleX":0,
+            "rotation":0,
+            "gravity": 3
+        },
+        {
+            "name": "address",
+            "fontSize": 14,
+            "fontColor": "255|0|0|0",
+            "isShow": false,
+            "showTag": "",
+            "maxEms": 23,
+            "minEms": 0,
+            "top": 0,
+            "left": 24,
+            "right": 0,
+            "bottom": 221,
+            "rule": [
+                12,
+                9
+            ],
+            "fontScaleX":0,
+            "rotation":0,
+            "gravity": 5
+        },
+        {
+            "name": "mobile",
+            "fontSize": 14,
+            "fontColor": "255|0|0|0",
+            "isShow": true,
+            "showTag": "手机:",
+            "maxEms": 0,
+            "minEms": 0,
+            "top": 0,
+            "left": 24,
+            "right": 0,
+            "bottom": 185,
+            "rule": [
+                12,
+                9
+            ],
+            "fontScaleX":0,
+            "rotation":0,
+            "gravity": 5
+        },
+        {
+            "name": "Email",
+            "fontSize": 14,
+            "fontColor": "255|0|0|0",
+            "isShow": true,
+            "showTag": "Email:",
+            "maxEms": 0,
+            "minEms": 0,
+            "top": 0,
+            "left": 24,
+            "right": 0,
+            "bottom": 166,
+            "rule": [
+                12,
+                9
+            ],
+            "fontScaleX":0,
+            "rotation":0,
+            "gravity": 5
+        },
+        {
+            "name": "telephone",
+            "fontSize": 14,
+            "fontColor": "255|0|0|0",
+            "isShow": true,
+            "showTag": "电话:",
+            "maxEms": 0,
+            "minEms": 0,
+            "top": 0,
+            "left": 24,
+            "right": 0,
+            "bottom": 203,
+            "rule": [
+                12,
+                9
+            ],
+            "fontScaleX":0,
+            "rotation":0,
+            "gravity": 5
+        },
+        {
+            "name": "fax",
+            "fontSize": 14,
+            "fontColor": "255|0|0|0",
+            "isShow": true,
+            "showTag": "传真:",
+            "maxEms": 0,
+            "minEms": 0,
+            "top": 0,
+            "left": 187,
+            "right": 0,
+            "bottom": 203,
+            "rule": [
+                12,
+                9
+            ],
+            "fontScaleX":0,
+            "rotation":0,
+            "gravity": 5
+        },
+        {
+            "name": "companyName",
+            "fontSize": 22,
+            "fontColor": "255|0|0|0",
+            "isShow": false,
+            "showTag": "",
+            "maxEms": 13,
+            "minEms": 0,
+            "top": 0,
+            "left": 0,
+            "right": 0,
+            "bottom": 245,
+            "rule": [
+                12,
+                14
+            ],
+            "fontScaleX":0,
+            "rotation":0,
+            "gravity": 5
+        },
+        {
+            "name": "QQ",
+            "fontSize": 14,
+            "fontColor": "255|0|0|0",
+            "isShow": true,
+            "showTag": "QQ:",
+            "maxEms": 0,
+            "minEms": 0,
+            "top": 0,
+            "left": 187,
+            "right": 0,
+            "bottom": 185,
+            "rule": [
+                12,
+                9
+            ],
+            "fontScaleX":0,
+            "rotation":0,
+            "gravity": 5
+        },
+        {
+            "name": "homePage",
+            "fontSize": 14,
+            "fontColor": "255|0|0|0",
+            "isShow": false,
+            "showTag": "",
+            "maxEms": 0,
+            "minEms": 0,
+            "top": 0,
+            "left": 24,
+            "right": 0,
+            "bottom": 148,
+            "rule": [
+                12,
+                9
+            ],
+            "fontScaleX":0,
+            "rotation":0,
+            "gravity": 5
+        }
+    ],
+    "cardModeImageBackArray": [],
+    "cardModeTextBackArray": []
+	}
+},
+"V10009": {
+        "id": 10009,
+        "name": "VIP模板",
+        "templateType": 1,
+        "vertical": false,
+        "money": 0,
+        "createTime": "",
+        "verson": 0,
+        "classType": 0,
+        "showImage": "local_card_template_10009.jpg",
+        "showImageBack": "local_card_template_b10009.jpg",
+        "hasLogo": false,
+        "hasHeadImg": true,
+        "style": {
+    "width": 1200,
+    "height": 720,
+    "vertical": false,
+    "backgroundImage": "local_card_template_10009bg.jpg",
+    "backgroundImageBack": "local_card_template_b10009bg.jpg",
+    "cardModeImageArray": [
+        {
+            "name": "headImg",
+            "width": 84,
+            "height": 84,
+            "top": 0,
+            "bottom": 164,
+            "left": 25,
+            "right": 0,
+            "rule": [
+                9,
+                12
+            ],
+            "gravity": 17,
+            "rotation":0
+        }
+    ],
+    "cardModeTextArray": [
+        {
+            "name": "name",
+            "fontSize": 26,
+            "fontColor": "255|255|255|255",
+            "isShow": false,
+            "showTag": "",
+            "maxEms": 4,
+            "minEms": 0,
+            "top": 0,
+            "left": 384,
+            "right": 0,
+            "bottom": 285,
+            "rule": [
+                12,
+                9
+            ],
+            "fontScaleX":0,
+            "rotation":0,
+            "gravity": 3
+        },
+        {
+            "name": "job",
+            "fontSize": 18,
+            "fontColor": "255|255|255|255",
+            "isShow": false,
+            "showTag": "",
+            "maxEms": 5,
+            "minEms": 0,
+            "top": 0,
+            "left": 487,
+            "right": 0,
+            "bottom": 285,
+            "rule": [
+                12,
+                9
+            ],
+            "fontScaleX":0,
+            "rotation":0,
+            "gravity": 3
+        },
+        {
+            "name": "address",
+            "fontSize": 16,
+            "fontColor": "255|255|255|255",
+            "isShow": true,
+            "showTag": "地址:",
+            "maxEms": 23,
+            "minEms": 0,
+            "top": 0,
+            "left": 25,
+            "right": 0,
+            "bottom": 30,
+            "rule": [
+                12,
+                9
+            ],
+            "fontScaleX":0,
+            "rotation":0,
+            "gravity": 5
+        },
+        {
+            "name": "mobile",
+            "fontSize": 16,
+            "fontColor": "255|255|255|255",
+            "isShow": true,
+            "showTag": "M.O:",
+            "maxEms": 0,
+            "minEms": 0,
+            "top": 0,
+            "left": 384,
+            "right": 0,
+            "bottom": 260,
+            "rule": [
+                12,
+                9
+            ],
+            "fontScaleX":0,
+            "rotation":0,
+            "gravity": 5
+        },
+        {
+            "name": "Email",
+            "fontSize": 16,
+            "fontColor": "255|255|255|255",
+            "isShow": true,
+            "showTag": "E-mail:",
+            "maxEms": 0,
+            "minEms": 0,
+            "top": 0,
+            "left": 25,
+            "right": 0,
+            "bottom": 51,
+            "rule": [
+                12,
+                9
+            ],
+            "fontScaleX":0,
+            "rotation":0,
+            "gravity": 5
+        },
+        {
+            "name": "telephone",
+            "fontSize": 16,
+            "fontColor": "255|255|255|255",
+            "isShow": true,
+            "showTag": "电话:",
+            "maxEms": 0,
+            "minEms": 0,
+            "top": 0,
+            "left": 25,
+            "right": 0,
+            "bottom": 92,
+            "rule": [
+                12,
+                9
+            ],
+            "fontScaleX":0,
+            "rotation":0,
+            "gravity": 5
+        },
+        {
+            "name": "fax",
+            "fontSize": 16,
+            "fontColor": "255|255|255|255",
+            "isShow": true,
+            "showTag": "传真:",
+            "maxEms": 0,
+            "minEms": 0,
+            "top": 0,
+            "left": 25,
+            "right": 0,
+            "bottom": 71,
+            "rule": [
+                12,
+                9
+            ],
+            "fontScaleX":0,
+            "rotation":0,
+            "gravity": 5
+        },
+        {
+            "name": "companyName",
+            "fontSize": 22,
+            "fontColor": "255|255|255|255",
+            "isShow": false,
+            "showTag": "",
+            "maxEms": 19,
+            "minEms": 0,
+            "top": 0,
+            "left": 25,
+            "right": 0,
+            "bottom": 117,
+            "rule": [
+                12,
+                9
+            ],
+            "fontScaleX":0,
+            "rotation":0,
+            "gravity": 5
+        }
+    ],
+    "cardModeImageBackArray": [],
+    "cardModeTextBackArray": [
+     {
+            "name": "companyName",
+            "fontSize": 24,
+            "fontColor": "255|255|255|255",
+            "isShow": false,
+            "showTag": "",
+            "maxEms": 0,
+            "minEms": 0,
+            "top": 0,
+            "left": 0,
+            "right": 0,
+            "bottom": 167,
+            "rule": [
+                12,
+                14
+            ],
+            "fontScaleX":0,
+            "rotation":0,
+            "gravity": 5
+        },
+        {
+            "name": "homePage",
+            "fontSize": 20,
+            "fontColor": "255|255|255|255",
+            "isShow": false,
+            "showTag": "",
+            "maxEms": 0,
+            "minEms": 0,
+            "top": 0,
+            "left": 0,
+            "right": 0,
+            "bottom": 138,
+            "rule": [
+                12,
+                14
+            ],
+            "fontScaleX":0,
+            "rotation":0,
+            "gravity": 5
+        }
+        ]
+	}
+}
+}

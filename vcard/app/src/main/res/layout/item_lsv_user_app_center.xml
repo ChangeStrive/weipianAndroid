@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/all_btn_background_color"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dimen_65dp"
+    android:paddingLeft="@dimen/dimen_15dp"
+    android:paddingRight="@dimen/dimen_15dp">
+
+    <ImageView
+        android:id="@+id/imv_app_center_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/app_name"
+        android:src="@mipmap/ic_launcher" />
+
+    <ImageView
+        android:id="@+id/imv_app_center_operate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/app_name" />
+
+    <TextView
+        android:id="@+id/txv_app_center_name"
+        style="@style/text_setting_general_size_and_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_10dp"
+        android:layout_toRightOf="@id/imv_app_center_icon"
+        android:layout_alignTop="@id/imv_app_center_icon"
+        android:singleLine="true" />
+
+    <TextView
+        android:id="@+id/txv_app_center_description"
+        style="@style/user_app_center_content_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/imv_app_center_icon"
+        android:layout_alignLeft="@id/txv_app_center_name"
+        android:singleLine="true" />
+
+</RelativeLayout>

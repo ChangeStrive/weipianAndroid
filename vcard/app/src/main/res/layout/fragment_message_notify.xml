@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/all_frg_view_color"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.maya.android.vcard.ui.frg.MessageNotifyFragment">
+
+
+    <RelativeLayout
+        android:id="@+id/rel_del"
+        style="@style/all_btn_background_color"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:paddingBottom="@dimen/dimen_6dp"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/imv_divider"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="@mipmap/bg_shadow" />
+
+        <Button
+            android:id="@+id/btn_del"
+            style="@style/meg_notify_btn_del"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_42dp"
+            android:layout_below="@id/imv_divider"
+            android:layout_marginLeft="@dimen/dimen_15dp"
+            android:layout_marginRight="@dimen/dimen_15dp"
+            android:layout_marginTop="@dimen/dimen_6dp"
+            android:background="@drawable/bg_general_btn_normal"
+            android:gravity="center"
+            android:text="@string/delete" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/rel_del">
+
+        <include layout="@layout/inc_lsv_view" />
+    </RelativeLayout>
+
+</RelativeLayout>

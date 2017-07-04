@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="cancel">Cancel</string>
+    <string name="hint_abs_vcard_scan_image_ocr">正在识别…</string>
+    <string name="hint_abs_vcard_scan_image_process_start">正在切边…</string>
+    <string name="hint_abs_vcard_scan_ocr_second">请继续拍摄名片反面！</string>
+    <string name="hint_abs_vcard_scan_system_camera_error">系统相机不可用！</string>
+    <string name="hint_abs_vcard_scan_take_photo_faile">拍照失败！</string>
+    <string name="no_storage_card">No storage card</string>
+    <string name="not_enough_space">Not enough space</string>
+    <string name="preparing_card">Preparing card</string>
+    <string name="save">Save</string>
+    <string name="saving_image">Saving image</string>
+</resources>

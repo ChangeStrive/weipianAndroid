@@ -1,0 +1,122 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/all_frg_view_color"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.maya.android.vcard.ui.frg.SettingAboutFragment">
+
+    <RelativeLayout
+        android:id="@+id/rel_vcard_logo"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_126dp">
+
+        <TextView
+            android:id="@+id/txv_vcard_version"
+            style="@style/text_setting_general_size_and_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/dimen_15dp"
+            android:text="@string/vcard_v2_0_0" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/txv_vcard_version"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/dimen_12dp"
+
+            android:src="@mipmap/img_vcard_logo" />
+    </RelativeLayout>
+
+    <LinearLayout
+        style="@style/all_btn_background_color"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rel_vcard_logo"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/dimen_15dp"
+        android:paddingRight="@dimen/dimen_15dp">
+
+        <TextView
+            android:id="@+id/txv_homepage_voice"
+            style="@style/text_setting_general_size_and_color"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_50dp"
+            android:drawableRight="@mipmap/img_general_right_arrow"
+            android:gravity="center_vertical"
+            android:text="@string/homepage_voice_think" />
+        <View  style="@style/vertical_line_divider_height_dimen_10dp" />
+        <TextView
+            android:id="@+id/txv_function_introduction"
+            style="@style/text_setting_general_size_and_color"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_50dp"
+            android:drawableRight="@mipmap/img_general_right_arrow"
+            android:gravity="center_vertical"
+            android:text="@string/function_introduction" />
+
+
+        <TextView
+            android:id="@+id/txv_using_help"
+            style="@style/text_setting_general_size_and_color"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_50dp"
+            android:drawableRight="@mipmap/img_general_right_arrow"
+            android:gravity="center_vertical"
+            android:text="@string/using_help" />
+        <TextView
+            android:id="@+id/txv_frg_web_common_feedback"
+            style="@style/text_setting_general_size_and_color"
+            android:layout_height="@dimen/dimen_50dp"
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:drawableRight="@mipmap/img_general_right_arrow"
+            android:visibility="gone"
+            android:text="@string/frg_setting_main_feedback" />
+
+        <TextView
+            android:id="@+id/txv_feedback"
+            style="@style/text_setting_general_size_and_color"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_50dp"
+            android:drawableRight="@mipmap/img_general_right_arrow"
+            android:gravity="center_vertical"
+            android:text="@string/feedback"/>
+
+        <!--<View style="@style/horizontal_line_divider_fill" />-->
+        <View  style="@style/vertical_line_divider_height_dimen_10dp" />
+
+        <TextView
+            android:id="@+id/txv_check_for_updates"
+            style="@style/text_setting_general_size_and_color"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_50dp"
+            android:drawableRight="@mipmap/img_general_right_arrow"
+            android:gravity="center_vertical"
+            android:text="@string/check_for_updates" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/txv_about_vcard_bottom_info"
+        style="@style/text_about_vcard_bottom_mess"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/dimen_15dp"
+        android:gravity="center"
+        android:text="@string/about_vcard_bottom_info" />
+
+    <TextView
+        android:id="@+id/txv_terms_of_use_and_privacy_policy"
+        style="@style/text_about_vcard_protocol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/txv_about_vcard_bottom_info"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/dimen_8dp"
+        android:text="@string/terms_of_use_and_privacy_policy" />
+</RelativeLayout>

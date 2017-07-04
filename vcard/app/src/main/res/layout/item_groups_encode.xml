@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/dimen_10dp"
+    android:paddingTop="@dimen/dimen_10dp">
+
+    <TextView
+        android:id="@+id/txv_groups_encode"
+        style="@style/card_case_group_encode_text"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dimen_44dp"
+        android:gravity="center_vertical"
+        android:text="@string/set_password" />
+
+    <EditText
+        android:id="@+id/edt_groups_encode_pwd"
+        style="@style/card_case_group_encode_text"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_44dp"
+        android:layout_toRightOf="@id/txv_groups_encode"
+        android:background="@drawable/bg_edt_add_group"
+        android:gravity="center_vertical"
+        android:hint="@string/hint_encode_pwd"
+        android:inputType="textPassword"
+        android:maxLength="12"
+        android:paddingLeft="@dimen/dimen_10dp"
+        android:paddingRight="@dimen/dimen_10dp" />
+
+    <EditText
+        android:id="@+id/edt_groups_encode_pwd_valid"
+        style="@style/card_case_group_encode_text"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_44dp"
+        android:layout_alignLeft="@id/edt_groups_encode_pwd"
+        android:layout_below="@id/edt_groups_encode_pwd"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:background="@drawable/bg_edt_add_group"
+        android:gravity="center_vertical"
+        android:hint="@string/hint_encode_pwd"
+        android:inputType="textPassword"
+        android:maxLength="12"
+        android:paddingLeft="@dimen/dimen_10dp"
+        android:paddingRight="@dimen/dimen_10dp"/>
+</RelativeLayout>

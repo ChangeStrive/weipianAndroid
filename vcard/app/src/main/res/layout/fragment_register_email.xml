@@ -1,0 +1,123 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/all_frg_view_color"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.maya.android.vcard.ui.frg.RegisterEmailFragment">
+
+    <!--<TextView
+        android:id="@+id/txv_email_hint"
+        style="@style/text_email_hint_size_and_color"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_35dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/dimen_15dp"
+        android:paddingRight="@dimen/dimen_15dp"
+        android:text="@string/pro_you_haven_enter_email_address" />-->
+
+    <LinearLayout
+        android:id="@+id/lil_email"
+        style="@style/all_btn_background_color"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/dimen_15dp"
+        android:paddingRight="@dimen/dimen_15dp">
+
+        <EditText
+            android:id="@+id/edt_email"
+            style="@style/edt_main_general_size_and_color"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_45dp"
+            android:background="@color/color_00000000"
+            android:digits="@string/frg_login_limit_range_account"
+            android:gravity="center_vertical"
+            android:hint="@string/please_enter_the_email_address" />
+
+
+        <View android:id="@+id/view_password_divider"
+            style="@style/horizontal_line_divider_fill" />
+
+
+        <EditText
+            android:id="@+id/edt_password"
+            style="@style/edt_main_general_size_and_color"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_45dp"
+            android:background="@color/color_00000000"
+            android:digits="@string/frg_login_limit_range_account"
+            android:gravity="center_vertical"
+            android:hint="@string/please_enter_the_password_6_12"
+            android:inputType="textPassword" />
+
+
+        <View android:id="@+id/view_password_again_divider"
+            style="@style/horizontal_line_divider_fill" />
+
+        <EditText
+            android:id="@+id/edt_password_again"
+            style="@style/edt_main_general_size_and_color"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_45dp"
+            android:background="@color/color_00000000"
+            android:digits="@string/frg_login_limit_range_account"
+            android:gravity="center_vertical"
+            android:hint="@string/please_enter_the_password_6_12_repetition"
+            android:inputType="textPassword" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+
+        android:id="@+id/rel_chb_protocol"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lil_email"
+        android:layout_marginTop="@dimen/dimen_16dp">
+
+        <CheckBox
+            android:id="@+id/chb_protocol"
+            style="@style/chb_is_agree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:paddingLeft="@dimen/dimen_15dp"
+            android:text="@string/have_read_and_agreed_to" />
+
+        <TextView
+            android:id="@+id/txv_protocol"
+            style="@style/test_protocol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/chb_protocol"
+            android:paddingRight="@dimen/dimen_15dp"
+            android:text="@string/terms_of_use_and_privacy_policy" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_send_the_activation_email"
+        style="@style/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_42dp"
+        android:layout_below="@id/rel_chb_protocol"
+        android:layout_marginLeft="@dimen/dimen_15dp"
+        android:layout_marginRight="@dimen/dimen_15dp"
+        android:layout_marginTop="@dimen/dimen_15dp"
+        android:background="@drawable/bg_general_btn_normal"
+        android:text="@string/send_the_activation_email" />
+
+    <TextView
+        android:id="@+id/txv_mobile_register"
+        style="@style/btn_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/btn_send_the_activation_email"
+        android:layout_marginTop="@dimen/dimen_18dp"
+        android:drawablePadding="@dimen/dimen_5dp"
+        android:drawableRight="@mipmap/img_general_right_arrow"
+        android:paddingRight="@dimen/dimen_15dp"
+        android:text="@string/registered_mobile_phone_number" />
+</RelativeLayout>

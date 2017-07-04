@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dimen_50dp"
+    android:minHeight="@dimen/dimen_50dp"
+    android:paddingLeft="@dimen/dimen_15dp"
+    android:paddingRight="@dimen/dimen_15dp">
+
+    <RelativeLayout
+        android:id="@+id/rel_vcard"
+        android:layout_width="@dimen/dimen_64dp"
+        android:layout_height="@dimen/dimen_38dp"
+        android:layout_centerVertical="true"
+        android:background="@drawable/bg_recommend_log_card"
+        android:padding="@dimen/dimen_1px">
+
+        <com.maya.android.asyncimageview.widget.AsyncImageView
+            android:id="@+id/imv_vcard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitCenter" />
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/btn_recommend"
+        style="@style/btn_get_verification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/bg_general_btn_green"
+        android:paddingBottom="@dimen/dimen_3dp"
+        android:paddingLeft="@dimen/dimen_15dp"
+        android:paddingRight="@dimen/dimen_15dp"
+        android:paddingTop="@dimen/dimen_3dp"
+        android:text="@string/recommend" />
+
+    <TextView
+        android:id="@+id/txv_card_name"
+        style="@style/text_setting_general_size_and_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dimen_10dp"
+        android:layout_toRightOf="@id/rel_vcard" />
+
+    <TextView
+        android:id="@+id/txv_user_vcard_current"
+        style="@style/user_vcard_current"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/txv_card_name"
+        android:text="@string/current_vcard" />
+
+    <TextView
+        android:id="@+id/txv_surplus_num"
+        style="@style/text_setting_general_right_sign_size_12sp_and_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dimen_10dp"
+        android:layout_marginRight="@dimen/dimen_3dp"
+        android:layout_toLeftOf="@+id/btn_recommend"
+        android:layout_toRightOf="@+id/txv_user_vcard_current"
+        android:singleLine="true" />
+</RelativeLayout>

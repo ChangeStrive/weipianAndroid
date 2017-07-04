@@ -1,0 +1,196 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/all_frg_view_color"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.maya.android.vcard.ui.frg.RegisterMobileFragment">
+
+    <LinearLayout
+        android:id="@+id/lil_mobile"
+        style="@style/all_btn_background_color"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/dimen_15dp"
+        android:paddingRight="@dimen/dimen_15dp">
+
+        <TextView
+            android:id="@+id/txv_area_selected"
+            style="@style/text_setting_general_size_and_color"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_45dp"
+            android:drawableRight="@mipmap/img_general_right_arrow"
+            android:gravity="center_vertical"
+            android:text="@string/china_tel_code" />
+
+
+        <View style="@style/horizontal_line_divider_fill" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_45dp">
+
+            <TextView
+                android:id="@+id/txv_login_account"
+                style="@style/text_setting_general_size_and_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/find_num" />
+
+            <EditText
+                android:id="@+id/edt_mobile_number"
+                style="@style/edt_main_general_size_and_color"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_45dp"
+                android:layout_toRightOf="@id/txv_login_account"
+                android:background="@color/color_00000000"
+                android:gravity="center_vertical"
+                android:hint="@string/edt_mobile_number_please"
+                android:phoneNumber="true"
+                android:singleLine="true" />
+        </RelativeLayout>
+
+        <View style="@style/horizontal_line_divider_fill" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_45dp">
+
+            <TextView
+                android:id="@+id/txv_login_password"
+                style="@style/text_setting_general_size_and_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/frg_login_password" />
+
+            <EditText
+                android:id="@+id/edt_mobile_password"
+                style="@style/edt_main_general_size_and_color"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_45dp"
+                android:inputType="textPassword"
+                android:layout_toRightOf="@id/txv_login_password"
+                android:background="@color/color_00000000"
+                android:gravity="center_vertical"
+                android:hint="@string/frg_login_password_hint"
+                android:phoneNumber="true"
+                android:singleLine="true" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rel_code"
+        style="@style/all_btn_background_color"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_45dp"
+        android:layout_below="@id/lil_mobile"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:paddingLeft="@dimen/dimen_15dp"
+        android:paddingRight="@dimen/dimen_15dp">
+
+        <Button
+            android:id="@+id/btn_get_verification"
+            style="@style/btn_get_verification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/bg_general_btn_green"
+            android:gravity="center"
+            android:paddingBottom="@dimen/dimen_4dp"
+            android:paddingLeft="@dimen/dimen_8dp"
+            android:paddingRight="@dimen/dimen_8dp"
+            android:paddingTop="@dimen/dimen_4dp"
+            android:text="@string/get_verification" />
+        <TextView
+            android:id="@+id/tv_code"
+            style="@style/text_setting_general_size_and_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:text="@string/find_code" />
+        <EditText
+            android:id="@+id/edt_mobile_code"
+            style="@style/edt_main_general_size_and_color"
+            android:layout_width="@dimen/dimen_200dp"
+            android:layout_height="@dimen/dimen_45dp"
+            android:layout_toRightOf="@id/tv_code"
+            android:background="@color/color_00000000"
+            android:digits="@string/frg_login_limit_range_password"
+            android:gravity="center_vertical"
+            android:hint="@string/please_enter_a_message_authentication_code"
+            android:singleLine="true" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/txv_fail_info_hint"
+        style="@style/text_login_other_login_size_and_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rel_code"
+        android:layout_marginTop="@dimen/dimen_13dp"
+        android:paddingLeft="@dimen/dimen_15dp"
+        android:paddingRight="@dimen/dimen_15dp"
+        android:text="@string/register_prompt_hint" />
+
+    <RelativeLayout
+
+        android:id="@+id/rel_chb_protocol"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txv_fail_info_hint"
+        android:layout_marginTop="@dimen/dimen_25dp">
+
+        <CheckBox
+            android:id="@+id/chb_protocol"
+            style="@style/chb_is_agree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:paddingLeft="@dimen/dimen_15dp"
+            android:text="@string/have_read_and_agreed_to" />
+
+        <TextView
+            android:id="@+id/txv_protocol"
+            style="@style/test_protocol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/chb_protocol"
+            android:paddingRight="@dimen/dimen_15dp"
+            android:text="@string/terms_of_use_and_privacy_policy" />
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/btn_complete_the_sign"
+        android:textSize="@dimen/dimen_15sp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_42dp"
+        android:layout_below="@id/rel_chb_protocol"
+        android:layout_marginLeft="@dimen/dimen_15dp"
+        android:layout_marginRight="@dimen/dimen_15dp"
+        android:layout_marginTop="@dimen/dimen_180dp"
+        android:textColor="@color/color_a1a1aa"
+        android:background="@drawable/bg_general_btn_normal"
+        android:text="@string/next" />
+
+    <!--<TextView-->
+    <!--android:id="@+id/txv_email_register"-->
+    <!--style="@style/btn_submit"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:layout_below="@id/btn_complete_the_sign"-->
+    <!--android:layout_marginTop="@dimen/dimen_15dp"-->
+    <!--android:drawablePadding="@dimen/dimen_5dp"-->
+    <!--android:drawableRight="@mipmap/img_general_right_arrow"-->
+    <!--android:paddingRight="@dimen/dimen_15dp"-->
+    <!--android:visibility="gone"-->
+    <!--android:text="@string/e_mail_register" />邮箱注册-->
+
+</RelativeLayout>

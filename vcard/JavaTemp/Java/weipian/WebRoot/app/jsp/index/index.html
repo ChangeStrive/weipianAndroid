@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<#include "app/jsp/common/common.ftl">
+	<#include "app/jsp/weixinTemplate.html">
+	<title>微商店</title>
+	<script type="text/javascript">
+		var footTab="1";
+	</script>
+	<script src='${hxltUrl}app/js/index/index.js'></script>
+</head>
+<body class="grayBg">
+	<div class="wrap">
+		<header class="homepage_head">
+			<a href="javascript:history.go(-1)" class="left_head  ahref" style="left:2%;">
+	             	  <span class="iconfont backBtn">&#xe61c;</span>
+			</a>
+			<h2>微商店</h2>
+		</header>
+		<div class="headNext">
+			<div class="adList">
+				<div class="fotorama"   data-arrows="false"  data-width="100%"  data-auto="true" data-autoplay="3000" data-stopautoplayontouch="false">
+					<#list adlist.list as ad>
+						<#if ad.fdUrl!=''>
+							<a href="${ad.fdUrl}" fdAdId="${ad.fdId}">
+							<#else>
+							<a href="javascript:void(0);" fdAdId="${ad.fdId}">
+						</#if>
+								<img src="${downAction}${ad.fdPicUrl}"/>
+							</a>
+					</#list>
+				</div>
+			</div>
+			<div class="shopMessage">
+				<span class="shopUserHead">
+					<img src="${fdShopPicUrl}"/>
+				</span>
+				<span class="shopTitle">
+					${fdShopName}的微商店
+				</span>
+			</div>
+			<div class="droploadDiv">
+				<div class="goodsList">
+					
+				</div>
+			</div>
+			<div class="noDateTip">暂无数据</div>
+			<div style="padding-top:70px;"></div>
+		</div>
+	</div>
+	<#include "app/jsp/common/goodsItemTemplate.html">
+	<#include "app/jsp/common/addShopCart.html">
+	<#include "app/jsp/common/foot.html">
+</body>
+</html>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rel_act_template"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <GridView
+        android:id="@+id/grv_template"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/dimen_5dp"
+        android:paddingRight="@dimen/dimen_5dp"
+        android:columnWidth="@dimen/dimen_101dp"
+        android:horizontalSpacing="@dimen/dimen_10dp"
+        android:numColumns="3"
+        android:scrollbars="none"
+        android:verticalSpacing="@dimen/dimen_10dp" >
+    </GridView>
+    <TextView
+        android:id="@+id/txv_template_empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:padding="@dimen/dimen_10dp"
+        android:ellipsize="middle"
+        android:text="@string/template_empty_4upgrade"
+        android:visibility="gone"/>
+</RelativeLayout>

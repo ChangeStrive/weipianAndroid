@@ -1,0 +1,543 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <string-array name="access_file_models_name">
+        <item>local_card_template_10001.jpg</item>
+        <item>local_card_template_10001bg.jpg</item>
+        <item>local_card_template_10002.jpg</item>
+        <item>local_card_template_10002bg.jpg</item>
+        <item>local_card_template_10003.jpg</item>
+        <item>local_card_template_10003bg.jpg</item>
+        <item>local_card_template_10004.jpg</item>
+        <item>local_card_template_10004bg.jpg</item>
+        <item>local_card_template_10005.jpg</item>
+        <item>local_card_template_10005bg.jpg</item>
+        <item>local_card_template_10006.jpg</item>
+        <item>local_card_template_10006bg.jpg</item>
+        <item>local_card_template_10007.jpg</item>
+        <item>local_card_template_10007bg.jpg</item>
+        <item>local_card_template_10008.jpg</item>
+        <item>local_card_template_10008bg.jpg</item>
+        <item>local_card_template_10009.jpg</item>
+        <item>local_card_template_10009bg.jpg</item>
+        <item>local_card_template_b10009.jpg</item>
+        <item>local_card_template_b10009bg.jpg</item>
+    </string-array>
+    <!-- 选择方式 -->
+    <string-array name="image_choose_type">
+        <item>拍照</item>
+        <item>从图片库选择</item>
+    </string-array>
+    <!-- 消息中心 会话长按内容 -->
+    <string-array name="message_main_session">
+        <item>置顶会话</item>
+        <item>删除会话</item>
+    </string-array>
+    <!-- 消息中心 广播长按内容 -->
+    <string-array name="message_main_broadcast">
+        <item>复制</item>
+        <item>发表评论</item>
+        <item>分享微广播</item>
+        <item>屏蔽此人广播</item>
+        <item>删除</item>
+    </string-array>
+
+    <!-- 数据库表名 -->
+    <string-array name="table_name_list">
+        <item>user</item>
+        <item>card</item>
+        <item>message</item>
+        <item>notice</item>
+        <item>contacts</item>
+        <item>contact_groups</item>
+        <item>enterprise</item>
+        <item>backup_log</item>
+        <item>modes</item>
+        <item>repair</item>
+        <item>nearby</item>
+        <item>circle_groups</item>
+        <item>circle_group_members</item>
+        <item>enterprise_members</item>
+    </string-array>
+    <!-- 注销用户清空数据 -->
+    <string-array name="table_name_list_clear">
+        <item>nearby</item>
+    </string-array>
+
+    <!-- 分享列表 -->
+    <string-array name="share_member_list">
+        <item>tencent.mobileqq</item>
+        <item>com.sina.weibo</item>
+        <item>com.tencent</item>
+        <item>com.qzone</item>
+        <item>renren</item>
+        <item>im.yixin</item>
+    </string-array>
+    <!-- 信息详细长按发送者选项 -->
+    <string-array name="message_chat_info">
+        <item>重发</item>
+        <item>转发</item>
+        <item>删除</item>
+        <item>复制信息文本</item>
+        <item>分享信息</item>
+    </string-array>
+    <!-- 长按联系人选项 -->
+    <string-array name="cardcase_contact_info">
+        <item>查看详情</item>
+        <item>呼叫</item>
+        <item>发送消息</item>
+        <item>发送邮件</item>
+        <item>转发名片</item>
+        <item>移动至分组</item>
+        <item>加入黑名单</item>
+        <item>删除名片</item>
+    </string-array>
+    <!-- 长按联系人选项 -->
+    <string-array name="book_contact_info">
+        <item>查看详情</item>
+        <item>呼叫</item>
+        <item>发送短信</item>
+        <item>发送邮件</item>
+        <item>推荐好友获得奖励</item>
+        <item>移动至分组</item>
+        <item>加入黑名单</item>
+        <item>删除联系人</item>
+    </string-array>
+    <string-array name="book_contact_info_b">
+        <item>查看详情</item>
+        <item>呼叫</item>
+        <item>发送短信</item>
+        <item>发送邮件</item>
+        <item>云端交换名片</item>
+        <item>移动至分组</item>
+        <item>加入黑名单</item>
+        <item>删除联系人</item>
+    </string-array>
+    <!-- 行业 -->
+    <string-array name="business">
+        <item>其他</item>
+        <item>计算机/互联网/通信</item>
+        <item>生产/工艺/制造业</item>
+        <item>能源/化工/冶金/矿业</item>
+        <item>商业/贸易/采购/零售/个体</item>
+        <item>酒店/餐饮/旅游/服务业</item>
+        <item>金融/银行/保险/投资/财税</item>
+        <item>文化/广告/公关/传媒/新闻</item>
+        <item>影视/娱乐/艺术/表演</item>
+        <item>建筑/房地产/装修/物业</item>
+        <item>交通/运输/物流</item>
+        <item>医疗/护理/制药/美容/保健</item>
+        <item>农业/林业/畜牧/养殖</item>
+        <item>律师/法务/咨询</item>
+        <item>学校/教育/培训</item>
+        <item>政府/公务员/事业单位</item>
+        <item>自由职业者/待业/失业/退休</item>
+        <item>在校学生</item>
+    </string-array>
+
+    <!-- 出生_年 -->
+    <string-array name="birthday_year">
+        <item>1970</item>
+        <item>1971</item>
+        <item>1972</item>
+        <item>1973</item>
+        <item>1974</item>
+        <item>1975</item>
+        <item>1976</item>
+    </string-array>
+
+    <!-- 出生_月 -->
+    <string-array name="birthday_month">
+        <item>一月</item>
+        <item>二月</item>
+        <item>三月</item>
+        <item>四月</item>
+        <item>五月</item>
+        <item>六月</item>
+        <item>七月</item>
+        <item>八月</item>
+        <item>九月</item>
+        <item>十月</item>
+        <item>十一月</item>
+        <item>十二月</item>
+    </string-array>
+
+    <!-- 学历 -->
+    <string-array name="education">
+        <item>小学</item>
+        <item>初中</item>
+        <item>高中</item>
+        <item>大专</item>
+        <item>本科</item>
+        <item>硕士</item>
+        <item>博士</item>
+    </string-array>
+
+    <!-- 性别 -->
+    <string-array name="sex">
+        <item>女</item>
+        <item>男</item>
+    </string-array>
+
+    <!-- 血型 -->
+    <string-array name="blood_type">
+        <item>A型</item>
+        <item>B型</item>
+        <item>AB型</item>
+        <item>O型</item>
+    </string-array>
+
+    <!-- 星座 -->
+    <string-array name="constellation">
+        <item>摩羯座</item>
+        <item>水瓶座</item>
+        <item>双鱼座</item>
+        <item>白羊座</item>
+        <item>金牛座</item>
+        <item>双子座</item>
+        <item>巨蟹座</item>
+        <item>狮子座</item>
+        <item>处女座</item>
+        <item>天秤座</item>
+        <item>天蝎座</item>
+        <item>射手座</item>
+    </string-array>
+
+    <!-- 城市 -->
+    <string-array name="city">
+        <item>北京市</item>
+        <item>上海市</item>
+        <item>深圳市</item>
+        <item>福州市</item>
+        <item>泉州市</item>
+        <item>厦门市</item>
+    </string-array>
+
+    <!-- 省份 -->
+    <string-array name="province">
+        <item>北京市</item>
+        <item>上海市</item>
+        <item>深圳市</item>
+        <item>福建省 </item>
+        <item>广东省</item>
+        <item>浙江省</item>
+        <item>江苏省</item>
+        <item>安徽省</item>
+        <item>江西省</item>
+        <item>广西省</item>
+        <item>云南省</item>
+        <item>河北省</item>
+        <item>山西省</item>
+        <item>辽宁省</item>
+        <item>吉林省</item>
+        <item>黑龙江省</item>
+        <item>山东省</item>
+        <item>河南省</item>
+        <item>湖北省</item>
+        <item>湖南省</item>
+        <item>海南省</item>
+        <item>四川省</item>
+        <item>贵州省</item>
+        <item>陕西省</item>
+        <item>甘肃省</item>
+        <item>青海省</item>
+        <item>台湾省</item>
+        <item>内蒙古自治区</item>
+        <item>广西壮族自治区</item>
+        <item>西藏自治区</item>
+        <item>宁夏回族自治区</item>
+        <item>新疆维吾尔自治区</item>
+        <item>香港特别行政区</item>
+        <item>澳门特别行政区</item>
+    </string-array>
+    <!-- 籍贯 -->
+    <string-array name="nativeplace">
+        <item>北京市</item>
+        <item>上海市</item>
+        <item>深圳市</item>
+        <item>福建省 </item>
+        <item>广东省</item>
+        <item>浙江省</item>
+        <item>江苏省</item>
+        <item>安徽省</item>
+        <item>江西省</item>
+        <item>广西省</item>
+        <item>云南省</item>
+        <item>河北省</item>
+        <item>山西省</item>
+        <item>辽宁省</item>
+        <item>吉林省</item>
+        <item>黑龙江省</item>
+        <item>山东省</item>
+        <item>河南省</item>
+        <item>湖北省</item>
+        <item>湖南省</item>
+        <item>海南省</item>
+        <item>四川省</item>
+        <item>贵州省</item>
+        <item>陕西省</item>
+        <item>甘肃省</item>
+        <item>青海省</item>
+        <item>台湾省</item>
+        <item>内蒙古自治区</item>
+        <item>广西壮族自治区</item>
+        <item>西藏自治区</item>
+        <item>宁夏回族自治区</item>
+        <item>新疆维吾尔自治区</item>
+        <item>香港特别行政区</item>
+        <item>澳门特别行政区</item>
+    </string-array>
+    <!-- 毕业院校 -->
+    <string-array name="school">
+        <item>北京大学</item>
+        <item>清华大学</item>
+        <item>福州大学</item>
+        <item>浙江大学</item>
+        <item>大连理工大学</item>
+        <item>天津大学</item>
+    </string-array>
+    <!-- 国籍 -->
+    <string-array name="country">
+        <item>中国</item>
+        <item>美国</item>
+        <item>俄罗斯</item>
+        <item>加拿大</item>
+        <item>英国</item>
+        <item>法国</item>
+        <item>德国</item>
+        <item>意大利</item>
+        <item>荷兰</item>
+        <item>朝鲜</item>
+        <item>印度</item>
+        <item>印度尼西亚</item>
+        <item>巴西</item>
+        <item>阿根廷</item>
+        <item>墨西哥</item>
+        <item>伊朗</item>
+        <item>伊拉克</item>
+        <item>阿富汗</item>
+        <item>其他</item>
+    </string-array>
+    <!-- 二进制对照 -->
+    <string-array name="binarys">
+        <item>00000</item>
+        <item>00001</item>
+        <item>00010</item>
+        <item>00011</item>
+        <item>00100</item>
+        <item>00101</item>
+        <item>00110</item>
+        <item>00111</item>
+        <item>01000</item>
+        <item>01001</item>
+        <item>01010</item>
+        <item>01011</item>
+        <item>01100</item>
+        <item>01101</item>
+        <item>01110</item>
+        <item>01111</item>
+        <item>10000</item>
+        <item>10001</item>
+        <item>10010</item>
+        <item>10011</item>
+        <item>10100</item>
+        <item>10101</item>
+        <item>10110</item>
+        <item>10111</item>
+        <item>11000</item>
+        <item>11001</item>
+        <item>11010</item>
+        <item>11011</item>
+        <item>11100</item>
+        <item>11101</item>
+        <item>11110</item>
+        <item>11111</item>
+    </string-array>
+    <string-array name="file_format">
+        <item>vCard格式(*.vcf)</item>
+        <item>Outlook格式(*.csv)</item>
+        <item>Excel格式(*.xls)</item>
+    </string-array>
+    <string-array name="backupType">
+        <item>我的名片</item>
+        <item>私密空间(数量保密)</item>
+        <item>主要设置</item>
+    </string-array>
+    <string-array name="default_group">
+        <item>我的VIP</item>
+        <item>家人</item>
+        <item>朋友</item>
+        <item>同事</item>
+    </string-array>
+    <string-array name="logoArray">
+        <item>img_myinfo_card</item>
+        <item>img_secret_space</item>
+        <item>img_myinfo_otherset</item>
+    </string-array>
+
+    <!-- 祝福短信 -->
+    <string-array name="sms_blessing">
+        <item>生日快乐</item>
+        <item>白头偕老</item>
+        <item>早生贵子</item>
+    </string-array>
+
+    <!-- 快捷短信 -->
+    <string-array name="sms_quick">
+        <item>开会中</item>
+        <item>吃饭未回</item>
+        <item>正在忙</item>
+    </string-array>
+    <!-- 自动备份恢复时间间隔 -->
+    <string-array name="backup_set_distance">
+        <item>1天</item>
+        <item>1周</item>
+        <item>1个月</item>
+        <item>1季度</item>
+    </string-array>
+
+    <!-- 设定备份方式 -->
+    <string-array name="backup_set_pattern">
+        <item>以本机为准覆盖云端</item>
+        <item>合并云端和本机</item>
+    </string-array>
+
+    <!-- 滑一滑、扫一扫名片交换模式 设置 -->
+    <string-array name="swap_card_slip_pattern">
+        <item>直接交换(默认)</item>
+        <item>需要验证交换</item>
+    </string-array>
+
+    <!-- 摇一摇名片交换模式 设置 -->
+    <string-array name="swap_card_rock_pattern">
+        <item>直接交换(默认)</item>
+        <item>需要验证交换</item>
+        <item>只发名片,不收名片</item>
+        <item>只收名片,不发名片</item>
+    </string-array>
+
+    <!-- 设置语言 -->
+    <string-array name="set_language">
+        <item>系统语言(默认)</item>
+        <item>简体中文</item>
+        <item>繁体中文</item>
+        <item>English</item>
+    </string-array>
+
+    <!-- 通讯录来电显示设置 -->
+    <string-array name="contact_book_caller_display">
+        <item>头像(默认)</item>
+        <item>名片</item>
+    </string-array>
+	 <!-- 首页设置 -->
+    <string-array name="set_homepage">
+         <item>微片(默认)</item>
+         <item>名片夹</item>
+    </string-array>
+    
+    <!-- 转发我的名片设置 -->
+    <string-array name="transmit_mycard_set">
+        <item>需要我同意(默认)</item>
+        <item>直接转发</item>
+    </string-array>
+
+    <!-- 设置名片交换音效 -->
+    <string-array name="swap_card_sound_set">
+        <item>京剧脸谱(默认)</item>
+        <item>Sunset Journey</item>
+        <item>静音</item>
+    </string-array>
+
+    <!-- 云端查找 信息显示 -->
+    <string-array name="cloud_find_show_type">
+        <item>仅显示姓名和微号(默认)</item>
+        <item>显示当前名片信息</item>
+    </string-array>
+    <string-array name="card_detail_more_info">
+        <item>QQ</item>
+        <item>新浪微博</item>
+        <item>腾讯微博</item>
+        <item>微信</item>
+        <item>MSN</item>
+        <item>邮编</item>
+    </string-array>
+
+     <string-array name="new_card_detail_more_info">
+        <item>QQ</item>
+        <item>新浪微博</item>
+        <item>腾讯微博</item>
+        <item>MSN</item>
+        <item>邮编</item>
+    </string-array>
+    
+    <!-- 单位性质 -->
+    <string-array name="company_type">
+        <item>国有企业</item>
+        <item>国有控股企业</item>
+        <item>外资企业</item>
+        <item>合资企业</item>
+        <item>民营企业</item>
+        <item>事业单位</item>
+        <item>国家行政机关</item>
+        <item>政府</item>
+        <item>其他</item>
+    </string-array>
+    <string-array name="detail_eddit_dlg_item_select_way">
+        <item>名片扫描识别</item>
+        <item>本地上传电子名片</item>
+    </string-array>
+    <!-- 名片模板分类 及 对应的背景颜色值 -->
+    <string-array name="act_card_template_class_name">
+        <item>IT行业</item>
+        <item>五金家电数码</item>
+        <item>行政机关</item>
+        <item>金融保险投资</item>
+        <item>酒店餐饮茶艺</item>
+        <item>休闲娱乐美容</item>
+        <item>广告策划传媒</item>
+        <item>印刷包装</item>
+        <item>学校教育培训</item>
+        <item>文化体育</item>
+        <item>房产物业中介</item>
+        <item>建筑家居装饰</item>
+        <item>服装纺织首饰</item>
+        <item>汽车汽配</item>
+        <item>工程机械</item>
+        <item>交通运输物流</item>
+        <item>医疗卫生</item>
+        <item>批发零售</item>
+        <item>商业服务</item>
+        <item>中国传统</item>
+        <item>艺术风格</item>
+        <item>透明PVC名片</item>
+        <item>特殊工艺名片</item>
+        <item>至尊金属名片</item>
+    </string-array>
+    <string-array name="act_card_template_class_background_color">
+        <item>#41aade</item>
+        <item>#fe2402</item>
+        <item>#19458e</item>
+        <item>#ff5c06</item>
+        <item>#ffc416</item>
+        <item>#7081fd</item>
+        <item>#a14fe4</item>
+        <item>#009931</item>
+        <item>#41aade</item>
+        <item>#6402d3</item>
+        <item>#1d9e4a</item>
+        <item>#01496d</item>
+        <item>#ff9804</item>
+        <item>#01bd3d</item>
+        <item>#19458e</item>
+        <item>#ff5c06</item>
+        <item>#01b727</item>
+        <item>#146cfd</item>
+        <item>#d84c02</item>
+        <item>#41aade</item>
+        <item>#0156a0</item>
+        <item>#fb6e23</item>
+        <item>#0197e2</item>
+        <item>#ffc61f</item>
+    </string-array>
+
+</resources>

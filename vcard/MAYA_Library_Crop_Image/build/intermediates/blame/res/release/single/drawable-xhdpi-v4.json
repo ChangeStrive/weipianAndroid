@@ -1,0 +1,38 @@
+[
+    {
+        "merged": "D:\\AndroidStudio\\VCard\\MAYA_Library_Crop_Image\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\fwex_crop_img_indicator_autocrop.png",
+        "source": "D:\\AndroidStudio\\VCard\\MAYA_Library_Crop_Image\\res\\drawable-xhdpi\\fwex_crop_img_indicator_autocrop.png"
+    },
+    {
+        "merged": "D:\\AndroidStudio\\VCard\\MAYA_Library_Crop_Image\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\fwex_crop_img_camera_crop_1.png",
+        "source": "D:\\AndroidStudio\\VCard\\MAYA_Library_Crop_Image\\res\\drawable-xhdpi\\fwex_crop_img_camera_crop_1.png"
+    },
+    {
+        "merged": "D:\\AndroidStudio\\VCard\\MAYA_Library_Crop_Image\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\fwex_crop_img_ic_rotate_right.png",
+        "source": "D:\\AndroidStudio\\VCard\\MAYA_Library_Crop_Image\\res\\drawable-xhdpi\\fwex_crop_img_ic_rotate_right.png"
+    },
+    {
+        "merged": "D:\\AndroidStudio\\VCard\\MAYA_Library_Crop_Image\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\fwex_crop_img_btn_crop_operator.9.png",
+        "source": "D:\\AndroidStudio\\VCard\\MAYA_Library_Crop_Image\\res\\drawable-xhdpi\\fwex_crop_img_btn_crop_operator.9.png"
+    },
+    {
+        "merged": "D:\\AndroidStudio\\VCard\\MAYA_Library_Crop_Image\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\fwex_crop_img_camera_crop_height.png",
+        "source": "D:\\AndroidStudio\\VCard\\MAYA_Library_Crop_Image\\res\\drawable-xhdpi\\fwex_crop_img_camera_crop_height.png"
+    },
+    {
+        "merged": "D:\\AndroidStudio\\VCard\\MAYA_Library_Crop_Image\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\fwex_crop_img_camera_crop_width.png",
+        "source": "D:\\AndroidStudio\\VCard\\MAYA_Library_Crop_Image\\res\\drawable-xhdpi\\fwex_crop_img_camera_crop_width.png"
+    },
+    {
+        "merged": "D:\\AndroidStudio\\VCard\\MAYA_Library_Crop_Image\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\fwex_crop_img_btn_crop_pressed.9.png",
+        "source": "D:\\AndroidStudio\\VCard\\MAYA_Library_Crop_Image\\res\\drawable-xhdpi\\fwex_crop_img_btn_crop_pressed.9.png"
+    },
+    {
+        "merged": "D:\\AndroidStudio\\VCard\\MAYA_Library_Crop_Image\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\fwex_crop_img_ic_rotate_left.png",
+        "source": "D:\\AndroidStudio\\VCard\\MAYA_Library_Crop_Image\\res\\drawable-xhdpi\\fwex_crop_img_ic_rotate_left.png"
+    },
+    {
+        "merged": "D:\\AndroidStudio\\VCard\\MAYA_Library_Crop_Image\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\fwex_crop_img_camera_crop_2.png",
+        "source": "D:\\AndroidStudio\\VCard\\MAYA_Library_Crop_Image\\res\\drawable-xhdpi\\fwex_crop_img_camera_crop_2.png"
+    }
+]

@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <META http-equiv="X-UA-Compatible" content="IE=9" ></META>
+    <title>微片生活管理平台 - 在线留言</title>
+	<#include "Admin/jsp/common/common.ftl">
+	<link rel="stylesheet" type="text/css" href="${hxltUrl}Admin/css/validator.css">
+	
+	<script type="text/javascript" src="${hxltUrl}js/utils/form/validform.js"></script>
+	
+	<script type="text/javascript" src="${hxltUrl}Admin/js/web/WebMessage/WebMessageAdd.js"></script>
+	<script>
+		var fdId = "${item.fdId}";
+		var fdStatus = '${item.fdStatus}';
+	</script>
+	<script type="text/javascript">
+		var firstMenuNo="00015";
+		var secondMenuNo="00034";
+	</script>
+  </head>
+  
+<body>
+<!-- 头部 -->
+<#include "Admin/jsp/common/header.ftl">
+<!-- /头部 --> 
+
+<!-- 边栏 -->
+<#include "Admin/jsp/common/sidebar.ftl">
+<!-- /边栏 --> 
+
+<!-- 内容区 -->
+<div id="main-content">
+	<div id="top-alert" class="fixed alert alert-error" style="display: none;">
+		<button class="close fixed" style="margin-top: 4px;">×</button>
+		<div class="alert-content">这是内容</div>
+	</div>
+	<div id="main" class="main" style="min-height: 430px;"> 
+		
+		<!-- nav -->
+		<div class="main-title">
+			<h2>在线留言</h2>
+		</div>
+		<form method="post" id="linkForm" class="form-horizontal contact_form">
+			<div class="form-item">
+				<label class="item-label">用户名</label>
+				<div class="controls">
+					${item.fdUserName}
+				</div>
+			</div>
+			<div class="form-item">
+				<label class="item-label">Email</label>
+				<div class="controls">
+					${item.fdEmail}
+				</div>
+			</div>
+			<div class="form-item">
+				<label class="item-label">联系电话</label>
+				<div class="controls">
+					${item.fdTel}
+				</div>
+			</div>
+			<div class="form-item">
+				<label class="item-label">创建时间</label>
+				<div class="controls">
+					${item.fdCreateTime}
+				</div>
+			</div>
+			<div class="form-item">
+				<label class="item-label">留言</label>
+				<div class="controls">
+					${item.fdContent}
+				</div>
+			</div>
+			<div class="form-item">
+				<label class="item-label">是否显示</label>
+				<div class="controls">
+					<label for="fdStatus1" style="margin-right: 5px;">是</label><input id="fdStatus1" name="fdStatus" type="radio" value="1" style="margin-right: 10px;"/>
+					<label for="fdStatus2" style="margin-right: 5px;">否</label><input id="fdStatus2" name="fdStatus" type="radio" value="0" checked="checked"/>
+					<span class="form_checktip"></span>
+				</div>
+			</div>
+			<div class="form-item">
+				<label class="item-label">回复</label>
+				<div class="controls">
+					<textarea name="fdReplay" class="textArea input-large">${item.fdReplay}</textarea>
+					<span class="form_checktip"></span>
+				</div>
+			</div>
+			<div class="form-item">
+				<input type="hidden" name="fdId" value="${item.fdId }" />
+			</div>
+			<div class="form-item">
+				<button class="btn submit-btn ajax-post" id="submit" type="submit" target-form="form-horizontal">确 定</button>
+				<button class="btn btn-return" onclick="javascript:history.back(-1);return false;">返 回</button>
+			</div>
+		</form>
+	</div>
+	<!-- 底部 -->
+	<#include "Admin/jsp/common/footer.ftl">
+</div>
+<!-- /内容区 -->
+</body>
+</html>

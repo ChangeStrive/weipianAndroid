@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.maya.android.vcard"
+    android:installLocation="auto">
+
+    <uses-sdk
+        android:maxSdkVersion="22"
+        android:minSdkVersion="14" />
+
+    <!-- 允许网络访问 -->
+    <!-- 以下4个同时为 百度分享权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="gexin.permission.GexinService" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.WRITE_SMS" />
+    <!-- 录音权限 -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <!-- 微信权限 -->
+    <permission
+        android:name="com.maya.android.vcard.permission.MMOAUTH_CALLBACK"
+        android:protectionLevel="normal" />
+    <permission
+        android:name="com.maya.android.vcard.permission.MM_MESSAGE"
+        android:protectionLevel="normal" />
+
+    <uses-permission android:name="com.maya.android.vcard.permission.MMOAUTH_CALLBACK" />
+    <uses-permission android:name="com.maya.android.vcard.permission.MM_MESSAGE" />
+    <!-- 个推权限 -->
+    <permission
+        android:name="gexin.permission.GexinService"
+        android:protectionLevel="normal" />
+    <!-- SCAN权限集 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!-- 开启闪光灯权限 -->
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <!-- NFC权限 -->
+    <uses-permission android:name="android.permission.NFC" />
+
+    <uses-feature
+        android:name="android.hardware.nfc"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".app.VCardApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".ui.act.LoadingAndWelcomeActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.act.SettingActivity"
+            android:label="@string/title_activity_setting"></activity>
+        <!-- <activity -->
+        <!-- android:name=".ui.act.LoadingAndWelcomeActivity" -->
+        <!-- android:label="@string/title_activity_loading_and_welcome" > -->
+        <!-- </activity> -->
+        <!-- <activity -->
+        <!-- android:name=".ui.act.TestActivity" -->
+        <!-- android:label="@string/title_activity_setting" > -->
+        <!-- </activity> -->
+        <activity
+            android:name=".ui.act.RegisterActivity"
+            android:label="@string/title_activity_register"></activity>
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:label="@string/title_activity_wxentry"></activity>
+        <activity
+            android:name=".ui.act.AddVCardActivity"
+            android:label="@string/title_activity_add_vcard"></activity>
+        <activity
+            android:name=".ui.act.VCardMainActivity"
+            android:label="@string/title_activity_vcard_main"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"></activity>
+        <activity
+            android:name=".ui.act.MultiMainActivity"
+            android:label="@string/title_activity_multi_main"
+            android:theme="@android:style/Theme.Black.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustNothing"></activity>
+        <activity
+            android:name=".ui.act.UnitMainActivity"
+            android:label="@string/title_activity_unit_main"></activity>
+        <activity
+            android:name=".ui.act.WebActivity"
+            android:label="@string/title_activity_common_web"></activity>
+        <activity
+            android:name=".ui.act.ScanQrCodeActivity"
+            android:label="@string/title_activity_scan_qr_code"></activity>
+        <activity
+            android:name=".ui.act.UserMainActivity"
+            android:label="@string/title_activity_user_main"
+            android:windowSoftInputMode="stateHidden|adjustNothing">
+            <intent-filter>
+                <action android:name="android.nfc.action.TAG_DISCOVERED" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.nfc.action.NDEF_DISCOVERED" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="text/plain" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.nfc.action.TECH_DISCOVERED"
+                android:resource="@xml/filter_nfc" />
+        </activity>
+        <activity
+            android:name=".ui.act.VCardSwapMainActivity"
+            android:label="@string/title_activity_vcard_swap_main"></activity>
+        <activity
+            android:name=".ui.act.CardcaseMainActivity"
+            android:label="@string/title_activity_cardcase_main"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan"></activity>
+        <activity
+            android:name=".ui.act.MessageMainActivity"
+            android:label="@string/title_activity_message_main"></activity>
+        <activity
+            android:name=".ui.act.CardcaseDetailVCardActivity"
+            android:label="@string/title_activity_cardcase_detail_vcard"></activity>
+        <activity
+            android:name=".ui.act.AddVCardScanActivity"
+            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|fontScale"
+            android:label="@string/title_activity_add_vcard_scan"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"></activity>
+        <activity
+            android:name=".ui.act.AddVCardScanTrimActivity"
+            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|fontScale"
+            android:label="@string/title_activity_add_vcard_scan_trim"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"></activity>
+        <activity
+            android:name=".ui.act.FullScreenActivity"
+            android:label="@string/title_activity_vcard_swap_full_screen"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"></activity>
+
+        <!-- U-meng start -->
+        <!-- 测试Key：5383fb7356240be691015177 -->
+        <!-- 正式Key：527b4ec956240bb06b001c73 -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="5383fb7356240be691015177"></meta-data>
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="${UMENG_CHANNEL_VALUE}" />
+
+        <service
+            android:name="com.umeng.update.net.DownloadingService"
+            android:process=":DownloadingService" />
+
+        <activity
+            android:name="com.umeng.update.UpdateDialogActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity android:name="com.umeng.fb.ConversationActivity" />
+        <!-- U-meng end -->
+
+
+        <!-- 个推接收 -->
+        <receiver android:name=".receiver.GexinMessageReceiver">
+            <intent-filter>
+                <action android:name="com.igexin.sdk.action.zQYFtkK4Wm7A3ueMiUola8" />
+            </intent-filter>
+        </receiver>
+
+        <!-- 个推SDK配置 start -->
+        <meta-data
+            android:name="PUSH_APPID"
+            android:value="zQYFtkK4Wm7A3ueMiUola8" />
+        <meta-data
+            android:name="PUSH_APPKEY"
+            android:value="E7IwgOckgd5w4pbAkqtxI4" />
+        <meta-data
+            android:name="PUSH_APPSECRET"
+            android:value="SMEYr2tVHF6UywIBj6yrK4" />
+
+        <!-- 配置SDK核心服务 -->
+        <service
+            android:name="com.igexin.sdk.PushService"
+            android:exported="true"
+            android:label="NotificationCenter"
+            android:process=":pushservice"></service>
+
+        <receiver
+            android:name="com.igexin.sdk.PushReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="com.igexin.sdk.action.refreshls" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.igexin.sdk.action.pushmanager" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.igexin.getuiext.service.PayloadReceiver"
+            android:exported="true">
+            <intent-filter>
+
+                <!-- 这个com.igexin.sdk.action.7fjUl2Z3LH6xYy7NQK4ni4固定，不能修改 -->
+                <action android:name="com.igexin.sdk.action.7fjUl2Z3LH6xYy7NQK4ni4" />
+                <!-- android:name="com.igexin.sdk.action.第三方的appId" -->
+                <action android:name="com.igexin.sdk.action.zQYFtkK4Wm7A3ueMiUola8" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.igexin.getuiext.service.GetuiExtService"
+            android:process=":pushservice" />
+
+        <activity
+            android:name="com.igexin.sdk.PushActivity"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:process=":pushservice"
+            android:taskAffinity="com.igexin.sdk.PushActivityTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.igexin.getuiext.activity.GetuiExtActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:process=":pushservice"
+            android:taskAffinity="android.task.myServicetask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <!-- 个推download模块配置 -->
+        <service
+            android:name="com.igexin.download.DownloadService"
+            android:process=":pushservice" />
+
+        <receiver
+            android:name="com.igexin.download.DownloadReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <provider
+            android:name="com.igexin.download.DownloadProvider"
+            android:authorities="downloads.com.maya.android.vcard"
+            android:process=":pushservice" />
+
+        <!-- 个推SDK配置 end -->
+
+
+        <!-- 腾讯 qq start -->
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent100397760" />
+            </intent-filter>
+        </activity>
+        <!-- 腾讯 qq end -->
+
+
+    </application>
+
+</manifest>

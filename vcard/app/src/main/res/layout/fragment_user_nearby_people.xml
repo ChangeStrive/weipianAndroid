@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/all_frg_view_color"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.maya.android.vcard.ui.frg.UserNearbyPeopleFragment">
+
+    <LinearLayout
+        android:id="@+id/lil_person_select"
+        style="@style/all_btn_background_color"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_40dp">
+
+        <ImageButton
+            android:id="@+id/imb_nearby_all_person"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:src="@mipmap/img_nearby_all_person" />
+
+        <View style="@style/vertical_line_divider" />
+
+        <ImageButton
+            android:id="@+id/imb_nearby_woman_person"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@mipmap/bg_nearby_select"
+            android:src="@mipmap/img_nearby_woman_person" />
+
+        <View style="@style/vertical_line_divider" />
+
+        <ImageButton
+            android:id="@+id/imb_nearby_man_person"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@mipmap/bg_nearby_select"
+            android:src="@mipmap/img_nearby_man_person" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view_divider"
+        style="@style/horizontal_line_divider_fill"
+        android:layout_below="@id/lil_person_select" />
+
+    <RelativeLayout
+        style="@style/all_btn_background_color"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view_divider">
+
+        <include layout="@layout/inc_lsv_view" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

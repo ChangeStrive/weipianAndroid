@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<#include "app/jsp/common/common.ftl">
+	<#include "app/jsp/weixinTemplate.html">
+	<#include "app/jsp/common/wxJS.html">
+	<title>订单支付</title>
+	<script type="text/javascript">
+	 var fdOrderId="${fdOrderId}";
+	 var title="${user.fdName}找您帮忙代付";
+	 var desc="${user.fdName}找您帮忙代付";
+	 var link=window.location.href;
+	 var imgUrl="${user.fdPicUrl}";
+	</script>
+	<script src='${hxltUrl}app/js/pay/share.js'></script>
+	<script src='${hxltUrl}app/js/pay/payWx.js'></script>
+</head>
+<body class="pay" >
+	<div class="mask" style="display: none;"></div>
+	<div class="wrap">
+		<header class="head clearfix buleHead">
+			<a href="javascript:history.back(-1)" class="left_head ahref iconfont">
+              	&#xe61c;
+			</a>
+			<h2 class="typePageTitle">订单支付</h2>
+		</header>
+		<div class="payMain" >
+			<div class="pm-success">
+				<div class="pm-image"><img src="${user.fdPicUrl}"/></div>
+				<div class="pm-text"> ${user.fdName}</div>
+			</div>
+			<div class="pm-list">
+				<div class="pm-item clearfix">
+					<span class="pmi-left">订单编号</span>
+					<span class="pmi-right">${item.fdOrderNo}</span>
+				</div>
+				<div class="pm-item clearfix">
+					<span class="pmi-left">应付金额</span>
+					<span class="pmi-right yellowMoney"><span class="amount">${item.fdAmount}</span><span class="rmb">￥</span></span>
+				</div>
+			</div>
+		</div>
+		<div class="reg-btn clearfix">
+			<a href="javascript:void(0)" class="regBtn selected nowPayBtn" >马上支付</a>
+		</div>
+		<div class="reg-btn clearfix">
+			<a href="javascript:void(0)" class="regBtn selected findPeopleBtn" >找人代付</a>
+		</div>
+	</div>
+	<img src="${hxltUrl}app/images/tip.png" class="payTipImage"/>
+	<#include "app/jsp/common/goIndex.html">
+</body>
+</html>

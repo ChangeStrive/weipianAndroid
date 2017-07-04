@@ -1,0 +1,37 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/all_frg_view_color"
+    tools:context="com.maya.android.vcard.ui.frg.UnitPictureFragment">
+
+    <RelativeLayout
+        android:id="@+id/rel_we_official_viewpage"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_144dp"
+        android:background="@mipmap/bg_album_banner">
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/txv_ablum_hint"
+        style="@style/unit_we_official_hint"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_70dp"
+        android:layout_below="@+id/rel_we_official_viewpage"
+        android:gravity="center"
+        android:text="@string/album_hint" />
+    <Button
+        android:id="@+id/btn_album_submit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_42dp"
+        android:layout_below="@id/txv_ablum_hint"
+        android:layout_marginLeft="@dimen/dimen_15dp"
+        android:layout_marginRight="@dimen/dimen_15dp"
+        android:background="@drawable/bg_general_btn_normal"
+        android:gravity="center"
+         style="@style/btn_submit"
+        android:text="@string/album_establish"
+        android:textSize="@dimen/dimen_16sp"/>
+
+</RelativeLayout>

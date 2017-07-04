@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<#include "app/jsp/common/common.ftl">
+	<#include "app/jsp/weixinTemplate.html">
+	<title>我的收藏</title>
+	<script type="text/javascript">
+	</script>
+	<script src='${hxltUrl}app/js/myCollection/myCollection.js'></script>
+</head>
+<body class="grayBg">
+	<div class="wrap">
+		<header class="homepage_head">
+			<a href="javascript:history.go(-1)" class="left_head  ahref" style="left:2%;">
+	             	  <span class="iconfont backBtn">&#xe61c;</span>
+			</a>
+			<h2>我的收藏</h2>
+		</header>
+		<div class="headNext">
+			<div class="droploadDiv">
+				<div class="goodsList">
+					
+				</div>
+			</div>
+			<div class="noDateTip">暂无数据</div>
+			<div style="padding-top:70px;"></div>
+		</div>
+	</div>
+	<#include "app/jsp/myCollection/goodsItemTemplate.html">
+</body>
+</html>

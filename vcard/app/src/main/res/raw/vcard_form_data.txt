@@ -1,0 +1,412 @@
+{
+    "480x800": {
+        "45x90": {
+            "cardTop": 44,
+            "cardLeft": 56,
+            "cardBottom": 20,
+            "markRight": 10,
+            "markBottom": 165,
+            "scanWidth": 78,
+            "scanHeight": 60,
+            "sideWidth": 126,
+            "sideHeight": 245,
+            "sideBottom": 110,
+            "sideItemHeight": 79
+        },
+        "54x90": {
+            "cardTop": 44,
+            "cardLeft": 19,
+            "cardBottom": 20,
+            "markRight": 10,
+            "markBottom": 165,
+            "scanWidth": 78,
+            "scanHeight": 60,
+            "sideWidth": 126,
+            "sideHeight": 245,
+            "sideBottom": 110,
+            "sideItemHeight": 79
+        },
+        "94x90": {
+            "cardTop": 44,
+            "cardLeft": 19,
+            "cardBottom": 20,
+            "markRight": 10,
+            "markBottom": 165,
+            "scanWidth": 78,
+            "scanHeight": 60,
+            "sideWidth": 126,
+            "sideHeight": 245,
+            "sideBottom": 110,
+            "sideItemHeight": 79
+        }
+    },
+    "480x854": {
+        "45x90": {
+            "cardTop": 47,
+            "cardLeft": 44,
+            "cardBottom": 22,
+            "markRight": 10,
+            "markBottom": 181,
+            "scanWidth": 78,
+            "scanHeight": 60,
+            "sideWidth": 126,
+            "sideHeight": 257,
+            "sideBottom": 121,
+            "sideItemHeight": 83
+        },
+        "54x90": {
+            "cardTop": 47,
+            "cardLeft": 19,
+            "cardBottom": 22,
+            "markRight": 10,
+            "markBottom": 181,
+            "scanWidth": 78,
+            "scanHeight": 60,
+            "sideWidth": 126,
+            "sideHeight": 257,
+            "sideBottom": 121,
+            "sideItemHeight": 83
+        },
+        "94x90": {
+            "cardTop": 47,
+            "cardLeft": 19,
+            "cardBottom": 22,
+            "markRight": 10,
+            "markBottom": 181,
+            "scanWidth": 78,
+            "scanHeight": 60,
+            "sideWidth": 126,
+            "sideHeight": 257,
+            "sideBottom": 121,
+            "sideItemHeight": 83
+        }
+    },
+    "540x960": {
+        "45x90": {
+            "cardTop": 58,
+            "cardLeft": 50,
+            "cardBottom": 21,
+            "markRight": 10,
+            "markBottom": 195,
+            "scanWidth": 82,
+            "scanHeight": 63,
+            "sideWidth": 144,
+            "sideHeight": 297,
+            "sideBottom": 121,
+            "sideItemHeight": 96
+        },
+        "54x90": {
+            "cardTop": 58,
+            "cardLeft": 24,
+            "cardBottom": 21,
+            "markRight": 10,
+            "markBottom": 195,
+            "scanWidth": 82,
+            "scanHeight": 63,
+            "sideWidth": 144,
+            "sideHeight": 297,
+            "sideBottom": 121,
+            "sideItemHeight": 96
+        },
+        "94x90": {
+            "cardTop": 58,
+            "cardLeft": 20,
+            "cardBottom": 21,
+            "markRight": 10,
+            "markBottom": 195,
+            "scanWidth": 82,
+            "scanHeight": 63,
+            "sideWidth": 144,
+            "sideHeight": 297,
+            "sideBottom": 121,
+            "sideItemHeight": 96
+        }
+    },
+    "640x960": {
+        "45x90": {
+            "cardTop": 53,
+            "cardLeft": 92,
+            "cardBottom": 25,
+            "markRight": 11,
+            "markBottom": 199,
+            "scanWidth": 94,
+            "scanHeight": 72,
+            "sideWidth": 128,
+            "sideHeight": 291,
+            "sideBottom": 134,
+            "sideItemHeight": 95
+        },
+        "54x90": {
+            "cardTop": 53,
+            "cardLeft": 46,
+            "cardBottom": 25,
+            "markRight": 11,
+            "markBottom": 199,
+            "scanWidth": 94,
+            "scanHeight": 72,
+            "sideWidth": 128,
+            "sideHeight": 291,
+            "sideBottom": 134,
+            "sideItemHeight": 95
+        },
+        "94x90": {
+            "cardTop": 53,
+            "cardLeft": 20,
+            "cardBottom": 25,
+            "markRight": 11,
+            "markBottom": 199,
+            "scanWidth": 94,
+            "scanHeight": 72,
+            "sideWidth": 128,
+            "sideHeight": 291,
+            "sideBottom": 134,
+            "sideItemHeight": 95
+        }
+    },
+    "640x1136": {
+        "45x90": {
+            "cardTop": 59,
+            "cardLeft": 58,
+            "cardBottom": 27,
+            "markRight": 12,
+            "markBottom": 221,
+            "scanWidth": 104,
+            "scanHeight": 80,
+            "sideWidth": 167,
+            "sideHeight": 346,
+            "sideBottom": 156,
+            "sideItemHeight": 113
+        },
+        "54x90": {
+            "cardTop": 59,
+            "cardLeft": 20,
+            "cardBottom": 27,
+            "markRight": 12,
+            "markBottom": 221,
+            "scanWidth": 104,
+            "scanHeight": 80,
+            "sideWidth": 167,
+            "sideHeight": 346,
+            "sideBottom": 156,
+            "sideItemHeight": 113
+        },
+        "94x90": {
+            "cardTop": 59,
+            "cardLeft": 20,
+            "cardBottom": 27,
+            "markRight": 12,
+            "markBottom": 221,
+            "scanWidth": 104,
+            "scanHeight": 80,
+            "sideWidth": 167,
+            "sideHeight": 346,
+            "sideBottom": 156,
+            "sideItemHeight": 113
+        }
+    },
+    "720x1280": {
+        "45x90": {
+            "cardTop": 70,
+            "cardLeft": 66,
+            "cardBottom": 32,
+            "markRight": 14,
+            "markBottom": 269,
+            "scanWidth": 126,
+            "scanHeight": 96,
+            "sideWidth": 188,
+            "sideHeight": 386,
+            "sideBottom": 182,
+            "sideItemHeight": 126
+        },
+        "54x90": {
+            "cardTop": 70,
+            "cardLeft": 20,
+            "cardBottom": 32,
+            "markRight": 14,
+            "markBottom": 269,
+            "scanWidth": 126,
+            "scanHeight": 96,
+            "sideWidth": 188,
+            "sideHeight": 386,
+            "sideBottom": 182,
+            "sideItemHeight": 126
+        },
+        "94x90": {
+            "cardTop": 70,
+            "cardLeft": 20,
+            "cardBottom": 32,
+            "markRight": 14,
+            "markBottom": 269,
+            "scanWidth": 126,
+            "scanHeight": 96,
+            "sideWidth": 188,
+            "sideHeight": 386,
+            "sideBottom": 182,
+            "sideItemHeight": 126
+        }
+    },
+    "768x1024": {
+        "45x90": {
+            "cardTop": 56,
+            "cardLeft": 149,
+            "cardBottom": 28,
+            "markRight": 12,
+            "markBottom": 215,
+            "scanWidth": 97,
+            "scanHeight": 77,
+            "sideWidth": 149,
+            "sideHeight": 312,
+            "sideBottom": 145,
+            "sideItemHeight": 101
+        },
+        "54x90": {
+            "cardTop": 56,
+            "cardLeft": 101,
+            "cardBottom": 28,
+            "markRight": 12,
+            "markBottom": 215,
+            "scanWidth": 97,
+            "scanHeight": 77,
+            "sideWidth": 149,
+            "sideHeight": 312,
+            "sideBottom": 145,
+            "sideItemHeight": 101
+        },
+        "94x90": {
+            "cardTop": 56,
+            "cardLeft": 20,
+            "cardBottom": 28,
+            "markRight": 12,
+            "markBottom": 215,
+            "scanWidth": 97,
+            "scanHeight": 77,
+            "sideWidth": 149,
+            "sideHeight": 312,
+            "sideBottom": 145,
+            "sideItemHeight": 101
+        }
+    },
+    "768x1184": {
+        "45x90": {
+            "cardTop": 71,
+            "cardLeft": 112,
+            "cardBottom": 30,
+            "markRight": 13,
+            "markBottom": 239,
+            "scanWidth": 112,
+            "scanHeight": 86,
+            "sideWidth": 201,
+            "sideHeight": 359,
+            "sideBottom": 160,
+            "sideItemHeight": 120
+        },
+        "54x90": {
+            "cardTop": 71,
+            "cardLeft": 44,
+            "cardBottom": 30,
+            "markRight": 13,
+            "markBottom": 239,
+            "scanWidth": 112,
+            "scanHeight": 86,
+            "sideWidth": 201,
+            "sideHeight": 359,
+            "sideBottom": 160,
+            "sideItemHeight": 120
+        },
+        "94x90": {
+            "cardTop": 71,
+            "cardLeft": 20,
+            "cardBottom": 30,
+            "markRight": 13,
+            "markBottom": 239,
+            "scanWidth": 112,
+            "scanHeight": 86,
+            "sideWidth": 201,
+            "sideHeight": 359,
+            "sideBottom": 160,
+            "sideItemHeight": 120
+        }
+    },
+    "800x1280": {
+        "45x90": {
+            "cardTop": 70,
+            "cardLeft": 106,
+            "cardBottom": 34,
+            "markRight": 14,
+            "markBottom": 268,
+            "scanWidth": 122,
+            "scanHeight": 96,
+            "sideWidth": 188,
+            "sideHeight": 386,
+            "sideBottom": 182,
+            "sideItemHeight": 126
+        },
+        "54x90": {
+            "cardTop": 70,
+            "cardLeft": 47,
+            "cardBottom": 34,
+            "markRight": 14,
+            "markBottom": 268,
+            "scanWidth": 122,
+            "scanHeight": 96,
+            "sideWidth": 188,
+            "sideHeight": 386,
+            "sideBottom": 182,
+            "sideItemHeight": 126
+        },
+        "94x90": {
+            "cardTop": 70,
+            "cardLeft": 20,
+            "cardBottom": 34,
+            "markRight": 14,
+            "markBottom": 268,
+            "scanWidth": 122,
+            "scanHeight": 96,
+            "sideWidth": 188,
+            "sideHeight": 386,
+            "sideBottom": 182,
+            "sideItemHeight": 126
+        }
+    },
+    "1080x1920": {
+        "45x90": {
+            "cardTop": 105,
+            "cardLeft": 99,
+            "cardBottom": 48,
+            "markRight": 21,
+            "markBottom": 402,
+            "scanWidth": 189,
+            "scanHeight": 144,
+            "sideWidth": 282,
+            "sideHeight": 575,
+            "sideBottom": 273,
+            "sideItemHeight": 189
+        },
+        "54x90": {
+            "cardTop": 105,
+            "cardLeft": 30,
+            "cardBottom": 48,
+            "markRight": 21,
+            "markBottom": 402,
+            "scanWidth": 189,
+            "scanHeight": 144,
+            "sideWidth": 282,
+            "sideHeight": 575,
+            "sideBottom": 273,
+            "sideItemHeight": 189
+        },
+        "94x90": {
+            "cardTop": 105,
+            "cardLeft": 30,
+            "cardBottom": 48,
+            "markRight": 21,
+            "markBottom": 402,
+            "scanWidth": 189,
+            "scanHeight": 144,
+            "sideWidth": 282,
+            "sideHeight": 575,
+            "sideBottom": 273,
+            "sideItemHeight": 189
+        }
+    }
+}

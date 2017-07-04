@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/dimen_15dp"
+    android:paddingRight="@dimen/dimen_15dp">
+
+    <View android:id="@+id/view_divider"
+        style="@style/horizontal_line_divider_fill"/>
+    <RelativeLayout
+        android:layout_below="@id/view_divider"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_65dp"
+        android:minHeight="@dimen/dimen_65dp">
+
+        <ImageView
+            android:id="@+id/imv_user_recommend_book"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/app_name"
+            android:scaleType="centerInside"
+            android:src="@mipmap/img_book" />
+
+        <CheckBox
+            android:id="@+id/chb_user_recommend_select"
+            style="@style/chb_is_agree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:checked="true"
+            android:focusable="false"
+            android:paddingLeft="@dimen/dimen_1dp" />
+
+        <EditText
+            android:id="@+id/edt_user_recommend_phone"
+            style="@style/user_recommend_edt"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dimen_10dp"
+            android:layout_marginRight="@dimen/dimen_9dp"
+            android:layout_toLeftOf="@id/chb_user_recommend_select"
+            android:layout_toRightOf="@id/imv_user_recommend_book"
+            android:background="@drawable/bg_general_edt_normal"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:hint="@string/hint_recommend_enter_phone"
+            android:inputType="phone"
+            android:paddingLeft="@dimen/dimen_10dp"
+            android:paddingRight="@dimen/dimen_10dp"
+            android:singleLine="true" />
+    </RelativeLayout>
+</RelativeLayout>

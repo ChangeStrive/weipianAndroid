@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <view
+	    class="eu.janmuller.android.cropimage.CropImageView"
+	    android:id="@+id/act_crop_image_view"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"/>
+    
+    <TextView 
+        android:id="@+id/txv_act_card_cut_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:layout_marginBottom="@dimen/dimen_25dp"
+        android:text="@string/vcard_cut_single_title"
+        android:textColor="@color/color_ffffff"
+        android:textSize="@dimen/dimen_20sp"/>
+    
+    <LinearLayout 
+        android:id="@+id/lil_act_card_cut_operate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:paddingRight="@dimen/dimen_10dp"
+        android:paddingBottom="@dimen/dimen_25dp"
+        android:orientation="vertical">
+        <Button 
+            android:id="@+id/btn_act_card_cut_scan"
+            android:layout_width="@dimen/dimen_93dp"
+            android:layout_height="@dimen/dimen_38dp"
+            android:textSize="@dimen/dimen_18sp"
+            android:background="@drawable/bg_btn_add_vcard_cut"
+            android:gravity="center"
+            android:text="@string/again_scan"/>
+        
+        <Button 
+            android:id="@+id/btn_act_card_cut_next"
+            android:layout_width="@dimen/dimen_93dp"
+            android:layout_height="@dimen/dimen_38dp"
+            android:textSize="@dimen/dimen_18sp"
+            android:background="@drawable/bg_btn_add_vcard_cut"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:text="@string/next_step"/>
+    </LinearLayout>
+
+    <TextView 
+        android:id="@+id/txv_act_card_cut_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/color_ffffff"
+        android:text="@string/add_vcard_cut_prompt"
+        android:textSize="@dimen/dimen_16sp"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:paddingBottom="@dimen/dimen_10dp"/>
+    
+</RelativeLayout>

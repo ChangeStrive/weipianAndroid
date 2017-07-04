@@ -1,0 +1,94 @@
+<textarea class="x-template" id="orderTitleTemplate">
+	<tr class="order-hd">
+		 <td class="first">
+			 <div class="summary">
+				 <span>
+				 	<input type="checkbox" class="J_Selector selector" id="{fdId}" name="biz_order_id" value="{fdId}">
+				 </span>
+				 <span class="dealtime" title="{fdCreateTime}" >{fdCreateTime}</span>
+				 <span class="number last-item" >订单号：<em>{fdOrderNo}</em></span>
+				 <span class="number last-item" style="margin-left: 5%;">门店名称：<em>{fdShopName}</em></span>
+				 <span class="number last-item" >门店编号：<em>{fdShopNo}</em></span>
+			 </div>
+		 </td>
+		 <td class="column" colspan="2">
+		  </td>
+		 <td class="column">
+		  </td>
+		 <td class="last" colspan="3">
+		 </td>
+	</tr>
+</textarea>
+
+<textarea class="x-template" id="orderItemDetail">
+	<tr id="item{fdId}" class="order-bd last    order-last">
+		<td class="baobei">
+			<a target="_blank" hidefocus="true" title="查看宝贝详情" href="javascript:void(0);" class="pic J_MakePoint">
+				<img alt="查看宝贝详情" src="${downAction}{fdPicUrl} ">
+			</a>
+			<div class="desc">
+				<p class="baobei-name">
+				 	<a target="_blank" href="javascript:void(0);" class="J_MakePoint" >
+						{fdGoodsName}
+				     </a>
+				</p>
+				<div class="spec" title="">
+			     	<span>规格：{fdGoodsNo}</span>
+			    </div>
+			</div>
+		</td>
+		<td class="price">
+		    <i class="special-num">{fdPrice}</i>
+		</td>
+		
+		<td class="quantity" title="{fdQuantity}">
+		 	<i class="special-num">{fdQuantity}</i>
+		 </td>
+		{orderOptions}
+	</tr>
+</textarea>
+
+<textarea class="x-template" id="orderItemDetail1">
+		<td class="item-operate" rowspan="{totalSize}">
+			<p>买家账号：{fdUserCode}</p>
+			<p>买家名称：{fdUserName}</p>
+			<p>收货人：{fdConsignee}</p>
+		 </td>
+		<td class="amount" rowspan="{totalSize}">
+		  	<p><em class="real-price special-num"> {fdTotalAmount}</em></p>
+			<p class="post-type"></p>
+			<p>(优惠券：<i class="special-num">{fdCoupon}</i> )</p>
+		</td>
+		<td class="trade-status" rowspan="{totalSize}">
+			<a href="javascript:void(0)">
+				  {fdStatus}
+			</a>
+			<span>
+				<a href="${hxltUrl}AppGoodsOrderAction/view?fdId={orderId}" target="_blank">
+				 订单详情
+				</a>
+			</span>
+		</td>
+		
+		<td class="trade-operate" rowspan="{totalSize}"  style="padding-top: 18px;">
+	      	{fdOption}&nbsp;
+	    </td>
+</textarea>
+
+<textarea class="x-template" id="extendTemplate">
+	<tr class="order-hd">
+		 <td class="column addressColumn" colspan="7">
+		 		{extendTemplate}
+		 		
+		  </td>
+	</tr>
+</textarea>
+<textarea class="x-template" id="ApplyReturnTemplate">
+	<div><span>退款申请时间：{fdApplyRefundTime}</span><span>退款申请理由：{fdApplyRefundReason}</span></div>
+</textarea>
+<textarea class="x-template" id="expressTemplate">
+	<div><span>快递名称：{fdExpressName}</span><span>快递编号：{fdExpressNo}</span></div>
+</textarea>
+<textarea class="x-template" id="recevieGoodsTemplate">
+	<div><span>收货地址:{fdAddress}</span><span>邮编：{fdZipCode}</span><span>收货人：{fdConsignee}</span><span>联系电话：{fdTel}</span></div>
+</textarea>

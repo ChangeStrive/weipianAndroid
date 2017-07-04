@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+  <head>
+        <meta charset="UTF-8">
+        <title>欢迎您登录微片管理平台</title>
+        <#include "Admin/jsp/common/common.ftl">
+        <script type="text/javascript">
+        	var backUrl="${backUrl}";
+        	if(hasLogin){
+        		window.location.href = hxltUrl+"LoginAction/toIndex";
+        	}
+        </script>
+        <link rel="stylesheet" type="text/css" href="${hxltUrl}Admin/css/login.css" media="all">
+        <link rel="stylesheet" type="text/css" href="${hxltUrl}Admin/css/validator.css">
+       	<link rel="stylesheet" type="text/css" href="${hxltUrl}Admin/css/default_color.css" media="all">
+        <script type="text/javascript" src="${hxltUrl}js/utils/form/validform.js"></script>
+		<script type="text/javascript" src="${hxltUrl}Admin/js/core/login/login.js"></script>
+    </head>
+  
+  <body id="login-page">
+  		<div class="login-mainContain">
+  			<div class="login-tip">微片管理平台</div>
+  			<form class="login-forms" id="form" action="${hxltUrl}LoginAction/login" method="post">
+  				<div class="leftContain">
+	  				<div class="login-item clearfix">
+	  					<input type="text" placeholder="请填写用户名" name="fdLoginName" autocomplete="off">
+	  					<i class="icon-login-user"></i>
+	  				</div>
+	  				<div class="login-item clearfix">
+	  					<input type="password" placeholder="请填写密码" name="fdPwd"  autocomplete="off">
+	  					<i class="icon-login-pwd" ></i>
+	  				</div>
+	  				<div class="checkBoxItem">
+	  					<input type="text" name="fdCode" placeholder="请输入验证码" autocomplete="off" />
+	  					<img src="${hxltUrl}Admin/jsp/number.jsp" class="checkBoxImage">
+	  					<span class="checkBoxTip">换一张</span>
+	  				</div>
+	  				<div class="login-btnList">
+	  					 <button class="login-btn" type="submit" >
+	                           	    登录
+	                    </button>
+	  				</div>
+  				</div>
+  			</form>
+  		</div>
+  </body>
+</html>

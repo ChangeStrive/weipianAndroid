@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<#include "app/jsp/common/common.ftl">
+	<#include "app/jsp/weixinTemplate.html">
+	<title>微片新用户激活</title>
+	<script src="${hxltUrl}app/js/reg/reg.js"></script>
+</head>
+<body class="grayBg">
+	<div class="wrap">
+		<header class="homepage_head">
+			<a href="javascript:history.go(-1)" class="left_head  ahref" style="left:2%;">
+	             	  <span class="iconfont backBtn">&#xe61c;</span>
+			</a>
+			<h2 >微片新用户激活</h2>
+		</header>
+		<div class="headNext">
+			<div class="newactiveMain">
+				<div class="newactiveLogo">
+					<img src="${hxltUrl}app/images/logo.png"/>
+				</div>
+				<div class="newactiveBtns">
+					<a href="${hxltUrl}wx/reg?fdShopNo=${fdShopNo}" class="newactiveBtn">新用户注册激活</a>
+					<a href="${hxltUrl}wx/login?fdShopNo=${fdShopNo}" class="newactiveBtn">绑定已有账号</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

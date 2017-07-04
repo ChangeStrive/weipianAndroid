@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lil_contact"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:visibility="gone">
+
+    <View style="@style/horizontal_line_divider_padding_dimen_15dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_60dp"
+        android:minHeight="@dimen/dimen_60dp"
+        android:paddingLeft="@dimen/dimen_15dp"
+        android:paddingRight="@dimen/dimen_15dp">
+
+        <com.maya.android.asyncimageview.widget.AsyncImageView
+            android:id="@+id/imv_head"
+            android:layout_width="@dimen/dimen_43dp"
+            android:layout_height="@dimen/dimen_43dp"
+            android:layout_centerVertical="true"
+            android:scaleType="fitXY"
+            android:src="@mipmap/img_upload_head" />
+
+        <TextView
+            android:id="@+id/txv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/imv_head"
+            android:layout_marginLeft="@dimen/dimen_10dp"
+            android:layout_toRightOf="@id/imv_head"
+            android:textColor="@color/color_ffffff"
+            android:textSize="@dimen/dimen_15sp" />
+
+        <TextView
+            android:id="@+id/txv_job"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/txv_name"
+            android:layout_alignTop="@id/imv_head"
+            android:layout_marginLeft="@dimen/dimen_10dp"
+            android:layout_toRightOf="@id/txv_name"
+            android:textColor="@color/color_ffffff"
+            android:textSize="@dimen/dimen_12sp" />
+
+        <TextView
+            android:id="@+id/txv_company"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/imv_head"
+            android:layout_alignLeft="@id/txv_name"
+            android:textColor="@color/color_ffffff"
+            android:textSize="@dimen/dimen_12sp" />
+
+        <CheckBox
+            android:id="@+id/chb_is_agree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:button="@drawable/img_chb_is_agree" />
+    </RelativeLayout>
+
+    <View style="@style/horizontal_line_divider_padding_dimen_15dp" />
+</LinearLayout>

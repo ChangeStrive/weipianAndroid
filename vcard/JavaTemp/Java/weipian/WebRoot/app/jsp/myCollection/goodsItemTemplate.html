@@ -1,0 +1,22 @@
+<textarea class="x-template" id="goodsItem">
+	<div  class="goodsItem clearfix">
+		<div class="goodsItemLeft">
+			<a href="${hxltUrl}wx/goodsDetail?fdShopNo=${fdShopNo}&fdGoodsId={fdGoodsId}">
+				<img src="${downAction}{fdPicUrl}"/>
+			</a>
+		</div>
+		<div class="goodsItemRight">
+			<a class="goodsItemTitle" href="${hxltUrl}wx/goodsDetail?fdShopNo=${fdShopNo}&fdGoodsId={fdGoodsId}">
+				{fdGoodsName}
+			</a>
+			<a class="goodsItemType" href="${hxltUrl}wx/goodsDetail?fdShopNo=${fdShopNo}&fdGoodsId={fdGoodsId}">
+				型号:{fdGoodsNo}
+			</a>
+			<a class="goodsItemMoney" href="${hxltUrl}wx/goodsDetail?fdShopNo=${fdShopNo}&fdGoodsId={fdGoodsId}">
+				<span class="goodsItemPrice">￥{fdPrice}</span>
+				<span class="goodsItemPrice2">￥{fdTagPrice}</span>
+			</a>
+			<a href="javascript:void(0);" class="cancelColleBtn" fdGoodsId="{fdGoodsId}">取消收藏</a>
+		</div>
+	</div>
+</textarea>

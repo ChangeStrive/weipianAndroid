@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<#include "app/jsp/common/common.ftl">
+	<#include "app/jsp/weixinTemplate.html">
+	<title>我的名片</title>
+	<script src='${hxltUrl}app/js/jquery-touch.js'></script>
+	<script>
+		var fdUserMessage = '${shop.fdUserMessage}';
+	</script>
+	<script src='${hxltUrl}app/js/jquery-touch.js'></script>
+</head>
+<body class="mycard">
+	<div class="mycardList">
+		<div class="mycardImageDiv">
+			<div class="mycardImage mycardImage1">
+				<img src="${hxltUrl}app/images/card1.png"/>
+				<div class="mycardLabel">名片正面</div>
+			</div>
+		</div>
+		<div class="mycardImageDiv">
+			<div class="mycardImage mycardImage2">
+				<img src="${hxltUrl}app/images/card2.png"/>
+				<div class="mycardLabel">名片反面</div>
+			</div>
+		</div>
+		<div class="mycardUpDiv hide">
+			<a href="javascript:void(0);" class="iconfont mycardUpBtn">&#xe633;</a>
+		</div>
+	</div>
+	<div class="mycardMain">
+		<div class="mask" style="display:none;"></div>
+		<div class="mc_head">
+			<div class="mch_title clearfix">
+				<span class="mcht_cmp singleLine fdCompany"></span>
+				<span class="mcht_ghmp">交换名片</span>
+			</div>
+			<div class="mch_icon clearfix">
+				<span class="mchi_border">
+					<a href="${hxltUrl}wx/viewMessage?fdShopNo=${fdShopNo}" class="toViewUserMessage"><img src="${fdShopPicUrl}" class="mchi_icon"></a>
+					<#if (shop.fdSex=="1")>
+						<img src="${hxltUrl}app/images/man_icon.png" class="mchi_sex" alt="性别">
+						<#else>
+						<img src="${hxltUrl}app/images/woman_icon.png" class="mchi_sex" alt="性别">
+					</#if>
+				</span>
+				<div class="mchi_name">
+					<p class="mchin_1">${shop.fdName}</p>
+					<p class="mchin_2 fdJobs"></p>
+				</div>
+			</div>
+			<div class="mch_fx clearfix">
+				<a href="javascript:;" class="mchf_ahref wb"><img src="${hxltUrl}app/images/wb_icon.png" class="mchi_icon" alt="微博"></a>
+				<a href="javascript:;" class="mchf_ahref qq"><img src="${hxltUrl}app/images/qq_icon.png" class="mchi_icon" alt="QQ"></a>
+				<a href="javascript:;" class="mchf_ahref wx"><img src="${hxltUrl}app/images/wx_icon.png" class="mchi_icon" alt="微信"></a>
+			</div>
+		</div>
+		<div class="mc_menu clearfix">
+			<a href="javascript:void(0)" class="mcm_item ">
+				<span class="mcmi_img"><img src="${hxltUrl}app/images/yjbc_icon.png" class="mchi_icon" ></span>
+				<span class="mcmi_text">一键保存</span>
+			</a>
+			<a href="${hxltUrl}wx/index?fdShopNo=${fdShopNo}" class="mcm_item">
+				<span class="mcmi_img"><img src="${hxltUrl}app/images/wgw_icon.png" class="mchi_icon" ></span>
+				<span class="mcmi_text">微官网</span>
+			</a>
+			<a href="javascript:void(0)" class="mcm_item">
+				<span class="mcmi_img"><img src="${hxltUrl}app/images/dtdh_icon.png" class="mchi_icon" ></span>
+				<span class="mcmi_text">地图导航</span>
+			</a>
+			<a href="javascript:void(0)" class="mcm_item ">
+				<span class="mcmi_img"><img src="${hxltUrl}app/images/zsdl_icon.png" class="mchi_icon" ></span>
+				<span class="mcmi_text">招商代理</span>
+			</a>
+			<a href="javascript:void(0)" class="mcm_item">
+				<span class="mcmi_img"><img src="${hxltUrl}app/images/wsd_icon.png" class="mchi_icon" ></span>
+				<span class="mcmi_text">微商店</span>
+			</a>
+			<a href="javascript:void(0)" class="mcm_item">
+				<span class="mcmi_img"><img src="${hxltUrl}app/images/zf_pos_icon.png" class="mchi_icon" ></span>
+				<span class="mcmi_text">支付POS</span>
+			</a>
+			<div class="mcm_hide">
+				<a href="javascript:void(0)" class="mcm_item ">
+					<span class="mcmi_img"><img src="${hxltUrl}app/images/wtg_icon.png" class="mchi_icon" ></span>
+					<span class="mcmi_text">微推广</span>
+				</a>
+				<a href="javascript:void(0)" class="mcm_item">
+					<span class="mcmi_img"><img src="${hxltUrl}app/images/wlj_icon.png" class="mchi_icon" ></span>
+					<span class="mcmi_text">微链接</span>
+				</a>
+				<a href="javascript:void(0)" class="mcm_item">
+					<span class="mcmi_img"><img src="${hxltUrl}app/images/gdnr_icon.png" class="mchi_icon" ></span>
+					<span class="mcmi_text">更多内容</span>
+				</a>
+			</div>
+		</div>
+        <a href="javascript:;" class="mcm_ahref"><span class="iconfont xlBtn">&#xe608;</span></a>
+        <div class="mc_lxfs clearfix">
+        	<div class="mcl_item ">
+        		<span class="mcl_img"><img src="${hxltUrl}app/images/sj_icon.png" class="mcl_icon" ></span>
+        		<span class="mcl_text fdMobile"></span>
+        	</div>
+        	<div class="mcl_item ">
+        		<span class="mcl_img"><img src="${hxltUrl}app/images/dh_icon.png" class="mcl_icon" ></span>
+        		<span class="mcl_text fdTel"</span>
+        	</div>
+        	<div class="mcl_item ">
+        		<span class="mcl_img"><img src="${hxltUrl}app/images/wz_icon.png" class="mcl_icon" ></span>
+        		<span class="mcl_text fdCompanyUrl"></span>
+        	</div>
+        	<div class="mcl_item ">
+        		<span class="mcl_img"><img src="${hxltUrl}app/images/yj_icon.png" class="mcl_icon" ></span>
+        		<span class="mcl_text fdEmail"></span>
+        	</div>
+        	<div class="mcl_item ">
+        		<span class="mcl_img"><img src="${hxltUrl}app/images/dw_icon.png" class="mcl_icon" ></span>
+        		<span class="mcl_text fdCompanyAddress"></span>
+        	</div>
+        	<!-- <div class="mcl_item ">
+        		<span class="mcl_img"><img src="${hxltUrl}app/images/yb_icon.png" class="mcl_icon" ></span>
+        		<span class="mcl_text">365500</span>
+        	</div> -->
+        </div>
+        <div class="mc_fxs clearfix">
+        	<#if (hasWxLogin==0)>
+        		<a class="mf_text" href="${hxltUrl}wx/newactive?fdShopNo=${fdShopNo}" >我要创建名片</a>
+        		<#elseif (isMe==1)>
+        			<a class="mf_text" href="javascript:;" >我要成为分销商</a>
+        		<#elseif (isMe==0)>	
+        			<a class="mf_text" href="${hxltUrl}wx/mycard?fdShopNo=${myCode}" >查看我的名片</a>
+        	</#if>
+        	<a class="mf_close_btn mcl_icon" href="javascript:;" ><img src="${hxltUrl}app/images/fxs_close_icon.png" ></a>
+        </div>
+        <div class="footerShare clearfix">
+        	<span class="fs_img1"><img src="${hxltUrl}app/images/wp_logo_icon.png" class="mcl_icon" ></span>
+        	<span class="fs_img2"><img src="${hxltUrl}app/images/wp_syzgzfs_icon.png" class="mcl_icon" ></span>
+        	<a href="javascript:;" class="fs_ahref fenxiang">
+        		<span class="fs_fx">分享红包赚钱</span>
+        	</a>
+        	<a href="javascript:;" class="fs_ahref xiazai">
+        		<span class="fs_xz">下载APP</span>
+        	</a>
+        </div>
+        <div class="mc_no_nfc" style="display: none;">
+        	<div class="mnn_item">
+        		<span class="mnn_text">您尚未通过微片APP将您的微片写入NFC，请下载微片APP启用更多高级功能</span>
+        		<a href="javascript:;" class="mnn_btn">我知道了</a>
+        	</div>
+		</div>        
+	</div>
+<script src='${hxltUrl}app/js/mycard/mycard.js'></script>
+</body>
+</html>

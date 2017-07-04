@@ -1,0 +1,127 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/all_frg_view_color"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.maya.android.vcard.ui.frg.MessageGroupSettingFragment">
+
+    <LinearLayout
+        android:id="@+id/lil_top"
+        style="@style/all_btn_background_color"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_50dp"
+            android:paddingLeft="@dimen/dimen_15dp"
+            android:paddingRight="@dimen/dimen_15dp">
+
+            <TextView
+                android:id="@+id/txv_label"
+                style="@style/text_deputy_general_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:text="@string/group_chat_name"
+                android:textSize="@dimen/dimen_15sp" />
+
+            <TextView
+                android:id="@+id/txv_name"
+                style="@style/text_setting_general_right_sign_size_and_color"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/txv_label"
+                android:gravity="center_vertical|left"
+                android:singleLine="true"/>
+        </RelativeLayout>
+
+
+        <View style="@style/horizontal_line_divider_padding_dimen_15dp" />
+
+        <RelativeLayout
+            android:id="@+id/rel_chat_log"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_50dp"
+            android:paddingLeft="@dimen/dimen_15dp"
+            android:paddingRight="@dimen/dimen_15dp">
+
+            <TextView
+                style="@style/text_setting_general_size_and_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/news_notify" />
+
+            <com.maya.android.vcard.ui.widget.SlipButton
+                android:id="@+id/sbtn_frg_notice_chatting_records"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true" />
+        </RelativeLayout>
+
+        <View style="@style/horizontal_line_divider_padding_dimen_15dp" />
+
+        <TextView
+            android:id="@+id/txv_clear_chat_log"
+            style="@style/text_setting_general_size_and_color"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_50dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/dimen_15dp"
+            android:paddingRight="@dimen/dimen_15dp"
+            android:text="@string/frg_setting_notice_clear_chat_log" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rel_submit"
+        style="@style/all_btn_background_color"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_55dp"
+        android:layout_alignParentBottom="true"
+        android:paddingLeft="@dimen/dimen_15dp"
+        android:paddingRight="@dimen/dimen_15dp">
+
+        <Button
+            android:id="@+id/btn_submit"
+            style="@style/btn_submit"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_42dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/bg_general_btn_normal"
+            android:gravity="center" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        style="@style/all_btn_background_color"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_55dp"
+        android:layout_below="@id/lil_top"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:paddingLeft="@dimen/dimen_15dp"
+        android:paddingRight="@dimen/dimen_15dp">
+
+        <GridView
+            android:id="@+id/grv_group_member"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:horizontalSpacing="@dimen/dimen_6dp"
+            android:numColumns="5"
+            android:scrollbars="none"
+            android:verticalSpacing="@dimen/dimen_6dp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/rel_submit"
+        android:background="@mipmap/bg_multi_nav_shadow"
+        android:contentDescription="@null" />
+</RelativeLayout>

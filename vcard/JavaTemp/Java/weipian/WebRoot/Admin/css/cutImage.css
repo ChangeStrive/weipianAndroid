@@ -1,0 +1,6 @@
+.cutImageBox{
+	width:90%;margin: 10px auto;
+}
+.cutImageBox img{width:100%;}
+.cutImageBtnBox{width:100%;text-align: center;padding: 10px 0;}
+.cutImageBtn{font-size: 16px;color:white;padding: 10px 20px;background: green;}

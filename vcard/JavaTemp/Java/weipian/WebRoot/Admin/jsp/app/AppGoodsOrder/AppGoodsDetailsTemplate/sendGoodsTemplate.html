@@ -1,0 +1,49 @@
+<#if item.fdSendType=="1">
+	<div class="takeTitle">
+		收货方式：商城发货
+	</div>
+	<div class="takeGoodsType">
+		<div class="takeItem">
+			<span>收货人：${item.fdConsignee}</span>
+			<span>联系电话：${item.fdTel}</span>
+			<span>邮编：${item.fdZipCode}</span>
+		</div>
+		<div class="takeItem">
+			收货地址：${item.fdAddress}
+		</div>
+	</div>
+</#if>
+
+<#if item.fdExpressName??>
+	<div class="takeTitle">
+		快递信息
+	</div>
+	<div class="takeGoodsType">
+		<div class="takeItem">
+			<span>快递名称：${item.fdExpressName}</span>
+			<span>快递编号：${item.fdExpressNo}</span>
+		</div>
+		<div class="takeItem">
+			配送时间：${item.fdDeliverTime}
+		</div>
+	</div>
+</#if>
+
+			
+<#if item.fdSendType=="2">
+	<div class="takeTitle">
+		收货方式：上商城自提
+	</div>
+</#if>
+
+<#if item.fdSendType=="3">
+	<div class="takeTitle">
+		收货方式：上授权店自提
+	</div>
+	<div class="takeGoodsType">
+		<div class="takeItem">
+			<span>授权店账号：${item.fdShopCode}</span>
+			<span>授权店名称：${item.fdShopName}</span>
+		</div>
+	</div>
+</#if>

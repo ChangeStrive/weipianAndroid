@@ -1,0 +1,48 @@
+<foot class="footList clearfix">
+	<a  href="${hxltUrl}wx/index?fdShopNo=${fdShopNo}" class="footItem footItemSelected" tab="1">
+		<div class="footImage">
+			<img src="${hxltUrl}app/images/tab11.png"/>
+		</div>
+		<div class="footText">
+			主页
+		</div>
+	</a>
+	<a  href="${hxltUrl}wx/category?fdShopNo=${fdShopNo}" class="footItem"  tab="2">
+		<div class="footImage">
+			<img src="${hxltUrl}app/images/tab22.png"/>
+		</div>
+		<div class="footText">
+			分类
+		</div>
+	</a>
+	<a  href="${hxltUrl}wx/shopcart?fdShopNo=${fdShopNo}" class="footItem"  tab="3">
+		<div class="footImage">
+			<img src="${hxltUrl}app/images/tab32.png"/>
+		</div>
+		<div class="footText">
+			购物车
+		</div>
+	</a>
+	<a  href="${hxltUrl}wx/my?fdShopNo=${fdShopNo}" class="footItem"  tab="4">
+		<div class="footImage">
+			<img src="${hxltUrl}app/images/tab42.png"/>
+		</div>
+		<div class="footText">
+			个人
+		</div>
+	</a>
+</foot>
+<script>
+	if(footTab){
+		$(".footItemSelected").removeClass("footItemSelected");
+		$(".footItem").each(function(){
+			var tab=$(this).attr("tab");
+			if(tab!=footTab){
+				$(this).find("img").attr("src","${hxltUrl}app/images/tab"+tab+"2.png");
+			}else{
+				$(this).addClass("footItemSelected");
+				$(this).find("img").attr("src","${hxltUrl}app/images/tab"+tab+"1.png");
+			}
+		});
+	}
+</script>

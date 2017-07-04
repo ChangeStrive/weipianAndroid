@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<proxool-config>
+	<proxool>
+		<alias>platformdb</alias>
+		<!--<driver-url>jdbc:oracle:thin:@192.168.1.144:1521:orcl</driver-url>
+		<driver-class>oracle.jdbc.driver.OracleDriver</driver-class>
+		-->
+		<driver-url>jdbc:mysql://192.168.1.201:3306/weipian?useUnicode=true&amp;characterEncoding=UTF-8</driver-url>
+		<driver-class>com.mysql.jdbc.Driver</driver-class>
+		<driver-properties>
+			<property name="user" value="root" />
+			<property name="password" value="123456" />
+		</driver-properties>
+		<house-keeping-sleep-time>90000</house-keeping-sleep-time>
+		<simultaneous-build-throttle>10</simultaneous-build-throttle>
+		<prototype-count>5</prototype-count>
+		<maximum-connection-count>50</maximum-connection-count>
+		<minimum-connection-count>5</minimum-connection-count>
+		<house-keeping-test-sql>select 1 from dual</house-keeping-test-sql>
+	</proxool> 
+</proxool-config> 

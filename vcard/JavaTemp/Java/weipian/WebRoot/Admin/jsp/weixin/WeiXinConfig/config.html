@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <META http-equiv="X-UA-Compatible" content="IE=9" ></META>
+    <title>微片生活管理平台 - 微信基础配置</title>
+	<#include "Admin/jsp/common/common.ftl">
+	<link rel="stylesheet" type="text/css" href="${hxltUrl}Admin/css/validator.css">
+	
+	<script type="text/javascript" src="${hxltUrl}js/utils/form/validform.js"></script>
+	
+	<script>
+		var fdId = "${item.fdId}";
+	</script>
+	<script type="text/javascript">
+		var firstMenuNo="00027";
+		var secondMenuNo="00030";
+	</script>
+	<script type="text/javascript" src="${hxltUrl}Admin/js/weixin/WeiXinConfig/config.js"></script>
+  </head>
+  
+<body>
+<!-- 头部 -->
+<#include "Admin/jsp/common/header.ftl">
+<!-- /头部 --> 
+
+<!-- 边栏 -->
+<#include "Admin/jsp/common/sidebar.ftl">
+<!-- /边栏 --> 
+
+<!-- 内容区 -->
+<div id="main-content">
+	<div id="top-alert" class="fixed alert alert-error" style="display: none;">
+		<button class="close fixed" style="margin-top: 4px;">×</button>
+		<div class="alert-content">这是内容</div>
+	</div>
+	<div id="main" class="main" style="min-height: 430px;"> 
+		
+		<!-- nav -->
+		<div class="main-title">
+			<h2>微信基础配置</h2>
+		</div>
+		<form method="post" id="configForm" class="form-horizontal contact_form">
+			<div class="form-item">
+				<label class="item-label">公众账号名称</label>
+				<div class="controls">
+					<input type="text" class="text input-large" name=fdName nullmsg="标题不允许为空" ajaxurl="" datatype="*3-18" errormsg="公众账号名称至少3个字符,最多18个字符！" value="${item.fdName }" />
+					<span class="form_checktip"></span>
+				</div>
+			</div>
+			<div class="form-item">
+				<label class="item-label">原始ID</label>
+				<div class="controls">
+					<input type="text" class="text input-large" name=fdRawId nullmsg="原始ID不允许为空" ajaxurl="" datatype="*10-20" errormsg="原始ID至少10个字符,最多20个字符！" value="${item.fdRawId }" />
+					<span class="form_checktip"></span>
+				</div>
+			</div>
+			<div class="form-item">
+				<label class="item-label">公众账号APPID</label>
+				<div class="controls">
+					<input type="text" class="text input-large" name=fdAppId nullmsg="公众账号APPID不允许为空" ajaxurl="" datatype="*18-18" errormsg="公众账号APPID至少18个字符,最多18个字符！" value="${item.fdAppId }" />
+					<span class="form_checktip"></span>
+				</div>
+			</div>
+			<div class="form-item">
+				<label class="item-label">公众账号APPSECRET</label>
+				<div class="controls">
+					<input type="text" class="text input-large" name=fdAppSecret nullmsg="公众账号APPSECRET不允许为空" ajaxurl="" datatype="*32-32" errormsg="公众账号APPSECRET至少32个字符,最多32个字符！" value="${item.fdAppSecret }" />
+					<span class="form_checktip"></span>
+				</div>
+			</div>
+			<div class="form-item">
+				<input type="hidden" name="fdId" value="${item.fdId}" />
+			</div>
+			<div class="form-item">
+				<button class="btn submit-btn ajax-post" id="submit" type="submit" target-form="form-horizontal">确 定</button>
+				<button class="btn btn-return" onclick="javascript:history.back(-1);return false;">返 回</button>
+			</div>
+		</form>
+	</div>
+	<!-- 底部 -->
+	<#include "Admin/jsp/common/footer.ftl">
+</div>
+<!-- /内容区 -->
+</body>
+</html>

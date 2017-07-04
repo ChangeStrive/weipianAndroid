@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<#include "app/jsp/common/common.ftl">
+	<#include "app/jsp/weixinTemplate.html">
+	<title>个人中心</title>
+	<script type="text/javascript">
+		var footTab="4";
+	</script>
+</head>
+<body class="grayBg">
+	<div class="wrap">
+		<header class="homepage_head">
+			<a href="javascript:history.go(-1)" class="left_head  ahref" style="left:2%;">
+	             	  <span class="iconfont backBtn">&#xe61c;</span>
+			</a>
+			<h2>个人中心</h2>
+		</header>
+		<div class="headNext">
+			<div class="shopMessage">
+				<span class="shopUserHead">
+					<img src="${fdShopPicUrl}"/>
+				</span>
+				<span class="shopTitle">
+					${fdShopName}的微商店
+				</span>
+			</div>
+			<a class="my_order clearfix" href="${hxltUrl}wx/all?fdShopNo=${fdShopNo}">
+				<span class="my_order_text">我的订单</span>
+				<span class="my_order_right_ahref iconfont">
+	              	&#xe641;
+				</span>
+				<span class="my_order_all">查看全部订单</span>
+			</a>	
+			<div class="my_fh clearfix">
+				<a href="${hxltUrl}wx/dfk?fdShopNo=${fdShopNo}" class="mf_ahref dfk">
+					<span class="mfa_img">
+						<#if (noPayCount>0)>
+							<span class="fblh_circle" style="display: display;">${noPayCount}</span>
+						</#if>
+						<img src="${hxltUrl}app/images/dfk_icon.png" class="mf_icon" alt="代付款">
+					</span>
+					<span class="mf-text">待付款</span>
+				</a>
+				<a href="${hxltUrl}wx/dfh?fdShopNo=${fdShopNo}" class="mf_ahref dfh">
+					<span class="mfa_img">
+						<#if (dfhCount>0)>
+							<span class="fblh_circle" style="display: display;">${dfhCount}</span>
+						</#if>
+						<img src="${hxltUrl}app/images/dfh_icon.png" class="mf_icon" alt="待发货">
+					</span>
+					<span class="mf-text">待发货</span>
+				</a>
+				<a href="${hxltUrl}wx/yfh?fdShopNo=${fdShopNo}" class="mf_ahref dsh">
+					<span class="mfa_img">
+						<#if (dshCount>0)>
+							<span class="fblh_circle" style="display: display;">${dshCount}</span>
+						</#if>
+						<img src="${hxltUrl}app/images/dsh_icon.png" class="mf_icon" alt="待收货">
+					</span>
+					<span class="mf-text">待收货</span>
+				</a>
+				<a href="${hxltUrl}wx/ywc?fdShopNo=${fdShopNo}" class="mf_ahref dpj">
+					<span class="mfa_img">
+						<#if (replyCount>0)>
+							<span class="fblh_circle" style="display: display;">${replyCount}</span>
+						</#if>
+						<img src="${hxltUrl}app/images/dpj_icon.png" class="mf_icon" alt="待评价">
+					</span>
+					<span class="mf-text">待评价</span>
+				</a>
+			</div>
+			<div class="my_list">
+				<a href="${hxltUrl}wx/myCollection?fdShopNo=${fdShopNo}" class="ml_item clearfix">
+					<span class="mli_img">
+						<img src="${hxltUrl}app/images/wdsc_icon.png"  alt="我的收藏">
+					</span>
+					<span class="mli_text">我的收藏</span>
+					<span class="mli_right_ahref iconfont">
+		              	&#xe641;
+					</span>
+				</a>
+				<a href="${hxltUrl}wx/myReply?fdShopNo=${fdShopNo}" class="ml_item clearfix">
+					<span class="mli_img">
+						<img src="${hxltUrl}app/images/wdpj_icon.png"  alt="我的评价">
+					</span>
+					<span class="mli_text">我的评价</span>
+					<span class="mli_right_ahref iconfont">
+		              	&#xe641;
+					</span>
+				</a>
+				<a href="${hxltUrl}wx/address?fdShopNo=${fdShopNo}" class="ml_item clearfix">
+					<span class="mli_img">
+						<img src="${hxltUrl}app/images/shdz_icon.png"  alt="收货地址">
+					</span>
+					<span class="mli_text">收货地址</span>
+					<span class="mli_right_ahref iconfont">
+		              	&#xe641;
+					</span>
+				</a>
+				<a href="${hxltUrl}wx/exit?fdShopNo=${fdShopNo}" class="ml_item clearfix">
+					<span class="mli_img">
+						<img src="${hxltUrl}app/images/shdz_icon.png"  alt="收货地址">
+					</span>
+					<span class="mli_text">退出账号</span>
+					<span class="mli_right_ahref iconfont">
+		              	&#xe641;
+					</span>
+				</a>
+			</div>
+			<div style="padding-bottom: 70px;"></div>
+		</div>
+	</div>
+	<#include "app/jsp/common/foot.html">
+</body>
+</html>

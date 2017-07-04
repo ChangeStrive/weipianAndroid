@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <META http-equiv="X-UA-Compatible" content="IE=9" ></META>
+    <title>微片生活管理平台 - 用户管理</title>
+	<#include "Admin/jsp/common/common.ftl">
+	<link rel="stylesheet" type="text/css" href="${hxltUrl}Admin/css/validator.css">
+	
+	<script type="text/javascript" src="${hxltUrl}js/utils/form/validform.js"></script>
+	<script type="text/javascript" src="${hxltUrl}Admin/js/web/WebLink/linkAdd.js"></script>
+	
+	<link rel="stylesheet" type="text/css" href="${hxltUrl}js/utils/singleUpload/singleUpload.css">
+	<script type="text/javascript" src="${hxltUrl}js/utils/singleUpload/singleUpload.js"></script>
+	
+	<script>
+		var fdId = "${item.fdId}";
+	</script>
+	<script type="text/javascript">
+		var firstMenuNo="00015";
+		var secondMenuNo="00020";
+	</script>
+  </head>
+  
+<body>
+<!-- 头部 -->
+<#include "Admin/jsp/common/header.ftl">
+<!-- /头部 --> 
+
+<!-- 边栏 -->
+<#include "Admin/jsp/common/sidebar.ftl">
+<!-- /边栏 --> 
+
+<!-- 内容区 -->
+<div id="main-content">
+	<div id="top-alert" class="fixed alert alert-error" style="display: none;">
+		<button class="close fixed" style="margin-top: 4px;">×</button>
+		<div class="alert-content">这是内容</div>
+	</div>
+	<div id="main" class="main" style="min-height: 430px;"> 
+		
+		<!-- nav -->
+		<div class="main-title">
+			<h2>友情链接</h2>
+		</div>
+		<form method="post" id="linkForm" class="form-horizontal contact_form">
+			<div class="form-item">
+				<label class="item-label">图标</label>
+				<div class="controls">
+					<input type="hidden" name="fdPicUrl"  singUpload-Type="image" value="${item.fdPicUrl}"/>
+				</div>
+			</div>
+			<div class="form-item">
+				<label class="item-label">标题</label>
+				<div class="controls">
+					<input type="text" class="text input-large" name=fdTitle nullmsg="标题不允许为空" ajaxurl="" datatype="*"  value="${item.fdTitle }" />
+					 <span class="form_checktip"></span>
+				</div>
+			</div>
+			<div class="form-item">
+				<label class="item-label">URL</label>
+				<div class="controls">
+					<input type="text" class="text input-large" name="fdUrl" value="${item.fdUrl}" />
+					 <span class="form_checktip"></span>
+				</div>
+			</div>
+			<div class="form-item">
+				<label class="item-label">排序</span></label>
+				<div class="controls">
+					<input type="number" class="text input-large"  name="fdSeqNo"  value="${item.fdSeqNo }" />
+					<span class="form_checktip"></span>
+				</div>
+			</div>
+			<div class="form-item">
+				<input type="hidden" name="fdId" value="${item.fdId }" />
+			</div>
+			<div class="form-item">
+				<button class="btn submit-btn ajax-post" id="submit" type="submit" target-form="form-horizontal">确 定</button>
+				<button class="btn btn-return" onclick="javascript:history.back(-1);return false;">返 回</button>
+			</div>
+		</form>
+	</div>
+	<!-- 底部 -->
+	<#include "Admin/jsp/common/footer.ftl">
+</div>
+<!-- /内容区 -->
+</body>
+</html>

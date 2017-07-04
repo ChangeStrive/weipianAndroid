@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<#include "app/jsp/common/common.ftl">
+	<#include "app/jsp/weixinTemplate.html">
+	<title>订单详情</title>
+	<script type="text/javascript">
+	</script>
+	<style type="text/css">
+		.orderPayBtn{display: block;text-align: center;background: #FFBC3B;color:white;padding: 10px 0;font-size: 16px;width:100%;}
+		.rfTitle{font-size: 14px;color:black;padding: 2px 0;}
+		.rfTitle p{font-size: 14px;color:#FFBC3B;padding: 2px 0;}
+	</style>
+</head>
+<body class="orderDetail" >
+	<div class="mask" style="display:none;"></div>
+	<div class="wrap">
+		<header class="homepage_head">
+			<a href="${hxltUrl}wx/my?fdShopNo=${fdShopNo}" class="left_head  ahref" style="left:2%;">
+	            <span class="iconfont backBtn">&#xe61c;</span>
+			</a>
+			<h2 class="typePageTitle">订单详情</h2>
+		</header>
+		<div class="orderDetailMain" >
+			<div class="odm-Item" >
+				<div class="odmi-head">
+					<p class="odmi-content clearfix">
+						<img src="${hxltUrl}app/images/un_icon.png" alt="用户名icon" class="un-icon">
+						<span>${order.fdConsignee}</span>
+					</p>
+					<p class="odmi-content clearfix">
+						<img src="${hxltUrl}app/images/tel_icon.png" alt="手机icon" class="tel-icon">
+						<span>${order.fdTel}</span>
+					</p>
+					<p class="odmi-content clearfix">
+						<img src="${hxltUrl}app/images/loc_icon.png" alt="手机icon" class="tel-icon">
+						<span>
+								${order.fdProvince}
+								${order.fdCity}
+								${order.fdArea}
+								${order.fdAddress}
+								${order.fdZipCode}
+						</span>
+					</p>
+				</div>
+			</div>
+			<div class="odm-line"></div>
+			<div class="orderDetailGoodsItem">
+				<div class="odmg-goods clearfix">
+					<#list detail.list as item>
+						<a class="odmg-item clearfix" fdId="${item.fdId}" href="${hxltUrl}wx/goodsDetail?fdGoodsId=${item.fdGoodsId}&fdShopNo=${fdShopNo}">
+							<img src="${downAction}${item.fdPicUrl}" alt="goods"/>
+							<div class="odmgiMain clearfix">
+								<p class="odmgiTitle">${item.fdGoodsName}</p>
+								<p class="odmgiSize">规格：${item.fdGoodsNo}</p>
+								<p class="odmgiColor">原价：￥${item.fdTagPrice}</p>
+								<span class="odmgiPrice">￥${item.fdPrice}</span>
+								<span class="odmgi_Calc clearfix">
+									<span class="odmgi_quantity">X${item.fdQuantity}</span>
+								</span>
+							</div>
+						</a>
+					</#list>
+					<div class="odmg-total clearfix">
+						<div class="odmg-left clearfix">
+							<span class="heji">小计</span>
+						</div>
+						<div class="odmg-right clearfix">
+							<span class="odmg-amount">${order.fdGoodsAmount}</span>
+							<span class="odmg-rmb">￥</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="odm-coupon">
+				<div class="odmc-item clearfix">
+					<div class="odmci-left clearfix">
+						<span>订单状态</span>
+					</div>
+					<div class="odmci-right clearfix">
+						<span class="odmci-amount">
+							<#if (order.fdStatus=="0")>
+								未付款
+								<#elseif (order.fdStatus=="1")>
+								已付款
+								<#elseif (order.fdStatus=="2")>
+								已发货
+								<#elseif (order.fdStatus=="3")>
+								已完成
+								<#elseif (order.fdStatus=="4")>
+								退款申请中
+								<#elseif (order.fdStatus=="5")>
+								已退款
+								<#elseif (order.fdStatus=="6")>
+								退款申请被驳回
+								<#elseif (order.fdStatus=="-1")>
+								 订单已取消
+								 <#elseif (order.fdStatus=="-2")>
+								 已退款
+							</#if>
+						</span>
+					</div>
+				</div>
+			</div>
+			<div class="odm-coupon">
+				<div class="odmc-item clearfix">
+					<div class="odmci-left clearfix">
+						<span>订单编号</span>
+					</div>
+					<div class="odmci-right clearfix">
+						<span class="odmci-amount">${order.fdOrderNo}</span>
+					</div>
+				</div>
+			</div>
+			<div class="odm-coupon">
+				<div class="odmc-item clearfix">
+					<div class="odmci-left clearfix">
+						<span>运费</span>
+					</div>
+					<div class="odmci-right clearfix">
+						<span class="odmci-amount">免运费</span>
+					</div>
+				</div>
+				<#if order.fdExpressName??>
+					<div class="odmc-item clearfix">
+						<div class="odmci-left clearfix">
+							<span>快递公司</span>
+						</div>
+						<div class="odmci-right clearfix">
+							<span class="odmci-amount">${order.fdExpressName}</span>
+						</div>
+					</div>
+					<div class="odmc-item clearfix">
+						<div class="odmci-left clearfix">
+							<span>快递编号</span>
+						</div>
+						<div class="odmci-right clearfix">
+							<span class="odmci-amount">${order.fdExpressNo}</span>
+						</div>
+					</div>
+				</#if>
+			</div>
+			<div class="odm-coupon">
+				<div class="odmc-item clearfix">
+					<div class="odmci-left clearfix">
+						<span>合计</span>
+					</div>
+					<div class="odmci-right clearfix">
+						<span class="odmci-amount">${order.fdAmount}</span>
+						<span class="odmci-rmb">￥</span>
+					</div>
+				</div>
+			</div>
+			
+			<div class="odm-leave-message" >
+				<div style="padding-left: 5%;font-size: 14px;color:black;">备注</div>
+				<div class="odmlm-Content">
+					<textarea placeholder="给卖家留言...."  name="fdReplyContent"  class="fdReplyContent" readOnly="true">${order.fdRemark}</textarea>
+				</div>
+			</div>
+			
+			<#if (refunerList?size>0)>
+				<div class="odm-leave-message" >
+					<div style="padding-left: 5%;font-size: 14px;color:black;">退款信息</div>
+					<div  style="background: white;padding:0 5%;">
+						<#list refunerList as refunderItem>
+							<#if refunderItem.fdFinishTime??>
+								<div class="rfTitle">
+									退款成功：${refunderItem.fdFinishTime}
+								</div>	
+							</#if>
+							<#if refunderItem.fdBackTime??>
+								<div class="rfTitle">
+									商家&nbsp;&nbsp;${refunderItem.fdBackTime}
+								</div>	
+								<div class="rfTitle" style="border:0;">
+									<p>内容：${refunderItem.fdBackReason}</p>
+								</div>	
+							</#if>
+							<div class="rfTitle">
+								客户&nbsp;&nbsp;${refunderItem.fdApplyRefundTime}
+							</div>	
+							<div class="rfTitle" style="border:0;">
+								<p>理由：${refunderItem.fdApplyReason}</p>
+							</div>	
+						</#list>
+					</div>
+				</div>
+			</#if>
+		</div>
+		<div style="height: 70px;width:100%;"></div>
+		<#if (order.fdStatus=="0")>
+			<footer class="orderDetail-footer">
+				<a href="${hxltUrl}wx/pay?fdShopNo=${fdShopNo}&fdOrderId=${order.fdId}" class="orderPayBtn" ><span>付款</span></a>
+			</footer>
+		</#if>
+	</div>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<#include "app/jsp/common/common.ftl">
+	<#include "app/jsp/weixinTemplate.html">
+	<title>登录</title>
+	<script type="text/javascript">
+		var backUrl="${backUrl}";
+	</script>
+	<script src='${hxltUrl}app/js/login/login.js'></script>
+</head>
+<body class="grayBg">
+	<div class="wrap">
+		<header class="homepage_head">
+			<a href="javascript:history.go(-1)" class="left_head  ahref" style="left:2%;">
+	             	  <span class="iconfont backBtn">&#xe61c;</span>
+			</a>
+			<h2>登录</h2>
+		</header>
+		<div class="headNext">
+			<div class="loginMain">
+				<div class="loginLogo"><img src="${hxltUrl}app/images/loginLogo.png"></div>
+				<div class="formItem clearfix">
+					<div class="formLabel">手机号</div>
+					<div class="formInput">
+						<input type="text" placeholder="请输入本人的手机号码" name="fdTel"/>
+					</div>
+				</div>
+				<div class="formItem clearfix">
+					<div class="formLabel">密码</div>
+					<div class="formInput">
+						<input type="password" placeholder="请输入密码" name="fdPwd"/>
+					</div>
+				</div>
+			</div>
+			<div class="LoginBtns">
+				<a href="javascript:void(0)" class="commonbtn toLogin">登录</a>
+			</div>
+			<div class="loginBar clearfix">
+				<a  href="${hxltUrl}wx/forget?fdShopNo=${fdShopNo}" class="forgetLink">忘记密码</a>
+				<a  href="${hxltUrl}wx/reg?fdShopNo=${fdShopNo}" class="regLink">新用户注册</a>
+			</div>
+			
+		</div>
+	</div>
+</body>
+</html>

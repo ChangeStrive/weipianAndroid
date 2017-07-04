@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dimen_50dp"
+    android:minHeight="@dimen/dimen_50dp"
+    android:paddingRight="@dimen/dimen_15dp"
+    android:paddingLeft="@dimen/dimen_15dp">
+
+    <ImageView
+        android:id="@+id/imv_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"/>
+
+    <TextView
+        android:id="@+id/txv_title"
+        style="@style/card_case_group_manager_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dimen_15dp"
+        android:layout_toRightOf="@id/imv_icon"
+        android:text="@string/favorite" />
+
+    <ImageView
+        android:id="@+id/imv_drag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/img_mobile_group"/>
+
+</RelativeLayout>

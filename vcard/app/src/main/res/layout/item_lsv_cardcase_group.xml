@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rel_item_act_cardcase_group"
+    android:layout_width="@dimen/dimen_100dp"
+    android:layout_height="@dimen/dimen_45dp"
+    android:background="@color/color_ffffff"
+    android:minHeight="@dimen/dimen_45dp">
+
+    <RelativeLayout 
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+	    <TextView
+	        android:id="@+id/txv_item_cardcase_group"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+	        android:ellipsize="end"
+	        android:singleLine="true"
+			android:textSize="@dimen/dimen_12sp"
+	        android:layout_centerHorizontal="true"
+			android:gravity="center"/>
+	    <TextView
+	        android:id="@+id/txv_item_cardcase_group_num"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+	        android:layout_below="@id/txv_item_cardcase_group"
+	        android:layout_centerHorizontal="true"
+	        android:textSize="@dimen/dimen_12sp"
+			android:gravity="center"/>
+	</RelativeLayout>
+	<ImageView
+	    android:id="@+id/imv_item_cardcase_lock"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentBottom="true"
+	    android:layout_alignParentRight="true"
+	    android:layout_marginBottom="@dimen/dimen_4dp"
+	    android:layout_marginRight="@dimen/dimen_4dp"
+	    android:contentDescription="@null"
+	    android:src="@mipmap/img_lock_cardcase_group"
+	    android:visibility="gone"/>
+
+</RelativeLayout>

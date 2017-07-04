@@ -1,0 +1,62 @@
+[
+    {
+        "merged": "D:\\AndroidStudio\\VCard\\MAYA_Library_AsyncImageView2\\build\\intermediates\\res\\merged\\release\\anim\\fwex_cycle_7.xml",
+        "source": "D:\\AndroidStudio\\VCard\\MAYA_Library_AsyncImageView2\\build\\intermediates\\exploded-aar\\VCard\\MAYA_Library_Utils\\unspecified\\res\\anim\\fwex_cycle_7.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudio\\VCard\\MAYA_Library_AsyncImageView2\\build\\intermediates\\res\\merged\\release\\anim\\fwex_translate_up_out.xml",
+        "source": "D:\\AndroidStudio\\VCard\\MAYA_Library_AsyncImageView2\\build\\intermediates\\exploded-aar\\VCard\\MAYA_Library_Utils\\unspecified\\res\\anim\\fwex_translate_up_out.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudio\\VCard\\MAYA_Library_AsyncImageView2\\build\\intermediates\\res\\merged\\release\\anim\\fwex_translate_down_in.xml",
+        "source": "D:\\AndroidStudio\\VCard\\MAYA_Library_AsyncImageView2\\build\\intermediates\\exploded-aar\\VCard\\MAYA_Library_Utils\\unspecified\\res\\anim\\fwex_translate_down_in.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudio\\VCard\\MAYA_Library_AsyncImageView2\\build\\intermediates\\res\\merged\\release\\anim\\fwex_translate_right_out.xml",
+        "source": "D:\\AndroidStudio\\VCard\\MAYA_Library_AsyncImageView2\\build\\intermediates\\exploded-aar\\VCard\\MAYA_Library_Utils\\unspecified\\res\\anim\\fwex_translate_right_out.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudio\\VCard\\MAYA_Library_AsyncImageView2\\build\\intermediates\\res\\merged\\release\\anim\\fwex_scale_zoomout_out.xml",
+        "source": "D:\\AndroidStudio\\VCard\\MAYA_Library_AsyncImageView2\\build\\intermediates\\exploded-aar\\VCard\\MAYA_Library_Utils\\unspecified\\res\\anim\\fwex_scale_zoomout_out.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudio\\VCard\\MAYA_Library_AsyncImageView2\\build\\intermediates\\res\\merged\\release\\anim\\fwex_scale_zoomin_in.xml",
+        "source": "D:\\AndroidStudio\\VCard\\MAYA_Library_AsyncImageView2\\build\\intermediates\\exploded-aar\\VCard\\MAYA_Library_Utils\\unspecified\\res\\anim\\fwex_scale_zoomin_in.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudio\\VCard\\MAYA_Library_AsyncImageView2\\build\\intermediates\\res\\merged\\release\\anim\\fwex_translate_right_in.xml",
+        "source": "D:\\AndroidStudio\\VCard\\MAYA_Library_AsyncImageView2\\build\\intermediates\\exploded-aar\\VCard\\MAYA_Library_Utils\\unspecified\\res\\anim\\fwex_translate_right_in.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudio\\VCard\\MAYA_Library_AsyncImageView2\\build\\intermediates\\res\\merged\\release\\anim\\fwex_translate_left_out.xml",
+        "source": "D:\\AndroidStudio\\VCard\\MAYA_Library_AsyncImageView2\\build\\intermediates\\exploded-aar\\VCard\\MAYA_Library_Utils\\unspecified\\res\\anim\\fwex_translate_left_out.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudio\\VCard\\MAYA_Library_AsyncImageView2\\build\\intermediates\\res\\merged\\release\\anim\\fwex_translate_left_in.xml",
+        "source": "D:\\AndroidStudio\\VCard\\MAYA_Library_AsyncImageView2\\build\\intermediates\\exploded-aar\\VCard\\MAYA_Library_Utils\\unspecified\\res\\anim\\fwex_translate_left_in.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudio\\VCard\\MAYA_Library_AsyncImageView2\\build\\intermediates\\res\\merged\\release\\anim\\fwex_translate_up_in.xml",
+        "source": "D:\\AndroidStudio\\VCard\\MAYA_Library_AsyncImageView2\\build\\intermediates\\exploded-aar\\VCard\\MAYA_Library_Utils\\unspecified\\res\\anim\\fwex_translate_up_in.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudio\\VCard\\MAYA_Library_AsyncImageView2\\build\\intermediates\\res\\merged\\release\\anim\\fwex_scale_zoomout_in.xml",
+        "source": "D:\\AndroidStudio\\VCard\\MAYA_Library_AsyncImageView2\\build\\intermediates\\exploded-aar\\VCard\\MAYA_Library_Utils\\unspecified\\res\\anim\\fwex_scale_zoomout_in.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudio\\VCard\\MAYA_Library_AsyncImageView2\\build\\intermediates\\res\\merged\\release\\anim\\fwex_shake.xml",
+        "source": "D:\\AndroidStudio\\VCard\\MAYA_Library_AsyncImageView2\\build\\intermediates\\exploded-aar\\VCard\\MAYA_Library_Utils\\unspecified\\res\\anim\\fwex_shake.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudio\\VCard\\MAYA_Library_AsyncImageView2\\build\\intermediates\\res\\merged\\release\\anim\\fwex_translate_down_out.xml",
+        "source": "D:\\AndroidStudio\\VCard\\MAYA_Library_AsyncImageView2\\build\\intermediates\\exploded-aar\\VCard\\MAYA_Library_Utils\\unspecified\\res\\anim\\fwex_translate_down_out.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudio\\VCard\\MAYA_Library_AsyncImageView2\\build\\intermediates\\res\\merged\\release\\anim\\fwex_scale_zoomin_out.xml",
+        "source": "D:\\AndroidStudio\\VCard\\MAYA_Library_AsyncImageView2\\build\\intermediates\\exploded-aar\\VCard\\MAYA_Library_Utils\\unspecified\\res\\anim\\fwex_scale_zoomin_out.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudio\\VCard\\MAYA_Library_AsyncImageView2\\build\\intermediates\\res\\merged\\release\\anim\\fwex_floating.xml",
+        "source": "D:\\AndroidStudio\\VCard\\MAYA_Library_AsyncImageView2\\build\\intermediates\\exploded-aar\\VCard\\MAYA_Library_Utils\\unspecified\\res\\anim\\fwex_floating.xml"
+    }
+]

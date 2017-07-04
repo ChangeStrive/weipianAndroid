@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rel_account_manage_add_account"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dimen_50dp"
+    android:minHeight="@dimen/dimen_50dp"
+    style="@style/all_btn_background_color">
+
+    <TextView
+        android:id="@+id/txv_act_account_manage_add_account"
+        style="@style/text_setting_general_size_and_color"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@mipmap/img_account_manage_pop_add_contact"
+        android:gravity="center"
+        android:drawablePadding="@dimen/dimen_10dp"
+        android:drawableRight="@null"
+        android:text="@string/frg_account_manage_add_account" />
+
+</RelativeLayout>

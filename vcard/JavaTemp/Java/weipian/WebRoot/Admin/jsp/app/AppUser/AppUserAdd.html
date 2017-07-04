@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <META http-equiv="X-UA-Compatible" content="IE=8" ></META>
+    <title>用户管理</title>
+	<#include "Admin/jsp/common/common.ftl">
+	<link rel="stylesheet" type="text/css" href="${hxltUrl}Admin/css/validator.css">
+	
+	<link rel="stylesheet" type="text/css" href="${hxltUrl}js/utils/singleUpload/singleUpload.css">
+	<script type="text/javascript" src="${hxltUrl}js/utils/singleUpload/singleUpload.js"></script>
+	
+	<script type="text/javascript" charset="utf-8" src="${hxltUrl}ueditor/ueditor.config.js"></script>
+    <script type="text/javascript" charset="utf-8" src="${hxltUrl}ueditor/ueditor.all.min.js"> </script>
+    <script type="text/javascript" charset="utf-8" src="${hxltUrl}ueditor/lang/zh-cn/zh-cn.js"></script>
+    
+    <link rel="stylesheet" type="text/css" href="${hxltUrl}js/plugins/easyui/themes/default/easyui.css">
+	<link rel="stylesheet" type="text/css" href="${hxltUrl}js/plugins/easyui/themes/icon.css">
+	<script type="text/javascript" src="${hxltUrl}js/plugins/easyui/jquery.easyui.min.js"></script>
+	
+	<script type="text/javascript" src="${hxltUrl}js/utils/form/validform.js"></script>
+	<script src='${hxltUrl}js/utils/PCASClass.js'></script>
+	<script>
+		var fdId = "${item.fdId}";
+		var fdShopType="${item.fdShopType}";
+	</script>
+	<script type="text/javascript">
+		var firstMenuNo="00090";
+		var secondMenuNo="00091";
+		$(function(){
+			new PCAS("fdProvince","fdCity","fdArea","${item.fdProvince}","${item.fdCity}","${item.fdArea}");
+		});
+	</script>
+	<script type="text/javascript" src="${hxltUrl}Admin/js/app/AppUser/AppUserAdd.js"></script>
+  </head>
+  
+<body>
+<!-- 头部 -->
+<#include "Admin/jsp/common/header.ftl">
+<!-- /头部 --> 
+
+<!-- 边栏 -->
+<#include "Admin/jsp/common/sidebar.ftl">
+<!-- /边栏 --> 
+
+<!-- 内容区 -->
+<div id="main-content">
+	<div id="top-alert" class="fixed alert alert-error" style="display: none;">
+		<button class="close fixed" style="margin-top: 4px;">×</button>
+		<div class="alert-content">这是内容</div>
+	</div>
+	<div id="main" class="main" style="min-height: 430px;"> 
+		
+		<!-- nav -->
+		<div class="main-title">
+			<h2>用户管理</h2>
+		</div>
+		<form method="post" id="AppUserForm" class="form-horizontal contact_form">
+			<div class="form-item">
+				<label class="item-label">账号(手机号)</label>
+				<div class="controls">
+					<input type="text" class="text input-large" name="fdCode" nullmsg="账号不允许为空" ajaxurl="" datatype="*"  value="${item.fdCode}" />
+					 <span class="form_checktip"></span>
+				</div>
+			</div>
+			<div class="form-item">
+				<label class="item-label">姓名</label>
+				<div class="controls">
+					<input type="text" class="text input-large" name="fdName" nullmsg="姓名不允许为空" ajaxurl="" datatype="*"  value="${item.fdName}" />
+					 <span class="form_checktip"></span>
+				</div>
+			</div>
+			<div class="form-item">
+				<label class="item-label">性别</label>
+				<div class="controls">
+					<label style="margin-right: 5px;">男
+						<input  name="fdSex" type="radio" value="1" style="margin-right: 10px;"
+							<#if item.fdSex!="0">
+									checked="checked"
+							</#if>
+						/>
+					</label>
+					<label style="margin-right: 5px;">女
+						<input id="fdSex" name="fdSex" type="radio" value="0"
+							 <#if item.fdSex=="0">
+									checked="checked"
+							</#if>
+						/>
+					</label>
+					<span class="form_checktip"></span>
+				</div>
+			</div>
+			<div class="form-item">
+				<label class="item-label">生日</label>
+				<div class="controls">
+					<input type="text" class="text input-large easyui-datebox" name="fdBirthday"  ajaxurl="" nullmsg="生日不允许为空"  datatype="*"  value="${item.fdBirthday}"/>
+					 <span class="form_checktip"></span>
+				</div>
+			</div>
+			<div class="form-item">
+				<label class="item-label">省份</label>
+				<div class="controls">
+					<select  class="fdProvince input-large" name="fdProvince"  nullmsg="省份不允许为空" ajaxurl="" datatype="*" >
+					</select>
+					 <span class="form_checktip"></span>
+				</div>
+			</div>
+			<div class="form-item">
+				<label class="item-label">城市</label>
+				<div class="controls">
+					<select  class="fdCity input-large" name="fdCity"  nullmsg="城市不允许为空" ajaxurl="" datatype="*" >
+					</select>
+					 <span class="form_checktip"></span>
+				</div>
+			</div>
+			<div class="form-item">
+				<label class="item-label">区域</label>
+				<div class="controls">
+					<select  class="fdArea input-large" name="fdArea"  nullmsg="区域不允许为空" ajaxurl="" datatype="*" >
+					</select>
+					 <span class="form_checktip"></span>
+				</div>
+			</div>
+			<div class="form-item">
+				<label class="item-label">商家类型</label>
+				<div class="controls">
+						<select name="fdShopType" class="input-large fdShopType" nullmsg="商家类型不允许为空" ajaxurl="" datatype="*" >
+							<option value="">所有</option>
+							<option value="0">待审核</option>
+							<option value="1">普通分销商</option>
+							<option value="2">城市合伙人</option>
+							<option value="3">区域合伙人</option>
+						</select>
+					 <span class="form_checktip"></span>
+				</div>
+			</div>
+			
+			<div class="form-item">
+	            <label class="item-label">状态<span class="check-tips"></span></label>
+	            <div class="controls">
+	                <label class="radio">
+	                	<input type="radio" name="fdStatus" id="fdStatus1" value="1" 
+	                		<#if item.fdStatus!="0">
+									checked="checked"
+							</#if>
+	                	>
+	                	启用
+	                </label>
+	                <label class="radio">
+		                <input type="radio" name="fdStatus" id="fdStatus2" value="0"
+		                	<#if item.fdStatus=="0">
+									checked="checked"
+							</#if>
+		                >
+		                              禁用
+	                </label>
+	            </div>
+	        </div>
+			<div class="form-item">
+				<input type="hidden" name="fdId" value="${item.fdId }" />
+			</div>
+			<div class="form-item">
+				<button class="btn submit-btn ajax-post" id="submit" type="submit" target-form="form-horizontal">确 定</button>
+				<button class="btn btn-return" onclick="javascript:history.back(-1);return false;">返 回</button>
+			</div>
+		</form>
+	</div>
+	<#include "Admin/jsp/common/footer.ftl">
+</div>
+<!-- /内容区 -->
+</body>
+</html>

@@ -1,0 +1,40 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/all_frg_view_color"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.maya.android.vcard.ui.frg.UnitDetailIntroFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/edt_unit_detail_intro"
+            style="@style/edt_main_general_size_and_color"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_ffffff"
+            android:gravity="top|left"
+            android:hint="@string/not_enter"
+            android:minHeight="@dimen/dimen_170dp"
+            android:paddingBottom="@dimen/dimen_6dp"
+            android:paddingLeft="@dimen/dimen_15dp"
+            android:paddingRight="@dimen/dimen_15dp"
+            android:paddingTop="@dimen/dimen_6dp" />
+
+        <Button
+            android:id="@+id/btn_submit"
+            style="@style/btn_submit"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_42dp"
+            android:layout_marginLeft="@dimen/dimen_15dp"
+            android:layout_marginRight="@dimen/dimen_15dp"
+            android:layout_marginTop="@dimen/dimen_25dp"
+            android:background="@drawable/bg_general_btn_normal"
+            android:gravity="center"
+            android:text="@string/submit" />
+    </LinearLayout>
+
+</ScrollView>

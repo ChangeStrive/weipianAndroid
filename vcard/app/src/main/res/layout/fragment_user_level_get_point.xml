@@ -1,0 +1,375 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/all_frg_view_color"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.maya.android.vcard.ui.frg.UserLevelGetPointFragment">
+
+    <LinearLayout
+        style="@style/all_btn_background_color"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_15dp"
+        android:layout_marginRight="@dimen/dimen_15dp"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/user_level_text_rule_title"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_18dp"
+            android:background="@color/color_688abe"
+            android:gravity="center"
+            android:text="@string/how_to_get_a_card_and_integral" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_35dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/user_level_text_rlue"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/subscriber_data" />
+
+            <View style="@style/vertical_line_divider" />
+
+            <TextView
+                style="@style/user_level_text_rlue"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/integral_0_100" />
+
+            <View style="@style/vertical_line_divider" />
+
+            <TextView
+                style="@style/user_level_text_rlue"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/disposable" />
+        </LinearLayout>
+
+        <View style="@style/horizontal_line_divider_fill" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_35dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/user_level_text_rlue"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/login_sign_in" />
+
+            <View style="@style/vertical_line_divider" />
+
+            <TextView
+                style="@style/user_level_text_rlue"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/integral_10" />
+
+            <View style="@style/vertical_line_divider" />
+
+            <TextView
+                style="@style/user_level_text_rlue"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/everyday" />
+        </LinearLayout>
+
+        <View style="@style/horizontal_line_divider_fill" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_35dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/user_level_text_rlue"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/upload_img_head" />
+
+            <View style="@style/vertical_line_divider" />
+
+            <TextView
+                style="@style/user_level_text_rlue"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/integral_100" />
+
+            <View style="@style/vertical_line_divider" />
+
+            <TextView
+                style="@style/user_level_text_rlue"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/disposable" />
+        </LinearLayout>
+
+        <View style="@style/horizontal_line_divider_fill" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_35dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/user_level_text_rlue"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/upload_vcard" />
+
+            <View style="@style/vertical_line_divider" />
+
+            <TextView
+                style="@style/user_level_text_rlue"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/vcard_50_integral_200" />
+
+            <View style="@style/vertical_line_divider" />
+
+            <TextView
+                style="@style/user_level_text_rlue"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/disposable" />
+        </LinearLayout>
+
+        <View style="@style/horizontal_line_divider_fill" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_35dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/user_level_text_rlue"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/mobile_binding" />
+
+            <View style="@style/vertical_line_divider" />
+
+            <TextView
+                style="@style/user_level_text_rlue"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/vcard_50" />
+
+            <View style="@style/vertical_line_divider" />
+
+            <TextView
+                style="@style/user_level_text_rlue"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/disposable" />
+        </LinearLayout>
+
+        <View style="@style/horizontal_line_divider_fill" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_35dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/user_level_text_rlue"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/inviting_friends" />
+
+            <View style="@style/vertical_line_divider" />
+
+            <TextView
+                style="@style/user_level_text_rlue"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/vcard_50" />
+
+            <View style="@style/vertical_line_divider" />
+
+            <TextView
+                style="@style/user_level_text_rlue"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/disposable" />
+        </LinearLayout>
+
+        <View style="@style/horizontal_line_divider_fill" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_35dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/user_level_text_rlue"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/share_vcard" />
+
+            <View style="@style/vertical_line_divider" />
+
+            <TextView
+                style="@style/user_level_text_rlue"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/integral_10" />
+
+            <View style="@style/vertical_line_divider" />
+
+            <TextView
+                style="@style/user_level_text_rlue"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/every_time" />
+        </LinearLayout>
+
+        <View style="@style/horizontal_line_divider_fill" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_35dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/user_level_text_rlue"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/attention_fans" />
+
+            <View style="@style/vertical_line_divider" />
+
+            <TextView
+                style="@style/user_level_text_rlue"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/integral_5" />
+
+            <View style="@style/vertical_line_divider" />
+
+            <TextView
+                style="@style/user_level_text_rlue"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/every_time" />
+        </LinearLayout>
+
+        <View style="@style/horizontal_line_divider_fill" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_35dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/user_level_text_rlue"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/have_attention" />
+
+            <View style="@style/vertical_line_divider" />
+
+            <TextView
+                style="@style/user_level_text_rlue"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/integral_5" />
+
+            <View style="@style/vertical_line_divider" />
+
+            <TextView
+                style="@style/user_level_text_rlue"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/every_time" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,177 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/all_frg_view_color"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.maya.android.vcard.ui.frg.MessageConversationFragment">
+
+    <LinearLayout
+        android:id="@+id/lil_bottom"
+        style="@style/all_btn_background_color"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:minHeight="@dimen/dimen_50dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rel_keyboard"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_50dp"
+            android:paddingLeft="@dimen/dimen_15dp"
+            android:paddingRight="@dimen/dimen_15dp">
+
+            <ImageButton
+                android:id="@+id/imb_voice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:background="@color/color_00000000"
+                android:src="@mipmap/img_msg_conversation_voice" />
+
+            <RelativeLayout
+                android:id="@+id/rel_imb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true">
+
+                <ImageButton
+                    android:id="@+id/imb_more"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/color_00000000"
+                    android:src="@mipmap/img_msg_conversation_more" />
+
+                <ImageButton
+                    android:id="@+id/imb_send"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/color_00000000"
+                    android:src="@mipmap/img_msg_conversation_send"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_42dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dimen_7dp"
+                android:layout_marginRight="@dimen/dimen_7dp"
+                android:layout_toLeftOf="@id/rel_imb"
+                android:layout_toRightOf="@id/imb_voice"
+                android:background="@drawable/bg_general_edt_normal">
+
+                <ImageButton
+                    android:id="@+id/imb_face"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@color/color_00000000"
+                    android:paddingBottom="@dimen/dimen_3dp"
+                    android:paddingRight="@dimen/dimen_7dp"
+                    android:paddingTop="@dimen/dimen_3dp"
+                    android:src="@mipmap/img_msg_conversation_face" />
+
+                <EditText
+                    android:id="@+id/edt_enter_msg"
+                    style="@style/msg_conversation_edt"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toLeftOf="@id/imb_face"
+                    android:background="@color/color_00000000"
+                    android:ems="10"
+                    android:gravity="center_vertical"
+                    android:hint="@string/please_enter_msg"
+                    android:inputType="textMultiLine"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/dimen_7dp"
+                    android:singleLine="true" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rel_voice"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_50dp"
+            android:paddingLeft="@dimen/dimen_15dp"
+            android:paddingRight="@dimen/dimen_15dp"
+            android:visibility="gone">
+
+            <ImageButton
+                android:id="@+id/imb_keyboard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:background="@color/color_00000000"
+                android:src="@mipmap/img_msg_conversation_keyboard" />
+
+            <ImageButton
+                android:id="@+id/imb_more_too"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@color/color_00000000"
+                android:src="@mipmap/img_msg_conversation_more" />
+
+            <TextView
+                android:id="@+id/txv_press_speak"
+                style="@style/text_setting_general_size_and_color"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_42dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dimen_7dp"
+                android:layout_marginRight="@dimen/dimen_7dp"
+                android:layout_toLeftOf="@id/imb_more_too"
+                android:layout_toRightOf="@id/imb_keyboard"
+                android:background="@drawable/bg_general_edt_normal"
+                android:gravity="center"
+                android:text="@string/pop_voice_press_speak" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/lil_bottom">
+
+        <ListView
+            android:id="@+id/lsv_chat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:cacheColorHint="@color/color_00000000"
+            android:divider="@color/color_00000000"
+            android:dividerHeight="@dimen/dimen_15dp"
+            android:transcriptMode="normal" />
+
+        <TextView
+            android:id="@+id/txv_empty"
+            style="@style/text_list_empty_data"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/lil_chat_camera_show"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/lil_bottom"
+        android:padding="@dimen/dimen_10dp"
+        android:visibility="gone">
+
+        <SurfaceView
+            android:id="@+id/sfv_chat_camera_area"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible"></SurfaceView>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,79 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/all_frg_view_color"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.maya.android.vcard.ui.frg.UserSmsShareVCardFragment">
+
+    <RelativeLayout
+        android:id="@+id/rel_enter"
+        style="@style/all_btn_background_color"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_58dp"
+        android:paddingLeft="@dimen/dimen_15dp"
+        android:paddingRight="@dimen/dimen_15dp">
+
+        <EditText
+            android:id="@+id/edt_sms_share_contact"
+            style="@style/user_recommend_edt"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_44dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/bg_general_edt_normal"
+            android:gravity="center_vertical"
+            android:hint="@string/enter_contact_please"
+            android:paddingLeft="@dimen/dimen_10dp"
+            android:paddingRight="@dimen/dimen_10dp"
+            android:singleLine="true" />
+
+        <ImageButton
+            android:id="@+id/imv_book"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dimen_10dp"
+            android:background="@color/transparent"
+            android:src="@mipmap/img_book" />
+
+        <View
+            style="@style/vertical_line_divider"
+            android:layout_height="@dimen/dimen_44dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dimen_10dp"
+            android:layout_toLeftOf="@id/imv_book" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/edt_sms_share_content"
+        style="@style/user_recommend_edt"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_160dp"
+        android:layout_below="@id/rel_enter"
+        android:layout_marginLeft="@dimen/dimen_15dp"
+        android:layout_marginRight="@dimen/dimen_15dp"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:background="@drawable/bg_general_edt_normal"
+        android:enabled="false"
+        android:gravity="top"
+        android:lines="8"
+        android:padding="@dimen/dimen_10dp" />
+
+    <RelativeLayout
+        style="@style/all_btn_background_color"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_55dp"
+        android:layout_alignParentBottom="true"
+        android:paddingLeft="@dimen/dimen_15dp"
+        android:paddingRight="@dimen/dimen_15dp">
+
+        <Button
+            android:id="@+id/btn_send"
+            style="@style/btn_submit"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_42dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/bg_general_btn_normal"
+            android:text="@string/send" />
+    </RelativeLayout>
+</RelativeLayout>

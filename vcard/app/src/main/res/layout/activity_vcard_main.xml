@@ -1,0 +1,210 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg_act_vcard"
+    tools:context="com.maya.android.vcard.ui.act.VCardMainActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/bg_vcard_name"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@null"/>
+    <!-- 文字：我的名片-->
+    <TextView
+        android:id="@+id/txv_vcard_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/color_ffffff"
+        android:textSize="@dimen/dimen_18sp"
+        android:drawableRight="@mipmap/img_arrow_down_white"
+        android:drawablePadding="@dimen/dimen_7dp"
+        android:paddingBottom="@dimen/dimen_2dp"
+        android:text="@string/my_card" />
+
+    <!-- 名片加载失败/ 未添加名片  界面 -->
+    <LinearLayout
+        android:id="@+id/lil_vcard_load_fail"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/dimen_40dp"
+        android:layout_marginBottom="@dimen/dimen_16dp"
+        android:background="@mipmap/bg_act_vcard_main_empty"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/txv_vcard_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dimen_74dp"
+            android:drawablePadding="@dimen/dimen_4dp"
+            android:drawableTop="@mipmap/img_vcard_load_fail_face"
+            android:drawableBottom="@mipmap/img_vcard_load_fail_hint"/>
+
+
+        <TextView
+            android:id="@+id/txv_act_mycard_load_fail_warn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:gravity="center_horizontal"
+            android:textColor="@color/color_787878"
+            android:layout_marginTop="@dimen/dimen_74dp"
+            android:drawableTop="@mipmap/img_vcard_load_fail"
+            android:drawablePadding="@dimen/dimen_15dp"
+            android:lineSpacingMultiplier="1.2"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/vcard_load_fail_hint"
+            android:textSize="@dimen/dimen_12sp"/>
+
+    </LinearLayout>
+    <!-- 名片加载失败/ 未添加名片  界面  end-->
+
+    <com.maya.android.vcard.ui.widget.VCardImageView
+        android:id="@+id/imv_vcard_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@null"/>
+
+    <Button android:id="@+id/btn_act_mycard_scan_code"
+        android:layout_width="@dimen/dimen_68dp"
+        android:layout_height="@dimen/dimen_48dp"
+        android:background="@mipmap/btn_vcard_scan_code"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
+
+    <ImageView android:id="@+id/imv_act_mycard_scan_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dimen_9dp"
+        android:src="@mipmap/img_vcard_scan_char"
+        android:scaleType="centerInside"
+        android:contentDescription="@null"/>
+
+    <!-- 未验证名片标签 -->
+    <ImageView android:id="@+id/imv_act_mycard_unverified_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:contentDescription="@null"/>
+    <!-- 交换失败提示 -->
+    <ImageView android:id="@+id/imv_act_switch_fail_hint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:contentDescription="@null"
+        android:src="@mipmap/img_vcard_switch_fail_hint"
+        android:visibility="gone" />
+
+    <!--顶部边栏-->
+    <LinearLayout
+        android:id="@+id/lil_vcard_name"
+        android:layout_width="@dimen/dimen_180dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_vcard_name"
+        android:orientation="vertical"
+        android:layout_below="@id/txv_vcard_title"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/dimen_2dp">
+
+            <ImageView
+                android:id="@+id/imv_vcard_top_view_add"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:contentDescription="@null"
+                android:src="@mipmap/img_add_vcard" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/img_line_vcard"
+                android:contentDescription="@null" />
+
+            <ImageView
+                android:id="@+id/imv_vcard_top_view_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:contentDescription="@null"
+                android:src="@mipmap/img_edit_vcard" />
+        </LinearLayout>
+        <ListView
+            android:id="@+id/lsv_vcard_top_view_names"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:cacheColorHint="@color/color_00000000"
+            android:divider="@color/color_00000000"
+            android:listSelector="@color/color_00000000"/>
+    </LinearLayout>
+
+    <!--右侧边栏-->
+    <LinearLayout
+        android:id="@+id/lil_vcard_right"
+        android:layout_width="@dimen/dimen_94dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_vcard_right"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/dimen_10dp"
+        android:paddingRight="@dimen/dimen_12dp"
+        android:paddingBottom="@dimen/dimen_18dp"
+        android:visibility="gone">
+        <TextView
+            android:id="@+id/txv_vcard_right_view_cardcase"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="@dimen/dimen_12sp"
+            android:textColor="@color/color_ffffff"
+            android:drawableTop="@mipmap/img_cardcase"
+            android:text="@string/cardcase" />
+        <ImageView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/img_line_vcard_main_right"
+            android:layout_marginTop="@dimen/dimen_6dp"
+            android:layout_marginBottom="@dimen/dimen_6dp"
+            android:contentDescription="@null"/>
+        <TextView
+            android:id="@+id/txv_vcard_right_view_msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="@dimen/dimen_12sp"
+            android:textColor="@color/color_ffffff"
+            android:drawableTop="@mipmap/img_message"
+            android:text="@string/message" />
+        <ImageView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/img_line_vcard_main_right"
+            android:layout_marginTop="@dimen/dimen_6dp"
+            android:layout_marginBottom="@dimen/dimen_6dp"
+            android:contentDescription="@null"/>
+        <TextView
+            android:id="@+id/txv_vcard_right_view_mine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="@dimen/dimen_12sp"
+            android:textColor="@color/color_ffffff"
+            android:drawableTop="@mipmap/img_mine"
+            android:text="@string/my" />
+    </LinearLayout>
+</RelativeLayout>

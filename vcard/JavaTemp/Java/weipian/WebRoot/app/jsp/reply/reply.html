@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<#include "app/jsp/common/common.ftl">
+	<#include "app/jsp/weixinTemplate.html">
+	<title>评论</title>
+	<script type="text/javascript">
+		var fdOrderId="${order.fdId}";
+	</script>
+	<script src="${hxltUrl}app/js/reply/reply.js"></script>
+	<style type="text/css">
+		.orderPayBtn{display: block;text-align: center;background: #FFBC3B;color:white;padding: 10px 0;font-size: 16px;width:100%;}
+		.rfTitle{font-size: 14px;color:black;padding: 2px 0;}
+		.rfTitle p{font-size: 14px;color:#FFBC3B;padding: 2px 0;}
+	</style>
+</head>
+<body class="grayBg">
+	<div class="wrap">
+		<header class="homepage_head">
+			<a href="javascript:history.go(-1)" class="left_head  ahref" style="left:2%;">
+	             	  <span class="iconfont backBtn">&#xe61c;</span>
+			</a>
+			<h2>评论</h2>
+		</header>
+		<div class="headNext">
+			<#list detail.list as item>
+				<div class="orderReplyItem">
+					<a class="odmg-item clearfix" fdId="${item.fdId}" href="${hxltUrl}wx/goodsDetail?fdGoodsId=${item.fdGoodsId}&fdShopNo=${fdShopNo}">
+						<img src="${downAction}${item.fdPicUrl}" alt="goods"/>
+						<div class="odmgiMain clearfix">
+							<p class="odmgiTitle">${item.fdGoodsName}</p>
+							<p class="odmgiSize">规格：${item.fdGoodsNo}</p>
+							<p class="odmgiColor">原价：￥${item.fdTagPrice}</p>
+							<span class="odmgiPrice">￥${item.fdPrice}</span>
+							<span class="odmgi_Calc clearfix">
+								<span class="odmgi_quantity">X${item.fdQuantity}</span>
+							</span>
+						</div>
+					</a>
+					<div class="odmg-replyTitle">商品评价</div>
+					<div class="odmg-replyContent">
+						<textarea placeholder="请输入商品评价" class="orderItem_reply" fdOrderItemId="${item.fdId}" ></textarea>
+					</div>
+				</div>
+			</#list>
+			<div style="padding-bottom: 70px"></div>
+		</div>
+	</div>
+	<footer class="orderDetail-footer">
+		<a href="javascript:void(0);" class="orderPayBtn" ><span>发表评论</span></a>
+	</footer>
+</body>
+</html>

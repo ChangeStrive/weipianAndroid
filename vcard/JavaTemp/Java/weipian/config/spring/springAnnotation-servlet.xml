@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"  
+ xmlns:context="http://www.springframework.org/schema/context"  
+ xmlns:p="http://www.springframework.org/schema/p"  
+ xmlns:mvc="http://www.springframework.org/schema/mvc"  
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+ xsi:schemaLocation="http://www.springframework.org/schema/beans  
+      http://www.springframework.org/schema/beans/spring-beans-3.2.xsd  
+      http://www.springframework.org/schema/context  
+      http://www.springframework.org/schema/context/spring-context.xsd  
+      http://www.springframework.org/schema/mvc  
+      http://www.springframework.org/schema/mvc/spring-mvc-3.2.xsd">
+     <!-- 注解扫描包 -->
+	<context:component-scan base-package="com.**.action" />
+	<!-- 开启注解 -->
+	
+	<mvc:annotation-driven/>
+	
+	<!-- <bean class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter" />
+	<bean class="org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping"></bean> -->
+	<!-- 静态资源访问 -->
+	<mvc:resources location="/ueditor/" mapping="/ueditor/**"/>  
+	<mvc:resources location="/js/" mapping="/js/**"/>   
+	<mvc:resources location="/Admin/" mapping="/Admin/**"/>  
+	<mvc:resources location="/app/" mapping="/app/**"/>  
+	<mvc:resources location="/app2/" mapping="/app2/**"/>  
+	<mvc:resources location="/sites/" mapping="/sites/**"/>  
+	<mvc:resources location="/sites2/" mapping="/sites2/**"/>  
+	<mvc:resources location="/money/" mapping="/money/**"/>  
+	<mvc:resources location="/car/" mapping="/car/**"/>  
+	<mvc:resources location="/MMS.ico" mapping="/MMS.ico"/>  
+	<mvc:view-controller path="/" view-name="forward:/LoginAction/toLogin"/>
+	
+	<!--<mvc:view-controller path="/" view-name="redirect:/LoginAction/toLogin"/>
+	 -->	
+	<mvc:interceptors>
+		<mvc:interceptor>
+			<mvc:mapping path="/**Action/**"/>
+			<mvc:mapping path="/wx/**"/>
+			<mvc:mapping path="/wxajax/**"/>
+			<mvc:mapping path="/seller/**"/>
+			<mvc:mapping path="/sellerajax/**"/>
+			<mvc:mapping path="/salesman/**"/>
+			<mvc:mapping path="/salesmanajax/**"/>
+			<mvc:mapping path="/web/**"/>
+			<mvc:mapping path="/ajax/**"/>
+			<mvc:mapping path="/smajax/**"/>
+			<mvc:mapping path="/sm/**"/>
+			<bean id="myInterceptor" class="com.platform.sys.filter.MyInterceptor"></bean>
+		</mvc:interceptor>
+	</mvc:interceptors>
+	
+	
+	
+ 	<!-- Freemarker配置 -->
+    <bean id="freemarkerConfig"
+          class="org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer">
+        <property name="templateLoaderPath" value="/" />
+        <property name="defaultEncoding" value="utf-8" /> 
+        <property name="freemarkerSettings">
+            <props>
+                <prop key="template_update_delay">0</prop>
+                <prop key="default_encoding">UTF-8</prop>
+                <prop key="number_format">0.##########</prop>
+                <prop key="datetime_format">yyyy-MM-dd HH:mm:ss</prop>
+                <prop key="classic_compatible">true</prop>
+                <prop key="template_exception_handler">ignore</prop>
+            </props>
+        </property>
+    </bean>
+    
+    
+	    <!--视图解释器 -->
+    <bean id="viewResolver"
+          class="org.springframework.web.servlet.view.freemarker.FreeMarkerViewResolver">
+        <property name="contentType" value="text/html;charset=UTF-8"></property>
+        <property name="prefix" value="/"></property>
+    </bean>
+	
+	<bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+		  <property name="defaultEncoding" value="utf-8" />
+	      <property name="maxUploadSize" value="10485760000" />
+	      <property name="maxInMemorySize" value="40960" />
+	      <property name="resolveLazily" value="true"/>    
+	</bean>
+ </beans>  

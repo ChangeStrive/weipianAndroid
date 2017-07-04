@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/all_btn_background_color"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/dimen_32dp"
+    android:paddingLeft="@dimen/dimen_40dp"
+    android:paddingRight="@dimen/dimen_40dp"
+    android:paddingTop="@dimen/dimen_32dp">
+
+    <com.maya.android.asyncimageview.widget.AsyncImageView
+        android:id="@+id/imv_head"
+        android:layout_width="@dimen/dimen_61dp"
+        android:layout_height="@dimen/dimen_61dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/img_upload_head" />
+
+    <TextView
+        android:id="@+id/txv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/imv_head"
+        android:layout_marginLeft="@dimen/dimen_10dp"
+        android:layout_marginTop="@dimen/dimen_5dp"
+        android:layout_toRightOf="@id/imv_head"
+        android:singleLine="true"
+        android:textColor="@color/color_101010"
+        android:textSize="@dimen/dimen_16sp" />
+
+    <TextView
+        android:id="@+id/txv_job"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/txv_name"
+        android:layout_marginLeft="@dimen/dimen_10dp"
+        android:layout_toRightOf="@id/txv_name"
+        android:singleLine="true"
+        android:textColor="@color/color_313131"
+        android:textSize="@dimen/dimen_12sp" />
+
+    <TextView
+        android:id="@+id/txv_company"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/imv_head"
+        android:layout_alignLeft="@id/txv_name"
+        android:layout_marginBottom="@dimen/dimen_5dp"
+        android:singleLine="true"
+        android:textColor="@color/color_777777"
+        android:textSize="@dimen/dimen_12sp" />
+
+    <ImageView
+        android:id="@+id/imv_qr_code_loading"
+        android:layout_width="@dimen/dimen_195dp"
+        android:layout_height="@dimen/dimen_195dp"
+        android:layout_below="@id/imv_head"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dimen_44dp"
+        android:contentDescription="@string/common_scan"
+        android:scaleType="fitXY" />
+
+    <com.maya.android.asyncimageview.widget.AsyncImageView
+        android:id="@+id/imv_qr_code_scan"
+        android:layout_width="@dimen/dimen_195dp"
+        android:layout_height="@dimen/dimen_195dp"
+        android:layout_below="@id/imv_head"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dimen_44dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imv_qr_code_scan"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dimen_35dp"
+        android:text="@string/scan_qr_code_swap_vcard"
+        android:textColor="@color/color_7a7a7a"
+        android:textSize="@dimen/dimen_13dp" />
+</RelativeLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_f3fafd">
+
+    <View style="@style/horizontal_line_divider_fill" />
+
+
+    <LinearLayout
+        android:id="@+id/lil_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_51dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="@dimen/dimen_7dp"
+        android:background="@drawable/bg_search_bar"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imv_pop_act_message_chat_bottom_laughter"
+            android:layout_width="@dimen/dimen_47dp"
+            android:layout_height="@dimen/dimen_51dp"
+            android:contentDescription="@string/app_name"
+            android:scaleType="centerInside"
+            android:src="@mipmap/f001" />
+
+        <View style="@style/vertical_line_divider" />
+
+        <ImageView
+            android:id="@+id/imv_add"
+            android:layout_width="@dimen/dimen_47dp"
+            android:layout_height="@dimen/dimen_51dp"
+            android:contentDescription="@string/app_name"
+            android:padding="@dimen/dimen_10dp"
+            android:scaleType="centerInside"
+            android:src="@mipmap/img_chat_add" />
+
+        <View style="@style/vertical_line_divider" />
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/grv_face"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/lil_bottom"
+        android:numColumns="7"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="@dimen/dimen_11dp" />
+
+    <!--  <ImageView
+          android:id="@+id/imv_pop_act_message_chat_point"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_above="@+id/lil_pop_act_message_chat_face_bottom"
+          android:layout_below="@+id/grv_pop_act_message_chat_face"
+          android:layout_centerHorizontal="true"
+          android:layout_marginTop="@dimen/dimen_21dp"
+          android:contentDescription="@string/app_name"
+          android:src="@mipmap/img_chat_point" />-->
+</RelativeLayout>

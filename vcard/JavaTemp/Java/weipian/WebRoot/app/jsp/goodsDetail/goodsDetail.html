@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<#include "app/jsp/common/common.ftl">
+	<#include "app/jsp/weixinTemplate.html">
+	<title>商品详情</title>
+	<script type="text/javascript">
+		var footTab="2";
+		var fdGoodsId="${goods.fdId}";
+	</script>
+	<script src='${hxltUrl}app/js/goodsDetail/reply.js'></script>
+	<script src='${hxltUrl}app/js/goodsDetail/goodsDetail.js'></script>
+</head>
+<body>
+	<div class="wrap">
+		<header class="homepage_head">
+			<a href="javascript:history.go(-1)" class="left_head  ahref" style="left:2%;">
+	             	  <span class="iconfont backBtn">&#xe61c;</span>
+			</a>
+			<h2>商品详情</h2>
+		</header>
+		<div class="headNext ">
+			<div class="adList baseContain ">
+			<div class="fotorama"   data-width="100%"   data-arrows="false" data-autoplay="true" data-autoplay="3000" data-stopautoplayontouch="false">
+					<#if (picList.len>0)>
+						<#list picList.list as pic>
+							<img src="${downAction}${pic.fdPicUrl}" alt="商品图片">
+						</#list>
+						<#else>
+							<img src="${downAction}${goods.fdPicUrl}" alt="商品图片">
+					</#if>
+				</div>
+			</div>
+			<div class="gd_title">
+				<span>${goods.fdGoodsName}</span>
+			</div>
+			<div class="gd_price">
+				<div class="gdp_text">
+					<p class="gdpt_p1"><span class="gdptp_rmb">￥</span><span>${goods.fdPrice}</span></p>
+					<p class="gdpt_p2"><span>价格：</span><span class="gdptp2_rmb">&nbsp;￥</span><span class="gdptp2_amount">${goods.fdTagPrice}&nbsp;</span></p>
+					<p class="gdpt_p3"><span>规格：${goods.fdGoodsNo}</span></p>
+					<p class="gdpt_p3"><span>快递&nbsp;&nbsp;免运费</span></p>
+				</div>
+			</div>
+			<div class="gd_head">
+				<div class="gdh_content clearfix">
+					<a class="gdh_title" fdType="goods" href="javascript:void(0);"><span class="gdht_left gdht_selected">商品详情</span></a>
+					<span class="gdh_line"></span>
+					<a class="gdh_title " fdType="reply"  href="javascript:void(0);"><span class="gdht_right">商品评价</span></a>
+				</div>
+			</div>
+			<#include "app/jsp/goodsDetail/goodsReply.html">
+			<div style="background: white;" class="goodsRemark">
+				<div class="gd_content">
+					<div class="gdc_content clearfix">
+						${goods.fdDesc}
+					</div>
+				</div>
+			</div>
+			<div style="height: 60px;"></div>
+		</div>
+	</div>
+	<a class="toTop" href="javascript:scrollTo(0,0)"><img src="${hxltUrl}app/images/toTop.png"/></a>
+	<div class="gd-foot clearfix">
+		<div class="gd-iconBtns clearfix">
+			<a href="javascript:void(0);" class="gd-iconbtn">
+				<div class="gd-btnIcon">
+					<img src="${hxltUrl}app/images/gtel.png"/>
+				</div>
+				<div class="gd-btnText">客服</div>
+			</a>
+			<a href="${hxltUrl}wx/index?fdShopNo=${fdShopNo}" class="gd-iconbtn">
+				<div class="gd-btnIcon">
+					<img src="${hxltUrl}app/images/ghome.png"/>
+				</div>
+				<div class="gd-btnText">微官网</div>
+			</a>
+			<a href="javascript:void(0);" class="gd-iconbtn gd-sc">
+				<div class="gd-btnIcon">
+					<img src="${hxltUrl}app/images/gsc.png"/>
+				</div>
+				<div class="gd-btnText">收藏</div>
+			</a>
+		</div>
+		<a href="javascript:void(0);" class="gd-bbtn gd-shopcart" buyType="shopCart">
+			加入购物车
+		</a>
+		<a href="javascript:void(0);" class="gd-bbtn gd-buy" buyType="buyNow">
+			立即购买
+		</a>
+	</div>
+	
+	<div class="goodsSelectQuantity">
+		<div  class="goodsHeader clearfix">
+			<div class="goodsHeaderLeft">
+				<img src="${downAction}${goods.fdPicUrl}" alt="goods"/>
+			</div>
+			<div class="goodsHeaderMiddle ">
+				<p class="ghm_Title">${goods.fdGoodsName}</p>
+				<div class="gdp_text" style="border:0;padding: 0;">
+					<p class="gdpt_p1"><span class="gdptp_rmb">￥</span><span>${goods.fdPrice}</span></p>
+					<p class="gdpt_p2"><span>价格：</span><span class="gdptp2_rmb">&nbsp;￥</span><span class="gdptp2_amount">${goods.fdTagPrice}&nbsp;</span></p>
+					<p class="gdpt_p3"><span>规格：${goods.fdGoodsNo}</span></p>
+				</div>
+			</div>
+			<a class="iconfont close_btn">&#xe626;</a>
+		</div>
+		<div  class="goodsQuantity clearfix">
+			<span class="gq_Title ">购买数量</span>
+			<span class="gq_Calc clearfix">
+				<a href="javascript:void(0)" class="gq_jian">－</a>
+				<input type="number"  name="fdQuantity1" class="fdBuyQuantity" value="1" maxQuantity="${goods.fdQuantity}"/>
+				<a href="javascript:void(0)" class="gq_jia">＋</a>
+			</span>
+		</div>
+		<a href="javascript:void(0)" class="goodsGouwuche">
+			<span class="gg-text">加入购物车</span>
+		</a>
+	</div>
+	<div class="mask" style="display:none;"></div>
+	<#include "app/jsp/common/addShopCart.html">
+	<#include "app/jsp/goodsReply/replyItemTemplate.html">
+</body>
+</html>

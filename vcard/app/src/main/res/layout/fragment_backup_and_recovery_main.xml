@@ -1,0 +1,277 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/all_frg_view_color"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.maya.android.vcard.ui.frg.BackupAndRecoveryMainFragment">
+
+    <LinearLayout
+        android:id="@+id/lil_content"
+        style="@style/all_btn_background_color"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/dimen_15dp"
+        android:paddingRight="@dimen/dimen_15dp">
+
+        <TextView
+            style="@style/back_up_text_deputy"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_38dp"
+            android:gravity="bottom"
+            android:paddingBottom="@dimen/dimen_2dp"
+            android:singleLine="true"
+            android:text="@string/backup_login_reg_prompt" />
+
+        <View style="@style/horizontal_line_divider_fill" />
+
+        <RelativeLayout
+            android:id="@+id/rel_login"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_50dp">
+
+            <TextView
+                android:id="@+id/txv_vcardsno_label"
+                style="@style/back_up_text_main"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/vcard_sno" />
+
+            <TextView
+                android:id="@+id/txv_vcardsno"
+                style="@style/text_deputy_general_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/txv_vcardsno_label"
+                android:textSize="@dimen/dimen_15sp" />
+
+            <TextView
+                android:id="@+id/txv_is_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:drawablePadding="@dimen/dimen_10dp"
+                android:drawableRight="@mipmap/img_general_right_arrow"
+                android:textSize="@dimen/dimen_15sp" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lil_selected"
+        style="@style/all_btn_background_color"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lil_content"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/dimen_15dp"
+        android:paddingRight="@dimen/dimen_15dp">
+
+        <RelativeLayout
+            android:id="@+id/rel_backup_cloud"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_50dp">
+
+            <ImageView
+                android:id="@+id/imv_backup_cloud"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/img_backup_cloud" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/img_general_right_arrow" />
+
+            <TextView
+                style="@style/back_up_text_main"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_10dp"
+                android:layout_marginTop="@dimen/dimen_5dp"
+                android:layout_toRightOf="@id/imv_backup_cloud"
+                android:text="@string/backup_cloud" />
+
+            <TextView
+                style="@style/back_up_text_deputy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/dimen_5dp"
+                android:layout_marginLeft="@dimen/dimen_10dp"
+                android:layout_toRightOf="@id/imv_backup_cloud"
+                android:text="@string/backup_copy_prompt" />
+        </RelativeLayout>
+
+        <View style="@style/horizontal_line_divider_fill" />
+
+        <RelativeLayout
+            android:id="@+id/rel_back_recovery"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_50dp">
+
+            <ImageView
+                android:id="@+id/imv_back_recovery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/img_back_recovery" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/img_general_right_arrow" />
+
+            <TextView
+                style="@style/back_up_text_main"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_10dp"
+                android:layout_marginTop="@dimen/dimen_5dp"
+                android:layout_toRightOf="@id/imv_back_recovery"
+                android:text="@string/backup_recover" />
+
+            <TextView
+                style="@style/back_up_text_deputy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/dimen_5dp"
+                android:layout_marginLeft="@dimen/dimen_10dp"
+                android:layout_toRightOf="@id/imv_back_recovery"
+                android:text="@string/backup_recover_prompt" />
+        </RelativeLayout>
+
+        <View style="@style/horizontal_line_divider_fill" />
+
+        <RelativeLayout
+            android:id="@+id/rel_back_administration"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_50dp">
+
+            <ImageView
+                android:id="@+id/imv_back_administration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/img_back_administration" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/img_general_right_arrow" />
+
+            <TextView
+                style="@style/back_up_text_main"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_10dp"
+                android:layout_marginTop="@dimen/dimen_5dp"
+                android:layout_toRightOf="@id/imv_back_administration"
+                android:text="@string/backup_data" />
+
+            <TextView
+                style="@style/back_up_text_deputy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/dimen_5dp"
+                android:layout_marginLeft="@dimen/dimen_10dp"
+                android:layout_toRightOf="@id/imv_back_administration"
+                android:text="@string/backup_data_prompt" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txv_back_up_last_time"
+        style="@style/back_up_text_deputy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/lil_selected"
+        android:layout_marginRight="@dimen/dimen_15dp"
+        android:layout_marginTop="@dimen/dimen_5dp" />
+
+    <TextView
+        android:id="@+id/txv_backup_recover_last_time"
+        style="@style/back_up_text_deputy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/txv_back_up_last_time"
+        android:layout_marginRight="@dimen/dimen_15dp"
+        android:layout_marginTop="@dimen/dimen_2dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txv_backup_recover_last_time"
+        android:layout_marginTop="@dimen/dimen_5dp"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/dimen_15dp"
+        android:paddingRight="@dimen/dimen_15dp">
+
+        <View style="@style/horizontal_line_divider_fill" />
+
+        <TextView
+            style="@style/back_up_text_deputy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_5dp"
+            android:text="@string/backup_label_copy_log" />
+
+        <TextView
+            android:id="@+id/txv_vcard_num"
+            style="@style/back_up_text_deputy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_5dp" />
+
+        <TextView
+            android:id="@+id/txv_contact_person_num"
+            style="@style/back_up_text_deputy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_5dp" />
+
+        <TextView
+            android:id="@+id/txv_mail_list_num"
+            style="@style/back_up_text_deputy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_5dp" />
+
+        <TextView
+            android:id="@+id/txv_short_mes_num"
+            style="@style/back_up_text_deputy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_5dp" />
+
+        <TextView
+            android:id="@+id/txv_private"
+            style="@style/back_up_text_deputy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_5dp" />
+
+        <TextView
+            android:id="@+id/txv_main_set_num"
+            style="@style/back_up_text_deputy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_5dp" />
+    </LinearLayout>
+</RelativeLayout>

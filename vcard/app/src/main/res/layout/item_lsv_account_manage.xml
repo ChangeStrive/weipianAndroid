@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/list_item_backroundcolor"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dimen_50dp"
+    android:minHeight="@dimen/dimen_50dp"
+    android:paddingLeft="@dimen/dimen_15dp"
+    android:paddingRight="@dimen/dimen_15dp">
+
+
+    <com.maya.android.asyncimageview.widget.AsyncImageView
+        android:id="@+id/imv_account_manage_headimg"
+        android:layout_width="@dimen/dimen_40dp"
+        android:layout_height="@dimen/dimen_40dp"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/img_upload_head" />
+
+    <TextView
+        android:id="@+id/txv_account_manage_username"
+        style="@style/text_setting_general_size_and_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dimen_15dp"
+        android:layout_toRightOf="@id/imv_account_manage_headimg"/>
+
+    <ImageView
+        android:id="@+id/imv_account_manage_current_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/img_general_agree" />
+
+</RelativeLayout>

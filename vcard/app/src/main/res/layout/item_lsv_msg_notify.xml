@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/all_btn_background_color"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/dimen_12dp"
+    android:paddingLeft="@dimen/dimen_15dp"
+    android:paddingRight="@dimen/dimen_15dp"
+    android:paddingTop="@dimen/dimen_12dp">
+
+    <com.maya.android.asyncimageview.widget.AsyncImageView
+        android:id="@+id/imv_head"
+        android:layout_width="@dimen/dimen_50dp"
+        android:layout_height="@dimen/dimen_50dp"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/txv_datetime"
+        style="@style/unit_member_job"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/imv_head" />
+
+    <TextView
+        android:id="@+id/txv_from_where"
+        style="@style/unit_member_job"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/imv_head"
+        android:layout_marginLeft="@dimen/dimen_10dp"
+        android:layout_toEndOf="@id/imv_head" />
+
+    <com.maya.android.vcard.ui.widget.MarqueeTextView
+        android:id="@+id/txv_swap_card_want"
+        style="@style/text_setting_general_size_and_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/imv_head"
+        android:layout_marginLeft="@dimen/dimen_10dp"
+        android:layout_marginRight="@dimen/dimen_10dp"
+        android:layout_toEndOf="@id/imv_head"
+        android:layout_toLeftOf="@id/txv_datetime"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:scrollHorizontally="true"
+        android:singleLine="true" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/imv_head"
+        android:layout_alignParentRight="true">
+
+        <CheckBox
+            android:id="@+id/chb_have_agree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:button="@drawable/img_chb_is_agree" />
+
+        <TextView
+            android:id="@+id/txv_have_agree"
+            style="@style/unit_member_job"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/chb_have_agree"
+            android:paddingRight="@dimen/dimen_10dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rel_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/imv_head"
+        android:paddingTop="@dimen/dimen_12dp">
+
+        <Button
+            android:id="@+id/btn_agree"
+            style="@style/btn_get_verification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/bg_general_btn_green"
+            android:gravity="center"
+            android:paddingBottom="@dimen/dimen_3dp"
+            android:paddingLeft="@dimen/dimen_15dp"
+            android:paddingRight="@dimen/dimen_15dp"
+            android:paddingTop="@dimen/dimen_3dp"
+            android:text="@string/agree" />
+
+
+        <Button
+            android:id="@+id/btn_cancel"
+            style="@style/mag_notify_btn_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dimen_10dp"
+            android:layout_toLeftOf="@id/btn_agree"
+            android:background="@drawable/bg_general_btn_normal"
+            android:gravity="center"
+            android:paddingBottom="@dimen/dimen_3dp"
+            android:paddingLeft="@dimen/dimen_15dp"
+            android:paddingRight="@dimen/dimen_15dp"
+            android:paddingTop="@dimen/dimen_3dp"
+            android:text="@string/frg_text_cancel" />
+    </RelativeLayout>
+
+</RelativeLayout>

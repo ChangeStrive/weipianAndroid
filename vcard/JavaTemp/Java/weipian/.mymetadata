@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="weipian"
+  id="myeclipse.1416970992528"
+  context-root="/weipian"
+  j2ee-spec="5.0"
+  archive="weipian.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

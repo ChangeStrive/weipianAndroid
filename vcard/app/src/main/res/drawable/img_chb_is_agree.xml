@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+   <item android:state_checked="true"   
+        android:drawable="@drawable/bg_chb_reg_true" />选中时效果  
+   <item android:state_checked="false"   
+       android:drawable="@drawable/bg_chb_reg_false" />未选中时效果
+    -->
+
+    <item android:drawable="@mipmap/img_general_is_agree" android:state_checked="true"/>
+    <item android:drawable="@mipmap/img_general_no_agree" android:state_checked="false"/>
+
+</selector>

@@ -1,0 +1,514 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="android:Theme.Black.NoTitleBar">
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="theme_swap_radar_member" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimAmount">0.8</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <!-- 浅色  间隔  分割线 start -->
+    <!-- 横线分割线颜色 -->
+    <style name="horizontal_line_divider_color">
+        <item name="android:background">@color/color_cacaca</item>
+    </style>
+    <!-- 竖线分割线颜色 -->
+    <style name="vertical_line_divider_color">
+        <item name="android:background">@color/color_cacaca</item>
+    </style>
+    <!-- 上下间隔颜色 -->
+    <style name="vertical_line_divider_height_color">
+        <item name="android:background">@color/color_e2e2e2</item>
+    </style>
+    <!-- 横线浅色  填充整个父控件宽 -->
+    <style name="horizontal_line_divider_fill" parent="horizontal_line_divider_color">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dimen_1px</item>
+
+    </style>
+    <!-- 横线浅色  左右有间距 15dp-->
+    <style name="horizontal_line_divider_padding_dimen_15dp" parent="horizontal_line_divider_fill">
+        <item name="android:layout_marginLeft">@dimen/dimen_15dp</item>
+        <item name="android:layout_marginRight">@dimen/dimen_15dp</item>
+    </style>
+    <!-- 竖线浅色 分割线-->
+
+    <!-- 竖线浅色 分割线  填充整个父控件宽 -->
+    <style name="vertical_line_divider" parent="vertical_line_divider_color">
+        <item name="android:layout_width">@dimen/dimen_1dp</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <!-- 上下 间距  view -->
+    <style name="vertical_line_divider_height_dimen_10dp" parent="vertical_line_divider_height_color">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dimen_10dp</item>
+    </style>
+    <!-- 浅色  间隔  分割线  end -->
+
+    <!--Checkbox复选按钮字体大小、颜色，背景，-->
+    <style name="chb_is_agree" parent="text_setting_general_right_sign_size_12sp_and_color">
+        <item name="android:button">@color/color_00000000</item>
+        <item name="android:drawableLeft">@drawable/img_chb_is_agree</item>
+        <item name="android:drawablePadding">@dimen/dimen_5dp</item>
+    </style>
+
+    <!-- 自定义仿IOS的AlertDialog的样式 -->
+    <style name="AlertDialogStyle" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+    <!--所有页面主背景颜色-->
+    <style name="all_frg_view_color">
+        <item name="android:background">@color/color_e2e2e2</item>
+    </style>
+    <!--所有页面主按钮背景颜色-->
+    <style name="all_btn_background_color">
+        <item name="android:background">@color/color_ffffff</item>
+    </style>
+    <!--展示用户资料的字体颜色-->
+    <style name="all_show_user_detail">
+        <item name="android:textColor">@color/color_ffffff</item>
+    </style>
+    <!--布局主字体颜色(通用)-->
+    <style name="text_main_general_color">
+        <item name="android:textColor">@color/color_292929</item>
+    </style>
+    <!--布局副字体颜色(通用)-->
+    <style name="text_deputy_general_color">
+        <item name="android:textColor">@color/color_787878</item>
+    </style>
+    <!--设置界面布局主字体15sp(通用)-->
+    <style name="text_setting_general_size_and_color" parent="text_main_general_color">
+        <item name="android:textSize">@dimen/dimen_15sp</item>
+    </style>
+    <!--设置界面布局右边提示字体大小14sp和颜色(通用)-->
+    <style name="text_setting_general_right_sign_size_and_color" parent="text_deputy_general_color">
+        <item name="android:textSize">@dimen/dimen_14sp</item>
+    </style>
+    <!--设置界面布副字体大小12sp和颜色(通用)-->
+    <style name="text_setting_general_right_sign_size_12sp_and_color" parent="text_deputy_general_color">
+        <item name="android:textSize">@dimen/dimen_12sp</item>
+    </style>
+    <!--设置界面布副字体大小12sp和颜色+背景颜色(通用)-->
+    <style name="text_setting_privacy_size_12sp_color_7878_backgroundcolor" parent="all_frg_view_color">
+        <item name="android:textSize">@dimen/dimen_12sp</item>
+        <item name="android:textColor">@color/color_787878</item>
+    </style>
+    <!--设置界面修改密码输入框字体大小、颜色、背景-->
+    <style name="edt_setting_account_change_pwd_size_15sp_color_292929_backgoundcolor" parent="all_btn_background_color">
+        <item name="android:textSize">@dimen/dimen_15sp</item>
+        <item name="android:textColor">@color/color_292929</item>
+    </style>
+
+    <!--btn按钮字体大小、颜色-->
+    <style name="btn_submit">
+        <item name="android:textColor">@color/color_399c2f</item>
+        <item name="android:textSize">@dimen/dimen_15sp</item>
+    </style>
+    <!--list按钮字体大小、颜色-->
+    <style name="text_list_empty_data">
+        <item name="android:textColor">@color/color_292929</item>
+        <item name="android:textSize">@dimen/dimen_15sp</item>
+    </style>
+    <!--list的item背景颜色-->
+    <style name="list_item_backroundcolor">
+        <item name="android:background">@color/color_ffffff</item>
+    </style>
+    <!--日志管理 child Item txvName color-->
+    <style name="text_backup_log_name_color" parent="all_btn_background_color">
+        <item name="android:textSize">@dimen/dimen_13sp</item>
+    </style>
+    <!--日志管理 child Item txvName color-->
+    <style name="text_backup_log_num_color" parent="text_deputy_general_color">
+        <item name="android:textSize">@dimen/dimen_13sp</item>
+    </style>
+    <!-- 登录、注册页面输入框字体颜色-->
+    <style name="edt_main_general_size_and_color" parent="text_main_general_color">
+        <item name="android:textSize">@dimen/dimen_15sp</item>
+        <item name="android:textColorHint">@color/color_787878</item>
+    </style>
+    <!-- 登录页面快速注册字体颜色和大小-->
+    <style name="text_login_quick_register_size_and_color">
+        <item name="android:textSize">@dimen/dimen_15sp</item>
+        <item name="android:textColor">@color/color_0c7f02</item>
+    </style>
+    <!--  登录页面其他登录方式字体大小和颜色-->
+    <style name="text_login_other_login_size_and_color" parent="text_deputy_general_color">
+        <item name="android:textSize">@dimen/dimen_12sp</item>
+    </style>
+    <!-- 登录页面获取验证码字体颜色和大小-->
+    <style name="btn_get_verification">
+        <item name="android:textSize">@dimen/dimen_12sp</item>
+        <item name="android:textColor">@color/color_2d659f</item>
+    </style>
+    <!--协议-->
+    <style name="test_protocol">
+        <item name="android:textSize">@dimen/dimen_12sp</item>
+        <item name="android:textColor">@color/color_2d659f</item>
+    </style>
+    <!--跳转到邮箱注册的字体和颜色-->
+    <style name="text_email_register_size_and_color" parent="text_deputy_general_color">
+        <item name="android:textSize">@dimen/dimen_15sp</item>
+    </style>
+    <!--邮箱注册信息提示-->
+    <style name="text_email_hint_size_and_color">
+        <item name="android:textSize">@dimen/dimen_12sp</item>
+        <item name="android:textColor">@color/color_e06862</item>
+    </style>
+   <!-- 关于微片底部版权信息-->
+    <style name="text_about_vcard_bottom_mess">
+        <item name="android:textSize">@dimen/dimen_12sp</item>
+        <item name="android:textColor">@color/color_a1a1aa</item>
+    </style>
+    <!-- 关于微片底部条款协议-->
+    <style name="text_about_vcard_protocol">
+        <item name="android:textSize">@dimen/dimen_15sp</item>
+        <item name="android:textColor">@color/color_2d659f</item>
+    </style>
+   <!-- 基本信息-->
+    <style name="edt_base_mess" parent="text_main_general_color">
+        <item name="android:textSize">@dimen/dimen_12sp</item>
+        <item name="android:textColorHint">@color/color_787878</item>
+    </style>
+    <!--意见反馈按钮字体颜色-->
+    <style name="btn_feedback_send_size_and_color">
+        <item name="android:textSize">@dimen/dimen_15sp</item>
+        <item name="android:textColor">@color/color_ffffff</item>
+    </style>
+    <!--聊天窗口显示的时间-->
+    <style name="chat_show_datetime">
+        <item name="android:background">@drawable/bg_chat_datetime</item>
+        <item name="android:textSize">@dimen/dimen_8sp</item>
+        <item name="android:textColor">@color/color_ffffff</item>
+    </style>
+    <!--聊天窗口显示的文本信息-->
+    <style name="chat_text_size_and_color">
+        <item name="android:textColor">@color/color_292929</item>
+        <item name="android:textSize">@dimen/dimen_15sp</item>
+    </style>
+    <!--消息主页收索框字体大小、颜色-->
+    <style name="news_search_text_size_color" parent="text_main_general_color">
+        <item name="android:textSize">@dimen/dimen_14sp</item>
+        <item name="android:textColorHint">@color/color_688abe</item>
+    </style>
+    <!--消息主页会话列表红色提示-->
+    <style name="red_hint_num">
+         <item name="android:textSize">@dimen/dimen_8sp</item>
+        <item name="android:textColor">@color/color_ffffff</item>
+    </style>
+    <!--消息主页会话列表会话标题-->
+    <style name="news_conversation_name_size_color" parent="text_main_general_color">
+        <item name="android:textSize">@dimen/dimen_14sp</item>
+    </style>
+    <!--消息主页会话列表会话标题-->
+    <style name="news_conversation_content_size_color" >
+        <item name="android:textSize">@dimen/dimen_12sp</item>
+        <item name="android:textColor">@color/color_7c7c7c</item>
+    </style>
+    <!--消息主页会话列表会话标题-->
+    <style name="news_conversation_datetime_size_color" >
+        <item name="android:textSize">@dimen/dimen_8sp</item>
+        <item name="android:textColor">@color/color_7c7c7c</item>
+    </style>
+    <!--我的主页 名称-->
+    <style name="user_name" parent="all_show_user_detail">
+        <item name="android:textSize">@dimen/dimen_17sp</item>
+    </style>
+    <!--我的主页  微号-->
+    <style name="user_vcardsno" parent="all_show_user_detail">
+        <item name="android:textSize">@dimen/dimen_13sp</item>
+    </style>
+    <!--我的主页  个人资料下面选项-->
+    <style name="user_head_bottom_selected" parent="all_show_user_detail">
+        <item name="android:textSize">@dimen/dimen_15sp</item>
+    </style>
+    <!--我的主页  应用中心下面选项-->
+    <style name="user_head_selected" parent="text_main_general_color">
+        <item name="android:textSize">@dimen/dimen_16sp</item>
+    </style>
+   <!-- 看别人资料底部菜单栏-->
+    <style name="userinfo_bottom_selected" parent="text_deputy_general_color">
+        <item name="android:textSize">@dimen/dimen_12sp</item>
+    </style>
+    <!-- 名片信息标题提示-->
+    <style name="text_hint_vcard_info" parent="vertical_line_divider_height_color">
+        <item name="android:textSize">@dimen/dimen_12sp</item>
+        <item name="android:textColor">@color/color_787878</item>
+    </style>
+    <!-- 名片信息标题提示-->
+    <style name="text_hint_vcard_info_edt_big">
+        <item name="android:textSize">@dimen/dimen_12sp</item>
+        <item name="android:textColor">@color/color_787878</item>
+    </style>
+    <style name="text_hint_vcard_info_edt_small">
+        <item name="android:textSize">@dimen/dimen_10sp</item>
+        <item name="android:textColor">@color/color_787878</item>
+    </style>
+    <!-- 添加名片图标字体颜色-->
+    <style name="text_vcard_info_add">
+        <item name="android:textSize">@dimen/dimen_14sp</item>
+        <item name="android:textColor">@color/color_ffffff</item>
+    </style>
+    <!-- 立即体验登录-->
+    <style name="text_vcard_info_add_login">
+        <item name="android:textSize">@dimen/dimen_20sp</item>
+        <item name="android:textColor">@color/color_ffffff</item>
+    </style>
+    <!-- 添加名创建我的微片-->
+    <style name="text_vcard_info_add_my_vcard">
+        <item name="android:textSize">@dimen/dimen_12sp</item>
+        <item name="android:textColor">@color/color_60ffffff</item>
+    </style>
+    <!-- 选择名片上传 提示-->
+    <style name="text_choose_upload_add_vcard">
+        <item name="android:textSize">@dimen/dimen_14sp</item>
+        <item name="android:textColor">@color/color_ffffff</item>
+    </style>
+    <!-- 选择名片上传 提示-->
+    <style name="text_choose_upload_add_vcard_btn">
+        <item name="android:textColor">@color/color_0a0a0b</item>
+    </style>
+    <!-- 名片上传 提示-->
+    <style name="text_upload_add_vcard_hint">
+        <item name="android:textSize">@dimen/dimen_18sp</item>
+        <item name="android:textColor">@color/color_ffffff</item>
+    </style>
+    <!--名片上传提示-->
+    <style name="text_upload_vcard_hint" parent="text_choose_upload_add_vcard_btn">
+        <item name="android:textSize">@dimen/dimen_16sp</item>
+    </style>
+    <!--会员等级-->
+    <style name="user_level_text" parent="text_deputy_general_color">
+        <item name="android:textSize">@dimen/dimen_12sp</item>
+    </style>
+    <!--是否验证-->
+    <style name="user_level_text_verify" >
+        <item name="android:textSize">@dimen/dimen_9sp</item>
+        <item name="android:textColor">@color/color_ffffff</item>
+    </style>
+    <!--显示当前积分 -->
+    <style name="user_level_text_current_integral" >
+        <item name="android:textSize">@dimen/dimen_12sp</item>
+        <item name="android:textColor">@color/color_ffffff</item>
+    </style>
+    <!--提示 -->
+    <style name="user_level_text_current_integral_hint" parent="text_deputy_general_color">
+        <item name="android:textSize">@dimen/dimen_10sp</item>
+    </style>
+    <!--会员等级积分-->
+    <style name="user_level_text_rlue" parent="text_main_general_color">
+        <item name="android:textSize">@dimen/dimen_12sp</item>
+    </style>
+    <!--会员等级积分规则及提升等级标题-->
+    <style name="user_level_text_rule_title">
+        <item name="android:textSize">@dimen/dimen_12sp</item>
+        <item name="android:textColor">@color/color_ffffff</item>
+    </style>
+    <!--提升等级内容-->
+    <style name="user_level_text_level_up" parent="text_deputy_general_color">
+        <item name="android:textSize">@dimen/dimen_12sp</item>
+    </style>
+    <!--提升等级内容-->
+    <style name="user_level_text_level_up_bottom" parent="text_deputy_general_color">
+        <item name="android:textSize">@dimen/dimen_11sp</item>
+    </style>
+    <!--提升等级内容-->
+    <style name="user_level_text_level_up_bottom_show" parent="text_main_general_color">
+        <item name="android:textSize">@dimen/dimen_13sp</item>
+    </style>
+
+    <!--应用中心正文字体大小-->
+    <style name="user_app_center_content_text" parent="text_deputy_general_color">
+        <item name="android:textSize">@dimen/dimen_12sp</item>
+    </style>
+   <!-- 关注/粉丝-->
+    <style name="user_att_and_fans_text_name" parent="text_main_general_color">
+        <item name="android:textSize">@dimen/dimen_14sp</item>
+    </style>
+    <!-- 关注/粉丝-->
+    <style name="user_att_and_fans_other_text" parent="text_deputy_general_color">
+        <item name="android:textSize">@dimen/dimen_12sp</item>
+    </style>
+   <!-- 二维码扫描提示字体-->
+    <style name="vcard_qrcode_hint" parent="text_deputy_general_color">
+        <item name="android:textSize">@dimen/dimen_15sp</item>
+    </style>
+    <!-- 用户名片提示-->
+    <style name="user_vcard_hint" parent="text_deputy_general_color">
+        <item name="android:textSize">@dimen/dimen_11sp</item>
+    </style>
+    <!-- 用户名片当前-->
+    <style name="user_vcard_current" parent="text_main_general_color">
+        <item name="android:textSize">@dimen/dimen_12sp</item>
+    </style>
+    <!-- 微官网提示-->
+    <style name="unit_we_official_hint" parent="text_main_general_color">
+        <item name="android:textSize">@dimen/dimen_18sp</item>
+    </style>
+    <!-- 创建微官网-->
+    <style name="unit_we_official_create" parent="text_deputy_general_color">
+        <item name="android:textSize">@dimen/dimen_13sp</item>
+    </style>
+    <!-- 单位详情页 选择项-->
+    <style name="unit_detail_selected" parent="text_deputy_general_color">
+        <item name="android:textSize">@dimen/dimen_13sp</item>
+    </style>
+    <!-- 单位详情页 button-->
+    <style name="unit_detail_btn_submit" parent="text_deputy_general_color">
+        <item name="android:textSize">@dimen/dimen_15sp</item>
+    </style>
+    <!-- 微公告 内容-->
+    <style name="unit_we_notice_content" parent="text_main_general_color">
+        <item name="android:textSize">@dimen/dimen_12sp</item>
+    </style>
+    <!-- 微公告 发布时间-->
+    <style name="unit_we_notice_datetime" parent="text_deputy_general_color">
+        <item name="android:textSize">@dimen/dimen_11sp</item>
+    </style>
+    <!--单位认证输入内容-->
+    <style name="unit_auth_edt_enter" parent="text_main_general_color">
+        <item name="android:textSize">@dimen/dimen_15sp</item>
+        <item name="android:textColorHint">@color/color_787878</item>
+    </style>
+    <!--单位认证机构照片文字说明-->
+    <style name="unit_auth_edt_picture_text" parent="text_main_general_color">
+        <item name="android:textSize">@dimen/dimen_13sp</item>
+    </style>
+    <!--超级管理员-->
+    <style name="unit_auth_super_administrator_text" parent="text_main_general_color">
+        <item name="android:textSize">@dimen/dimen_12sp</item>
+    </style>
+    <!--ABC。。。Z可分类标题-->
+    <style name="lsv_item_title" parent="text_deputy_general_color">
+        <item name="android:background">@color/color_cccfd1</item>
+        <item name="android:textSize">@dimen/dimen_12sp</item>
+    </style>
+    <!--单位成员名字-->
+    <style name="unit_member_name" parent="text_main_general_color">
+        <item name="android:textSize">@dimen/dimen_15sp</item>
+    </style>
+    <!--单位成员职位-->
+    <style name="unit_member_job" parent="text_deputy_general_color">
+        <item name="android:textSize">@dimen/dimen_12sp</item>
+    </style>
+    <!-- 联系人列表字母弹出框样式 -->
+    <style name="cardcase_txv_char_hint">
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/color_ffffff</item>
+        <item name="android:textSize">@dimen/dimen_36sp</item>
+        <item name="android:background">@drawable/bg_charhint</item>
+    </style>
+    <!--系统通知删除按钮-->
+    <style name="meg_notify_btn_del">
+        <item name="android:textColor">@color/color_fe6030</item>
+        <item name="android:textSize">@dimen/dimen_15sp</item>
+    </style>
+    <!--系统通知取消按钮-->
+    <style name="mag_notify_btn_cancel" parent="text_deputy_general_color">
+        <item name="android:textSize">@dimen/dimen_12sp</item>
+    </style>
+    <!--好友推荐-->
+    <style name="mag_invite_hint" parent="text_deputy_general_color">
+        <item name="android:textSize">@dimen/dimen_14sp</item>
+    </style>
+    <!--会话输入框-->
+    <style name="msg_conversation_edt" parent="text_main_general_color">
+        <item name="android:textSize">@dimen/dimen_15sp</item>
+        <item name="android:textColorHint">@color/color_787878</item>
+    </style>
+    <!--会话时间 -->
+    <style name="msg_conversation_time">
+        <item name="android:textSize">@dimen/dimen_10sp</item>
+        <item name="android:textColorHint">@color/color_6f6f71</item>
+    </style>
+    <!--会话时间 -->
+    <style name="msg_conversation_other_time">
+        <item name="android:textSize">@dimen/dimen_10sp</item>
+        <item name="android:textColorHint">@color/color_ffffff</item>
+    </style>
+  <!--  语音通话-->
+    <style name="voice_chat_start">
+        <item name="android:textSize">@dimen/dimen_18sp</item>
+        <item name="android:textColor">@color/color_ffffff</item>
+    </style>
+    <!--  语音通话-->
+    <style name="voice_chat_start_time">
+        <item name="android:textSize">@dimen/dimen_13sp</item>
+        <item name="android:textColor">@color/color_ffffff</item>
+    </style>
+    <!--名片夹主页列表单位名-->
+    <style name="card_case_unit_name" parent="text_main_general_color">
+        <item name="android:textSize">@dimen/dimen_14sp</item>
+    </style>
+    <!--名片夹主页列表单位名-->
+    <style name="card_case_unit_notice" parent="text_deputy_general_color">
+        <item name="android:textSize">@dimen/dimen_12sp</item>
+    </style>
+    <!--名片夹主页列表单位名-->
+    <style name="card_case_unit_member" parent="text_deputy_general_color">
+        <item name="android:textSize">@dimen/dimen_11sp</item>
+    </style>
+    <!--名片分享-->
+    <style name="user_share_name" parent="text_main_general_color">
+        <item name="android:textSize">@dimen/dimen_15sp</item>
+    </style>
+    <style name="user_share_content" parent="text_deputy_general_color">
+        <item name="android:textSize">@dimen/dimen_12sp</item>
+    </style>
+    <!--名片详细页-->
+    <style name="card_detail_button_text" >
+        <item name="android:textColor">@color/color_787878</item>
+        <item name="android:textSize">@dimen/dimen_13sp</item>
+    </style>
+    <style name="card_detail_txv_icon_text" >
+        <item name="android:textColor">@color/color_787878</item>
+        <item name="android:textSize">@dimen/dimen_10sp</item>
+    </style>
+    <style name="card_detail_txv_odt_text">
+        <item name="android:textColor">@color/color_0a0a0b</item>
+        <item name="android:textSize">@dimen/dimen_12sp</item>
+    </style>
+    <!--备份恢复-->
+    <style name="back_up_text_main" parent="text_main_general_color">
+        <item name="android:textSize">@dimen/dimen_15sp</item>
+    </style>
+    <style name="back_up_text_deputy" parent="text_deputy_general_color">
+        <item name="android:textSize">@dimen/dimen_12sp</item>
+    </style>
+    <!--云端查找输入框字体-->
+    <style name="cloud_search_edt" parent="text_deputy_general_color">
+        <item name="android:textSize">@dimen/dimen_15sp</item>
+    </style>
+    <!--好友推荐输入框-->
+    <style name="user_recommend_edt" parent="text_main_general_color">
+        <item name="android:textSize">@dimen/dimen_15sp</item>
+        <item name="android:textColorHint">@color/color_787878</item>
+    </style>
+    <!--本地联系人-->
+    <style name="user_choose_local_contact" parent="text_main_general_color">
+        <item name="android:textSize">@dimen/dimen_15sp</item>
+    </style>
+    <!--分组管理-->
+    <style name="card_case_group_manager_text" parent="text_main_general_color">
+        <item name="android:textSize">@dimen/dimen_15sp</item>
+    </style>
+    <!--分组管理 加密弹窗-->
+    <style name="card_case_group_encode_text" parent="text_main_general_color">
+        <item name="android:textSize">@dimen/dimen_14sp</item>
+    </style>
+</resources>

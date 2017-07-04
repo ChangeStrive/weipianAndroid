@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txv_datetime"
+        style="@style/chat_show_datetime"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dimen_17dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/dimen_15dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/dimen_13dp"
+        android:paddingRight="@dimen/dimen_13dp" />
+
+    <com.maya.android.asyncimageview.widget.AsyncImageView
+        android:id="@+id/imv_user_img_head"
+        android:layout_width="@dimen/dimen_45dp"
+        android:layout_height="@dimen/dimen_45dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/txv_datetime"
+        android:layout_marginRight="@dimen/dimen_15dp"
+        android:layout_marginTop="@dimen/dimen_9dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/img_upload_head" />
+
+    <LinearLayout
+        android:id="@+id/lil_user_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txv_datetime"
+        android:layout_marginLeft="@dimen/dimen_15dp"
+        android:layout_marginRight="@dimen/dimen_10dp"
+        android:layout_marginTop="@dimen/dimen_4dp"
+        android:layout_toLeftOf="@id/imv_user_img_head"
+        android:background="@drawable/bg_dialogue_right"
+        android:minHeight="@dimen/dimen_41dp"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/dimen_18dp"
+        android:paddingLeft="@dimen/dimen_10dp"
+        android:paddingRight="@dimen/dimen_15dp"
+        android:paddingTop="@dimen/dimen_18dp">
+
+        <TextView
+            android:id="@+id/txv_user_content"
+            style="@style/chat_text_size_and_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"/>
+    </LinearLayout>
+
+     <TextView
+        android:id="@+id/txv_time"
+        style="@style/msg_conversation_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/lil_user_content"
+        android:layout_toLeftOf="@id/lil_user_content" />
+</RelativeLayout>

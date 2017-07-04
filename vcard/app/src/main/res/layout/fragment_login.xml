@@ -1,0 +1,204 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/all_frg_view_color"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.maya.android.vcard.ui.frg.LoginFragment">
+
+    <LinearLayout
+        android:id="@+id/lil_account_and_password_edt"
+        style="@style/all_btn_background_color"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/dimen_15dp"
+        android:paddingRight="@dimen/dimen_15dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_45dp">
+
+            <TextView
+                android:id="@+id/txv_login_account"
+                style="@style/text_setting_general_size_and_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/frg_login_account" />
+
+            <EditText
+                android:id="@+id/edt_login_account"
+                style="@style/edt_main_general_size_and_color"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@id/txv_login_account"
+                android:background="@color/color_00000000"
+                android:digits="@string/frg_login_limit_range_account"
+                android:gravity="center_vertical"
+                android:hint="@string/frg_login_account_hint"
+                android:maxLength="50"
+                android:singleLine="true" />
+        </RelativeLayout>
+
+        <View style="@style/horizontal_line_divider_fill" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_45dp">
+
+            <TextView
+                android:id="@+id/txv_login_password"
+                style="@style/text_setting_general_size_and_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/frg_login_password" />
+
+            <EditText
+                android:id="@+id/edt_login_password"
+                style="@style/edt_main_general_size_and_color"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@id/txv_login_password"
+                android:background="@color/color_00000000"
+                android:digits="@string/frg_login_limit_range_password"
+                android:gravity="center_vertical"
+                android:hint="@string/frg_login_password_hint"
+                android:inputType="textPassword"
+                android:maxLength="12"
+                android:singleLine="true" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rel_chb_and_forget_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lil_account_and_password_edt"
+        android:layout_marginTop="@dimen/dimen_12dp">
+
+        <CheckBox
+            android:id="@+id/chb_is_remember_password"
+            style="@style/chb_is_agree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:paddingLeft="@dimen/dimen_15dp"
+            android:text="@string/frg_login_chb_hint" />
+
+        <TextView
+            android:id="@+id/txv_forget_password_solution"
+            style="@style/text_login_other_login_size_and_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingRight="@dimen/dimen_15dp"
+            android:text="@string/frg_login_forget_password_solution" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_login_submit"
+        style="@style/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_46dp"
+        android:layout_below="@id/rel_chb_and_forget_password"
+        android:layout_marginLeft="@dimen/dimen_25dp"
+        android:layout_marginRight="@dimen/dimen_25dp"
+        android:layout_marginTop="@dimen/dimen_65dp"
+        android:background="@drawable/bg_general_btn_normal"
+        android:gravity="center"
+        android:text="@string/frg_text_login"
+        android:textColor="@color/color_777777" />
+
+    <TextView
+        android:id="@+id/txv_quick_register_account_new"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/btn_login_submit"
+        android:layout_marginRight="@dimen/dimen_15dp"
+        android:layout_marginTop="@dimen/dimen_190dp"
+        android:hint="@string/frg_login_quick_register_account_new"
+        android:textColorHint="@color/color_688abe"
+        android:textSize="@dimen/dimen_15sp" />
+
+    <RelativeLayout
+        android:id="@+id/rel_selected_other_login_way"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_93dp"
+        android:layout_alignParentBottom="true"
+        android:paddingLeft="@dimen/dimen_55dp"
+        android:paddingRight="@dimen/dimen_55dp">
+
+        <TextView
+            android:id="@+id/txv_login_way_wechat"
+            style="@style/text_login_other_login_size_and_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:drawablePadding="@dimen/dimen_4dp"
+            android:drawableTop="@mipmap/img_login_way_wechat"
+            android:gravity="center"
+            android:text="@string/frg_login_wechat" />
+
+        <TextView
+            android:id="@+id/txv_login_way_qq"
+            style="@style/text_login_other_login_size_and_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:drawablePadding="@dimen/dimen_4dp"
+            android:drawableTop="@mipmap/img_login_way_qq"
+            android:gravity="center"
+            android:text="@string/frg_login_qq" />
+
+        <TextView
+            android:id="@+id/txv_login_way_sina_weibo"
+            style="@style/text_login_other_login_size_and_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:drawablePadding="@dimen/dimen_4dp"
+            android:drawableTop="@mipmap/img_login_way_weibo"
+            android:gravity="center"
+            android:text="@string/frg_login_sina_weibo" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/rel_selected_other_login_way"
+
+        android:layout_centerInParent="true"
+        android:gravity="center">
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_weight="1"
+            android:background="@android:color/darker_gray" />
+
+        <TextView
+            style="@style/text_login_other_login_size_and_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/dimen_20dp"
+            android:layout_marginRight="@dimen/dimen_20dp"
+            android:text="@string/frg_login_other_login_way" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_weight="1"
+            android:background="@android:color/darker_gray" />
+    </LinearLayout>
+
+
+</RelativeLayout>

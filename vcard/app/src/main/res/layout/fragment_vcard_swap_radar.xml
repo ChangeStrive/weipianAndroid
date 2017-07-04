@@ -1,0 +1,75 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg_card_swap_radar"
+    tools:context="com.maya.android.vcard.ui.frg.VCardSwapRadarFragment">
+
+    <TextView
+        android:id="@+id/txv_common_back"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dimen_48dp"
+        android:drawableLeft="@mipmap/img_top_left_back"
+        android:paddingLeft="@dimen/dimen_10dp"
+        android:paddingRight="@dimen/dimen_10dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/color_ffffff"
+        android:textSize="@dimen/dimen_18sp"
+        android:text="@string/back"
+        android:drawablePadding="@dimen/dimen_10dp"/>
+
+    <TextView android:id="@+id/txv_radar_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:contentDescription="@string/app_name"
+        android:text="@string/common_radar_search_now"
+        android:textColor="@color/color_ffffff"
+        android:textSize="@dimen/dimen_18sp"
+        android:layout_marginBottom="@dimen/dimen_80dp"
+        android:visibility="invisible"/>
+
+    <RelativeLayout
+        android:id="@+id/rel_radar_receiving"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@mipmap/bg_radarsearch_center_icon">
+    </RelativeLayout>
+    <ImageButton
+        android:id="@+id/imb_radar_receiving"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dimen_5dp"
+        android:layout_centerInParent="true"
+        android:background="@mipmap/img_radarsearch_center_icon" />
+
+    <ImageView
+        android:id="@+id/imv_radar_search_anim"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_407dp"
+        android:contentDescription="@string/app_name"
+        android:scaleType="fitXY"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
+
+
+        <GridView
+            android:layout_below="@id/txv_common_back"
+            android:paddingTop="@dimen/dimen_10dp"
+            android:paddingRight="@dimen/dimen_15dp"
+            android:paddingLeft="@dimen/dimen_15dp"
+            android:paddingBottom="@dimen/dimen_10dp"
+            android:id="@+id/grv_swap_radar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:verticalSpacing="@dimen/dimen_10dp"
+            android:horizontalSpacing="@dimen/dimen_10dp"
+            android:numColumns="4"
+            android:fadeScrollbars="false"
+            android:scrollbars="none"/>
+
+</RelativeLayout>

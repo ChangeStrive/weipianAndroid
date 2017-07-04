@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/all_btn_background_color"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dimen_60dp"
+    android:paddingLeft="@dimen/dimen_15dp"
+    android:paddingRight="@dimen/dimen_15dp">
+
+    <com.maya.android.asyncimageview.widget.AsyncImageView
+        android:id="@+id/imv_head"
+        android:layout_width="@dimen/dimen_50dp"
+        android:layout_height="@dimen/dimen_50dp"
+        android:layout_centerVertical="true"
+        android:scaleType="fitXY"
+        android:src="@mipmap/img_upload_head" />
+
+    <TextView
+        android:id="@+id/txv_size"
+        style="@style/card_case_unit_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_10dp"
+        android:layout_marginTop="@dimen/dimen_12dp"
+        android:layout_toRightOf="@id/imv_head"
+        android:text="111" />
+
+    <TextView
+        android:id="@+id/txv_name"
+        style="@style/card_case_unit_notice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/imv_head"
+        android:layout_alignLeft="@id/txv_size"
+        android:layout_marginBottom="@dimen/dimen_2dp"
+        android:singleLine="true" />
+
+    <CheckBox
+        android:id="@+id/chb_selected"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:button="@drawable/img_chb_is_agree" />
+</RelativeLayout>

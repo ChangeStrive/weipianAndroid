@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/dimen_15dp"
+    android:paddingRight="@dimen/dimen_15dp"
+    android:paddingBottom="@dimen/dimen_27dp"
+    android:paddingTop="@dimen/dimen_27dp">
+        <TextView
+            android:id="@+id/txv_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/dimen_15sp"
+            android:textColor="@color/color_292929"/>
+
+        <CheckBox
+            android:id="@+id/chb_is_agree"
+            android:layout_below="@id/txv_msg"
+            android:layout_marginTop="@dimen/dimen_27dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:paddingLeft="@dimen/dimen_2dp"
+            android:paddingRight="@dimen/dimen_2dp"
+            style="@style/chb_is_agree"
+            android:text="@string/next_not_hint"/>
+</RelativeLayout>

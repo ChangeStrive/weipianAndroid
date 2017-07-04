@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/all_frg_view_color"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.maya.android.vcard.ui.frg.UnitRememberFragment">
+
+    <RelativeLayout
+        android:id="@+id/rel_search"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_45dp"
+        android:background="@drawable/bg_search_bar"
+        android:paddingBottom="@dimen/dimen_6dp"
+        android:paddingTop="@dimen/dimen_6dp">
+
+        <EditText
+            android:id="@+id/edt_enter_search_unit_remember"
+            style="@style/news_search_text_size_color"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@mipmap/bg_news_search"
+            android:drawableLeft="@mipmap/img_news_find"
+            android:drawablePadding="@dimen/dimen_4dp"
+            android:gravity="center_vertical"
+            android:hint="@string/search_unit_remember_hint"
+            android:paddingLeft="@dimen/dimen_16dp"
+            android:singleLine="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        style="@style/all_btn_background_color"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rel_search">
+
+        <include layout="@layout/inc_lsv_view" />
+    </RelativeLayout>
+
+    <com.maya.android.vcard.ui.widget.SideBar
+        android:id="@+id/sib_unit_member"
+        android:layout_width="@dimen/dimen_14dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/rel_search"
+        android:layout_marginBottom="@dimen/dimen_10dp"
+        android:textColor="@color/color_787878"
+        android:textSize="@dimen/dimen_12sp" />
+
+</RelativeLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dimen_45dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+
+    <TextView
+        android:id="@+id/txv_lable"
+        style="@style/text_email_register_size_and_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:text="@string/telephone"/>
+
+    <EditText
+        android:id="@+id/edt_content"
+        style="@style/edt_base_mess"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_34dp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/txv_lable"
+        android:background="@drawable/bg_general_edt_normal"
+        android:gravity="center_vertical"
+        android:hint="@string/please_enter"
+        android:paddingLeft="@dimen/dimen_10dp"
+        android:paddingRight="@dimen/dimen_10dp"
+        android:singleLine="true" />
+
+    <ImageButton
+        android:id="@+id/imb_del"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@color/color_00000000"
+        android:padding="@dimen/dimen_10dp"
+        android:src="@mipmap/img_general_delete" />
+    <View android:id="@+id/view_divider"
+        style="@style/horizontal_line_divider_fill"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@id/edt_content"
+        android:visibility="gone"/>
+</RelativeLayout>

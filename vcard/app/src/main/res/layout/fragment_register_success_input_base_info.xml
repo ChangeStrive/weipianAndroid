@@ -1,0 +1,134 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/all_frg_view_color"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.maya.android.vcard.ui.frg.RegisterSuccessInputBaseInfoFragment">
+    <TextView
+        android:id="@+id/tv_login_suc"
+        android:layout_width="wrap_content"
+        android:padding="@dimen/dimen_2dp"
+        android:textSize="@dimen/dimen_18sp"
+        android:layout_margin="@dimen/dimen_2dp"
+        android:textColor="@color/color_292929"
+        android:text="@string/new_login_suc"
+        android:layout_height="wrap_content" />
+    <RelativeLayout
+        android:layout_below="@id/tv_login_suc"
+        android:id="@+id/rel_head"
+        style="@style/all_btn_background_color"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_55dp"
+        android:paddingLeft="@dimen/dimen_15dp"
+        android:paddingRight="@dimen/dimen_15dp">
+
+        <ImageView
+            android:id="@+id/imv_img_head"
+            android:layout_width="@dimen/dimen_45dp"
+            android:layout_height="@dimen/dimen_45dp"
+            android:layout_centerVertical="true"
+            android:scaleType="fitXY"
+            android:src="@mipmap/img_user_head_mytip" />
+
+        <TextView
+            android:id="@+id/txv_username"
+            style="@style/text_setting_general_size_and_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_10dp"
+            android:layout_marginTop="@dimen/dimen_9dp"
+            android:layout_toRightOf="@id/imv_img_head"
+            android:text="@string/new_user"/>
+
+        <TextView
+            android:id="@+id/txv_vcard_number_hint"
+            style="@style/text_setting_general_right_sign_size_12sp_and_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/imv_img_head"
+            android:layout_alignLeft="@id/txv_username"
+            android:text="@string/frg_setting_account_vnumber" />
+
+        <TextView
+            android:id="@+id/txv_vcard_number"
+            style="@style/text_setting_general_right_sign_size_12sp_and_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/imv_img_head"
+            android:layout_toRightOf="@id/txv_vcard_number_hint" />
+
+        <TextView
+            style="@style/text_setting_general_right_sign_size_12sp_and_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="@string/registered" />
+    </RelativeLayout>
+    <!--<TextView-->
+        <!--android:id="@+id/txv_hint"-->
+        <!--style="@style/text_login_other_login_size_and_color"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/dimen_19dp"-->
+        <!--android:gravity="center_vertical"-->
+        <!---->
+        <!--android:paddingLeft="@dimen/dimen_15dp"-->
+        <!--android:paddingRight="@dimen/dimen_15dp"-->
+        <!--android:text="@string/please_enter_username_once_change" />-->
+    <!--<View style="@style/horizontal_line_divider_fill" />-->
+    <LinearLayout
+        android:id="@+id/lil_base_mess"
+        style="@style/all_btn_background_color"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rel_head"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/dimen_9dp"
+        android:paddingLeft="@dimen/dimen_15dp"
+        android:paddingRight="@dimen/dimen_15dp">
+
+          <include layout="@layout/inc_base_mess" />
+
+        <!--<View style="@style/horizontal_line_divider_fill" />-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="@dimen/dimen_45dp"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--<TextView-->
+                <!--style="@style/text_email_register_size_and_color"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="@string/graduate_institutions" />-->
+
+            <!--<EditText-->
+                <!--android:id="@+id/edt_graduate_institutions"-->
+                <!--style="@style/edt_base_mess"-->
+                <!--android:layout_width="@dimen/dimen_0dp"-->
+                <!--android:layout_height="@dimen/dimen_34dp"-->
+                <!--android:layout_weight="1"-->
+                <!--android:background="@drawable/bg_general_edt_normal"-->
+                <!--android:gravity="center_vertical"-->
+                <!--android:hint="@string/please_enter"-->
+                <!--android:paddingLeft="@dimen/dimen_10dp"-->
+                <!--android:paddingRight="@dimen/dimen_10dp" />-->
+        <!--</LinearLayout>-->
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:layout_below="@id/lil_base_mess"
+        android:background="@drawable/bg_general_btn_normal"
+        android:layout_width="match_parent"
+        android:textColor="@color/color_a1a1aa"
+        android:layout_height="@dimen/dimen_42dp"
+        android:layout_marginLeft="@dimen/dimen_15dp"
+        android:layout_marginRight="@dimen/dimen_15dp"
+        android:gravity="center"
+        android:text="@string/frg_text_add"
+        style="@style/btn_submit"/>
+
+</RelativeLayout>

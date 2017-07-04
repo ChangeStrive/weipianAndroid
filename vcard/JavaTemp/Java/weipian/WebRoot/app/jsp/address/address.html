@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<#include "app/jsp/common/common.ftl">
+	<#include "app/jsp/weixinTemplate.html">
+	<title>收货地址</title>
+	<script type="text/javascript">
+	</script>
+</head>
+<body class="grayBg" >
+	<div class="wrap">
+		<header class="homepage_head">
+			<a href="${hxltUrl}wx/my?fdShopNo=${fdShopNo}" class="left_head  ahref" style="left:2%;">
+	            <span class="iconfont backBtn">&#xe61c;</span>
+			</a>
+			<h2 class="typePageTitle">收货地址</h2>
+		</header>
+		<div class="address_kongkong" style="display: none;">
+			<img src="${hxltUrl}app/images/zwxxdz_icon.png" alt="暂无详细地址">	
+			<span>暂无详细地址</span>	
+			<a href="javascript:void(0)" class="goAndGet" >赶快去填写</a>	
+		</div>
+		<div class="addressList" style="display: display;">
+			 <#if (addressList.addressSize==0)>
+			 	<div style="text-align: center;font-size: 18px;color:#3d3d3d;padding: 10px 0;">暂无收货地址</div>
+			 </#if>
+			 <#list addressList.list as addressItem>
+				<div class="addressItem" >
+					<div class="ai-head">
+						<div class="ai-content clearfix">
+							<img src="${hxltUrl}app/images/un_icon.png" alt="用户名icon" class="un-icon">
+							<span>${addressItem.fdConsignee}</span>
+						</div>
+						<div class="ai-content clearfix">
+							<img src="${hxltUrl}app/images/tel_icon.png" alt="手机icon" class="tel-icon">
+							<span>${addressItem.fdTel}</span>
+						</div>
+						<div class="ai-content clearfix">
+							<img src="${hxltUrl}app/images/loc_icon.png" alt="手机icon" class="tel-icon">
+							<span>${addressItem.fdProvince}${addressItem.fdCity}${addressItem.fdArea}${addressItem.fdAddress}&nbsp;&nbsp;${addressItem.fdZipCode}</span>
+						</div>
+					</div>
+					<div class="ai-bottom">
+						<div class="ai-btn clearfix">
+							<a href="javascript:void(0)" class="ai-btn-left clearfix">
+								<#if (addressItem.fdStatus=="1")>
+									   <span class="default-icon ai-selected"  fdId="${addressItem.fdId}" fdStatus="1"></span>
+									<#else>
+									   <span class="default-icon" fdId="${addressItem.fdId}" fdStatus="0"></span>
+								</#if>
+								<span class="default-span"  fdId="${addressItem.fdId}" fdStatus="${addressItem.fdStatus}">默认地址</span>
+							</a>
+							<div class="ai-btn-right clearfix">
+								<a href="${hxltUrl}wx/addAddress?fdShopNo=${fdShopNo}&fdId=${addressItem.fdId}" class="editBtn">
+									<span class="edit-span">编辑</span>
+									<img src="${hxltUrl}app/images/address_edit_icon.png" alt="用户名icon" class="edit-icon">
+								</a>
+								<a href="javascript:void(0)" class="delBtn">
+									<span class="del-span"  fdId="${addressItem.fdId}">删除</span>
+									<img src="${hxltUrl}app/images/address_del_icon.png" alt="用户名icon" class="del-icon">
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</#list>
+		</div>
+		<div style="height: 70px;width:100%;"></div>
+		<div class="footerBtn">
+			<a href="${hxltUrl}wx/addAddress?fdShopNo=${fdShopNo}" class="fb_ahref add " ><span class="fb-text">新增收货地址</span></a>
+		</div>
+	</div>
+	<#include "app/jsp/common/goIndex.html">
+</body>
+<script src='${hxltUrl}app/js/address/address.js'></script>
+</html>

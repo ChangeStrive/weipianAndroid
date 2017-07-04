@@ -1,0 +1,105 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg_add_vcard"
+    tools:context="com.maya.android.vcard.ui.frg.AddVCardChooseUploadFormFragment">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_add_card_transparency" />
+
+    <TextView
+        android:id="@+id/txv_state"
+        style="@style/text_choose_upload_add_vcard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_22dp"
+        android:paddingLeft="@dimen/dimen_15dp"
+        android:paddingRight="@dimen/dimen_15dp"
+        android:text="@string/chooose_vcard_upload_state" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txv_state"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dimen_24dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txv_standard_template"
+                style="@style/text_choose_upload_add_vcard_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_addcard_btn_format"
+                android:lineSpacingExtra="@dimen/dimen_3dp"
+                android:gravity="center" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dimen_9dp"
+                android:layout_toRightOf="@id/txv_standard_template"
+                android:src="@mipmap/img_arrow_right" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_13dp">
+
+            <TextView
+                android:id="@+id/txv_heteromorphism_template"
+                style="@style/text_choose_upload_add_vcard_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_addcard_btn_format"
+                android:lineSpacingExtra="@dimen/dimen_3dp"
+                android:gravity="center" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dimen_9dp"
+                android:layout_toRightOf="@id/txv_heteromorphism_template"
+                android:src="@mipmap/img_arrow_right" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_13dp">
+
+            <TextView
+                android:id="@+id/txv_fold_template"
+                style="@style/text_choose_upload_add_vcard_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_addcard_btn_format"
+                android:lineSpacingExtra="@dimen/dimen_3dp"
+                android:gravity="center" />
+            <ImageView
+            android:id="@+id/imv_fold_template_divier"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@mipmap/img_dot_divider"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dimen_9dp"
+                android:layout_toRightOf="@id/txv_fold_template"
+                android:src="@mipmap/img_arrow_right" />
+        </RelativeLayout>
+
+    </LinearLayout>
+</RelativeLayout>

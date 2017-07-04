@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<#include "app/jsp/common/common.ftl">
+	<#include "app/jsp/weixinTemplate.html">
+	<title>分类</title>
+	<script type="text/javascript">
+		var footTab="2";
+		var fdTypeId="${fdTypeId}";
+		$(function(){
+			var h=$(window).height()-195;
+			$(".category_main").height(h);
+		})
+	</script>
+	<script src='${hxltUrl}app/js/category/category.js'></script>
+</head>
+<body class="grayBg">
+	<div class="wrap">
+		<header class="homepage_head">
+			<a href="javascript:history.go(-1)" class="left_head  ahref" style="left:2%;">
+	             	  <span class="iconfont backBtn">&#xe61c;</span>
+			</a>
+			<h2>微商店</h2>
+		</header>
+		<div class="headNext">
+			<div class="shopMessage">
+				<span class="shopUserHead">
+					<img src="${fdShopPicUrl}"/>
+				</span>
+				<span class="shopTitle">
+					${fdShopName}的微商店
+				</span>
+			</div>
+			<span class="chl_img">
+				<img src="${hxltUrl}app/images/fenlei_head_h_bg.png" class="mf_icon" alt="代发货">
+			</span>
+			<div class="category_main clearfix">
+				<span class="cm_left">
+					<a href="${hxltUrl}wx/category?fdShopNo=${fdShopNo}&fdTypeId=" fdTypeId="" class="cl_item">全部分类</a>
+					<#list typelist.list as type>
+						<a href="${hxltUrl}wx/category?fdShopNo=${fdShopNo}&fdTypeId=${type.fdId}" fdTypeId="${type.fdId}"  class="cl_item">${type.fdTypeName}</a>
+					</#list>
+					<div style="padding-bottom: 40px;"></div>
+				</span>
+				<span class="cm_right">
+					<div class="droploadDiv">
+						<div class="goodsList">
+							
+						</div>
+					</div>
+					<div class="noDateTip">暂无数据</div>
+				</span>
+			</div>
+		</div>
+	</div>
+	<#include "app/jsp/common/goodsItemTemplate1.html">
+	<#include "app/jsp/common/addShopCart.html">
+	<#include "app/jsp/common/foot.html">
+</body>
+</html>

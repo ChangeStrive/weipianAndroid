@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/MAYA_Library_Afinal/MAYA_Library_Afinal.iml" filepath="$PROJECT_DIR$/MAYA_Library_Afinal/MAYA_Library_Afinal.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MAYA_Library_AsyncImageView2/MAYA_Library_AsyncImageView2.iml" filepath="$PROJECT_DIR$/MAYA_Library_AsyncImageView2/MAYA_Library_AsyncImageView2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MAYA_Library_Crop_Image/MAYA_Library_Crop_Image.iml" filepath="$PROJECT_DIR$/MAYA_Library_Crop_Image/MAYA_Library_Crop_Image.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MAYA_Library_JsonWork/MAYA_Library_JsonWork.iml" filepath="$PROJECT_DIR$/MAYA_Library_JsonWork/MAYA_Library_JsonWork.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MAYA_Library_Scan2/MAYA_Library_Scan2.iml" filepath="$PROJECT_DIR$/MAYA_Library_Scan2/MAYA_Library_Scan2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MAYA_Library_Utils/MAYA_Library_Utils.iml" filepath="$PROJECT_DIR$/MAYA_Library_Utils/MAYA_Library_Utils.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MAYA_Library_Vcard_OCR_Tencent/MAYA_Library_Vcard_OCR_Tencent.iml" filepath="$PROJECT_DIR$/MAYA_Library_Vcard_OCR_Tencent/MAYA_Library_Vcard_OCR_Tencent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/VCard.iml" filepath="$PROJECT_DIR$/VCard.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+    </modules>
+  </component>
+</project>

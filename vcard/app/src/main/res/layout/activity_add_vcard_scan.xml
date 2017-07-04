@@ -1,0 +1,201 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.maya.android.vcard.ui.act.AddVCardScanActivity">
+    <SurfaceView
+        android:id="@+id/suv_act_card_camera_preview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="1.0" >
+    </SurfaceView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:id="@+id/rel_act_card_camera_bar"
+            android:layout_width="@dimen/dimen_67dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/bg_add_vcard_scan_bar"
+            android:gravity="center_vertical" >
+
+            <ImageView
+                android:id="@+id/imv_act_card_camera_cancel"
+                android:layout_width="@dimen/dimen_43dp"
+                android:layout_height="@dimen/dimen_89dp"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="@dimen/dimen_13dp"
+                android:contentDescription="@null"
+                android:scaleType="centerInside"
+                android:background="@drawable/bg_add_vcard_scan_cancel"
+                android:src="@mipmap/img_add_vcard_scan_cancel" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_105dp"
+                android:layout_alignParentBottom="true" >
+
+                <ImageView
+                    android:id="@+id/imv_act_card_camera_model_bg"
+                    android:layout_width="@dimen/dimen_43dp"
+                    android:layout_height="@dimen/dimen_89dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="@dimen/dimen_13dp"
+                    android:contentDescription="@null" />
+
+                <ImageView
+                    android:id="@+id/imv_act_card_camera_model_single"
+                    android:layout_width="@dimen/dimen_55dp"
+                    android:layout_height="@dimen/dimen_55dp"
+                    android:layout_centerHorizontal="true"
+                    android:scaleType="centerInside"
+                    android:layout_alignTop="@id/imv_act_card_camera_model_bg"
+                    android:contentDescription="@null"
+                    android:src="@mipmap/img_add_vcard_scan_model_single_colour" />
+
+                <ImageView
+                    android:id="@+id/imv_act_card_camera_model_multi"
+                    android:layout_width="@dimen/dimen_55dp"
+                    android:layout_height="@dimen/dimen_55dp"
+                    android:layout_centerHorizontal="true"
+                    android:scaleType="centerInside"
+                    android:layout_alignTop="@id/imv_act_card_camera_model_bg"
+                    android:contentDescription="@null"
+                    android:src="@mipmap/img_add_vcard_scan_model_double_gray" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/imv_act_card_camera_take"
+                android:layout_width="@dimen/dimen_52dp"
+                android:layout_height="@dimen/dimen_91dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/bg_add_card_scan_take"
+                android:contentDescription="@string/app_name"
+                android:scaleType="centerInside"
+                android:src="@mipmap/img_add_vcard_scan_take" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@id/rel_act_card_camera_bar" >
+
+            <!-- 名片扫描白框 -->
+
+            <ImageView
+                android:id="@+id/imv_act_card_camera_frame"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/img_add_vcard_scan_frame_default"
+                android:contentDescription="@null" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:text="@string/add_vcard_scan_aim_at"
+                android:textColor="@color/color_e4e8ea"
+                android:textSize="@dimen/dimen_15sp" />
+
+            <TextView
+                android:id="@+id/txv_act_card_camera_bottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_ffffff"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/dimen_9dp"
+                android:text="@string/please_scan_vcard"
+                android:textSize="@dimen/dimen_18sp" />
+
+            <ImageView
+                android:id="@+id/imv_act_card_camera_model_prompt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@mipmap/img_add_vcard_scan_center"
+                android:contentDescription="@null"
+                android:gravity="center"
+                android:scaleType="centerInside"
+                android:src="@mipmap/img_add_vcard_scan_txt_single" />
+
+            <ImageView
+                android:id="@+id/imv_act_card_camera_light_single"
+                android:layout_width="@dimen/dimen_76dp"
+                android:layout_height="@dimen/dimen_35dp"
+                android:layout_alignLeft="@id/imv_act_card_camera_frame"
+                android:layout_alignTop="@id/imv_act_card_camera_frame"
+                android:layout_marginLeft="@dimen/dimen_41dp"
+                android:layout_marginTop="@dimen/dimen_41dp"
+                android:background="@drawable/bg_add_vcard_scan_light"
+                android:contentDescription="@string/app_name"
+                android:scaleType="centerInside"
+                android:src="@mipmap/img_add_vcard_scan_light_auto" />
+
+            <ImageView
+                android:id="@+id/imv_act_card_camera_explain"
+                android:layout_width="@dimen/dimen_76dp"
+                android:layout_height="@dimen/dimen_35dp"
+                android:layout_alignRight="@id/imv_act_card_camera_frame"
+                android:layout_alignTop="@id/imv_act_card_camera_frame"
+                android:layout_marginRight="@dimen/dimen_41dp"
+                android:layout_marginTop="@dimen/dimen_41dp"
+                android:background="@drawable/bg_add_vcard_scan_light"
+                android:contentDescription="@string/app_name"
+                android:scaleType="centerInside"
+                android:src="@mipmap/img_add_vcard_scan_explain" />
+
+            <!-- 闪光灯操作 -->
+
+            <LinearLayout
+                android:id="@+id/lil_act_card_camera_light_much"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dimen_35dp"
+                android:layout_alignLeft="@id/imv_act_card_camera_frame"
+                android:layout_alignTop="@id/imv_act_card_camera_frame"
+                android:layout_marginLeft="@dimen/dimen_41dp"
+                android:layout_marginTop="@dimen/dimen_41dp"
+                android:background="@drawable/bg_add_vcard_scan_light"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/dimen_13dp"
+                android:paddingRight="@dimen/dimen_13dp"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:id="@+id/imv_act_card_camera_light_auto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:contentDescription="@string/app_name"
+                    android:src="@mipmap/img_add_vcard_scan_light_auto" />
+
+                <ImageView
+                    android:id="@+id/imv_act_card_camera_light_default"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dimen_9dp"
+                    android:contentDescription="@string/app_name"
+                    android:src="@mipmap/img_add_vcard_scan_light_default" />
+
+                <ImageView
+                    android:id="@+id/imv_act_card_camera_light_close"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dimen_9dp"
+                    android:contentDescription="@string/app_name"
+                    android:src="@mipmap/img_add_vcard_scan_light_close" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

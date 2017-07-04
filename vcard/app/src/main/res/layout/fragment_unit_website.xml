@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/all_frg_view_color"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.maya.android.vcard.ui.frg.UnitWebsiteJoinFragment">
+
+    <RelativeLayout
+        android:id="@+id/rel_we_official_viewpage"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_144dp"
+        android:background="@mipmap/bg_we_official_banner"></RelativeLayout>
+
+    <TextView
+        android:id="@+id/txv_we_official_hint"
+        style="@style/unit_we_official_hint"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_70dp"
+        android:layout_below="@+id/rel_we_official_viewpage"
+        android:gravity="center"
+        android:text="@string/we_official_hint" />
+
+    <LinearLayout
+        style="@style/all_btn_background_color"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txv_we_official_hint"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txv_we_official_add_url"
+            style="@style/text_setting_general_size_and_color"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_45dp"
+            android:drawableLeft="@mipmap/img_we_official_add_url"
+            android:drawablePadding="@dimen/dimen_10dp"
+            android:drawableRight="@mipmap/img_general_right_arrow"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/dimen_15dp"
+            android:paddingRight="@dimen/dimen_15dp"
+            android:text="@string/we_official_add_weoffical_add_need" />
+
+        <View style="@style/horizontal_line_divider_padding_dimen_15dp" />
+
+        <TextView
+            android:id="@+id/txv_we_official_establish_home"
+            style="@style/text_setting_general_size_and_color"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_45dp"
+            android:drawableLeft="@mipmap/img_we_official_establish_home"
+            android:drawablePadding="@dimen/dimen_10dp"
+            android:drawableRight="@mipmap/img_general_right_arrow"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/dimen_15dp"
+            android:paddingRight="@dimen/dimen_15dp"
+            android:text="@string/we_official_add_weoffical_add_need_new" />
+    </LinearLayout>
+
+</RelativeLayout>

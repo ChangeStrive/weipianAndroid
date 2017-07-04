@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <META http-equiv="X-UA-Compatible" content="IE=8" ></META>
+	<title>微片管理平台 -产品相册管理</title>
+	<#include "Admin/jsp/common/common.ftl">
+	<script type="text/javascript" charset="utf-8" src="${hxltUrl}ueditor/ueditor.config.js"></script>
+    <script type="text/javascript" charset="utf-8" src="${hxltUrl}ueditor/ueditor.all.min.js"> </script>
+    <script type="text/javascript" charset="utf-8" src="${hxltUrl}ueditor/lang/zh-cn/zh-cn.js"></script>
+	<script type="text/javascript">
+		var firstMenuNo="00090";
+		var secondMenuNo="00093";
+		var fdId="${fdId}";
+	</script>
+	<script type="text/javascript" charset="utf-8" src="${hxltUrl}Admin/js/app/AppGoods/AppGoodsPic.js"></script>
+  </head>
+ <body>
+<!-- 头部 -->
+<#include "Admin/jsp/common/header.ftl">
+<!-- /头部 --> 
+
+<!-- 边栏 -->
+<#include "Admin/jsp/common/sidebar.ftl">
+<!-- /边栏 --> 
+
+<!-- 内容区 -->
+<div id="main-content">
+	<div id="top-alert" class="fixed alert alert-error" style="display: none;">
+		<button class="close fixed" style="margin-top: 4px;">&times;</button>
+		<div class="alert-content">这是内容</div>
+	</div>
+	<div id="main" class="main">
+		<div class="main-title">
+			<h2><font color=red>${fdTitle}</font>产品相册管理(1080*435)</h2>
+		</div>
+		<div class="cf">
+			<div class="fl"> 
+				<script type="text/plain" id="imageUpload"></script>
+				<a class="btn" onclick="AppGoodsPicConfig.upload();" href="javascript:;">新 增</a>
+				<a class="btn" onclick="AppGoodsPicConfig.del();" href="javascript:;">删 除</a>
+			</div>
+		</div>
+		<div class="data-table table-striped">
+			<table id="tableList">
+				<thead>
+					<tr>
+						<th class="row-selected row-selected"><input class="check-all" type="checkbox"></th>
+						<th class="">图片</th>
+						<th class="">顺序</th>
+					</tr>
+				</thead>
+				<tbody>
+				</tbody>
+			</table>
+		</div>
+		<!-- 分页 -->
+		
+	</div>
+	<!-- 底部 -->
+	<#include "Admin/jsp/common/footer.ftl">
+</div>
+<!-- /内容区 --> 
+</body>
+</html>

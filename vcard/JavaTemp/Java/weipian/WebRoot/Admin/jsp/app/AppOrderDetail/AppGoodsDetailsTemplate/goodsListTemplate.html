@@ -1,0 +1,30 @@
+<div class="takeTitle">
+		订单明细
+</div>
+<div class="takeGoodsType">
+	<#list orderDetail.list as orderItem>
+		<div class="goodsItem">
+			<span style="width:60px;">
+				<img src="${hxltUrl}SysFileAction/downFile?path=${orderItem.fdPicUrl}"/>
+			</span>
+			<span style="width:238px;">
+				<p>${orderItem.fdGoodsName}</p>
+				<p>商品编号：${orderItem.fdGoodsNo}</p>
+			</span>
+			<span style="width:50px;">
+				<p>X${orderItem.fdQuantity}</p>
+			</span>
+			<span style="width:100px;">
+				<p>¥${orderItem.fdAmount}</p>
+			</span>
+		</div>	
+	</#list>
+	<div class="goodsItem">
+			<span style="width:390px;text-align: right;">
+				<p>商品金额&nbsp;¥${item.fdGoodsAmount}</p>
+				<p>运费&nbsp;免运费</p>
+				<p>优惠券&nbsp;¥${item.fdCoupon}</p>
+				<p style="color:red;">总计&nbsp;¥${item.fdAmount}</p>
+			</span>
+    </div>	
+</div>

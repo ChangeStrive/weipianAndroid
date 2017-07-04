@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <META http-equiv="X-UA-Compatible" content="IE=9" ></META>
+    <title>微片生活管理平台 - 菜单管理</title>
+	<#include "Admin/jsp/common/common.ftl">
+	<link rel="stylesheet" type="text/css" href="${hxltUrl}Admin/css/validator.css">
+	<script>
+		var fdId = "${item.fdId}";
+		var firstMenuNo="00027";
+		var secondMenuNo="00028";
+	</script>
+	<script type="text/javascript" src="${hxltUrl}js/utils/form/validform.js"></script>
+	<script type="text/javascript" src="${hxltUrl}Admin/js/weixin/WeiXinMenu/menuSelect.js"></script>
+	<script type="text/javascript" src="${hxltUrl}Admin/js/weixin/WeiXinMenu/menuAdd.js"></script>
+  </head>
+  
+<body>
+<!-- 头部 -->
+<#include "Admin/jsp/common/header.ftl">
+<!-- /头部 --> 
+
+<!-- 边栏 -->
+<#include "Admin/jsp/common/sidebar.ftl">
+<!-- /边栏 --> 
+
+<!-- 内容区 -->
+<div id="main-content">
+	<div id="top-alert" class="fixed alert alert-error" style="display: none;">
+		<button class="close fixed" style="margin-top: 4px;">×</button>
+		<div class="alert-content">这是内容</div>
+	</div>
+	<div id="main" class="main" style="min-height: 430px;"> 
+		
+		<!-- nav -->
+		<div class="main-title">
+			<h2>菜单管理</h2>
+		</div>
+		<form method="POST" id="form" class="form-horizontal contact_form"  enctype="multipart/form-data">
+			<div class="form-item">
+	            <label class="item-label">标题<span class="check-tips">（用于后台显示的配置标题）</span></label>
+	            <div class="controls">
+	                <input type="text" class="text input-large" name="fdName" nullmsg="标题不允许为空" value="${item.fdName}">
+	                 <span class="form_checktip"></span>
+	            </div>
+	        </div>
+	         <div class="form-item">
+	            <label class="item-label">类型<span class="check-tips"></span></label>
+	            <div class="controls">
+	                <label class="radio">
+		                <input type="radio" name="fdType" value="1"
+		                	<#if (item.fdType=="1"||!item.fdType??)>
+									checked="checked"
+							</#if>
+		                >
+		                URL
+	                </label>
+	                <label class="radio">
+		                <input type="radio" name="fdType"  value="0"
+		                	<#if item.fdType=="0">
+									checked="checked"
+							</#if>
+		                >
+		                KEY
+	                </label>
+	                <label class="radio">
+		                <input type="radio" name="fdType"  value="2"
+		                	<#if item.fdType=="2">
+									checked="checked"
+							</#if>
+		                >
+		                	扫码带提示
+	                </label>
+	                <label class="radio">
+		                <input type="radio" name="fdType" value="3"
+		                	<#if item.fdType=="3">
+									checked="checked"
+							</#if>
+		                >
+		                	扫码推事件
+	                </label>
+	            </div>
+	        </div>
+	        <div class="form-item fdKey">
+	            <label class="item-label">KEY<span class="check-tips"></span></label>
+	            <div class="controls">
+	                <input type="text" class="text input-large" name="fdKey" value="${item.fdKey}">
+	                <span class="form_checktip"></span>
+	            </div>
+	        </div>
+	        <div class="form-item fdUrl">
+	            <label class="item-label">链接<span class="check-tips">（U函数解析的URL或者外链）</span></label>
+	            <div class="controls">
+	                <input type="text" class="text input-large" name="fdUrl" value="${item.fdUrl}">
+	                <span class="form_checktip"></span>
+	            </div>
+	        </div>
+			 <div class="form-item">
+	            <label class="item-label">上级菜单<span class="check-tips">（所属的上级菜单）</span></label>
+	            <div class="controls">
+	            	<input type="hidden" name="fdPidName" class="fdPidName" value="${item.fdPidName}" />
+					<select name="fdPid" selectValue="${fdPid}" data-key="selectMenu" data-text=".fdPidName" nullmsg="上级菜单不允许为空"></select>
+					 <span class="form_checktip"></span>
+				</div>
+			</div>
+	      
+	        <div class="form-item">
+	            <label class="item-label">授权状态<span class="check-tips"></span></label>
+	            <div class="controls">
+	                <label class="radio">
+	                	<input type="radio" name="fdStatus" id="fdStatus1" value="1" 
+	                		<#if item.fdStatus!="0">
+									checked="checked"
+							</#if>
+	                	>
+	                	已授权
+	                </label>
+	                <label class="radio">
+		                <input type="radio" name="fdStatus" id="fdStatus2" value="0"
+		                	<#if item.fdStatus=="0">
+									checked="checked"
+							</#if>
+		                >
+		                                          未授权
+	                </label>
+	            </div>
+	        </div>
+	         <div class="form-item">
+	            <label class="item-label">排序<span class="check-tips">（用于分组显示的顺序）</span></label>
+	            <div class="controls">
+	                <input type="number" class="text input-small" name="fdSeq" value='${item.fdSeq}'>
+	                 <span class="form_checktip"></span>
+	            </div>
+	        </div>
+			<div class="form-item">
+				<input type="hidden" name="fdId" value="${item.fdId}" />
+			</div>
+			<div class="form-item">
+				<button class="btn submit-btn ajax-post" id="submit" type="submit" target-form="form-horizontal">确 定</button>
+				<button class="btn btn-return" onclick="javascript:history.back(-1);return false;">返 回</button>
+			</div>
+		</form>
+	</div>
+	<!-- 底部 -->
+	<#include "Admin/jsp/common/footer.ftl">
+</div>
+<!-- /内容区 -->
+</body>
+</html>

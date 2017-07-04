@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<#include "app/jsp/common/common.ftl">
+	<#include "app/jsp/weixinTemplate.html">
+	<title>我的订单</title>
+	<script type="text/javascript">
+		var footTab="2";
+		$(function(){
+			var h=$(window).height()-145;
+			$(".category_main").height(h);
+		})
+	</script>
+</head>
+<body class="grayBg">
+	<div class="wrap">
+		<header class="homepage_head">
+			<a href="javascript:history.go(-1)" class="left_head  ahref" style="left:2%;">
+	             	  <span class="iconfont backBtn">&#xe61c;</span>
+			</a>
+			<h2>我的订单</h2>
+		</header>
+		<div class="headNext ">
+			<div class="my_order_status clearfix">
+				<a href="javascript:void(0)" class="myos_ahref all" ><span class="myos-text">全部</span><span class="myos-hline myos_selected"></span></a>
+				<a href="javascript:void(0)" class="myos_ahref dfk" ><span class="myos-text">待付款</span><span class="myos-hline"></span></a>
+				<a href="javascript:void(0)" class="myos_ahref dfh" ><span class="myos-text">待发货</span><span class="myos-hline"></span></a>
+				<a href="javascript:void(0)" class="myos_ahref yfh" ><span class="myos-text">已发货</span><span class="myos-hline"></span></a>
+				<a href="javascript:void(0)" class="myos_ahref ywc" ><span class="myos-text">已完成</span><span class="myos-hline"></span></a>
+			</div>
+			<div class="myOrderMain" >
+				<div class="momList" style="display: display;">
+					<div class="momlItem">
+						<div class="momli-header clearfix">
+							<span class="momlih-left">订单号:　201610113555086688</span>
+							<span class="momlih-right">买家未付款</span>
+						</div>
+						<div class="momli-goods clearfix">
+							<div class="momlig-item clearfix">
+								<img src="${hxltUrl}app/images/hot_goods1.png" alt="goods"/>
+								<div class="momligiMain clearfix">
+									<p class="momligiTitle">经典公主鞋</p>
+									<p class="momligiSize">鞋码(内长)：22码（内长约15cm）</p>
+									<p class="momligiColor">颜色：宝蓝绿</p>
+									<span class="momligiPrice">￥79.00</span>
+									<span class="momligi_Calc clearfix">
+										<span class="momligi_quantity">X1</span>
+									</span>
+								</div>
+							</div>
+							<div class="momlig-item clearfix">
+								<img src="${hxltUrl}app/images/hot_goods1.png" alt="goods"/>
+								<div class="momligiMain clearfix">
+									<p class="momligiTitle">经典公主鞋</p>
+									<p class="momligiSize">鞋码(内长)：22码（内长约15cm）</p>
+									<p class="momligiColor">颜色：宝蓝绿</p>
+									<span class="momligiPrice">￥79.00</span>
+									<span class="momligi_Calc clearfix">
+										<span class="momligi_quantity">X1</span>
+									</span>
+								</div>
+							</div>
+							<div class="momlig-total clearfix">
+								<div class="momlig-left clearfix">
+									<span class="heji">合计：</span>
+									<span class="momlig-rmb">￥</span>
+									<span class="momlig-amount">218.00</span>
+								</div>
+								<div class="momlig-right">
+									<span class="momlig-pay">付款</span>
+									<span class="momlig-cancel">取消订单</span>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div style="height: 70px;"></div>
+			
+		</div>
+	</div>
+</body>
+</html>

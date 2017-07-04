@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent">
+
+    <com.maya.android.asyncimageview.widget.AsyncImageView
+        android:id="@+id/imv_radar_search_detail_head"
+        android:layout_width="@dimen/dimen_108dp"
+        android:layout_height="@dimen/dimen_108dp"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/app_name"
+        android:background="@mipmap/bg_head"
+        android:src="@mipmap/img_head"/>
+
+    <RelativeLayout
+        android:id="@+id/rel_name"
+        android:layout_below="@id/imv_radar_search_detail_head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dimen_7dp">
+        <TextView
+            android:id="@+id/txv_radar_search_detail_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_ffffff"
+            android:textSize="@dimen/dimen_18sp"/>
+        <TextView
+            android:id="@+id/txv_radar_search_detail_job"
+            android:layout_toRightOf="@id/txv_radar_search_detail_name"
+            android:layout_alignBottom="@id/txv_radar_search_detail_name"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_10dp"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/dimen_15sp"
+            android:textColor="@color/color_787878"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/txv_radar_search_detail_company"
+        android:layout_below="@id/rel_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_3dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="@dimen/dimen_15sp"
+        android:textColor="@color/color_787878"/>
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_below="@id/txv_radar_search_detail_company"
+        android:layout_width="@dimen/dimen_190dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dimen_40dp"
+        android:background="@drawable/bg_general_normal_green"
+        android:layout_height="@dimen/dimen_42dp"
+        android:gravity="center"
+        android:textColor="@color/color_ffffff"
+        android:text="@string/cloud_swap_card"
+        android:textSize="@dimen/dimen_18sp"/>
+</RelativeLayout>

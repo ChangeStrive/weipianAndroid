@@ -1,0 +1,205 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/all_frg_view_color"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/all_btn_background_color"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/txv_frg_setting_seting_account"
+                style="@style/text_setting_general_size_and_color"
+                android:layout_height="@dimen/dimen_50dp"
+                android:layout_width="match_parent"
+                android:paddingRight="@dimen/dimen_15dp"
+                android:paddingLeft="@dimen/dimen_15dp"
+                android:gravity="center_vertical"
+                android:drawableRight="@mipmap/img_general_right_arrow"
+                android:text="@string/frg_setting_main_account" />
+
+
+            <TextView
+                android:id="@+id/txv_frg_setting_msg_warn_set"
+                style="@style/text_setting_general_size_and_color"
+                android:drawableRight="@mipmap/img_general_right_arrow"
+                android:layout_height="@dimen/dimen_50dp"
+                android:layout_width="match_parent"
+                android:paddingRight="@dimen/dimen_15dp"
+                android:paddingLeft="@dimen/dimen_15dp"
+                android:gravity="center_vertical"
+                android:text="@string/frg_setting_main_msg_warn_set" />
+
+
+            <TextView
+                android:id="@+id/txv_frg_setting_privacy"
+                style="@style/text_setting_general_size_and_color"
+                android:drawableRight="@mipmap/img_general_right_arrow"
+                android:layout_height="@dimen/dimen_50dp"
+                android:layout_width="match_parent"
+                android:paddingRight="@dimen/dimen_15dp"
+                android:paddingLeft="@dimen/dimen_15dp"
+                android:gravity="center_vertical"
+                android:text="@string/frg_setting_main_privacy" />
+
+
+            <TextView
+                android:id="@+id/txv_frg_setting_other"
+                style="@style/text_setting_general_size_and_color"
+                android:drawableRight="@mipmap/img_general_right_arrow"
+                android:layout_height="@dimen/dimen_50dp"
+                android:layout_width="match_parent"
+                android:paddingRight="@dimen/dimen_15dp"
+                android:paddingLeft="@dimen/dimen_15dp"
+                android:gravity="center_vertical"
+                android:text="@string/frg_setting_main_other" />
+
+            <View  style="@style/vertical_line_divider_height_dimen_10dp" />
+
+            <TextView
+                android:id="@+id/txv_nfc_vcard_enter"
+                style="@style/text_setting_general_size_and_color"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_55dp"
+                android:drawablePadding="@dimen/dimen_10dp"
+                android:drawableRight="@mipmap/img_general_right_arrow"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/dimen_15dp"
+                android:paddingRight="@dimen/dimen_15dp"
+                android:text="@string/nfc_edt_vcard2" />
+            <View  style="@style/vertical_line_divider_height_dimen_10dp" />
+
+            <RelativeLayout
+                android:id="@+id/rel_frg_setting_top_recommend"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/text_setting_general_size_and_color"
+                    android:layout_height="@dimen/dimen_50dp"
+                    android:layout_width="match_parent"
+                    android:paddingRight="@dimen/dimen_15dp"
+                    android:paddingLeft="@dimen/dimen_15dp"
+                    android:gravity="center_vertical"
+                    android:drawableRight="@mipmap/img_general_right_arrow"
+                    android:text="@string/frg_setting_main_recommend" />
+
+                <ImageView
+                    android:id="@+id/imv_frg_setting_recomend_sign"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dimen_15dp"
+                    android:layout_marginLeft="@dimen/dimen_58dp"
+                    android:layout_marginTop="@dimen/dimen_6dp"
+                    android:contentDescription="@string/app_name"
+                    android:src="@mipmap/img_setting_new_sign"
+                    android:visibility="gone"/>
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/txv_frg_setting_share"
+                style="@style/text_setting_general_size_and_color"
+                android:layout_height="@dimen/dimen_50dp"
+                android:layout_width="match_parent"
+                android:paddingRight="@dimen/dimen_15dp"
+                android:paddingLeft="@dimen/dimen_15dp"
+                android:gravity="center_vertical"
+                android:drawableRight="@mipmap/img_general_right_arrow"
+                android:visibility="gone"
+                android:text="@string/frg_setting_main_share" />
+
+
+            <TextView
+                android:id="@+id/txv_frg_web_common_feedback"
+                style="@style/text_setting_general_size_and_color"
+                android:layout_height="@dimen/dimen_50dp"
+                android:layout_width="match_parent"
+                android:paddingRight="@dimen/dimen_15dp"
+                android:paddingLeft="@dimen/dimen_15dp"
+                android:gravity="center_vertical"
+                android:visibility="gone"
+                android:drawableRight="@mipmap/img_general_right_arrow"
+                android:text="@string/frg_setting_main_feedback" />
+            <TextView
+                style="@style/text_setting_general_size_and_color"
+                android:layout_height="@dimen/dimen_50dp"
+                android:layout_width="match_parent"
+                android:paddingRight="@dimen/dimen_15dp"
+                android:paddingLeft="@dimen/dimen_15dp"
+                android:gravity="center_vertical"
+                android:drawableRight="@mipmap/img_general_right_arrow"
+                android:text="@string/frg_setting_main_clear" />
+
+            <View  style="@style/vertical_line_divider_height_dimen_10dp" />
+
+            <RelativeLayout
+                android:id="@+id/rel_frg_setting_about_vcard"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content">
+
+                <TextView
+
+                    style="@style/text_setting_general_size_and_color"
+                    android:layout_height="@dimen/dimen_50dp"
+                    android:layout_width="match_parent"
+                    android:paddingRight="@dimen/dimen_15dp"
+                    android:paddingLeft="@dimen/dimen_15dp"
+                    android:gravity="center_vertical"
+                    android:background="@color/color_ffffff"
+                    android:drawableRight="@mipmap/img_general_right_arrow"
+                    android:text="@string/frg_setting_main_about_vcard" />
+
+                <ImageView
+                    android:id="@+id/imv_frg_setting_about_vcard_sign"
+                    android:layout_width="@dimen/dimen_40dp"
+                    android:layout_height="@dimen/dimen_15dp"
+                    android:layout_marginLeft="@dimen/dimen_58dp"
+                    android:layout_marginTop="@dimen/dimen_6dp"
+                    android:contentDescription="@string/app_name"
+                    android:src="@mipmap/img_setting_new_sign"
+                    android:visibility="gone"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_0dp"
+                android:layout_weight="1"
+                android:background="@color/color_e2e2e2"
+                android:paddingBottom="@dimen/dimen_10dp">
+
+                <RelativeLayout
+                    android:id="@+id/rel_frg_setting_submit"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_42dp"
+                    android:layout_marginLeft="@dimen/dimen_15dp"
+                    android:layout_marginRight="@dimen/dimen_15dp"
+                    android:layout_marginTop="@dimen/dimen_25dp"
+                    android:background="@drawable/bg_general_btn_normal">
+
+                    <TextView
+                        android:id="@+id/txv_frg_setting_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:drawableLeft="@mipmap/img_setting_logoff"
+                        android:drawablePadding="@dimen/dimen_10dp"
+                        android:text="@string/frg_setting_main_common_log_off"
+                        android:textColor="@color/color_ff4e18"
+                        android:textSize="@dimen/dimen_15sp" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,115 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg_add_vcard"
+    tools:context="com.maya.android.vcard.ui.frg.AddVCardUploadFragment">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_add_card_transparency" />
+
+    <RelativeLayout
+        android:id="@+id/rel_vcard_front"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        >
+
+        <ImageView
+            android:id="@+id/imv_show_vcard_front"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_addcard_btn_format"/>
+
+        <ImageButton
+            android:id="@+id/imb_rotate_picture_front"
+            android:layout_width="@dimen/dimen_45dp"
+            android:layout_height="@dimen/dimen_45dp"
+            android:background="@color/color_00000000"
+            android:src="@mipmap/img_addcard_rotate_picture" />
+
+        <TextView
+            android:id="@+id/txv_content_front"
+            style="@style/text_upload_vcard_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/vcard_front_click_upload" />
+
+        <ImageView
+            android:id="@+id/view_front_divier"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_79dp"
+            android:background="@mipmap/img_dot_divider" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/txv_upload_vcard_front"
+        style="@style/text_upload_add_vcard_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rel_vcard_front"
+        android:layout_centerHorizontal="true"
+        android:text="@string/vcard_front" />
+
+    <RelativeLayout
+        android:id="@+id/rel_vcard_verso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txv_upload_vcard_front"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:id="@+id/imv_show_vcard_verso"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_addcard_btn_format"/>
+
+        <ImageButton
+            android:id="@+id/imb_rotate_picture_verso"
+            android:layout_width="@dimen/dimen_45dp"
+            android:layout_height="@dimen/dimen_45dp"
+            android:background="@color/color_00000000"
+            android:src="@mipmap/img_addcard_rotate_picture" />
+
+
+        <TextView
+            android:id="@+id/txv_content_verso"
+            style="@style/text_upload_vcard_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/vcard_verso_click_upload" />
+
+        <ImageView
+            android:id="@+id/view_verso_divider"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_79dp"
+            android:background="@mipmap/img_dot_divider" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_submit"
+        style="@style/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_42dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dimen_15dp"
+        android:layout_marginLeft="@dimen/dimen_15dp"
+        android:layout_marginRight="@dimen/dimen_15dp"
+        android:background="@drawable/bg_general_btn_normal"
+        android:text="@string/vcard_recognition" />
+
+    <TextView
+        android:id="@+id/txv_upload_vcard_verso"
+        style="@style/text_upload_add_vcard_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/btn_submit"
+        android:layout_centerHorizontal="true"
+        android:text="@string/vcard_verso" />
+</RelativeLayout>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<#include "app/jsp/common/common.ftl">
+	<#include "app/jsp/weixinTemplate.html">
+	<title>基础信息录入</title>
+	<script src='${hxltUrl}js/utils/PCASClass.js'></script>
+	<script src='${hxltUrl}app/js/baseInfo/baseInfo.js'></script>
+</head>
+<body class="grayBg">
+	<div class="wrap">
+		<header class="homepage_head">
+			<a href="javascript:history.go(-1)" class="left_head  ahref" style="left:2%;">
+	             	  <span class="iconfont backBtn">&#xe61c;</span>
+			</a>
+			<h2 >基础信息录入</h2>
+		</header>
+		<div class="headNext">
+			<div class="baseinfo-title">欢迎加入微片!</div>
+			<div class="loginMain baseInfo">
+				<div class="formItem clearfix">
+					<div class="formLabel">姓名</div>
+					<div class="formInput formInputItem">
+						<input type="text" placeholder="请填写您的真实姓名" name="fdName"/>
+					</div>
+				</div>
+				<div class="formItem clearfix">
+					<div class="formLabel">称呼</div>
+					<div class="formInput formInputItem">
+						<label>
+							<input type="radio" name="fdSex" value="1" checked="checked"/>先生
+						</label>
+						<label>
+							<input type="radio" name="fdSex" value="0"/>女士
+						</label>
+					</div>
+				</div>
+				<div class="formItem clearfix">
+					<div class="formLabel">生日</div>
+					<div class="formInput formInputItem">
+						<input type="text" placeholder="请选择日期" name="fdBirthday" data-field="date"/>
+					</div>
+				</div>
+				<div class="formItem clearfix">
+					<div class="formLabel">省份</div>
+					<div class="formInput">
+						<select  class="ProvinceId" name="fdProvince">
+						</select>
+					</div>
+				</div>
+				<div class="formItem clearfix">
+					<div class="formLabel">城市</div>
+					<div class="formInput">
+						<select  class="CityId" name="fdCity">
+						</select>
+					</div>
+				</div>
+				<div class="formItem clearfix">
+					<div class="formLabel">区域</div>
+					<div class="formInput">
+						<select class="AreaId" name="fdArea">
+						</select>
+					</div>
+				</div>
+			</div>
+			<div class="LoginBtns">
+				<a href="javascript:void(0)" class="commonbtn">下一步</a>
+			</div>
+		</div>
+	</div>
+	<div id="dtBox"></div>
+	<script type="text/javascript">
+		$(function(){
+			new PCAS("fdProvince","fdCity","fdArea");
+			$("#dtBox").DateTimePicker({dateFormat: "yyyy-MM-dd"});
+		});
+	</script>
+</body>
+</html>

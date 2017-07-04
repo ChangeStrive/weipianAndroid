@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<#include "app/jsp/common/common.ftl">
+	<#include "app/jsp/weixinTemplate.html">
+	<title>支付结果</title>
+	<script type="text/javascript">
+	</script>
+	<style>
+	.confirm{text-align: center;width:80%;margin: 20px auto;padding: 10px 0;border-radius:10px;background: #FFBC3B;color:white;display: block;font-size: 20px;}
+	</style>
+</head>
+<body class="pay">
+	<div class="wrap">
+		<!-- 导航 -->
+		<header class="homepage_head">
+			<a href="javascript:history.go(-1)" class="left_head  ahref" style="left:2%;">
+	             	  <span class="iconfont backBtn">&#xe61c;</span>
+			</a>
+			<h2 class="typePageTitle">支付结果</h2>
+		</header>
+		<section class="dispatching_con">
+			<#if status==0>
+				<div style="padding-top: 50%;">
+						<img alt="" src="${hxltUrl}app/images/xdcg_icon.png" style="width:30%;display:block;margin:0 auto;">
+				</div>
+				<div style="padding: 20px 0;text-align: center; font-size: 22px;">支付成功 !</div>
+				 <a href="${hxltUrl}wx/orderDetail?fdOrderId=${fdOrderId}&fdShopNo=${fdShopNo}" class="confirm">确定</a>
+				<#else>
+				<div  style="text-align: center;padding-top: 100px;font-size:30px;color:red;">${msg}</div>
+				<a href="${hxltUrl}wx/pay?fdOrderId=${fdOrderId}&fdShopNo=${fdShopNo}" class="confirm">重新支付</a>
+			</#if>
+		</section>
+	</div>
+</body>
+</html>

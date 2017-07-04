@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/img_frg_welcome_common"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:scaleType="fitXY"
+        android:contentDescription="@null"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/img_frg_welcome_3_top"
+            android:contentDescription="@null"
+            android:scaleType="fitXY"
+            android:layout_weight="1.0"/>
+        <ImageView
+            android:id="@+id/imv_frg_welcome_3_middle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/frg_welcome_3_anim"
+            android:contentDescription="@null"
+            android:scaleType="fitXY"
+            android:layout_weight="1.0"/>
+        <ImageView
+            android:id="@+id/imv_act_welcome_three_character"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/img_frg_welcome_3_character"
+            android:contentDescription="@null"
+            android:scaleType="fitXY"
+            android:layout_weight="1.0"/>
+
+    </LinearLayout>
+    
+</RelativeLayout>

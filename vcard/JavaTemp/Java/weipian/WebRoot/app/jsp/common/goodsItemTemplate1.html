@@ -1,0 +1,25 @@
+<textarea class="x-template" id="goodsItem">
+	<div  class="goodsItem cr_item  clearfix">
+		<div class="goodsItemLeft">
+			<a href="${hxltUrl}wx/goodsDetail?fdShopNo=${fdShopNo}&fdGoodsId={fdGoodsId}">
+				<img src="${downAction}{fdPicUrl}"/>
+			</a>
+		</div>
+		<div class="goodsItemRight">
+			<div class="goodsItemOption">
+				<a class="gio-sc" fdGoodsId="{fdGoodsId}" href="javascript:void(0)"></a>
+				<a class="gio-cart" fdGoodsId="{fdGoodsId}" href="javascript:void(0)"></a>
+			</div>
+			<a class="goodsItemTitle" href="${hxltUrl}wx/goodsDetail?fdShopNo=${fdShopNo}&fdGoodsId={fdGoodsId}">
+				{fdGoodsName}
+			</a>
+			<a class="goodsItemType" href="${hxltUrl}wx/goodsDetail?fdShopNo=${fdShopNo}&fdGoodsId={fdGoodsId}">
+				型号:{fdGoodsNo}
+			</a>
+			<a class="goodsItemMoney" href="${hxltUrl}wx/goodsDetail?fdShopNo=${fdShopNo}&fdGoodsId={fdGoodsId}">
+				<span class="goodsItemPrice">￥{fdPrice}</span>
+				<span class="goodsItemPrice2">￥{fdTagPrice}</span>
+			</a>
+		</div>
+	</div>
+</textarea>

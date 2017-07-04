@@ -1,0 +1,162 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.maya.android.vcard.ui.frg.CardcaseMainFragment">
+
+    <!--搜索栏-->
+    <LinearLayout
+        android:id="@+id/lil_cardcase_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_cardcase_search">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/bg_cardcase_search_card"
+            android:paddingLeft="@dimen/dimen_10dp"
+            android:paddingRight="@dimen/dimen_10dp"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/txv_act_cardcase_bus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginLeft="@dimen/dimen_30dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="@string/business_class"
+                android:textColor="@color/color_688abe"
+                android:textSize="@dimen/dimen_12sp"
+                android:width="@dimen/dimen_68dp" />
+
+            <ImageView
+                android:id="@+id/imv_act_cardcase_bus_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@null"
+                android:layout_marginLeft="@dimen/dimen_10dp"
+                android:layout_marginRight="@dimen/dimen_30dp"
+                android:src="@mipmap/img_cardcase_business_arrow"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:contentDescription="@null"
+                android:src="@mipmap/bg_cardcase_search_card_gap"/>
+
+            <EditText
+                android:id="@+id/edt_act_cardcase_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@mipmap/img_news_find"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/dimen_10dp"
+                android:drawablePadding="@dimen/dimen_10dp"
+                android:background="@null"
+                android:ellipsize="end"
+                android:hint="@string/search_contact_company_tel"
+                android:lines="1"
+                android:textColorHint="@color/color_688abe"
+                android:textSize="@dimen/dimen_12sp" >
+            </EditText>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--横线-->
+    <View
+        android:id="@+id/line_light"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_1dp"
+        android:layout_below="@id/lil_cardcase_search"
+        android:background="@color/color_cecece" />
+
+    <LinearLayout
+        android:layout_below="@id/line_light"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:background="@color/color_ffffff">
+
+        <!-- 左侧分组 -->
+        <LinearLayout
+            android:id="@+id/lil_cardcase_left"
+            android:layout_width="@dimen/dimen_100dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/bg_cardcase_left"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/txv_cardcase_group_all"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_45dp"
+                android:background="@drawable/bg_cardcase_group_select"
+                android:gravity="center"
+                android:textColor="@color/color_ffffff"
+                android:textSize="@dimen/dimen_12sp"
+                android:focusable="true"
+                android:text="@string/all" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_1dp"
+                android:background="@color/color_cecece" />
+
+            <ListView
+                android:id="@+id/lsv_cardcase_groups"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:cacheColorHint="@color/transparent"
+                android:divider="@color/color_cecece"
+                android:dividerHeight="@dimen/dimen_1dp"
+                android:drawSelectorOnTop="true"
+                android:listSelector="@color/transparent"
+                android:scrollbars="none" >
+            </ListView>
+        </LinearLayout>
+
+        <!-- 右侧联系人列表 -->
+        <LinearLayout
+            android:id="@+id/lil_act_cardcase_right"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/color_e2e2e2"
+            android:orientation="vertical" >
+            <ListView
+                android:id="@+id/lsv_cardcase_vcard"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/transparent"
+                android:cacheColorHint="@color/transparent"
+                android:divider="@color/color_cecece"
+                android:dividerHeight="@dimen/dimen_1dp"
+                android:drawSelectorOnTop="false"
+                android:focusable="true"
+                android:scrollbars="none"
+                android:listSelector="@color/transparent" >
+            </ListView>
+
+            <TextView
+                android:id="@+id/txv_cardcase_vcard_empty"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/no_contact"
+                android:textColor="@color/color_0a0a0b"
+                android:textSize="@dimen/dimen_15sp"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.maya.android.vcard.ui.widget.SideBar
+        android:id="@+id/cust_act_cardcase_side_bar"
+        android:layout_width="@dimen/dimen_14dp"
+        android:layout_height="match_parent"
+        android:layout_below="@id/lil_cardcase_search"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/dimen_10dp"
+        android:textColor="@color/color_626970"
+        android:textSize="@dimen/dimen_10sp" />
+</RelativeLayout>

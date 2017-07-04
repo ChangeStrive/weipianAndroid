@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<#include "app/jsp/common/common.ftl">
+	<#include "app/jsp/weixinTemplate.html">
+	<title>我的订单</title>
+	<script type="text/javascript">
+	</script>
+	<script src='${hxltUrl}app/js/dfh/dfh.js'></script>
+</head>
+<body class="myOrder" >
+	<div class="mask" style="display:none;"></div>
+	<div class="wrap">
+		<header class="homepage_head">
+			<a href="${hxltUrl}wx/my?fdShopNo=${fdShopNo}" class="left_head  ahref" style="left:2%;">
+	            <span class="iconfont backBtn">&#xe61c;</span>
+			</a>
+			<h2 class="typePageTitle">我的订单</h2>
+		</header>
+		<div class="my_order_status clearfix">
+			<a href="${hxltUrl}wx/all?fdShopNo=${fdShopNo}" class="myos_ahref dfk" ><span class="myos-text">全部</span><span class="myos-hline"></span><span class="myos-line"></span></a>
+			<a href="${hxltUrl}wx/dfk?fdShopNo=${fdShopNo}" class="myos_ahref dfk" ><span class="myos-text">待付款</span><span class="myos-hline"></span><span class="myos-line"></span></a>
+			<a href="${hxltUrl}wx/dfh?fdShopNo=${fdShopNo}" class="myos_ahref dfh" ><span class="myos-text">待发货</span><span class="myos-hline myos_selected"></span><span class="myos-line"></span></a>
+			<a href="${hxltUrl}wx/yfh?fdShopNo=${fdShopNo}" class="myos_ahref yfh" ><span class="myos-text">已发货</span><span class="myos-hline"></span><span class="myos-line"></span></a>
+			<a href="${hxltUrl}wx/ywc?fdShopNo=${fdShopNo}" class="myos_ahref ywc" ><span class="myos-text">待评价</span><span class="myos-hline"></span></a>
+		</div>
+		<div class="myOrderMain" >
+			<div class="mom_kongkong" style="display: none;">
+				<img src="${hxltUrl}app/images/myorder_dfh_icon.png" alt="暂无相关订单">	
+				<span>暂无相关订单</span>	
+				<a href="${hxltUrl}wx/index?fdShopNo=${fdShopNo}" class="goShopping" >去逛逛</a>	
+			</div>
+			<div class="droploadDiv">
+				<div class="momList" style="display: display;">
+					
+				</div>
+			</div>
+		</div>
+		<div style="height: 70px;width:100%;"></div>
+	</div>
+	<div class="tipBox">
+		<div class="tipBoxTitle">申请退款理由</div>
+		<div class="tipBoxMain">
+			<div class="tipTextAreaDiv">
+				<textarea class="fdReturnMark" placeholder="退款原因" ></textarea>
+				<a href="javascript:void(0);" class="iconfont tipBoxClose">&#xe656;</a>
+			</div>
+			<a href="javascript:void(0)" class="tipBoxBtn">确定</a>
+		</div>
+	</div>
+	<#include "app/jsp/common/orderItemTemplate.html">
+</body>
+</html>

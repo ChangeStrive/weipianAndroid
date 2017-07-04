@@ -1,0 +1,63 @@
+@charset "utf-8";
+html,body {
+    font-size: 14px;
+    font-family: "微软雅黑", Helvetica, Tahoma, Arial, sans-serif;
+    color: #000;
+    margin: 0;
+    padding: 0;
+    
+}
+img {
+    border: 0;
+}
+.cf:before,.cf:after {
+    display: table;
+    content: "";
+}
+.cf:after {
+    clear: both;
+}
+.cf {
+    *zoom: 1;
+}
+.clearfix:after{content: "\200B"; display: block; height: 0; clear: both;}
+.clearfix {*zoom:1;}
+
+/** login**/
+#login-page{
+	background: url("../images/loginBg.jpg")  top center no-repeat; background-size:100% 100%;
+}
+.login-mainContain{width:960px; margin: 0 auto;text-align: center;padding-top: 13%;}
+.login-logos{width:250px;text-align: center;margin: 0 auto;}
+.login-logo img{width:100%;}
+.login-tip{text-align: center;color:white;font-size: 30px;padding: 5px 0;letter-spacing:2px}
+.login-forms{position:relative;background: #C3AF97;opacity:0.98;border: 1px solid #C3AF97;border-radius:5px;width:500px;margin: 0 auto;padding-top: 20px;height:280px;}
+.login-item{width:80%;margin: 20px auto;border: 1px solid #AFACA7;padding: 2px 2px;text-align: left;background: white;border-radius:5px;}
+.login-item input{width:80%;font-size: 16px;border: 0;padding-left: 5px;background: white;}
+.login-item i{float:right;}
+.login-btnList{width:100%;text-align: center;padding: 10px 0;}
+.login-btn{font-size: 20px;color:white;background: #BD4B40;padding: 8px 40px;border-radius:10px;border: 1px solid #BD4B40;}
+.login-forms .icon-login-user,
+.login-forms .icon-login-pwd {
+    display: inline-block;
+    margin-right: 6px;
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+    background: url("../images/icon24_login.png") no-repeat;
+}
+.login-forms .icon-login-user {
+    background-position: 0 0;
+}
+.login-forms .icon-login-pwd {
+    background-position: -48px 0;
+}
+.checkBoxItem{width:80%;margin: 20px auto;text-align: left;}
+.checkBoxItem input{width:40%;text-align: left;font-size: 16px;padding: 2px 4px;border: 1px solid #AFACA7;border-radius:5px;}
+.checkBoxTip{font-size: 16px;color:#cdcdcd;padding-left: 5px;cursor: pointer;}
+.checkBoxImage{cursor: pointer;}
+.loginRightImage{position: absolute;right:10px;top:100px;width:15px;text-align: center;cursor: pointer;}
+.loginLeftImage{position: absolute;left:10px;top:100px;width:15px;text-align: center;cursor: pointer;}
+.codeImage,.shaohaoImage{text-align: center;}
+.codeImage img{width:200px;}
+.shaohaoImage{font-size:20px;color:black;padding: 10px 0;}

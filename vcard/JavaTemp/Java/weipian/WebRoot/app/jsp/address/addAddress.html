@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<#include "app/jsp/common/common.ftl">
+	<#include "app/jsp/weixinTemplate.html">
+	<title>收货地址</title>
+	<script type="text/javascript">
+		var fdId="${item.fdId}";
+		var backUrl="${backUrl}";
+	</script>
+	<script src='${hxltUrl}js/utils/PCASClass.js'></script>
+</head>
+<body class="grayBg" >
+	<div class="wrap">
+		<header class="homepage_head">
+			<a href="javascript:history.go(-1)" class="left_head  ahref" style="left:2%;">
+	             	  <span class="iconfont backBtn">&#xe61c;</span>
+			</a>
+			<#if item.fdId??>
+				<h2>修改收货地址</h2>
+				<#else>
+				<h2>添加收货地址</h2>
+			</#if>
+		</header>
+		<div class="addAddressContent" >
+			<div class="aac-content clearfix">
+				<span>收货人姓名</span>
+				<input type="text" placeholder="请输入收货人姓名"  name="fdConsignee" value="${item.fdConsignee}"/>
+			</div>
+			<div class="aac-content clearfix">
+				<span>手机号</span>
+				<input type="text" placeholder="请输入手机号"  name="fdTel" value="${item.fdTel}"/>
+			</div>
+			<div class="aac-content clearfix">
+				<span>省份</span>
+				<select  class="ProvinceId" name="fdProvince">
+				</select>
+			</div>
+			<div class="aac-content clearfix">
+				<span>城市</span>
+				<select  class="CityId" name="fdCity">
+				</select>
+			</div>
+			<div class="aac-content clearfix">
+				<span>县区</span>
+				<select class="AreaId" name="fdArea">
+				</select>
+			</div>
+			<div class="aac-content clearfix">
+				<span>详细地址</span>
+				<input type="text" placeholder="请输入详细地址" name="fdAddress" value="${item.fdAddress}"/>
+			</div>
+			<div class="aac-content clearfix">
+				<span>邮编</span>
+				<input type="text" placeholder="请输入邮编" name="fdZipCode" value="${item.fdZipCode}"/>
+			</div>
+			<div class="aac-content clearfix">
+				<span>设为默认地址</span>
+				<a href="javascript:void(0)" class="default-icon" fdStatus="${item.fdStatus}"></a>
+			</div>
+		</div>
+		<div class="confirm-btn clearfix">
+			<a href="javascript:void(0)" class="confirmBtn selected" >确定提交</a>
+		</div>
+	</div>
+	<#include "app/jsp/common/goIndex.html">
+</body>
+<script type="text/javascript">
+new PCAS("fdProvince","fdCity","fdArea","${item.fdProvince}","${item.fdCity}","${item.fdArea}");
+</script>
+<script src='${hxltUrl}app/js/address/addAddress.js'></script>
+</html>

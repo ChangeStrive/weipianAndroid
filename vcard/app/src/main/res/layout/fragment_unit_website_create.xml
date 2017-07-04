@@ -1,0 +1,73 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/all_frg_view_color"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.maya.android.vcard.ui.frg.UnitWebsiteJoinFragment">
+    <RelativeLayout
+        android:id="@+id/rel_computer"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_201dp" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/img_computer" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imv_line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rel_computer"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/img_line" />
+
+    <TextView
+        android:id="@+id/txv_hint"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_87dp"
+        android:layout_alignLeft="@+id/imv_line"
+        android:layout_alignRight="@+id/imv_line"
+        android:layout_below="@+id/imv_line"
+        android:gravity="center"
+        android:text="@string/we_official_establish_please"
+        style="@style/unit_we_official_create"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_42dp"
+        android:layout_below="@+id/txv_hint"
+        android:layout_marginLeft="@dimen/dimen_15dp"
+        android:layout_marginRight="@dimen/dimen_15dp"
+        android:background="@drawable/bg_general_btn_normal"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_nagtive"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center"
+            android:text="@string/frg_text_cancel"
+            style="@style/btn_submit"
+            android:visibility="gone"/>
+
+        <View
+            android:id="@+id/view_line"
+            style="@style/horizontal_line_divider_fill"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/btn_positive"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center"
+            android:text="@string/scan_computer_login"
+            style="@style/btn_submit" />
+    </LinearLayout>
+</RelativeLayout>

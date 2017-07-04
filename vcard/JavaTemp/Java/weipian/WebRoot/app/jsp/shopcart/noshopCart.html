@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<#include "app/jsp/common/common.ftl">
+	<#include "app/jsp/weixinTemplate.html">
+	<title>购物车</title>
+	<script type="text/javascript">
+		var footTab="3";
+	</script>
+</head>
+<body class="shopCartBuy" >
+	<div class="mask" style="display:none;"></div>
+	<div class="wrap">
+		<header class="homepage_head">
+			<a href="javascript:history.go(-1)" class="left_head  ahref" style="left:2%;">
+	             	  <span class="iconfont backBtn">&#xe61c;</span>
+			</a>
+			<h2>购物车</h2>
+		</header>
+
+		<div class="shopCartBuyMain" >
+			<div class="scbym_kongkong" >
+				<img src="${hxltUrl}app/images/gwckk.png" alt="首页">	
+				<span>购物车空空的</span>	
+				<a href="${hxltUrl}wx/index?fdShopNo=${fdShopNo}" class="goShopping" >去逛逛</a>	
+			</div>
+		</div>
+	</div>
+</body>
+</html>

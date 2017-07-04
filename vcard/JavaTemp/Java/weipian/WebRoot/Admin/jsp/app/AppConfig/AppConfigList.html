@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <META http-equiv="X-UA-Compatible" content="IE=9" ></META>
+	<title> 配置管理</title>
+	<#include "Admin/jsp/common/common.ftl">
+	<script type="text/javascript">
+		var firstMenuNo="00090";
+		var secondMenuNo="00096";
+	</script>
+	<script type="text/javascript" src="${hxltUrl}js/jquery/jquery.dataTables.js"></script>
+	<script type="text/javascript" src="${hxltUrl}js/jquery/jquery.tabaleUtils.js"></script>
+	<script type="text/javascript" src="${hxltUrl}Admin/js/app/AppConfig/AppConfigList.js"></script>
+  </head>
+ <body>
+<!-- 头部 -->
+<#include "Admin/jsp/common/header.ftl">
+<!-- /头部 --> 
+
+<!-- 边栏 -->
+<#include "Admin/jsp/common/sidebar.ftl">
+<!-- /边栏 --> 
+
+<!-- 内容区 -->
+<div id="main-content">
+	<div id="top-alert" class="fixed alert alert-error" style="display: none;">
+		<button class="close fixed" style="margin-top: 4px;">&times;</button>
+		<div class="alert-content">这是内容</div>
+	</div>
+	<div id="main" class="main">
+		<div class="main-title">
+			<h2>配置管理</h2>
+		</div>
+		<div class="cf">
+			<div class="fl"> 
+				<a class="btn" href="${hxltUrl}AppConfigAction/toEdit">新 增</a>
+				<a class="btn" onclick="AppConfigConfig.del()" href="javascript:;">删 除</a>
+			</div>
+			
+		</div>
+		<div class="data-table table-striped">
+			<table id="tableList">
+				<thead>
+					<tr>
+						<th class="row-selected row-selected"><input class="check-all" type="checkbox"></th>
+						<th class="">唯一标识</th>
+						<th class="">值</th>
+						<th class="">备注</th>
+						<th class="">操作</th>
+					</tr>
+				</thead>
+				<tbody>
+				</tbody>
+			</table>
+		</div>
+		<!-- 分页 -->
+		
+	</div>
+	<!-- 底部 -->
+	<#include "Admin/jsp/common/footer.ftl">
+</div>
+<!-- /内容区 --> 
+</body>
+</html>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListView
+        android:id="@+id/lsv_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:cacheColorHint="@color/color_00000000"
+        android:divider="@drawable/lsv_divider"
+        android:dividerHeight="@dimen/dimen_1px"
+        android:drawSelectorOnTop="false"
+        android:fastScrollEnabled="false"
+        android:focusable="true"
+        android:listSelector="@color/color_00000000"
+        android:fadeScrollbars="false"
+        android:scrollbars="none"/>
+
+    <TextView
+        android:id="@+id/txv_lsv_empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="@string/common_loading_data"
+        android:background="@color/color_e2e2e2"
+        style="@style/text_setting_general_size_and_color"
+        android:visibility="gone" />
+</merge>

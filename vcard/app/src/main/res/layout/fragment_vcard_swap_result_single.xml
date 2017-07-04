@@ -1,0 +1,89 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/all_frg_view_color"
+    tools:context="com.maya.android.vcard.ui.frg.VCardSwapResultSingleFragment">
+
+    <RelativeLayout
+        android:id="@+id/rel_mess"
+        style="@style/all_btn_background_color"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_60dp"
+        android:paddingLeft="@dimen/dimen_15dp"
+        android:descendantFocusability="blocksDescendants"
+        android:paddingRight="@dimen/dimen_15dp">
+
+
+        <com.maya.android.asyncimageview.widget.AsyncImageView
+            android:id="@+id/imv_head"
+            android:layout_width="@dimen/dimen_50dp"
+            android:layout_height="@dimen/dimen_50dp"
+            android:layout_centerVertical="true"
+            android:scaleType="fitXY"
+            android:src="@mipmap/img_upload_head" />
+
+        <TextView
+            android:id="@+id/txv_name"
+            style="@style/card_case_unit_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_10dp"
+            android:layout_marginTop="@dimen/dimen_12dp"
+            android:layout_toRightOf="@id/imv_head" />
+
+        <TextView
+            android:id="@+id/txv_company"
+            style="@style/card_case_unit_notice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/imv_head"
+            android:layout_alignLeft="@id/txv_name"
+            android:layout_marginBottom="@dimen/dimen_2dp"/>
+
+        <TextView
+            android:id="@+id/txv_job"
+            style="@style/card_case_unit_notice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/txv_name"
+            android:layout_marginLeft="@dimen/dimen_10dp"
+            android:layout_toRightOf="@id/txv_name" />
+
+       </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/rel_submit"
+        style="@style/all_btn_background_color"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_55dp"
+        android:layout_alignParentBottom="true"
+        android:paddingLeft="@dimen/dimen_15dp"
+        android:paddingRight="@dimen/dimen_15dp">
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_42dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/bg_general_btn_normal"
+            android:text="@string/swap_card"
+            style="@style/btn_submit"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rel_card_details_card"
+        android:layout_below="@id/rel_mess"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/dimen_15dp"
+        android:paddingRight="@dimen/dimen_15dp"
+        android:layout_above="@id/rel_submit"
+        android:layout_marginTop="@dimen/dimen_77dp"
+        android:layout_marginBottom="@dimen/dimen_115dp">
+
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,17 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.maya.android.vcard.ui.act.SettingActivity">
+
+    <include
+        android:id="@+id/inc_top"
+        layout="@layout/inc_top_title"/>
+
+    <FrameLayout
+        android:id="@+id/frg_content"
+        android:layout_below="@id/inc_top"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</RelativeLayout>

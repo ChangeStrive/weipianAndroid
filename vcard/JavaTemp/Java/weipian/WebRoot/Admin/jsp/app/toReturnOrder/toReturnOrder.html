@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <META http-equiv="X-UA-Compatible" content="IE=8" ></META>
+	<title>退款单</title>
+	<#include "Admin/jsp/common/common.ftl">
+	<script type="text/javascript">
+		var firstMenuNo="00097";
+		var secondMenuNo="00100";
+	</script>
+	<link rel="stylesheet" type="text/css" href="${hxltUrl}Admin/css/pageUtil.css" media="all">
+	<link rel="stylesheet" type="text/css" href="${hxltUrl}Admin/css/order.css" media="all">
+	<link rel="stylesheet" type="text/css" href="${hxltUrl}js/plugins/easyui/themes/default/easyui.css">
+	<link rel="stylesheet" type="text/css" href="${hxltUrl}js/plugins/easyui/themes/icon.css">
+	<script type="text/javascript" src="${hxltUrl}js/plugins/easyui/jquery.easyui.min.js"></script>
+	<script src="${hxltUrl}Admin/js/pagesUtil.js"></script>
+	<script src="${hxltUrl}js/utils/templateUtil.js"></script>
+	<script src="${hxltUrl}Admin/js/app/toReturnOrder/toReturnOrder.js"></script>
+  </head>
+ <body>
+<!-- 头部 -->
+<#include "Admin/jsp/common/header.ftl">
+<!-- /头部 --> 
+
+<!-- 边栏 -->
+<#include "Admin/jsp/common/sidebar.ftl">
+<!-- /边栏 --> 
+
+<!-- 内容区 -->
+<div id="main-content">
+	<div id="top-alert" class="fixed alert alert-error" style="display: none;">
+		<button class="close fixed" style="margin-top: 4px;">&times;</button>
+		<div class="alert-content">这是内容</div>
+	</div>
+	<div id="main" class="main">
+		<div class="main-title">
+			<h2>退款单</h2>
+		</div>
+		<div class="hightSearchForm clearfix">
+			<form>
+				<div class="search_title">高级搜索</div>
+				<div class="itemList">
+					<div class="search_item" >
+						<label>
+							订单编号：
+							<input type="text" name="fdOrderNo" placeholder="订单编号" />
+						</label>
+					</div>
+					<div class="search_item" >
+						<label>
+							买家账号：
+							<input type="text" name="fdUserCode" placeholder="买家账号" />
+						</label>
+					</div>
+					<div class="search_item" >
+						<label>
+							买家名称：
+							<input type="text" name="fdUserName" placeholder="买家名称" />
+						</label>
+					</div>
+					<div class="search_item" >
+							开始日期:<input name="fdStartDate"  type="text"   value=""   placeholder="开始日期" class="easyui-datebox" />
+					</div>
+					
+					<div class="search_item" >
+					         结束日期：<input name="fdEndDate"  type="text"   value=""   placeholder="结束日期" class="easyui-datebox" />
+					</div>
+					<div class="search_item" >
+						<a class="btn searchbtn" href="javascript:;">搜索</a>
+						<a class="btn clearbtn" href="javascript:;">清空</a>
+					</div>
+				</div>
+			</form>
+		</div>
+		<table class="bought-table" id="J_BoughtTable" >
+			<tr class="col-name">
+				 <th class="baobei">宝贝</th>
+				 <th class="price">单价(元)</th>
+				 <th class="quantity">数量</th>
+				 <th class="item-operate">买家</th>
+				 <th class="amount">实付款(元)</th>
+				 <th class="trade-status">
+					<div class="trade-status">
+						交易状态
+					</div>
+				 </th>
+				 <th class="trade-operate">交易操作</th>
+			</tr>
+		</table>
+		<ul class="pagination clearfix">
+		</ul>
+		<#include "Admin/jsp/app/AppGoodsOrder/orderListTemplate.html">
+	</div>
+	<!-- 底部 -->
+	<#include "Admin/jsp/common/footer.ftl">
+</div>
+<!-- /内容区 --> 
+</body>
+</html>

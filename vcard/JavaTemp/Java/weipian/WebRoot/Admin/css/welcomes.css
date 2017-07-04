@@ -1,0 +1,64 @@
+	.pagination{
+		margin: 0 70px;
+		float: right;
+	}
+	#first_col{
+		display: inline-block; 
+		zoom: 1; 
+		*display: inline; 
+	}
+	#second_col{
+		margin-left: 15px;
+		display: inline-block; 
+		zoom: 1; 
+		*display: inline; 
+	}
+	.add-btn {
+		height: 90px;
+		margin: 0 18px;
+		color: #b5b5b5;
+		background: transparent url('../images/appmsg-icon.png') no-repeat 50% -242px;
+	}
+	.multi-access {
+		background-position: 50% -342px;
+	}
+	ul{
+		padding: 0;
+		margin: 0;
+	}
+	li{
+		list-style-type: none;
+	}
+	.sub-msg-item {
+		padding: 12px 14px;
+		overflow: hidden;
+		zoom: 1;
+		border-top: 1px solid #c6c6c6;
+	}
+	.thumb {
+		float: right;
+		font-size: 0;
+	}
+	.thumb .default-tip {
+		font-size: 16px;
+		color: #c0c0c0;
+		width: 70px;
+		line-height: 70px;
+		border: 1px solid #b2b8bd;
+	}
+	.thumb img {
+		width: 70px;
+		height: 70px;
+		border: 1px solid #b2b8bd;
+	}
+	.sub-msg-item .msg-t {
+		margin-left: 0;
+		margin-right: 85px;
+		margin-top: 0;
+		padding-left: 4px;
+		padding-top: 12px;
+		line-height: 24px;
+		max-height: 48px;
+		font-size: 14px;
+		overflow: hidden;
+	}

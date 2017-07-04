@@ -1,0 +1,56 @@
+<textarea class="x-template" id="orderTemplate">
+	<div class="momlItem">
+		<div class="momli-header clearfix">
+			<span class="momlih-left">订单号:{fdOrderNo}</span>
+			<span class="momlih-right">{orderStatus}</span>
+		</div>
+		<div class="momli-goods clearfix">
+			{orderDetails}
+			<div class="momlig-total clearfix">
+				<div class="momlig-left clearfix">
+					<span class="heji">应付：</span>
+					<span class="momlig-rmb">￥</span>
+					<span class="momlig-amount">{fdAmount}</span>
+				</div>
+				{options}
+			</div>
+		</div>
+	</div>
+</textarea>
+<textarea class="x-template" id="orderItemTemplate">
+	<a class="momlig-item clearfix" href="${hxltUrl}wx/orderDetail?fdShopNo=${fdShopNo}&fdOrderId={fdId}">
+		<img src="${downAction}{fdPicUrl}" alt="goods"/>
+		<div class="momligiMain clearfix">
+			<p class="momligiTitle">{fdGoodsName}</p>
+			<p class="momligiSize">规格:{fdGoodsNo}</p>
+			<p class="momligiSize">原价:{fdTagPrice}</p>
+			<span class="momligiPrice">￥{fdPrice}<session style="padding-left: 10px;color:black;font-size:12px;">X{fdQuantity}</session></span>
+		</div>
+	</a>
+</textarea>
+
+<textarea class="x-template" id="noPay">
+	<div class="momlig-right">
+		<a class="momlig-pay" href="${hxltUrl}wx/pay?fdShopNo=${fdShopNo}&fdOrderId={fdId}" fdOrderId="{fdId}">付款</a>
+		<a class="momlig-cancel" fdOrderId="{fdId}"  href="javascript:void(0)">取消订单</a>
+	</div>
+</textarea>
+
+<textarea class="x-template" id="takeGoods">
+	<div class="momlig-right">
+		<a class="momlig-pay applyReturnBtn" fdOrderId="{fdId}"  href="javascript:void(0)">申请退款</a>
+	</div>
+</textarea>
+
+<textarea class="x-template" id="recevieGoods">
+	<div class="momlig-right">
+		<a class="momlig-pay confirm" fdOrderId="{fdId}" style="display:{fdIsShow}" href="javascript:void(0)">确认收货</a>
+		<!-- <a class="momlig-pay returnGoods" fdOrderId="{fdId}" style="display:{fdIsShow}"  href="javascript:void(0)">申请退货</a>-->
+	</div>
+</textarea>
+
+<textarea class="x-template" id="replyGoods">
+	<div class="momlig-right">
+		<a class="momlig-pay" fdOrderId="{fdId}" style="display:{fdIsShow}" href="${hxltUrl}wx/reply?fdShopNo=${fdShopNo}&fdOrderId={fdId}">评价</a>
+	</div>
+</textarea>

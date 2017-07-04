@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <com.maya.android.asyncimageview.widget.AsyncImageView
+        android:id="@+id/imv_head"
+        android:layout_width="@dimen/dimen_50dp"
+        android:layout_height="@dimen/dimen_50dp"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/app_name"
+        android:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/txv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imv_head"
+        android:layout_marginTop="@dimen/dimen_3dp"
+        style="@style/unit_auth_super_administrator_text"
+        android:singleLine="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/all_frg_view_color"
+    tools:context="com.maya.android.vcard.ui.frg.VCardSwapResultMultiFragment">
+
+    <TextView
+        android:id="@+id/txv_char"
+        style="@style/lsv_item_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_18dp"
+        android:text="@string/load_completion"
+        android:gravity="center"
+        android:singleLine="true"/>
+
+    <RelativeLayout
+        android:id="@+id/rel_submit"
+        style="@style/all_btn_background_color"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_55dp"
+        android:layout_alignParentBottom="true"
+        android:paddingLeft="@dimen/dimen_15dp"
+        android:paddingRight="@dimen/dimen_15dp">
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_42dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/bg_general_btn_normal"
+            android:text="@string/swap_card"
+            style="@style/btn_submit"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_below="@id/txv_char"
+        android:layout_above="@id/rel_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/all_btn_background_color">
+
+        <include layout="@layout/inc_lsv_view"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>

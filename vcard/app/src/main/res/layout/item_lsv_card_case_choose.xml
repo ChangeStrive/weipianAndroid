@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    style="@style/all_btn_background_color">
+
+    <TextView
+        android:id="@+id/txv_char"
+        style="@style/lsv_item_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_18dp"
+        android:paddingLeft="@dimen/dimen_15dp"
+        android:singleLine="true"
+        android:paddingRight="@dimen/dimen_15dp"/>
+
+    <RelativeLayout
+        android:id="@+id/rel_member"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_60dp"
+        android:paddingRight="@dimen/dimen_15dp"
+        android:paddingLeft="@dimen/dimen_15dp"
+        android:layout_below="@id/txv_char">
+
+        <com.maya.android.asyncimageview.widget.AsyncImageView
+            android:id="@+id/imv_head"
+            android:layout_width="@dimen/dimen_50dp"
+            android:layout_height="@dimen/dimen_50dp"
+            android:layout_centerVertical="true"
+            android:scaleType="fitXY"
+            android:src="@mipmap/img_upload_head" />
+
+        <TextView
+            android:id="@+id/txv_name"
+            style="@style/card_case_unit_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_12dp"
+            android:layout_marginLeft="@dimen/dimen_10dp"
+            android:layout_toRightOf="@id/imv_head"
+            android:text="111"/>
+
+        <TextView
+            android:id="@+id/txv_company"
+            style="@style/card_case_unit_notice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/txv_name"
+            android:layout_alignBottom="@id/imv_head"
+            android:layout_marginBottom="@dimen/dimen_2dp"/>
+
+         <TextView
+            android:id="@+id/txv_job"
+            style="@style/card_case_unit_notice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/txv_name"
+            android:layout_toRightOf="@id/txv_name"
+            android:layout_marginLeft="@dimen/dimen_10dp"/>
+
+        <ImageView
+            android:id="@+id/imv_bus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/imv_head"
+            android:layout_alignParentRight="true"/>
+
+        <ImageView
+            android:id="@+id/imv_selected"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/img_general_no_agree"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view_card_case_divider"
+        style="@style/horizontal_line_divider_padding_dimen_15dp"
+        android:layout_below="@id/rel_member"
+        android:visibility="gone"/>
+</RelativeLayout>
